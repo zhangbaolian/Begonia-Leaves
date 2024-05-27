@@ -57,8 +57,96 @@ e_maghreb = {
 			c_hengan = { # 涥安县
 				color = { 22 107 181 }
 					
-				b_wangzhai = {
+				b_wangzhai = { # 汪宅
 					province = 62
+					color = { 22 107 181 }
+				}
+				b_wenchang = { # 文昌
+					province = 63
+					color = { 22 107 181 }
+				}
+				b_fuwen = {	# 富文
+					province = 64
+					color = { 22 107 181 }
+				}
+				b_linqi = { # 临岐
+					province = 65
+					color = { 22 107 181 }
+				}
+				b_yaoshan = { # 瑶山
+					province = 66
+					color = { 22 107 181 }
+				}
+				b_pingmen = { # 屏门
+					province = 67
+					color = { 22 107 181 }
+				}
+				b_guangchang = { # 光昌
+					province = 68
+					color = { 22 107 181 }
+				}
+				b_yanjia = {  # 严家
+					province = 69
+					color = { 22 107 181 }
+				}
+				b_weiping = { # 威坪
+					province = 70
+					color = { 22 107 181 }
+				}
+				b_songcun = { # 宋村
+					province = 71
+					color = { 22 107 181 }
+				}
+				b_jinfeng = { # 金峰
+					province = 72
+					color = { 22 107 181 }
+				}
+				b_jiukeng = { # 鸠坑
+					province = 73
+					color = { 22 107 181 }
+				}
+				b_zitong = { # 梓桐
+					province = 74
+					color = { 22 107 181 }
+				}
+				b_tongziwu = { # 桐子坞
+					province = 75
+					color = { 22 107 181 }
+				}
+				b_jiangjia = { # 姜家
+					province = 76
+					color = { 22 107 181 }
+				}
+				b_langchuan = { # 浪川
+					province = 77
+					color = { 22 107 181 }
+				}
+				b_zhongzhou = { # 中洲
+					province = 78
+					color = { 22 107 181 }
+				}
+				b_baimufan = { # 百亩畈
+					province = 79
+					color = { 22 107 181 }
+				}
+				b_fengshuling = { # 枫树岭
+					province = 80
+					color = { 22 107 181 }
+				}
+				b_daye = { # 大野
+					province = 81
+					color = { 22 107 181 }
+				}
+				b_anyang = { # 安阳
+					province = 82
+					color = { 22 107 181 }
+				}
+				b_xuyuan = { # 许源
+					province = 83
+					color = { 22 107 181 }
+				}
+				b_chayuan = { # 茶园
+					province = 84
 					color = { 22 107 181 }
 				}
 			}
