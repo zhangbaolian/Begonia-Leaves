@@ -1,0 +1,15 @@
+﻿game_object_locator={
+	name="buildings"
+	render_pass=Map
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="building_layer"
+	instances={
+		{
+			id=1
+			position={ 10771.251953 0.000000 4257.074219 }
+			rotation={ -0.000000 -0.000000 -0.000000 1.000000 }
+			scale={ 1.000000 1.000000 1.000000 }
+		}
+	}
+}

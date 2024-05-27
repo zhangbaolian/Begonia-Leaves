@@ -1,0 +1,9 @@
+﻿l_english:
+ # LAKES
+ lake_qiandaohu:0 "Qian Dao Hu"
+ lake_poyanghu:0 "Po Yang Hu"
+
+ # MAJOR RIVERS
+ river_fuchunjiang:0 "Fu Chun Jiang"
+ river_qiantangjiang:0 "Qian Tang Jiang"
+ river_changjiang:0 "Chang Jiang"

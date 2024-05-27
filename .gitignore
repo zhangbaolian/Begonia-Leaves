@@ -1,0 +1,8 @@
+*.psd
+*.psb
+tools
+gfx/map/terrain/detail_index.tga
+gfx/map/terrain/detail_intensity.tga
+common/bookmarks
+common/bookmark_portraits
+*.info
