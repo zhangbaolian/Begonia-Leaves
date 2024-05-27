@@ -5,4 +5,4 @@ tags={
 }
 name="秋叶海棠"
 supported_version="1.12.5"
-path="C:/Users/PC/Documents/Paradox Interactive/Crusader Kings III/mod/qyht_dev"
+path="F:/Documents/Paradox Interactive/Crusader Kings III/mod/qyht_dev"

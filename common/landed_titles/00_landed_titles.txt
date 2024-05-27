@@ -52,6 +52,16 @@ e_maghreb = {
 					
 					color = 22 107 181
 				}
+			}
+
+			c_hengan = { # 涥安县
+				color = { 22 107 181 }
+					
+				b_wangzhai = {
+					province = 62
+					color = { 22 107 181 }
+				}
+			}
 		}
 	}
 }

@@ -1,2 +1,4 @@
-﻿default=plains
-1=plains
+﻿default = plains
+1 = plains
+2 = plains
+62 = plains
