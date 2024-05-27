@@ -9,7 +9,7 @@ window = {
 	allow_outside = yes
 	movable = no
 	layer = windows_layer
-	size = { 625 700 }
+	size = { 635 700 }
 	#size = { 625 645 }
 
 	background = {
@@ -670,59 +670,87 @@ window = {
 
 		hbox = {
 			layoutpolicy_horizontal = expanding
+			# vbox = {
+			# 	position = { 10 -20 }
+			# 	fixedgridbox = {
+			# 		name = "LOTR_buildings_grid"
+			# 		datamodel = "[HoldingView.GetBuildings]"
+			# 		datamodel_wrap = 2
+			# 		addcolumn = 58
+			# 		addrow = 58
+			# 		minimumsize = { 300 60 }
+			# 		maximumsize = { 500 60 }
+			# 		allow_outside = yes
+						
+			# 		item = {
+			# 			widget_building_item = {  }
+						
+			# 		}
+			# 	}
+			# }
 
-			hbox = {
+			vbox = {
 				margin_left = 5
 				spacing = 5
-				datamodel = "[HoldingView.GetCountyHoldings]"
-
-				item = {
-					button_tab_dark = {
-						datacontext = "[GUICountyHolding.GetHolding]"
-						size = { 45 45  }
-						down = "[GUICountyHolding.IsSelected]"
-						alwaystransparent = "[GUICountyHolding.IsSelected]"
-						onclick = "[GUICountyHolding.OnClick]"
-						onclick = "[PdxGuiTriggerAllAnimations('holding_view_refresh')]"
-						using = tooltip_ne
-						tooltipwidget = { holding_tooltip_click = {} }
-
-						icon_building_tab = {
-							parentanchor = center
-							position = { 0 1 }
-							size = { 35 30 }
-							alwaystransparent = yes
+				# position = { 10 -20 }
+				fixedgridbox = {
+					name = "QYHT_HOLDING_VIEW"
+					minimumsize = { 600 50 }
+					maximumsize = { 600 100 }
+					datamodel_wrap = 2
+					addcolumn = 49
+					addrow = 49
+					allow_outside = yes
+						
+					datamodel = "[HoldingView.GetCountyHoldings]"
+					item = {
+						button_tab_dark = {
+							datacontext = "[GUICountyHolding.GetHolding]"
+							size = { 45 45  }
 							down = "[GUICountyHolding.IsSelected]"
-							texture = "[GUICountyHolding.GetHolding.GetType.GetTabIcon]"
-
-							blockoverride "button_frames"
-							{
-								gfxtype = togglepushbuttongfx
-								effectname = "NoHighlight"
-								upframe = 4
-								uphoverframe = 5
-								uppressedframe = 6
-								downframe = 5
+							alwaystransparent = "[GUICountyHolding.IsSelected]"
+							onclick = "[GUICountyHolding.OnClick]"
+							onclick = "[PdxGuiTriggerAllAnimations('holding_view_refresh')]"
+							using = tooltip_ne
+							tooltipwidget = { holding_tooltip_click = {} }
+	
+							icon_building_tab = {
+								parentanchor = center
+								position = { 0 1 }
+								size = { 35 30 }
+								alwaystransparent = yes
+								down = "[GUICountyHolding.IsSelected]"
+								texture = "[GUICountyHolding.GetHolding.GetType.GetTabIcon]"
+	
+								blockoverride "button_frames"
+								{
+									gfxtype = togglepushbuttongfx
+									effectname = "NoHighlight"
+									upframe = 4
+									uphoverframe = 5
+									uppressedframe = 6
+									downframe = 5
+								}
+							}
+	
+							icon = {
+								name = "realm_capital_icon"
+								visible = "[GUICountyHolding.GetHolding.GetProvince.GetTitle.IsCountyCapital]"
+								parentanchor = bottom|right
+								size = { 32 32 }
+								position = { 4 0 }
+								framesize = { 63 63 }
+								texture = "gfx/interface/icons/icon_capital.dds"
+								frame = 1
 							}
 						}
-
-						icon = {
-							name = "realm_capital_icon"
-							visible = "[GUICountyHolding.GetHolding.GetProvince.GetTitle.IsCountyCapital]"
-							parentanchor = bottom|right
-							size = { 32 32 }
-							position = { 4 0 }
-							framesize = { 63 63 }
-							texture = "gfx/interface/icons/icon_capital.dds"
-							frame = 1
-						}
 					}
-				}
+				}	
 			}
-
-
+		
 			expand = {}
 		}
+		
 		####################################
 		########## HOLDING INFO ############
 		####################################
