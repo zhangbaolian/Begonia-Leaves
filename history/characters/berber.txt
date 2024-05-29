@@ -1,8 +1,8 @@
 ﻿20842 = {
 	name = "Guanarigato"
 	dynasty = 100848
-	religion = "west_african_pagan"
-	culture = baranis
+	religion = "zhengyi"
+	culture = han
 	father = 166432
 	1039.1.1 = {
 		birth = "1039.1.1"

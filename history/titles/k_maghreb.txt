@@ -5,12 +5,18 @@ e_maghreb = {
 
 k_maghreb = {
 	867.1.1 = { change_development_level = 3 }
-	1066.1.1 = { change_development_level = 6 }
+	1066.1.1 = { 
+		change_development_level = 6
+		holder = 20842 
+	}
 }
 
-d_canarias = {
+d_hangzhou = {
 	867.1.1 = { change_development_level = 3 }
-	1066.1.1 = { change_development_level = 6 }
+	1066.1.1 = { 
+		change_development_level = 6
+		holder = 20842 
+	}
 }
 
 c_canarias = {

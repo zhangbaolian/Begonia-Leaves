@@ -1,8 +1,45 @@
 #k_maghreb
-##d_canarias ###################################
+##d_hanzhou ###################################
 ###c_canarias
 1 = {		#GRAN CANARIA
-	culture = baranis
-	religion = west_african_pagan
-	holding = tribal_holding
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
 }
+###c_hengan
+62 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_jiande
+85 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_linan
+101 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_fuyang
+114 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_xiaoshan
+131 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+155 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+

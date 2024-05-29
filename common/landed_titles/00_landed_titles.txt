@@ -19,7 +19,7 @@ e_maghreb = {
 	}
 	
 	k_maghreb = {
-		color = { 196 36 18 }
+		color = { 238 63 77 }
 		
 		capital = c_canarias # Canarias
 		
@@ -34,13 +34,13 @@ e_maghreb = {
 			}
 		}
 		
-		d_canarias = { # 杭州
-			color = { 42 127 201 }
+		d_hanzhou = { # 杭州
+			color = { 255 241 67 }
 			
 			capital = c_canarias # Gran Canaria
 			
 			c_canarias = {
-				color = { 22 107 181 }
+				color = { 75 30 47 }
 				
 				b_grancanaria = {
 					province = 1
@@ -55,7 +55,7 @@ e_maghreb = {
 			}
 
 			c_hengan = { # 涥安
-				color = { 22 107 181 }
+				color = { 236 138 164 }
 					
 				b_wangzhai = { # 汪宅
 					province = 62
@@ -151,7 +151,7 @@ e_maghreb = {
 				}
 			}
 			c_jiande = { # 建德
-				color = { 44 77 181 }
+				color = { 78 124 161 }
 				b_xinanjiang = { # 新安江
 					province = 85
 					color = { 22 107 181 }
@@ -218,7 +218,7 @@ e_maghreb = {
 				}																																												
 			}
 			c_tonglu = { # 桐庐
-				color = { 156 188 66 }
+				color = { 98 22 36 }
 				b_tongjun = { # 桐君
 					province = 101
 					color = { 22 107 181 }
@@ -272,6 +272,277 @@ e_maghreb = {
 					color = { 22 107 181 }
 				}																																												
 			}
+			c_linan = { # 临安
+				color = { 222 28 49 }
+				b_jincheng = { # 锦城
+					province = 114
+					color = { 22 107 181 }
+				}				
+				b_shanggan = { # 上甘
+					province = 115
+					color = { 22 107 181 }
+				}				
+				b_sankou = { # 三口
+					province = 116
+					color = { 22 107 181 }
+				}
+				b_linglong = { # 玲珑
+					province = 117
+					color = { 22 107 181 }
+				}
+				b_hengfan = { # 横畈
+					province = 118
+					color = { 22 107 181 }
+				}
+				b_shimen = { # 石门
+					province = 119
+					color = { 22 107 181 }
+				}
+				b_ftaihuyuan= { # 太湖源
+					province = 120
+					color = { 22 107 181 }
+				}
+				b_zhaoxi = { # 藻溪
+					province = 121
+					color = { 22 107 181 }
+				}
+				b_shaolu = { # 绍鲁
+					province = 122
+					color = { 22 107 181 }
+				}
+				b_henglu = { # 横路
+					province = 123
+					color = { 22 107 181 }
+				}
+				b_mashan = { # 马山
+					province = 124
+					color = { 22 107 181 }
+				}
+				b_hongling = { # 洪岭
+					province = 125
+					color = { 22 107 181 }
+				}
+				b_heqiao = { # 河桥
+					province = 126
+					color = { 22 107 181 }
+				}	
+				b_changhua = { # 昌化
+					province = 127
+					color = { 22 107 181 }
+				}
+				b_longjing = { # 龙井
+					province = 128
+					color = { 22 107 181 }
+				}
+				b_xinqiao = { # 新桥
+					province = 129
+					color = { 22 107 181 }
+				}
+				b_maxiao = { # 马啸
+					province = 130
+					color = { 22 107 181 }
+				}																																																											
+			}
+			c_fuyang = { # 富阳
+				color = { 54 41 47 }	
+
+				b_fuchun = { # 富春
+					province = 131
+					color = { 22 107 181 }
+				}				
+				b_xinyi = { #  新义
+					province = 132
+					color = { 22 107 181 }
+				}
+				b_chunjian = { #  春建
+					province = 133
+					color = { 22 107 181 }
+				}
+				b_yongchang = { #  永昌
+					province = 134
+					color = { 22 107 181 }
+				}
+				b_xindeng = { #  新登
+					province = 135
+					color = { 22 107 181 }
+				}
+				b_xukou= { #  胥口
+					province = 136
+					color = { 22 107 181 }
+				}
+				b_qiaodong = { #  桥洞
+					province = 137
+					color = { 22 107 181 }
+				}
+				b_wanshi = { #  万市
+					province = 138
+					color = { 22 107 181 }
+				}
+				b_sanshan = { #  三山
+					province = 139
+					color = { 22 107 181 }
+				}
+				b_xintong = { #  新桐
+					province = 140
+					color = { 22 107 181 }
+				}
+				b_luzhu = { #  禄渚
+					province = 141
+					color = { 22 107 181 }
+				}
+				b_shoujiang = { #  受降
+					province = 142
+					color = { 22 107 181 }
+				}	
+				b_chunjiang = { #  春江
+					province = 143
+					color = { 22 107 181 }
+				}
+				b_huanshan = { #  环山
+					province = 144
+					color = { 22 107 181 }
+				}
+				b_dongtu = { #  东图
+					province = 145
+					color = { 22 107 181 }
+				}
+				b_changan = { #  常安
+					province = 146
+					color = { 22 107 181 }
+				}
+				b_longmen = { #  龙门
+					province = 147
+					color = { 22 107 181 }
+				}
+				b_shanggong = { #  上宫
+					province = 148
+					color = { 22 107 181 }
+				}
+				b_changlv = { #  常绿
+					province = 149
+					color = { 22 107 181 }
+				}
+				b_taiyuan = { #  太源
+					province = 150
+					color = { 22 107 181 }
+				}
+				b_lingqiao = { #  灵桥
+					province = 151
+					color = { 22 107 181 }
+				}
+				b_lishan = { #  里山
+					province = 152
+					color = { 22 107 181 }
+				}
+				b_yushan = { #  渔山
+					province = 153
+					color = { 22 107 181 }
+				}
+				b_dongzhou = { #  东洲
+					province = 154
+					color = { 22 107 181 }
+				}																																																											
+			}
+			c_xiaoshan = { # 萧山
+				color = { 0 224 158 }	
+
+				b_beigan = { # 北干
+					province = 155
+					color = { 22 107 181 }
+				}				
+				b_hezhuang = { #  河庄
+					province = 156
+					color = { 22 107 181 }
+				}
+				b_xinwan = { #  新湾
+					province = 157
+					color = { 22 107 181 }
+				}
+				b_wenyan = { #  闻堰
+					province = 158
+					color = { 22 107 181 }
+				}
+				b_fupu = { #  府浦
+					province = 159
+					color = { 22 107 181 }
+				}
+				b_changhe = { #  长河
+					province = 160
+					color = { 22 107 181 }
+				}
+				b_yiqiao = { #  义桥
+					province = 161
+					color = { 22 107 181 }
+				}
+				b_daicun = { #  戴村
+					province = 162
+					color = { 22 107 181 }
+				}
+				b_heshang = { #  河上
+					province = 163
+					color = { 22 107 181 }
+				}
+				b_louta = { #  楼塔
+					province = 164
+					color = { 22 107 181 }
+				}
+				b_linpu = { #  临浦
+					province = 165
+					color = { 22 107 181 }
+				}
+				b_puyang = { #  浦阳
+					province = 166
+					color = { 22 107 181 }
+				}	
+				b_suoqian = { #  所前
+					province = 167
+					color = { 22 107 181 }
+				}
+				b_ningwei = { #  宁围
+					province = 168
+					color = { 22 107 181 }
+				}
+				b_yaqian = { #  衙前
+					province = 169
+					color = { 22 107 181 }
+				}
+				b_kanshan = { #  坎山
+					province = 170
+					color = { 22 107 181 }
+				}
+				b_xinjie = { #  新街
+					province = 171
+					color = { 22 107 181 }
+				}
+				b_nanyang = { #  南阳
+					province = 172
+					color = { 22 107 181 }
+				}
+				b_guali = { #  瓜沥
+					province = 173
+					color = { 22 107 181 }
+				}
+				b_dangshan = { #  党山
+					province = 174
+					color = { 22 107 181 }
+				}
+				b_dangwan = { #  党湾
+					province = 175
+					color = { 22 107 181 }
+				}
+				b_yinong = { #  益农
+					province = 176
+					color = { 22 107 181 }
+				}
+				b_linjiang = { #  临江
+					province = 177
+					color = { 22 107 181 }
+				}
+				b_qianjin = { #  前进
+					province = 178
+					color = { 22 107 181 }
+				}																																																											
+			}			
 		}
 	}
 }
