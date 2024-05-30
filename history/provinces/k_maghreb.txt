@@ -1,7 +1,7 @@
 #k_maghreb
 ##d_hanzhou ###################################
 ###c_canarias
-1 = {		#GRAN CANARIA
+1 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding
@@ -18,7 +18,7 @@
 	religion = zhengyi
 	holding = castle_holding
 }
-###c_linan
+###c_tonglu
 101 = {
 	culture = han
 	religion = zhengyi
@@ -30,15 +30,15 @@
 	religion = zhengyi
 	holding = castle_holding
 }
-###c_xiaoshan
+###c_linan
 131 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding
 }
-
+###c_xiaoshan
 155 = {
-	culture = han
+	culture = qin
 	religion = zhengyi
 	holding = castle_holding
 }
