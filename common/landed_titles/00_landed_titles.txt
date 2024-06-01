@@ -1025,6 +1025,70 @@ e_maghreb = {
 					province = 290
 					color = { 22 107 181 }
 				}																																																																																														
+			}
+			c_xinchang = { # 新昌
+				color = { 0 224 158 }
+					
+				b_nanming = {
+					province = 291
+					color = { 22 107 181 } 
+				}
+				b_qixing = {
+					province = 292
+					color = { 22 107 181 }
+				}				
+				b_bamao = { # 东浦
+					province = 293
+					color = { 22 107 181 }
+				}
+				b_dashiju = {
+					province = 294
+					color = { 22 107 181 }
+				}
+				b_xinlin = {
+					province = 295
+					color = { 22 107 181 }
+				}
+				b_shaxi = {
+					province = 296
+					color = { 22 107 181 }
+				}
+				b_qiaoying = {
+					province = 297
+					color = { 22 107 181 }
+				}
+				b_xiaojiang = {
+					province = 298
+					color = { 22 107 181 }
+				}
+				b_ruao = {
+					province = 299
+					color = { 22 107 181 }
+				}
+				b_jingping = {
+					province = 300
+					color = { 22 107 181 }
+				}
+				b_shuangcai = {
+					province = 301
+					color = { 22 107 181 }
+				}	
+				b_chengnan = {
+					province = 302
+					color = { 22 107 181 }
+				}
+				b_dongming = {
+					province = 303
+					color = { 22 107 181 }
+				}	
+				b_meizhu = {
+					province = 304
+					color = { 22 107 181 }
+				}		
+				b_chengtan = {
+					province = 305
+					color = { 22 107 181 }
+				}																																																																																										
 			}											
 		}
 	}
