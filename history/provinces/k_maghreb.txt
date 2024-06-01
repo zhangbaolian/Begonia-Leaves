@@ -43,3 +43,44 @@
 	holding = castle_holding
 }
 
+###c_yuhang
+197 = {
+	culture = qin
+	religion = zhengyi
+	holding = castle_holding
+}
+
+### c_shaoxing
+202 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_keqiao
+215 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_shangyu
+229 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_zhuji
+247 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_shengzhou
+271 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
