@@ -12,6 +12,11 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+84 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
 ###c_jiande
 85 = {
 	culture = han
@@ -78,8 +83,85 @@
 	holding = castle_holding
 }
 
+
 ###c_shengzhou
 271 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_xinchang
+291 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+
+###c_yuyao
+312 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+
+###c_cixi
+333 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_zhenhai
+349 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+
+###c_jiangbei
+353 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_haishu
+356 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+
+###c_fegnhua
+366 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+
+###c_yinzhou
+376 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+
+###c_beicang
+389 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_ninghai
+399 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding
