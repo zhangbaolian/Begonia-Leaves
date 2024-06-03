@@ -1620,6 +1620,28 @@ e_maghreb = {
 				b_lingxia={ province = 541 color = { 229 127 126 } }
 				b_jiangdong={ province = 542 color = { 41 240 121 } }			   
 			}
+			c_jinhua_wucheng = { # 婺城
+				color = { 15 166 145}
+				b_qiubin={ province = 543 color = { 213 49 98 } }
+				b_wucheng_tongyuan={ province = 544 color = { 198 44 178 } }
+				b_zhuma={ province = 545 color = { 30 229 246 } }
+				b_qianxi={ province = 546 color = { 225 237 31 } }
+				b_bailongqiao={ province = 547 color = { 252 40 198 } }
+				b_jiangtang={ province = 548 color = { 219 98 235 } }
+				b_luobu={ province = 549 color = { 139 155 79 } }
+				b_yangbu={ province = 550 color = { 48 208 141 } }
+				b_wucheng_tangxi={ province = 551 color = { 37 65 115 } }
+				b_shenfan={ province = 552 color = { 213 101 136 } }
+				b_lingshang={ province = 553 color = { 129 212 152 } }
+				b_tashi={ province = 554 color = { 58 169 218 } }
+				b_shafan={ province = 555 color = { 123 30 117 } }
+				b_langya={ province = 556 color = { 77 183 145 } }
+				b_changshan={ province = 557 color = { 236 41 155 } }
+				b_andi={ province = 558 color = { 63 10 105 } }
+				b_yafan={ province = 559 color = { 227 37 13 } }
+				b_sumeng={ province = 560 color = { 226 105 173 } }
+				b_ruoyang={ province = 561 color = { 16 200 8 } }			   
+			}
 		}
 	}
 }
