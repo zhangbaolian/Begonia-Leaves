@@ -1607,6 +1607,19 @@ e_maghreb = {
 				b_daxikou={ province = 531 color = { 4 244 164 } }
 				b_xinzhai={ province = 532 color = { 253 159 252 } }			   
 			}
+			c_jinhua_jindong = { # 金东
+				color = { 15 26 199}
+				b_duohu={ province = 533 color = { 31 71 19 } }
+				b_chisong={ province = 534 color = { 191 31 251 } }
+				b_caozhai={ province = 535 color = { 153 16 4 } }
+				b_yuandong={ province = 536 color = { 61 68 84 } }
+				b_fucun={ province = 537 color = { 48 197 158 } }
+				b_xiaoshun={ province = 538 color = { 246 98 48 } }
+				b_tangya={ province = 539 color = { 95 68 230 } }
+				b_jindong_lipu={ province = 540 color = { 31 141 115 } }
+				b_lingxia={ province = 541 color = { 229 127 126 } }
+				b_jiangdong={ province = 542 color = { 41 240 121 } }			   
+			}
 		}
 	}
 }
