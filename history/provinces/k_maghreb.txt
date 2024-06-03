@@ -173,7 +173,7 @@
 	religion = zhengyi
 	holding = castle_holding
 }
-
+##d_zhejiang_jinhua
 ###c_jinhua_pujiang
 437 = {
 	culture = han
@@ -224,6 +224,13 @@
 }
 
 ###c_jinhua_wucheng
+543 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jinhua_lanxi
 543 = {
 	culture = han
 	religion = zhengyi
