@@ -1595,7 +1595,7 @@ e_maghreb = {
 				b_lvtan={ province = 519 color = { 108 157 97 } }
 				b_taoxitan={ province = 520 color = { 77 27 21 } }
 				b_baimu={ province = 521 color = { 254 240 245 } }
-				b_wangzhai={ province = 522 color = { 141 130 141 } }
+				b_wuyi_wangzhai={ province = 522 color = { 141 130 141 } }
 				b_datian={ province = 523 color = { 207 170 161 } }
 				b_yuyuan={ province = 524 color = { 137 17 151 } }
 				b_taoxi={ province = 525 color = { 177 116 136 } }
@@ -1660,6 +1660,47 @@ e_maghreb = {
 				b_yongting={ province = 575 color = { 38 243 255 } }
 				b_youbu={ province = 576 color = { 226 39 190 } }
 				b_chixi={ province = 577 color = { 80 109 250 } }			   
+			}
+		}
+		d_zhejiang_jiaxing = { # 嘉兴
+			color = {148 155 188}
+			cpaital = c_jiaxing_nanhu
+
+			c_jiaxing_haining = { # 海宁
+				color = {123 155 165}
+				b_haizhou={ province = 578 color = { 127 129 55 } }
+				b_xieqiao={ province = 579 color = { 142 122 85 } }
+				b_guodian={ province = 580 color = { 180 21 77 } }
+				b_zhouwangmiao={ province = 581 color = { 0 97 152 } }
+				b_shentu={ province = 582 color = { 30 205 77 } }
+				b_huangwan={ province = 583 color = { 115 156 122 } }
+				b_yuanhua={ province = 584 color = { 149 40 206 } }
+				b_maqiao={ province = 585 color = { 227 104 208 } }
+				b_dingqiao={ province = 586 color = { 115 84 227 } }
+				b_xincang={ province = 587 color = { 77 197 62 } }
+			}
+			c_jiaxing_haiyan = {
+				color = {165 133 188}
+				b_wuyuan={ province = 588 color = { 89 75 73 } }
+				b_haitang={ province = 589 color = { 214 213 178 } }
+				b_yuantong={ province = 590 color = { 75 186 205 } }
+				b_shendang={ province = 591 color = { 251 189 230 } }
+				b_baibu={ province = 592 color = { 250 229 185 } }
+				b_yucheng={ province = 593 color = { 53 43 40 } }
+				b_shiquan={ province = 594 color = { 59 57 197 } }
+				b_taishan={ province = 595 color = { 58 17 10 } }
+				b_ganpu={ province = 596 color = { 154 46 190 } }			   
+			}
+			c_jiaxing_pinghu = {
+				color = { 33 196 47}
+				b_danghu={ province = 597 color = { 10 14 174 } }
+				b_caoqiao={ province = 598 color = { 82 67 235 } }
+				b_zhongdai={ province = 599 color = { 120 148 179 } }
+				b_zhapu={ province = 600 color = { 238 92 134 } }
+				b_lindai={ province = 601 color = { 70 82 101 } }
+				b_quantang={ province = 602 color = { 112 166 112 } }
+				b_pinghu_xincang={ province = 603 color = { 81 34 150 } }
+				b_guangchen={ province = 604 color = { 41 92 145 } }			   
 			}
 		}
 	}

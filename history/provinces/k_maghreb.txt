@@ -236,3 +236,25 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+##d_zhejiang_jiaxing
+###c_jiaxing_haining
+578 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jiaxing_haiyan
+588 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jiaxing_pinghu
+597 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
