@@ -1465,7 +1465,110 @@ e_maghreb = {
 				b_changjie={ province = 414 color = { 61 169 246 } }
 				b_huchen={ province = 415 color = { 75 68 223 } }
 				b_dajia={ province = 416 color = { 55 13 190 } }			   
+			}
+			c_xiangshan = {# 象山
+				color =  { 55 77 235 }
+				b_dandong={ province = 418 color = { 10 52 75 } }
+				b_danxi={ province = 419 color = { 84 178 170 } }
+				b_dongchen={ province = 420 color = { 116 103 109 } }
+				b_juexi={ province = 421 color = { 21 42 10 } }
+				b_daxu={ province = 422 color = { 49 107 208 } }
+				b_xiangshan_xianxiang={ province = 423 color = { 103 240 71 } }
+				b_huangbiao={ province = 424 color = { 37 20 54 } }
+				b_qiangtou={ province = 425 color = { 135 144 36 } }
+				b_xizhou={ province = 426 color = { 183 174 158 } }
+				b_sizhoutou={ province = 427 color = { 170 174 165 } }
+				b_maoyang={ province = 428 color = { 149 6 58 } }
+				b_xiangshan_xinqiao={ province = 429 color = { 5 81 97 } }
+				b_dingtang={ province = 430 color = { 101 178 136 } }
+				b_xiaotang={ province = 431 color = { 72 25 67 } }
+				b_xiangshan_datang={ province = 432 color = { 153 7 68 } }
+				b_shipu={ province = 433 color = { 12 113 4 } }
+				b_gaotangdao={ province = 434 color = { 181 149 250 } }
+				b_hepu={ province = 435 color = { 144 15 128 } }
+				b_tantoushan={ province = 436 color = { 58 27 232 } }			   
 			}									
+		}
+		d_zhejiang_jinhua = { # 金华
+			color = {222 111 145}
+			capital = c_jinhua_wucheng # 婺城
+
+			c_jinhua_pujiang = { # 浦江
+				color = { 233 55 44}
+				b_xianhua={ province = 437 color = { 229 156 141 } }
+				b_wuqian={ province = 438 color = { 12 199 218 } }
+				b_punan={ province = 439 color = { 145 170 89 } }
+				b_huangzhai={ province = 440 color = { 66 220 181 } }
+				b_zhengjiawu={ province = 441 color = { 50 169 196 } }
+				b_baima={ province = 442 color = { 73 41 139 } }
+				b_zhengzhai={ province = 443 color = { 216 119 233 } }
+				b_yantou={ province = 444 color = { 126 29 166 } }
+				b_qili={ province = 445 color = { 85 112 237 } }
+				b_huaqiao={ province = 446 color = { 179 253 237 } }
+				b_hangping={ province = 447 color = { 163 54 86 } }
+				b_yuzhai={ province = 448 color = { 49 11 86 } }
+				b_dafan={ province = 449 color = { 111 225 245 } }
+				b_tanxi={ province = 450 color = { 156 88 10 } }
+				b_zhongyu={ province = 451 color = { 127 187 89 } }			   
+			}
+			c_jinhua_yiwu = { # 义乌
+				color = {55 66 77}
+				b_choujiang={ province = 452 color = { 197 198 17 } }
+				b_pingchou={ province = 453 color = { 250 233 95 } }
+				b_xialuozhai={ province = 454 color = { 62 105 251 } }
+				b_suxi={ province = 455 color = { 131 229 54 } }
+				b_dongtang={ province = 456 color = { 79 62 66 } }
+				b_houzhai={ province = 457 color = { 46 60 117 } }
+				b_beiyuan={ province = 458 color = { 101 216 174 } }
+				b_yiwu_donghe={ province = 459 color = { 165 10 132 } }
+				b_yiwu_yiting={ province = 460 color = { 224 54 162 } }
+				b_beilei={ province = 461 color = { 117 128 168 } }
+				b_maodian={ province = 462 color = { 46 30 143 } }
+				b_niansanli={ province = 463 color = { 235 21 37 } }			   
+			}
+			c_jinhua_dongyang = { # 东阳 
+				color = {78 169 233}
+				b_jiangbei={ province = 464 color = { 186 209 225 } }
+				b_liushi={ province = 465 color = { 107 144 72 } }
+				b_weishan={ province = 466 color = { 105 16 235 } }
+				b_hulu={ province = 467 color = { 45 202 71 } }
+				b_shangcun={ province = 468 color = { 50 69 79 } }
+				b_sandan={ province = 469 color = { 169 124 41 } }
+				b_dongyang={ province = 470 color = { 159 39 59 } }
+				b_guozhai={ province = 471 color = { 170 6 220 } }
+				b_geshan={ province = 472 color = { 227 219 212 } }
+				b_mazhai={ province = 473 color = { 214 94 97 } }
+				b_qianxiang={ province = 474 color = { 249 167 166 } }
+				b_fangjun={ province = 475 color = { 122 119 107 } }
+				b_hengdian={ province = 476 color = { 226 125 167 } }
+				b_nanma={ province = 477 color = { 140 54 226 } }
+				b_huaxi={ province = 478 color = { 115 248 156 } }
+				b_lizhai={ province = 479 color = { 232 211 246 } }
+				b_chengdong={ province = 480 color = { 173 154 143 } }
+				b_baiyun={ province = 481 color = { 0 40 47 } }			   
+			}
+			c_jinhua_panan = {
+				color = {156 67 88}
+				b_molin={ province = 482 color = { 85 246 193 } }
+				b_shenze={ province = 483 color = { 156 199 183 } }
+				b_xinwo={ province = 484 color = { 156 102 172 } }
+				b_lengshui={ province = 485 color = { 85 173 254 } }
+				b_renchuan={ province = 486 color = { 201 180 238 } }
+				b_shuangfeng={ province = 487 color = { 81 192 203 } }
+				b_panfeng={ province = 488 color = { 194 181 244 } }
+				b_dapan={ province = 489 color = { 227 12 106 } }
+				b_weixin={ province = 490 color = { 135 209 79 } }
+				b_gaoer={ province = 491 color = { 164 112 89 } }
+				b_fangqian={ province = 492 color = { 225 227 223 } }
+				b_shanghu={ province = 493 color = { 166 120 40 } }
+				b_yaochuan={ province = 494 color = { 206 104 188 } }
+				b_panan_shuangxi={ province = 495 color = { 161 220 140 } }
+				b_jiuhe={ province = 496 color = { 74 45 196 } }
+				b_panan_yushan={ province = 497 color = { 2 5 131 } }
+				b_jianshan={ province = 498 color = { 180 90 245 } }
+				b_huzhai={ province = 499 color = { 140 143 213 } }
+				b_wancang={ province = 500 color = { 193 136 230 } }
+			}
 		}
 	}
 }

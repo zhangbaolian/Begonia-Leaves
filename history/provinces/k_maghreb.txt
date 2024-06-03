@@ -166,3 +166,38 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+###c_xiangshan
+418 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jinhua_pujiang
+437 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jinhua_yiwu
+452 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jinhua_dongyang
+464 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_jinhua_panan
+482 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
