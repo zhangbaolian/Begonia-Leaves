@@ -1745,6 +1745,17 @@ e_maghreb = {
 				b_lingan={ province = 637 color = { 241 110 213 } }
 				b_wuzhen={ province = 638 color = { 23 16 87 } }			   
 			}
+			c_jiaxing_jiashan = { # 嘉善
+				color = { 166 178 188 }
+				b_weitang={ province = 639 color = { 120 240 37 } }
+				b_dayun={ province = 640 color = { 83 118 52 } }
+				b_huimin={ province = 641 color = { 219 42 153 } }
+				b_yaozhuang={ province = 642 color = { 2 247 4 } }
+				b_xitang={ province = 643 color = { 126 41 203 } }
+				b_tianyi={ province = 644 color = { 170 96 202 } }
+				b_ganyao={ province = 645 color = { 178 147 35 } }
+				b_taozhuang={ province = 646 color = { 153 197 78 } }			   
+			}
 		}
 	}
 }
