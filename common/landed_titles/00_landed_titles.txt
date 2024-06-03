@@ -1702,6 +1702,32 @@ e_maghreb = {
 				b_pinghu_xincang={ province = 603 color = { 81 34 150 } }
 				b_guangchen={ province = 604 color = { 41 92 145 } }			   
 			}
+			c_jiaxing_nanhu = {
+				color = { 155 48 169}
+				b_nanhu={ province = 605 color = { 12 2 42 } }
+				b_jiefang={ province = 606 color = { 102 58 122 } }
+				b_nanhu_qixing={ province = 607 color = { 3 6 95 } }
+				b_daqiao={ province = 608 color = { 179 55 144 } }
+				b_xinfeng={ province = 609 color = { 119 136 55 } }
+				b_nanhu_fengqiao={ province = 610 color = { 169 188 207 } }
+				b_yuxin={ province = 611 color = { 137 111 25 } }			   
+			}
+			c_jiaxing_xiuzhou = {
+				color = { 144 123 177}
+				b_dongzha={ province = 612 color = { 16 87 234 } }
+				b_xinxing={ province = 613 color = { 37 153 225 } }
+				b_jiabei={ province = 614 color = { 14 84 198 } }
+				b_tanghui={ province = 615 color = { 248 244 248 } }
+				b_youchegang={ province = 616 color = { 90 106 110 } }
+				b_nanhui={ province = 617 color = { 86 214 188 } }
+				b_wangjiangjing={ province = 618 color = { 106 138 81 } }
+				b_luodong={ province = 619 color = { 23 141 172 } }
+				b_xinteng={ province = 620 color = { 144 19 218 } }
+				b_gaozhao={ province = 621 color = { 15 69 221 } }
+				b_honghe={ province = 622 color = { 107 98 248 } }
+				b_jianshe={ province = 623 color = { 40 169 112 } }
+				b_wangdian={ province = 624 color = { 138 24 40 } }			   
+			}
 		}
 	}
 }
