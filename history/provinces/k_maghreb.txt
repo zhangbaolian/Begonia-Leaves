@@ -272,3 +272,10 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+###c_jiaxiang_tongxiang
+625 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}

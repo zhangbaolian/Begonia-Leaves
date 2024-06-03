@@ -1728,6 +1728,23 @@ e_maghreb = {
 				b_jianshe={ province = 623 color = { 40 169 112 } }
 				b_wangdian={ province = 624 color = { 138 24 40 } }			   
 			}
+			c_jiaxiang_tongxiang = {
+				color = { 155 144 133}
+				b_wutong={ province = 625 color = { 176 103 45 } }
+				b_puyuan={ province = 626 color = { 174 71 107 } }
+				b_xinsheng={ province = 627 color = { 205 105 121 } }
+				b_longxiang={ province = 628 color = { 222 99 37 } }
+				b_minhe={ province = 629 color = { 165 8 232 } }
+				b_tongxiang_shimen={ province = 630 color = { 101 127 144 } }
+				b_heshan={ province = 631 color = { 112 239 8 } }
+				b_zhouquan={ province = 632 color = { 151 8 131 } }
+				b_dama={ province = 633 color = { 66 51 223 } }
+				b_zhicun={ province = 634 color = { 221 117 171 } }
+				b_nanri={ province = 635 color = { 55 49 76 } }
+				b_tudian={ province = 636 color = { 179 223 2 } }
+				b_lingan={ province = 637 color = { 241 110 213 } }
+				b_wuzhen={ province = 638 color = { 23 16 87 } }			   
+			}
 		}
 	}
 }
