@@ -288,8 +288,8 @@
 }
 
 ##d_zhejiang_quzhou
-###c_jiaxing_jiashan
-639 = {
+###c_quzhou_longyou
+647 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding
@@ -310,7 +310,7 @@
 }
 
 ###c_quzhou_changshan
-693 = {
+692 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding
@@ -325,6 +325,14 @@
 
 ###c_quzhou_yushan
 730 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+##d_zhejiang_lishui
+###c_lishui_liandu
+751 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding

@@ -1661,7 +1661,7 @@ e_maghreb = {
 			}
 		}
 		d_zhejiang_jiaxing = { # 嘉兴
-			color = {148 155 188}
+			color = { 148 155 188 }
 			cpaital = c_jiaxing_nanhu
 
 			c_jiaxing_haining = { # 海宁
@@ -1756,11 +1756,11 @@ e_maghreb = {
 			}
 		}
 		d_zhejiang_quzhou = { # 衢州
-			color = { 155 233 188}
+			color = { 155 233 188 }
 			cpaital = c_quzhou_kecheng
 
 			c_quzhou_longyou = { # 龙游
-				color = { 155 133 177}
+				color = { 155 133 177 }
 				b_longzhou={ province = 647 color = { 190 165 16 } }
 				b_donghua={ province = 648 color = { 233 22 241 } }
 				b_huzhen={ province = 649 color = { 117 97 29 } }
@@ -1815,6 +1815,7 @@ e_maghreb = {
 			}
 			c_quzhou_changshan = { # 常山
 				color = { 178 199 215 }
+				b_tianma={ province = 692 color = { 23 161 73 } }
 				b_gedi={ province = 693 color = { 225 0 248 } }
 				b_zhaoxian={ province = 694 color = { 52 2 59 } }
 				b_jinyuan={ province = 695 color = { 162 132 115 } }
@@ -1879,6 +1880,31 @@ e_maghreb = {
 				b_tangyuan={ province = 748 color = { 37 67 229 } }
 				b_qinghu={ province = 749 color = { 119 130 93 } }
 				b_poyao={ province = 750 color = { 68 247 93 } }			   
+			}
+		}
+		d_zhejiang_lishui = {
+			color = { 214 55 77 }
+			cpaital = c_lishui_liandu
+
+			c_lishui_liandu = {
+				color = { 77 155 77 }
+				b_wanxiang={ province = 751 color = { 197 50 238 } }
+				b_liandu_baiyun={ province = 752 color = { 156 209 24 } }
+				b_xiandu={ province = 753 color = { 151 146 40 } }
+				b_yaxi={ province = 754 color = { 135 214 114 } }
+				b_juxi={ province = 755 color = { 191 254 200 } }
+				b_laozhu={ province = 756 color = { 4 216 38 } }
+				b_lixin={ province = 757 color = { 22 75 37 } }
+				b_gaoxi={ province = 758 color = { 42 0 243 } }
+				b_bihu={ province = 759 color = { 137 244 179 } }
+				b_dagang={ province = 760 color = { 84 50 140 } }
+				b_liancheng={ province = 761 color = { 249 215 193 } }
+				b_shuige={ province = 762 color = { 154 236 99 } }
+				b_fuling={ province = 763 color = { 241 165 35 } }
+				b_zijin={ province = 764 color = { 101 248 253 } }
+				b_yanniao={ province = 765 color = { 159 226 184 } }
+				b_shuanghuang={ province = 766 color = { 230 129 7 } }
+				b_yanquan={ province = 767 color = { 229 101 205 } }			   
 			}
 		}
 	}
