@@ -337,3 +337,38 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+###c_lishui_qingtian
+768 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_lishui_sonyang
+813 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_lishui_zhuchang
+831 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_lishui_longquan
+851 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_lishui_qingyuan
+905 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
