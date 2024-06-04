@@ -286,3 +286,39 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+##d_zhejiang_quzhou
+###c_jiaxing_jiashan
+639 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_quzhou_qujiang
+662 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_quzhou_kecheng
+681 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_quzhou_changshan
+693 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_quzhou_kaihua
+707 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
