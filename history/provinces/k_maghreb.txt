@@ -322,3 +322,10 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+###c_quzhou_yushan
+730 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}

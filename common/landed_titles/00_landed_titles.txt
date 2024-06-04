@@ -1856,6 +1856,30 @@ e_maghreb = {
 				b_majin={ province = 728 color = { 232 238 134 } }
 				b_yinkeng={ province = 729 color = { 227 22 104 } }			   
 			}
+			c_quzhou_yushan = { # 玉山
+				color = { 254 198 22 }
+				b_yushan_hushan={ province = 730 color = { 156 101 130 } }
+				b_shuangta={ province = 731 color = { 26 26 113 } }
+				b_shangyu={ province = 732 color = { 119 252 245 } }
+				b_sidou={ province = 733 color = { 247 155 98 } }
+				b_dachen={ province = 734 color = { 30 37 207 } }
+				b_tanshi={ province = 735 color = { 242 115 200 } }
+				b_yushan_daqiao={ province = 736 color = { 210 142 66 } }
+				b_hecun={ province = 737 color = { 169 201 14 } }
+				b_xintangbian={ province = 738 color = { 2 249 169 } }
+				b_yutou={ province = 739 color = { 175 180 46 } }
+				b_maoban={ province = 740 color = { 216 145 77 } }
+				b_jianglang={ province = 741 color = { 51 98 168 } }
+				b_xiakou={ province = 742 color = { 80 210 61 } }
+				b_baoan={ province = 743 color = { 232 81 151 } }
+				b_nianbadou={ province = 744 color = { 63 19 208 } }
+				b_shuangxikou={ province = 745 color = { 76 196 25 } }
+				b_zhangcun={ province = 746 color = { 60 5 145 } }
+				b_changtai={ province = 747 color = { 225 75 24 } }
+				b_tangyuan={ province = 748 color = { 37 67 229 } }
+				b_qinghu={ province = 749 color = { 119 130 93 } }
+				b_poyao={ province = 750 color = { 68 247 93 } }			   
+			}
 		}
 	}
 }
