@@ -1,4 +1,4 @@
-#k_maghreb
+﻿#k_maghreb
 ##d_hanzhou ###################################
 ###c_canarias
 1 = {
@@ -368,6 +368,56 @@
 
 ###c_lishui_qingyuan
 905 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+##d_zhejiang_wenzhou
+###c_wenzhou_lucheng
+925 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_longwan
+933 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_ouhai
+939 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_dongtou
+947 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_yongjia
+954 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_leqing
+978 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_ruian
+1002 = {
 	culture = han
 	religion = zhengyi
 	holding = castle_holding
