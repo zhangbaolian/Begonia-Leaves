@@ -422,3 +422,38 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+###c_wenzhou_wencheng
+1026 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_taishun
+1035 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_cangnan
+1050 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_pingyang
+1061 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_wenzhou_longgang
+1077 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
