@@ -2,10 +2,10 @@
 @better_than_the_alternatives_score = 50
 @always_primary_score = 1000
 
-e_maghreb = {
+e_huaxia = {
 	color = { 209 63 44 }
 	
-	capital = c_canarias # Canarias
+	capital = c_hanzhou_hanzhou
 	
 	ai_primary_priority = {
 		if = {
@@ -18,10 +18,10 @@ e_maghreb = {
 		}
 	}
 	
-	k_maghreb = {
+	k_yue = {
 		color = { 238 63 77 }
 		
-		capital = c_canarias # Canarias
+		capital = c_hanzhou_hanzhou
 		
 		ai_primary_priority = {
 			if = {
@@ -36,60 +36,23 @@ e_maghreb = {
 		
 		d_hanzhou = { # 杭州
 			color = { 255 241 67 }
+			capital = c_hanzhou_hanzhou
 			
-			capital = c_canarias # Gran Canaria
-			
-			c_canarias = { # 钱塘
+			c_hanzhou_hanzhou = { # 钱塘
 				color = { 75 30 47 }
-				
-				b_grancanaria = {
-					province = 1
-					
-					color = { 22 107 181 }
-				}
-				b_xiasha = {
-					province = 2
-					
-					color = 22 107 181
-				}
-				b_shuangpu = {
-					province = 179
-					
-					color = 22 107 181
-				}
-				b_liuxia = {
-					province = 180
-					
-					color = 22 107 181
-				}
-				b_sandun = {
-					province = 181
-					
-					color = 22 107 181
-				}
-				b_xihua = {
-					province = 182
-					
-					color = 22 107 181
-				}
-				b_gongye = {
-					province = 183
-					
-					color = 22 107 181
-				}
-				b_kangqiao = {
-					province = 184
-					
-					color = 22 107 181
-				}												
+				b_grancanaria = { province = 1 color = { 22 107 181 } }
+				b_xiasha = { province = 2 color = { 22 107 181 } }
+				b_shuangpu={ province = 179 color = { 22 107 181 } }
+				b_liuxia = { province = 180 color = { 22 107 181 } }
+				b_sandun = { province = 181 color = { 22 107 181 } }
+				b_xihua = { province = 182 color = { 22 107 181 } }
+				b_gongye = { province = 183 color = { 22 107 181 } }
+				b_kangqiao = { province = 184 color = { 2 107 181 } }												
 			}
 			c_hengan = { # 涥安
 				color = { 236 138 164 }
 					
-				b_wangzhai = { # 汪宅
-					province = 62
-					color = { 22 107 181 }
-				}
+				b_wangzhai = { province = 62 color = { 22 107 181 } }
 				b_wenchang = { # 文昌
 					province = 63
 					color = { 22 107 181 }

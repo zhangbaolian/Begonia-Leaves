@@ -1,0 +1,13 @@
+﻿37000102 = {
+	name = "Gou Jian"
+	dynasty = 100848
+	religion = "zhengyi"
+	culture = han
+	# father = 166432
+	2178.1.1 = {
+		birth = "2178.1.1"
+	}
+	2233.1.1 = {
+		death = "2233.1.1"
+	}
+}

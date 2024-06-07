@@ -1,10 +1,16 @@
 ﻿l_english:
- bm_group_1066:0 "Total Conversion Sandbox"
+ bm_group_1066:0 "HuaXia Yue Ear"
+ bm_group_1066_desc:0 "HuaXia Yue Ear"
  bm_1066_canarias:0 "Total Conversion Sandbox"
  bm_1066_canarias_desc:0 "This is a bookmark.#!"
-
+ bm_group_1928_2476:0 "DongZhou "
+ bm_group_1928_2476_desc:0 "ChunQiuZhanGuo"
+ bm_wu_yue_zhen_ba_2222:0 "ChunQiuZhanGuo"
+ bm_wu_yue_zhen_ba_2222_desc:0 "Wu Yue's Struggle for hegemony"
 
  # Guanarigato
  bookmark_canarias_guanarigato:0 "Guanarigato"
  bookmark_canarias_guanarigato_desc:0 "This is a character.#!"
-
+ bm_group_1928_2476_goujian:0 "Gou Jian"
+ bm_group_1928_2476_goujian_desc:0 "bm_group_1928_2476_goujian"
+ 
