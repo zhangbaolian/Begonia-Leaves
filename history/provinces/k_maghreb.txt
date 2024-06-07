@@ -457,3 +457,79 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+##d_zhejiang_taizhou
+###c_taizhou_jiaojiang
+1082 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_taizhou_linhai
+1088 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_taizhou_huangyan
+1107 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_taizhou_luqiao
+1122 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_taizhou_sanmen
+1131 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_taizhou_wenling
+1178 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_taizhou_yuhuan
+1193 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+##d_zhejaing_huzhou
+###c_huzhou_wuxing
+1205 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_huzhou_changxing
+1215 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_huzhou_deqing
+1229 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_huzhou_anji
+1239 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
