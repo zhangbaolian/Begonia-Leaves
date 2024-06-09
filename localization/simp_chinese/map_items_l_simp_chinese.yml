@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ # 湖泊
+ lake_qiandaohu:0 "千岛湖"
+ lake_poyanghu:0 "鄱阳湖"
+ lakes_dongqianhu:0 "东钱湖"
+
+ # MAJOR RIVERS
+ river_fuchunjiang:0 "富春江"
+ river_qiantangjiang:0 "钱塘江"
+ river_changjiang:0 "长江"
+ river_caoejiang:0 "曹娥江"
