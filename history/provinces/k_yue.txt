@@ -533,3 +533,31 @@
 	religion = zhengyi
 	holding = castle_holding
 }
+
+##d_zhejiang_zhoushan
+###c_huzhou_anji
+1253 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+###c_zhoushan_putuo
+1253 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_zhoushan_daishan
+1266 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
+
+###c_zhoushan_shensi
+1287 = {
+	culture = han
+	religion = zhengyi
+	holding = castle_holding
+}
