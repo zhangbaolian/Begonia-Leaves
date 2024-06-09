@@ -4,8 +4,9 @@ e_huaxia:0 "华夏"
 k_yue:0 "越"
 
 ## d_hangzhou 杭州
- d_zhejaing_hanzhou:0 "钱塘" #秦-钱塘 隋-杭州
+ d_zhejiang_hangzhou:0 "钱塘" #秦-钱塘 隋-杭州
  c_hangzhou_hangzhou:0 "钱塘"
+ b_qiantang:0 "钱塘"
  b_shuangpu:0 "上浦"
  b_liuxia:0 "留下"
  b_sandun:0 "三墩"
@@ -39,7 +40,7 @@ k_yue:0 "越"
  b_xuyuan:0 "许源"
  b_chayuan:0 "茶园"
  c_jiande:0 "建德"
- b_xinanjaing:0 "新安江"
+ b_xinanjiang:0 "新安江"
  b_yangxi:0 "洋溪"
  b_lianhua:0 "莲花"
  b_xiaya:0 "下涯"
@@ -425,6 +426,7 @@ k_yue:0 "越"
  b_tantoushan:0 "檀头山"
 
 ##d_zhejiang_jinhua 金华
+ d_zhejiang_jinhua:0 "金华"
  c_jinhua_pujiang:0 "浦江"
  b_xianhua:0 "仙华"
  b_wuqian:0 "吴前"

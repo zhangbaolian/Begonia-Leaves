@@ -1,9 +1,23 @@
-﻿37000102 = {
-	name = "Gou Jian"
-	dynasty = 100848
+﻿
+37000101 = { #越王允常
+	name = "yue_yunchang"
+	dynasty = 2222010101
 	religion = "zhengyi"
-	culture = han
-	# father = 166432
+	culture = yue
+	2160.1.1 = {
+		birth = "2160.1.1"
+	}
+	2201.1.1 = {
+		death = "2201.1.1"
+	}
+}
+
+37000102 = { #越王勾践
+	name = "yue_goujian"
+	dynasty = 2222010101
+	religion = "zhengyi"
+	culture = yue
+	father = 37000101
 	2178.1.1 = {
 		birth = "2178.1.1"
 	}
@@ -11,3 +25,6 @@
 		death = "2233.1.1"
 	}
 }
+
+
+

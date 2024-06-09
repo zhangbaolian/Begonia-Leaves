@@ -1,54 +1,54 @@
-﻿#k_maghreb
-##d_hanzhou ###################################
-###c_canarias
+﻿#k_yue
+##d_zhejiang_yuegzhou ###################################
+###c_qiantang
 1 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_hengan
 62 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 84 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_jiande
 85 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_tonglu
 101 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_fuyang
 114 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_linan
 131 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-###c_xiaoshan
+###c_xiaosyue
 155 = {
 	culture = qin
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_yuhang
+###c_yuyueg
 197 = {
 	culture = qin
 	religion = zhengyi
@@ -57,28 +57,28 @@
 
 ### c_shaoxing
 202 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_keqiao
 215 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_shangyu
+###c_syuegyu
 229 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_zhuji
 247 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -86,14 +86,14 @@
 
 ###c_shengzhou
 271 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_xinchang
+###c_xincyueg
 291 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -101,7 +101,7 @@
 
 ###c_yuyao
 312 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -109,14 +109,14 @@
 
 ###c_cixi
 333 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_zhenhai
 349 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -124,14 +124,14 @@
 
 ###c_jiangbei
 353 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_haishu
 356 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -139,7 +139,7 @@
 
 ###c_fegnhua
 366 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -147,7 +147,7 @@
 
 ###c_yinzhou
 376 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -155,84 +155,84 @@
 
 ###c_beicang
 389 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_ninghai
 399 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_xiangshan
+###c_xiangsyue
 418 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ##d_zhejiang_jinhua
 ###c_jinhua_pujiang
 437 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_yiwu
 452 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_dongyang
 464 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_panan
 482 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_yongkang
 501 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_wuyi
 515 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_jindong
 533 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_wucheng
 543 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jinhua_lanxi
 543 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -240,49 +240,49 @@
 ##d_zhejiang_jiaxing
 ###c_jiaxing_haining
 578 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jiaxing_haiyan
 588 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jiaxing_pinghu
 597 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jiaxing_nanhu
 605 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jiaxing_xiuzhou
 612 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_jiaxiang_tongxiang
 625 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jiaxing_jiashan
+###c_jiaxing_jiasyue
 639 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -290,42 +290,42 @@
 ##d_zhejiang_quzhou
 ###c_quzhou_longyou
 647 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_quzhou_qujiang
 662 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_quzhou_kecheng
 681 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_quzhou_changshan
+###c_quzhou_cyuegsyue
 692 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_quzhou_kaihua
 707 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_quzhou_yushan
+###c_quzhou_yusyue
 730 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -333,42 +333,42 @@
 ##d_zhejiang_lishui
 ###c_lishui_liandu
 751 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_lishui_qingtian
 768 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_lishui_sonyang
 813 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_lishui_zhuchang
+###c_lishui_zhucyueg
 831 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_lishui_longquan
 851 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_lishui_qingyuan
 905 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -376,84 +376,84 @@
 ##d_zhejiang_wenzhou
 ###c_wenzhou_lucheng
 925 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_longwan
 933 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_ouhai
 939 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_dongtou
 947 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_yongjia
 954 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_leqing
 978 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_ruian
 1002 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_wencheng
 1026 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_taishun
 1035 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_cangnan
 1050 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_pingyang
 1061 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_wenzhou_longgang
 1077 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -461,49 +461,49 @@
 ##d_zhejiang_taizhou
 ###c_taizhou_jiaojiang
 1082 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_taizhou_linhai
 1088 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_taizhou_huangyan
 1107 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_taizhou_luqiao
 1122 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_taizhou_sanmen
 1131 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_taizhou_wenling
 1178 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
 ###c_taizhou_yuhuan
 1193 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
@@ -511,53 +511,53 @@
 ##d_zhejaing_huzhou
 ###c_huzhou_wuxing
 1205 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-###c_huzhou_changxing
+###c_huzhou_cyuegxing
 1215 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_huzhou_deqing
 1229 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 ###c_huzhou_anji
 1239 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-##d_zhejiang_zhoushan
+##d_zhejiang_zhousyue
 ###c_huzhou_anji
 1253 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-###c_zhoushan_putuo
+###c_zhousyue_putuo
 1253 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_zhoushan_daishan
+###c_zhousyue_daisyue
 1266 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_zhoushan_shensi
+###c_zhousyue_shensi
 1287 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }

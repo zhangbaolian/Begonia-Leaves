@@ -5,13 +5,15 @@
 e_huaxia = {
 	color = { 209 63 44 }
 	
-	capital = c_hanzhou_hanzhou
+	capital = c_shaoxing
 	
 	ai_primary_priority = {
 		if = {
 			limit = {
 				OR = {
-					culture = culture:baranis
+					culture = culture:qin
+					culture = culture:yue
+					culture = culture:han
 				}
 			}
 			add = @correct_culture_primary_score
@@ -19,9 +21,9 @@ e_huaxia = {
 	}
 	
 	k_yue = {
-		color = { 238 63 77 }
+		color = { 23 124 176 }
 		
-		capital = c_hanzhou_hanzhou
+		capital = c_shaoxing
 		
 		ai_primary_priority = {
 			if = {
@@ -34,13 +36,13 @@ e_huaxia = {
 			}
 		}
 		
-		d_hangzhou = { # 杭州
+		d_zhejiang_hangzhou = { # 杭州
 			color = { 255 241 67 }
 			capital = c_hanzhou_hanzhou
 			
 			c_hangzhou_hangzhou = { # 钱塘
 				color = { 75 30 47 }
-				b_grancanaria = { province = 1 color = { 22 107 181 } }
+				b_qiantang = { province = 1 color = { 22 107 181 } }
 				b_xiasha = { province = 2 color = { 22 107 181 } }
 				b_shuangpu={ province = 179 color = { 22 107 181 } }
 				b_liuxia = { province = 180 color = { 22 107 181 } }
@@ -1293,7 +1295,7 @@ e_huaxia = {
 					color = { 22 107 181 }
 				}																																																																																	
 			}	
-			c_fegnhua = { # 奉化 
+			c_fenghua = { # 奉化 
 				color = { 0 224 158 }
 					
 				b_jinping = { 

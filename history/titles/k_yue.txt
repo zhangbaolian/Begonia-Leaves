@@ -5,9 +5,8 @@ e_huaxia = {
 
 k_yue = {
 	867.1.1 = { change_development_level = 3 }
-	1066.1.1 = { 
-		change_development_level = 6
-		holder = 20842 
+	2160.1.1 = {
+		holder = 37000101
 	}
 	2222.1.1 = {
 		holder = 37000102

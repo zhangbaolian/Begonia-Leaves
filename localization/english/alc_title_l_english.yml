@@ -6,6 +6,7 @@ k_yue:0 "Yue"
 ## d_hangzhou
  d_zhejaing_hangzhou:0 "QianTang"
  c_hangzhou_hangzhou:0 "QianTang"
+ b_qiantang:0 "QianTang"
  b_shuangpu:0 "ShuangPu"
  b_liuxia:0 "LiuXia"
  b_sandun:0 "SanDun"
