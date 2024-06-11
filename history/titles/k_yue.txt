@@ -1,4 +1,4 @@
-e_huaxia = {
+﻿e_huaxia = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
 }
@@ -13,7 +13,7 @@ k_yue = {
 	}
 }
 
-d_hangzhou = {
+d_zhejiang_hangzhou = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { 
 		change_development_level = 6
@@ -24,7 +24,7 @@ d_hangzhou = {
 	}
 }
 
-c_hanzhou_hanzhou = {
+c_hangzhou_hangzhou = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
 	767.1.1 = { government = tribal_government }

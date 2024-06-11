@@ -2532,6 +2532,154 @@ e_huaxia = {
 
 		}
 	}
+	k_min = {
+		color = {122 155 166}
+		capital = c_fuzhou_gulou
+
+		d_fujian_ningde = {
+			color = {233 155 66}
+			capital = c_ningde_jiaocheng
+
+			c_ningde_fuding ={
+				color = {122 133 144}
+				b_tongcheng={ province = 1294 color = { 4 251 56 } }
+				b_qianqi={ province = 1295 color = { 156 63 202 } }
+				b_guanling={ province = 1296 color = { 33 54 241 } }
+				b_dieshi={ province = 1297 color = { 215 130 148 } }
+				b_guanyang={ province = 1298 color = { 225 86 152 } }
+				b_diantou={ province = 1299 color = { 231 186 41 } }
+				b_bailin={ province = 1300 color = { 254 226 59 } }
+				b_panxi={ province = 1301 color = { 146 94 1 } }
+				b_tailaoshan={ province = 1302 color = { 173 124 253 } }
+				b_dianxia={ province = 1303 color = { 234 248 154 } }
+				b_xiamen={ province = 1304 color = { 135 35 165 } }
+				b_fuding_yushan={ province = 1305 color = { 244 228 119 } }
+				b_fuding_shacheng={ province = 1306 color = { 130 246 207 } }			   
+			}
+			c_ningde_xiapu ={
+				color = {122 133 144}
+				b_songgang={ province = 1307 color = { 99 70 48 } }
+				b_shuimen={ province = 1308 color = { 42 109 145 } }
+				b_baiyang={ province = 1309 color = { 3 192 71 } }
+				b_chongru={ province = 1310 color = { 159 234 115 } }
+				b_yantian={ province = 1311 color = { 144 204 26 } }
+				b_shajiang={ province = 1312 color = { 243 7 43 } }
+				b_xiapu_xinan={ province = 1313 color = { 95 185 187 } }
+				b_changchun={ province = 1314 color = { 95 164 16 } }
+				b_xiahu={ province = 1315 color = { 134 218 122 } }
+				b_beibi={ province = 1316 color = { 112 217 135 } }
+				b_haidao={ province = 1317 color = { 95 142 78 } }
+				b_sansha={ province = 1318 color = { 99 116 249 } }			   
+			}
+			c_ningde_zherong ={
+				color = {122 133 144}
+				b_yacheng={ province = 1319 color = { 217 120 63 } }
+				b_shuangcheng={ province = 1320 color = { 86 96 38 } }
+				b_yingshan={ province = 1321 color = { 207 12 135 } }
+				b_chuping={ province = 1322 color = { 142 151 40 } }
+				b_huangbai={ province = 1323 color = { 114 31 156 } }
+				b_zherong_fuxi={ province = 1324 color = { 237 6 71 } }
+				b_zhaizhong={ province = 1325 color = { 104 86 246 } }
+				b_dongyuan={ province = 1326 color = { 28 13 241 } }
+				b_zhayang={ province = 1327 color = { 110 203 91 } }			   
+			}
+			c_ningde_fuan ={
+				color = {122 133 144}
+				b_chengyang={ province = 1328 color = { 14 218 20 } }
+				b_banzhong={ province = 1329 color = { 154 244 43 } }
+				b_shekou={ province = 1330 color = { 23 94 107 } }
+				b_fuan_tantou={ province = 1331 color = { 156 83 217 } }
+				b_shangbaishi={ province = 1332 color = { 87 217 181 } }
+				b_fankeng={ province = 1333 color = { 183 66 72 } }
+				b_xiaoyang={ province = 1334 color = { 133 249 226 } }
+				b_kangcuo={ province = 1335 color = { 62 249 196 } }
+				b_xitan={ province = 1336 color = { 84 168 185 } }
+				b_saiqi={ province = 1337 color = { 171 70 211 } }
+				b_xiabaishi={ province = 1338 color = { 198 62 13 } }
+				b_wanwu={ province = 1339 color = { 27 48 29 } }
+				b_xiwei={ province = 1340 color = { 183 124 247 } }
+				b_songluo={ province = 1341 color = { 151 160 83 } }
+				b_xibing={ province = 1342 color = { 54 113 241 } }
+				b_fuan_gantang={ province = 1343 color = { 108 41 139 } }			   
+			}
+			c_ningde_shouning ={
+				color = {122 133 144}
+				b_aoyang={ province = 1344 color = { 136 54 220 } }
+				b_shouning_daan={ province = 1345 color = { 12 87 162 } }
+				b_kengdi={ province = 1346 color = { 108 131 186 } }
+				b_xixi={ province = 1347 color = { 244 111 72 } }
+				b_shouning_nanyang={ province = 1348 color = { 55 113 59 } }
+				b_zhuguanlong={ province = 1349 color = { 200 0 71 } }
+				b_wuqu={ province = 1350 color = { 186 179 248 } }
+				b_xietan={ province = 1351 color = { 201 130 226 } }
+				b_shouning_fengyang={ province = 1352 color = { 212 152 132 } }
+				b_pingxi={ province = 1353 color = { 77 252 208 } }
+				b_xiadang={ province = 1354 color = { 5 34 205 } }
+				b_tuoxi={ province = 1355 color = { 206 68 119 } }
+				b_qinyang={ province = 1356 color = { 94 43 200 } }
+				b_qingyuan={ province = 1357 color = { 97 53 116 } }			   
+			}
+			c_ningde_zhouning ={
+				color = {122 133 144}
+				b_shicheng={ province = 1358 color = { 217 40 24 } }
+				b_qibu={ province = 1359 color = { 22 195 187 } }
+				b_makeng={ province = 1360 color = { 241 150 130 } }
+				b_xiancun={ province = 1361 color = { 126 167 38 } }
+				b_lidun={ province = 1362 color = { 209 206 199 } }
+				b_limen={ province = 1363 color = { 3 146 55 } }
+				b_zhouning_puyuan={ province = 1364 color = { 80 239 192 } }
+				b_siqiao={ province = 1365 color = { 175 124 126 } }
+				b_chunchi={ province = 1366 color = { 19 38 133 } }			   
+			}
+			c_ningde_pingnan ={
+				color = {122 133 144}
+				b_gufeng={ province = 1367 color = { 213 50 148 } }
+				b_luxia={ province = 1368 color = { 240 73 76 } }
+				b_zhouning_changqiao={ province = 1369 color = { 61 112 211 } }
+				b_gantang={ province = 1370 color = { 201 39 56 } }
+				b_xiling={ province = 1371 color = { 20 244 164 } }
+				b_pingnan_daixi={ province = 1372 color = { 142 136 96 } }
+				b_shoushan={ province = 1373 color = { 52 116 50 } }
+				b_pingnan_shuangxi={ province = 1374 color = { 253 223 108 } }
+				b_tangkou={ province = 1375 color = { 210 15 44 } }			   
+			}
+			c_ningde_gutian ={
+				color = {122 133 144}
+				b_songji={ province = 1376 color = { 187 37 188 } }
+				b_gutian_huangtian={ province = 1377 color = { 231 55 74 } }
+				b_shuikou={ province = 1378 color = { 169 174 124 } }
+				b_fengdou={ province = 1379 color = { 80 110 50 } }
+				b_fengpu={ province = 1380 color = { 241 30 51 } }
+				b_pinghu={ province = 1381 color = { 250 254 225 } }
+				b_jixiang={ province = 1382 color = { 72 131 58 } }
+				b_hetang={ province = 1383 color = { 0 242 6 } }
+				b_shanyang={ province = 1384 color = { 116 23 134 } }
+				b_gutian_datian={ province = 1385 color = { 84 194 160 } }
+				b_zhuoyang={ province = 1386 color = { 120 171 53 } }
+				b_gutian_daqiao={ province = 1387 color = { 8 87 216 } }
+				b_panyang={ province = 1388 color = { 160 140 154 } }
+				b_hubin={ province = 1389 color = { 46 236 106 } }			   
+			}
+			c_ningde_jiaocheng ={
+				color = {122 133 144}
+				b_jiaonan={ province = 1390 color = { 163 139 209 } }
+				b_jinhan={ province = 1391 color = { 190 105 56 } }
+				b_shihou={ province = 1392 color = { 245 163 177 } }
+				b_yangzhong={ province = 1393 color = { 70 176 35 } }
+				b_hubei={ province = 1394 color = { 71 125 129 } }
+				b_hongkou={ province = 1395 color = { 242 109 102 } }
+				b_huotong={ province = 1396 color = { 132 234 69 } }
+				b_jiaocheng_chixi={ province = 1397 color = { 137 199 82 } }
+				b_jiudou={ province = 1398 color = { 96 222 60 } }
+				b_jiaocheng_badou={ province = 1399 color = { 59 210 157 } }
+				b_jiaocheng_qidou={ province = 1400 color = { 176 44 35 } }
+				b_jiaocheng_zhangwan={ province = 1401 color = { 39 65 29 } }
+				b_jiaocheng_sandou={ province = 1402 color = { 84 53 193 } }
+				b_feiluan={ province = 1403 color = { 239 57 84 } }			   
+			}
+		}
+
+	}
 }
 
 # These titles cut hundreds of errors from logs. 
