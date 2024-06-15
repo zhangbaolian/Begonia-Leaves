@@ -56,3 +56,134 @@
 	religion = zhengyi
 	holding = tribal_holding
 }
+
+###c_shaoxing_shaoxing
+66 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+###c_shaoxing_keqiao
+70 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+71 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+72 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+73 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+##c_shaoxing_shangyu
+74 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+##c_shaoxing_zhuji
+80 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+##c_shaoxing_shengzhou
+89 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+##c_shaoxing_xinchang
+99 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+
+##d_zhejiang_ningbo ###################################
+###c_ningbo_yinzhou
+105 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+###c_ningbo_fenghua
+110 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_haishu
+115 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_jiangbei
+119 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_cixi
+121 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_yuyao
+128 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_zhenhai
+137 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_beicang
+139 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_ninghai
+144 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+ }
+
+###c_ningbo_xiangshan
+153 = {
+	culture = yue
+	religion = zhengyi
+	holding = tribal_holding
+}
+
+
