@@ -87,11 +87,11 @@ e_huaxia = {
 				b_32hongling={ province = 32 color = { 232 98 169 } }
 				b_33changhua={ province = 33 color = { 182 71 232 } }
 				b_34longjingqiao={ province = 34 color = { 146 135 83 } }
-				b_35maxiao={ province = 35 color = { 153 204 75 } }
-				b_36tongjun={ province = 36 color = { 79 165 52 } }																																																									  
+				b_35maxiao={ province = 35 color = { 153 204 75 } }																																																			  
 			}						
 			c_hangzhou_tonglu = { # 桐庐
 				color = { 98 22 36 }
+				b_36tongjun={ province = 36 color = { 79 165 52 } }	
 				b_37fuchunjiang={ province = 37 color = { 74 234 138 } }
 				b_38gewu={ province = 38 color = { 55 235 80 } }
 				b_39bipu={ province = 39 color = { 184 178 4 } }
@@ -375,7 +375,7 @@ e_huaxia = {
 		}
 		d_zhejiang_jiaxing = { # 嘉兴
 			color = { 148 155 188 }
-			cpaital = c_jiaxing_nanhu
+			capital = c_jiaxing_nanhu
 
 			c_jiaxing_haining = { # 海宁
 				color = {123 155 165 }
@@ -426,7 +426,8 @@ e_huaxia = {
 		}
 		d_zhejiang_quzhou = { # 衢州
 			color = { 155 233 188 }
-			cpaital = c_quzhou_kecheng
+			capital = c_quzhou_kecheng
+			
 
 			c_quzhou_longyou = { # 龙游
 				color = { 155 133 177 }
@@ -487,7 +488,7 @@ e_huaxia = {
 		}		
 		d_zhejiang_lishui = { # 丽水
 			color = { 214 55 77 }
-			cpaital = c_lishui_liandu
+			capital = c_lishui_liandu
 
 			c_lishui_longquan = { # 龙泉
 				color = { 233 155 166 }	
@@ -581,7 +582,7 @@ e_huaxia = {
 		}		
 		d_zhejiang_wenzhou = { # 温州
 			color = { 65 88 12 }
-			cpaital = c_wenzhou_lucheng
+			capital = c_wenzhou_lucheng
 
 			c_wenzhou_lucheng = { # 鹿城
 				color = { 155 246 98 }
@@ -674,7 +675,7 @@ e_huaxia = {
 		}
 		d_zhejiang_taizhou = { # 台州
 			color = {255 35 46}
-			cpaital = c_taizhou_jiaojiang
+			capital = c_taizhou_jiaojiang
 
 			c_taizhou_jiaojaing = { # 椒江
 				color = {45 78 69}		
@@ -753,7 +754,7 @@ e_huaxia = {
 		}	
 		d_zhejaing_huzhou = { # 湖州
 			color = { 155 23 144 }
-			cpaital = c_huzhou_wuxing
+			capital = c_huzhou_wuxing
 			c_huzhou_wuxing = { # 吴兴
 				color = {25 223 45}		   
 				b_441tangdian={ province = 441 color = { 71 0 218 } }
@@ -794,7 +795,7 @@ e_huaxia = {
 		}
 		d_zhejiang_zhoushan = { # 舟山
 			color = {122 155 166}
-			cpaital = c_zhoushan_dinghai
+			capital = c_zhoushan_dinghai
 
 			c_zhoushan_dinghai = {
 				color = {44 71 32}
@@ -1255,7 +1256,7 @@ e_huaxia = {
 		}
 		d_fujian_zhangzhou = { # 漳州
 			color = { 61 225 173 }
-			cpaital = c_zhangzhou_zhangzhou
+			capital = c_zhangzhou_zhangzhou
 
 			c_zhangzhou_zhangzhou = { # 漳州
 				color = { 61 225 10 }
