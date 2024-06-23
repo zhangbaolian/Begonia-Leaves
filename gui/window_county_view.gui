@@ -9,7 +9,7 @@ window = {
 	allow_outside = yes
 	movable = no
 	layer = windows_layer
-	size = { 645 645 }
+	size = { 645 645 } #  增加宽高
 
 	background = {
 		texture = "gfx/interface/component_tiles/tile_window_background_subwindow.dds"
