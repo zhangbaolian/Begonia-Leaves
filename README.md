@@ -14,7 +14,7 @@
 3、修复桌面羊皮纸地图边框装饰的不显示。
 
 [h2]开源地址[/h2]
-Github：[url=https://github.com/zhangbaolian/Autumn-leaf-crabapple.git]Autumn Leaf Crabapple[/url]
+Github：[url=https://github.com/zhangbaolian/Begonia-Leaves.git]Begonia Leaves[/url]
 
 [h2]致谢[/h2]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2524797018]Total Conversion Sandbox[/url]

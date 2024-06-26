@@ -2799,6 +2799,66 @@ e_huaxia = {
 		}
 	}
 
+	k_yu = { # 豫？
+		color = { 128 29 174 }
+		capital = c_zibo_zhangdian
+
+		d_henan_zhengzhou = { # 郑州
+			color = { 128 29 174 }
+			capital = c_zhengzhou_guancheng
+
+			c_zhengzhou_guancheng = { # 管城
+				color = { 76 141 10 }
+				b_1531xushui={ province = 1531 color = { 64 228 212 } }
+				b_1532guxing={ province = 1532 color = { 188 63 19 } }
+				b_1533jinshui={ province = 1533 color = { 53 239 189 } }
+				b_1534nancao={ province = 1534 color = { 6 231 83 } }
+				b_1535houzhai={ province = 1535 color = { 117 103 23 } }			   
+			} 
+			c_zhengzhou_zhongmu = { # 中牟
+				color = { 76 141 20 }
+				b_1536dameng={ province = 1536 color = { 17 18 127 } }
+				b_1537langchenggang={ province = 1537 color = { 138 101 159 } }
+				b_1538jiulong={ province = 1538 color = { 228 248 68 } }
+				b_1539bagang={ province = 1539 color = { 114 198 171 } }
+				b_1540diaojia={ province = 1540 color = { 173 115 240 } }			   
+			} 
+			c_zhengzhou_xinzheng = { # 新郑
+				color = { 76 141 30 }
+				b_1541xinzheng={ province = 1541 color = { 230 162 22 } }
+				b_1542baqian={ province = 1542 color = { 124 176 252 } }
+				b_1543longhu={ province = 1543 color = { 201 31 3 } }			   
+			} 
+			c_zhengzhou_xinmi = { # 新密
+				color = { 76 141 40 }
+				b_1544qingping={ province = 1544 color = { 246 107 186 } }
+				b_1545dawei={ province = 1545 color = { 196 2 185 } }
+				b_1546quliang={ province = 1546 color = { 123 231 25 } }			   
+			} 
+			c_zhengzhou_dengfeng = { # 登封
+				color = { 76 141 50 }
+				b_1547zhongyue={ province = 1547 color = { 159 169 35 } }
+				b_1548daye={ province = 1548 color = { 65 158 97 } }
+				b_1549baiping={ province = 1549 color = { 165 78 88 } }
+				b_1550yingyang={ province = 1550 color = { 196 146 59 } }			   
+			} 
+			c_zhengzhou_gongyi = { # 巩义
+				color = { 76 141 60 }
+				b_1551gongyi={ province = 1551 color = { 221 248 212 } }
+				b_1552huiguo={ province = 1552 color = { 82 55 212 } }
+				b_1553hetaoyuan={ province = 1553 color = { 208 98 109 } }
+				b_1554mihe={ province = 1554 color = { 9 209 166 } }			   
+			} 
+			c_zhengzhou_xingyang = { # 荥阳
+				color = { 76 141 70 }
+				b_1555xingyang={ province = 1555 color = { 31 48 244 } }
+				b_1556liuhe={ province = 1556 color = { 34 104 112 } }
+				b_1557sishui={ province = 1557 color = { 130 73 104 } }
+				b_1558guangwu={ province = 1558 color = { 54 179 11 } }			   
+			}			 
+		}
+	}
+
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }
 e_byzantium = { landless = yes }
