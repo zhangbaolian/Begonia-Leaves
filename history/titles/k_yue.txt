@@ -1,4 +1,4 @@
-﻿e_huaxia = {
+﻿e_tianchao = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
 }
