@@ -5090,7 +5090,7 @@ e_tianchao = {
 	}
 	k_e = { # 鄂
 		color = { 59 46 126 }
-		capital = c_shaoxing_shaoxing
+		capital = c_wuhan_wuchang
 		
 		ai_primary_priority = {
 			if = {
@@ -5752,6 +5752,1324 @@ e_tianchao = {
 		# 	color = { 59 46 126 }
 		# 	capital = c_huanggang_tuanfeng
 		# }										
+	}
+	k_xiang = { # 湘
+		color = { 242 12 0 }
+		capital = c_changsha_changsha
+		
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						culture = culture:han
+						culture = culture:yue
+					}
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+
+		d_xiang_zhangjiajie = { # 张家界
+			color = { 242 12 0 }
+			capital = c_zhangjiajie_yongding
+
+			c_zhangjiajie_sangzhi = { # 桑植
+				color = { 242 12 0 }
+				b_3119liyuan={ province = 3119 color = { 207 104 29 } }
+				b_3120lianghekou={ province = 3120 color = { 2 42 111 } }
+				b_3121yanwukou={ province = 3121 color = { 253 236 149 } }
+				b_3122wudaoshui={ province = 3122 color = { 212 67 2 } }
+				b_3123kuzhuping={ province = 3123 color = { 102 149 47 } }
+				b_3124furongqiao={ province = 3124 color = { 103 92 95 } }
+				b_3125renchaoxi={ province = 3125 color = { 189 234 228 } }			   
+			}
+			c_zhangjiajie_cili = { # 慈利
+				color = { 242 12 0 }
+				b_3126lingyang={ province = 3126 color = { 61 226 243 } }
+				b_3127tongjinpu={ province = 3127 color = { 27 139 173 } }
+				b_3128sanhekou={ province = 3128 color = { 55 215 102 } }
+				b_3129jiangya={ province = 3129 color = { 191 154 45 } }
+				b_3130xikou={ province = 3130 color = { 185 85 8 } }
+				b_3131yanbodu={ province = 3131 color = { 14 223 223 } }
+				b_3132longtanhe={ province = 3132 color = { 193 235 118 } }			   
+			}
+			c_zhangjiajie_yongding = { # 永定
+				color = { 242 12 0 }
+				b_3133xixiping={ province = 3133 color = { 57 233 48 } }
+				b_3134daping={ province = 3134 color = { 122 188 23 } }
+				b_3135yuanguping={ province = 3135 color = { 73 116 19 } }
+				b_3136sanjiaguan={ province = 3136 color = { 4 229 201 } }
+				b_3137jiaoziya={ province = 3137 color = { 112 219 183 } }
+				b_3138tianzishan={ province = 3138 color = { 201 28 190 } }			   
+			}
+		}	
+		d_xiang_changde = { # 常德
+			color = { 201 55 86 }
+			capital = c_changde_wuling
+
+			c_changde_shimen = { # 石门
+				color = { 201 55 86 }
+				b_3139shimen={ province = 3139 color = { 61 126 112 } }
+				b_3140mengquan={ province = 3140 color = { 18 15 199 } }
+				b_3141zaoshi={ province = 3141 color = { 142 18 126 } }
+				b_3142yanchi={ province = 3142 color = { 106 3 21 } }
+				b_3143hupingshan={ province = 3143 color = { 125 37 151 } }
+				b_3144taiping={ province = 3144 color = { 139 127 234 } }			   
+			}
+			c_changde_li = { # 澧
+				color = { 201 55 86 }
+				b_3145liyang={ province = 3145 color = { 91 196 234 } }
+				b_3146linan={ province = 3146 color = { 181 3 152 } }
+				b_3147yiwan={ province = 3147 color = { 167 87 139 } }
+				b_3148jinluo={ province = 3148 color = { 115 83 139 } }
+				b_3149ganxitan={ province = 3149 color = { 73 36 206 } }
+				b_3150yongfeng={ province = 3150 color = { 167 94 207 } }
+				b_3151yaopodu={ province = 3151 color = { 191 166 84 } }
+				b_3152tanghua={ province = 3152 color = { 84 160 9 } }			   
+			}
+			c_changde_anxiang = { # 安乡
+				color = { 201 55 86 }
+				b_3153shenliu={ province = 3153 color = { 209 194 48 } }
+				b_3154anfu={ province = 3154 color = { 186 96 241 } }
+				b_3155xiayukou={ province = 3155 color = { 56 39 183 } }			   
+			}
+			c_changde_linli = { # 临澧
+				color = { 201 55 86 }
+				b_3156anfu={ province = 3156 color = { 202 123 187 } }
+				b_3157baizhi={ province = 3157 color = { 186 250 45 } }
+				b_3158jiuli={ province = 3158 color = { 146 103 48 } }			   
+			}
+			c_changde_taoyuan = { # 桃源
+				color = { 201 55 86 }
+				b_3159zhangjiang={ province = 3159 color = { 237 27 77 } }
+				b_3160taohuayuan={ province = 3160 color = { 255 79 78 } }
+				b_3161chaanpu={ province = 3161 color = { 182 187 139 } }
+				b_3162xinglong={ province = 3162 color = { 140 41 239 } }
+				b_3163jianshi={ province = 3163 color = { 92 3 182 } }
+				b_3164guanyinsi={ province = 3164 color = { 155 86 26 } }
+				b_3165ligonggang={ province = 3165 color = { 180 163 101 } }
+				b_3166jiaqiao={ province = 3166 color = { 25 88 152 } }
+				b_3167qihe={ province = 3167 color = { 175 40 31 } }
+				b_3168reshi={ province = 3168 color = { 231 183 152 } }			   
+			}
+			c_changde_wuling = { # 武陵
+				color = { 201 55 86 }
+				b_3169wuling={ province = 3169 color = { 161 253 85 } }
+				b_3170shibantan={ province = 3170 color = { 59 69 215 } }
+				b_3171zhufeng={ province = 3171 color = { 218 101 93 } }
+				b_3172niubitan={ province = 3172 color = { 60 50 78 } }
+				b_3173shigongqiao={ province = 3173 color = { 112 253 206 } }
+				b_3174doumuhu={ province = 3174 color = { 178 76 10 } }
+				b_3175changmaoling={ province = 3175 color = { 197 223 66 } }
+				b_3176huangtudian={ province = 3176 color = { 115 49 211 } }			   
+			}
+			c_changde_hanshou = { # 汉寿
+				color = { 201 55 86 }
+				b_3177longyang={ province = 3177 color = { 203 218 254 } }
+				b_3178zhoukou={ province = 3178 color = { 128 108 85 } }
+				b_3179fengjiapu={ province = 3179 color = { 248 207 31 } }
+				b_3180sanhe={ province = 3180 color = { 64 71 73 } }
+				b_3181yuemingtan={ province = 3181 color = { 171 237 128 } }			   
+			}
+		}
+		d_xiang_yiyang = { # 益阳
+			color = { 240 86 84 }
+			capital = c_yiyang_yiyang
+
+			c_yiyang_taojiang = { # 桃江
+				color = { 240 86 84 }
+				b_3182taohuajiang={ province = 3182 color = { 82 204 101 } }
+				b_3183hexishui={ province = 3183 color = { 89 150 13 } }
+				b_3184songmutang={ province = 3184 color = { 113 236 144 } }
+				b_3185majitang={ province = 3185 color = { 127 220 235 } }
+				b_3186daligang={ province = 3186 color = { 151 245 223 } }
+				b_3187wutan={ province = 3187 color = { 67 62 115 } }			   
+			}
+			c_yiyang_anhua = { # 安化
+				color = { 240 86 84 }
+				b_3188dongping={ province = 3188 color = { 173 246 44 } }
+				b_3189lengshi={ province = 3189 color = { 153 248 190 } }
+				b_3190jiangnan={ province = 3190 color = { 42 204 192 } }
+				b_3191xianxi={ province = 3191 color = { 226 28 198 } }
+				b_3192meicheng={ province = 3192 color = { 68 9 67 } }
+				b_3193dongshan={ province = 3193 color = { 50 215 190 } }
+				b_3194qingtangpu={ province = 3194 color = { 126 21 30 } }
+				b_3195malu={ province = 3195 color = { 248 195 68 } }
+				b_3196yanxi={ province = 3196 color = { 137 102 110 } }							  
+			}
+			c_yiyang_yiyang = { # 益阳
+				color = { 240 86 84 }
+				b_3197yiyang={ province = 3197 color = { 225 102 245 } }
+				b_3198changchun={ province = 3198 color = { 198 174 53 } }
+				b_3199nijiangkou={ province = 3199 color = { 244 96 15 } }
+				b_3200yangjiao={ province = 3200 color = { 238 128 79 } }
+				b_3201oujiangcha={ province = 3201 color = { 62 167 146 } }			   
+			}
+			c_yiyang_yuanjiang = { # 沅江
+				color = { 240 86 84 }
+				b_3202qionghu={ province = 3202 color = { 181 28 156 } }
+				b_3203qianshanhong={ province = 3203 color = { 74 96 196 } }
+				b_3204sihushan={ province = 3204 color = { 248 19 55 } }
+				b_3205zhicheng={ province = 3205 color = { 131 42 85 } }			   
+			}
+			c_yiyang_nan = { # 南
+				color = { 240 86 84 }
+				b_3206nanzhou={ province = 3206 color = { 14 108 142 } }
+				b_3207sanxianhu={ province = 3207 color = { 174 95 64 } }
+				b_3208huage={ province = 3208 color = { 27 221 44 } }			   
+			}
+		}
+		d_xiang_yueyang = { # 岳阳
+			color = { 255 33 33 }
+			capital = c_yueyang_yueyang
+
+			c_yueyang_huarong = { # 华容
+				color = { 255 33 33 }
+				b_3209huarong={ province = 3209 color = { 181 3 150 } }
+				b_3210caojun={ province = 3210 color = { 119 201 115 } }
+				b_3211liangxinbao={ province = 3211 color = { 111 212 153 } }
+				b_3212zhuzikou={ province = 3212 color = { 17 213 68 } }
+				b_3213hongshantou={ province = 3213 color = { 61 39 250 } }			   
+			}
+			c_yueyang_yueyang = { # 岳阳
+				color = { 255 33 33 }
+				b_3214yueyang={ province = 3214 color = { 12 65 103 } }
+				b_3215guangxingzhou={ province = 3215 color = { 122 216 216 } }
+				b_3216lujiao={ province = 3216 color = { 40 89 79 } }
+				b_3217baixiang={ province = 3217 color = { 155 163 109 } }
+				b_3218yunshan={ province = 3218 color = { 123 209 118 } }
+				b_3219yuetian={ province = 3219 color = { 210 163 23 } }			   
+			}
+			c_yueyang_linxiang = { # 临湘
+				color = { 255 33 33 }
+				b_3220changan={ province = 3220 color = { 14 38 109 } }
+				b_3221yunxi={ province = 3221 color = { 233 168 9 } }
+				b_3222chengfeng={ province = 3222 color = { 205 249 76 } }
+				b_3223wenbai={ province = 3223 color = { 68 214 241 } }
+				b_3224taolin={ province = 3224 color = { 159 64 185 } }			   
+			}
+			c_yueyang_pingjiang = { # 平江
+				color = { 255 33 33 }
+				b_3225pingjiang={ province = 3225 color = { 5 245 122 } }
+				b_3226jiayi={ province = 3226 color = { 216 202 245 } }
+				b_3227changshou={ province = 3227 color = { 130 239 214 } }
+				b_3228longmen={ province = 3228 color = { 182 45 72 } }
+				b_3229hongqiao={ province = 3229 color = { 76 146 233 } }
+				b_3230nanjiang={ province = 3230 color = { 73 75 180 } }
+				b_3231tongshi={ province = 3231 color = { 35 147 107 } }
+				b_3232meixian={ province = 3232 color = { 5 255 6 } }
+				b_3233wengjiang={ province = 3233 color = { 156 162 251 } }
+				b_3234wushi={ province = 3234 color = { 57 251 177 } }			   
+			}
+			c_yueyang_miluo = { # 汨罗
+				color = { 255 33 33 }
+				b_3235miluo={ province = 3235 color = { 207 64 219 } }
+				b_3236changle={ province = 3236 color = { 249 39 66 } }
+				b_3237baitang={ province = 3237 color = { 66 65 81 } }
+				b_3238baishui={ province = 3238 color = { 96 33 18 } }			   
+			}
+			c_yueyang_xiangyin = { # 湘阴
+				color = { 255 33 33 }
+				b_3239wenxing={ province = 3239 color = { 241 75 9 } }
+				b_3240jinlong={ province = 3240 color = { 55 91 138 } }
+				b_3241xilin={ province = 3241 color = { 14 159 165 } }			   
+			}
+		}
+		d_xiang_changsha = { # 长沙
+			color = {140 67 86 }
+			capital = c_changsha_changsha
+
+			c_changsha_changsha = { # 长沙
+				color = { 140 67 86 }
+				b_3242changsha={ province = 3242 color = { 100 170 10 } }
+				b_3243ansha={ province = 3243 color = { 20 250 71 } }
+				b_3244jinjing={ province = 3244 color = { 72 142 213 } }
+				b_3245lukou={ province = 3245 color = { 202 148 234 } }
+				b_3246huanghua={ province = 3246 color = { 164 130 227 } }
+				b_3247tiaoma={ province = 3247 color = { 230 187 60 } }
+				b_3248dingzi={ province = 3248 color = { 188 9 108 } }
+				b_3249wangcheng={ province = 3249 color = { 27 139 197 } }
+				b_3250xingcheng={ province = 3250 color = { 200 190 29 } }
+				b_3251pingtang={ province = 3251 color = { 133 68 169 } }
+				b_3252lianhua={ province = 3252 color = { 72 100 97 } }
+				b_3253bairuo={ province = 3253 color = { 52 132 104 } }			   
+			}
+			c_changsha_ningxiang = { # 宁乡
+				color = { 140 67 86 }
+				b_3254ningxiang={ province = 3254 color = { 15 84 9 } }
+				b_3255datunying={ province = 3255 color = { 255 122 49 } }
+				b_3256nantianping={ province = 3256 color = { 210 46 12 } }
+				b_3257batang={ province = 3257 color = { 121 177 71 } }
+				b_3258huitang={ province = 3258 color = { 247 249 16 } }
+				b_3259huangcai={ province = 3259 color = { 115 146 174 } }
+				b_3260liushahe={ province = 3260 color = { 168 38 45 } }			   
+			}
+			c_changsha_liuyang = { # 浏阳
+				color = { 140 67 86 }
+				b_3261guankou={ province = 3261 color = { 62 181 25 } }
+				b_3262dongyang={ province = 3262 color = { 182 24 11 } }
+				b_3263puji={ province = 3263 color = { 9 66 76 } }
+				b_3264dayao={ province = 3264 color = { 123 65 243 } }
+				b_3265zhonghe={ province = 3265 color = { 121 194 218 } }
+				b_3266zhangfang={ province = 3266 color = { 16 129 222 } }
+				b_3267longfu={ province = 3267 color = { 71 49 63 } }
+				b_3268baisha={ province = 3268 color = { 55 184 181 } }
+				b_3269yanxi={ province = 3269 color = { 14 111 63 } }
+				b_3270gaoping={ province = 3270 color = { 115 163 211 } }			   
+			}
+		}	
+		d_xiang_xiangtan = { # 黄冈
+			color = { 200 60 35 }
+			capital = c_xiangtan_xiangtan
+
+			c_xiangtan_xiangtan = { # 湘潭
+				color = { 200 60 35 }
+				b_3271xiangtan={ province = 3271 color = { 90 83 230 } }
+				b_3272yuhu={ province = 3272 color = { 155 106 173 } }
+				b_3273yunhuqiao={ province = 3273 color = { 165 104 231 } }
+				b_3274shaoshan={ province = 3274 color = { 10 25 139 } }
+				b_3275yisuhe={ province = 3275 color = { 49 71 184 } }
+				b_3276baishi={ province = 3276 color = { 215 55 71 } }
+				b_3277shebu={ province = 3277 color = { 25 36 86 } }
+				b_3278huashi={ province = 3278 color = { 146 131 114 } }
+				b_3279qingshanqiao={ province = 3279 color = { 39 198 49 } }			   
+			}
+			c_xiangtan_xiangxiang = { # 湘乡
+				color = { 200 60 35 }
+				b_3280wangchunmen={ province = 3280 color = { 193 42 208 } }
+				b_3281yutang={ province = 3281 color = { 69 75 226 } }
+				b_3282longdong={ province = 3282 color = { 59 242 197 } }
+				b_3283jinsou={ province = 3283 color = { 168 85 108 } }
+				b_3284fanjiang={ province = 3284 color = { 19 78 97 } }
+				b_3285qizi={ province = 3285 color = { 65 131 33 } }			   
+			}
+		}
+		d_xiang_zhuzhou = { # 株洲
+			color = { 157 41 51 }
+			capital = c_zhuzhou_zhuzhou
+
+			c_zhuzhou_zhuzhou = { # 株洲
+				color = { 157 41 51 }
+				b_3286zhuzhou={ province = 3286 color = { 223 219 34 } }
+				b_3287shifeng={ province = 3287 color = { 78 65 190 } }
+				b_3288lusong={ province = 3288 color = { 118 152 196 } }
+				b_3289guyuefeng={ province = 3289 color = { 233 26 236 } }
+				b_3290longtan={ province = 3290 color = { 205 152 35 } } 			   
+			}
+			c_zhuzhou_liling = { # 醴陵
+				color = { 157 41 51 }
+				b_3291xianyueshan={ province = 3291 color = { 146 23 57 } }
+				b_3292pukou={ province = 3292 color = { 135 122 215 } }
+				b_3293huangtazui={ province = 3293 color = { 158 58 20 } }
+				b_3294zhuanbu={ province = 3294 color = { 32 208 206 } }
+				b_3295sifen={ province = 3295 color = { 233 37 157 } }			   
+			}
+			c_zhuzhou_you = { # 攸
+				color = { 157 41 51 }
+				b_3296you={ province = 3296 color = { 231 98 149 } }
+				b_3297shiyangtang={ province = 3297 color = { 161 112 162 } }
+				b_3298yinkeng={ province = 3298 color = { 84 197 51 } }
+				b_3299luanshan={ province = 3299 color = { 144 110 110 } }
+				b_3300wangling={ province = 3300 color = { 88 107 152 } }
+				b_3301huangtuling={ province = 3301 color = { 28 178 79 } }
+				b_3302yajiangqiao={ province = 3302 color = { 231 89 41 } }			   
+			}
+			c_zhuzhou_chaling = { # 茶陵
+				color = { 157 41 51 }
+				b_3303chaling={ province = 3303 color = { 195 165 140 } }
+				b_3304zaoshi={ province = 3304 color = { 168 249 231 } }
+				b_3305huanxi={ province = 3305 color = { 193 10 155 } }
+				b_3306taokeng={ province = 3306 color = { 198 109 107 } }
+				b_3307lingfang={ province = 3307 color = { 152 56 39 } }
+				b_3308zhitang={ province = 3308 color = { 47 115 126 } }
+				b_3309yaobei={ province = 3309 color = { 132 242 146 } }			   
+			}
+			c_zhuzhou_yanling = { # 炎陵
+				color = { 157 41 51 }
+				b_3310yanling={ province = 3310 color = { 228 2 120 } }
+				b_3311miandu={ province = 3311 color = { 95 56 17 } }
+				b_3312shuikou={ province = 3312 color = { 138 17 160 } }
+				b_3313longzha={ province = 3313 color = { 60 184 125 } }
+				b_3314luyuan={ province = 3314 color = { 172 50 13 } }			   
+			}
+		}
+		d_xiang_hengyang = { # 衡阳
+			color = { 255 76 0 }
+			capital = c_hengyang_hengyang
+
+			c_hengyang_hengshan = { # 衡山
+				color = { 255 76 0 }
+				b_3315kaiyun={ province = 3315 color = { 123 56 116 } }
+				b_3316yonghe={ province = 3316 color = { 63 105 130 } }
+				b_3317nanyue={ province = 3317 color = { 71 144 58 } }
+				b_3318baiguo={ province = 3318 color = { 213 151 65 } }			   
+			}
+			c_hengyang_hengdong = { # 衡东
+				color = { 255 76 0 }
+				b_3319mishui={ province = 3319 color = { 201 118 23 } }
+				b_3320bailian={ province = 3320 color = { 177 104 92 } }
+				b_3321ganxi={ province = 3321 color = { 77 3 58 } }
+				b_3322gaohu={ province = 3322 color = { 242 149 9 } }
+				b_3323xialiu={ province = 3323 color = { 223 164 249 } }
+				b_3324shitan={ province = 3324 color = { 206 42 134 } }			   
+			}
+			c_hengyang_hengnan = { # 衡南
+				color = { 255 76 0 }
+				b_3325zhuhui={ province = 3325 color = { 44 160 66 } }
+				b_3326hongshan={ province = 3326 color = { 228 12 169 } }
+				b_3327mojing={ province = 3327 color = { 36 52 14 } }
+				b_3328guanshi={ province = 3328 color = { 236 207 80 } }
+				b_3329baogai={ province = 3329 color = { 200 178 37 } }
+				b_3330xiangyang={ province = 3330 color = { 210 136 193 } }
+				b_3331songjiang={ province = 3331 color = { 100 167 101 } }
+				b_3332maoshi={ province = 3332 color = { 68 138 195 } }
+				b_3333jilong={ province = 3333 color = { 0 113 86 } }
+				b_3334santang={ province = 3334 color = { 49 190 150 } }			   
+			}
+			c_hengyang_hengyang = { # 衡阳
+				color = { 255 76 0 }
+				b_3335hengyang={ province = 3335 color = { 134 172 35 } }
+				b_3336goulou={ province = 3336 color = { 25 150 93 } }
+				b_3337xidu={ province = 3337 color = { 203 132 133 } }
+				b_3338jingtou={ province = 3338 color = { 152 193 112 } }
+				b_3339yanbei={ province = 3339 color = { 55 74 53 } }
+				b_3340qulan={ province = 3340 color = { 71 47 231 } }
+				b_3341taiyuan={ province = 3341 color = { 206 202 67 } }
+				b_3342xijiang={ province = 3342 color = { 151 195 187 } }			   
+			}
+			c_hengyang_qidong = { # 祁东
+				color = { 255 76 0 }
+				b_3343qidong={ province = 3343 color = { 76 122 240 } }
+				b_3344niaojiang={ province = 3344 color = { 90 28 211 } }
+				b_3345shuangqiao={ province = 3345 color = { 142 62 135 } }
+				b_3346shitingzi={ province = 3346 color = { 196 101 188 } }
+				b_3347buyunqiao={ province = 3347 color = { 214 199 103 } }
+				b_3348taihetang={ province = 3348 color = { 208 60 252 } }			   
+			}
+			c_hengyang_changning = { # 常宁
+				color = { 255 76 0 }
+				b_3349yiyang={ province = 3349 color = { 74 132 183 } }
+				b_3350yangquan={ province = 3350 color = { 151 97 34 } }
+				b_3351guanling={ province = 3351 color = { 7 246 119 } }
+				b_3352miquan={ province = 3352 color = { 229 9 193 } }
+				b_3353xiling={ province = 3353 color = { 87 33 203 } }
+				b_3354baifang={ province = 3354 color = { 204 114 161 } }			   
+			}
+			c_hengyang_leiyang = { # 耒阳
+				color = { 255 76 0 }
+				b_3355leiyang={ province = 3355 color = { 220 50 196 } }
+				b_3356yaotian={ province = 3356 color = { 160 121 148 } }
+				b_3357renyi={ province = 3357 color = { 139 61 23 } }
+				b_3358xiaoshui={ province = 3358 color = { 65 95 9 } }
+				b_3359nanyang={ province = 3359 color = { 158 232 111 } }
+				b_3360dashi={ province = 3360 color = { 42 189 209 } }
+				b_3361donghuxu={ province = 3361 color = { 195 241 192 } }
+				b_3362mashui={ province = 3362 color = { 21 223 229 } }			   
+			}
+		}
+		d_xiang_chenzhou = { # 郴州
+			color = { 255 78 32 }
+			capital = c_chenzhou_chen
+
+			c_chenzhou_anren = { # 安仁
+				color = { 255 78 32 }
+				b_3363anren={ province = 3363 color = { 197 89 99 } }
+				b_3364lingguan={ province = 3364 color = { 168 31 116 } }
+				b_3365anping={ province = 3365 color = { 97 51 231 } }
+				b_3366guanwang={ province = 3366 color = { 212 172 83 } }			   
+			}
+			c_chenzhou_yongxing = { # 永兴
+				color = { 255 78 32 }
+				b_3367yongxing={ province = 3367 color = { 48 208 252 } }
+				b_3368liyutang={ province = 3368 color = { 65 68 111 } }
+				b_3369dabujiang={ province = 3369 color = { 73 28 33 } }
+				b_3370bailin={ province = 3370 color = { 37 27 25 } }
+				b_3371jingui={ province = 3371 color = { 6 1 113 } }
+				b_3372gaoting={ province = 3372 color = { 170 169 29 } }
+				b_3373santang={ province = 3373 color = { 109 64 160 } }			   
+			}
+			c_chenzhou_guiyang = { # 桂阳
+				color = { 255 78 32 }
+				b_3374guiyang={ province = 3374 color = { 165 36 168 } }
+				b_3375fangyuan={ province = 3375 color = { 95 88 209 } }
+				b_3376zhangshi={ province = 3376 color = { 33 197 212 } }
+				b_3377haotang={ province = 3377 color = { 16 175 231 } }
+				b_3378aoquan={ province = 3378 color = { 41 63 49 } }
+				b_3379qiaoshi={ province = 3379 color = { 226 237 143 } }
+				b_3380liufeng={ province = 3380 color = { 184 57 108 } }
+				b_3381huaquan={ province = 3381 color = { 20 225 28 } }
+				b_3382tangshi={ province = 3382 color = { 127 151 121 } }
+				b_3383feixian={ province = 3383 color = { 84 223 131 } }			   
+			}
+			c_chenzhou_jiahe = { # 嘉禾
+				color = { 255 78 32 }
+				b_3384jiahe={ province = 3384 color = { 53 72 102 } }
+				b_3385longtan={ province = 3385 color = { 12 97 40 } }
+				b_3386tanping={ province = 3386 color = { 197 16 15 } }			   
+			}
+			c_chenzhou_linwu = { # 临武
+				color = { 255 78 32 }
+				b_3387linwu={ province = 3387 color = { 220 66 20 } }
+				b_3388xishan={ province = 3388 color = { 224 227 58 } }
+				b_3389nanqiang={ province = 3389 color = { 74 242 119 } }
+				b_3390xianghualing={ province = 3390 color = { 136 44 28 } }
+				b_3391jinjiang={ province = 3391 color = { 37 44 49 } }			   
+			}
+			c_chenzhou_yizhang = { # 宜章
+				color = { 255 78 32 }
+				b_3392yizhang={ province = 3392 color = { 56 120 122 } }
+				b_3393baishidu={ province = 3393 color = { 240 157 12 } }
+				b_3394yaogangxian={ province = 3394 color = { 154 100 208 } }
+				b_3395meitian={ province = 3395 color = { 189 24 26 } }
+				b_3396yiliu={ province = 3396 color = { 133 78 25 } }
+				b_3397huangsha={ province = 3397 color = { 44 219 100 } }
+				b_3398mangshan={ province = 3398 color = { 255 46 176 } }			   
+			}
+			c_chenzhou_chen = { # 郴
+				color = { 255 78 32 }
+				b_3399chen={ province = 3399 color = { 222 168 96 } }
+				b_3400shigaitang={ province = 3400 color = { 229 2 89 } }
+				b_3401datang={ province = 3401 color = { 101 82 109 } }
+				b_3402dakuishang={ province = 3402 color = { 7 203 255 } }
+				b_3403bailutang={ province = 3403 color = { 166 173 222 } }
+				b_3404qifengdu={ province = 3404 color = { 157 124 51 } }			   
+			}
+			c_chenzhou_zixing = { # 资兴
+				color = { 255 78 32 }
+				b_3405zixing={ province = 3405 color = { 192 105 88 } }
+				b_3406beiji={ province = 3406 color = { 166 141 109 } }
+				b_3407pingshi={ province = 3407 color = { 171 248 6 } }
+				b_3408pishi={ province = 3408 color = { 167 209 72 } }
+				b_3409dongping={ province = 3409 color = { 179 196 240 } }
+				b_3410chukou={ province = 3410 color = { 204 12 51 } }			   
+			}
+			c_chenzhou_guidong = { # 桂东
+				color = { 255 78 32 }
+				b_3411guidong={ province = 3411 color = { 123 220 18 } }
+				b_3412qingquan={ province = 3412 color = { 34 156 177 } }
+				b_3413qingshan={ province = 3413 color = { 199 217 121 } }
+				b_3414pule={ province = 3414 color = { 6 159 10 } }
+				b_3415shatian={ province = 3415 color = { 16 145 196 } }			   
+			}
+			c_chenzhou_rucheng = { # 汝城
+				color = { 255 78 32 }
+				b_3416rucheng={ province = 3416 color = { 4 120 78 } }
+				b_3417nuanshui={ province = 3417 color = { 61 92 36 } }
+				b_3418yongfeng={ province = 3418 color = { 200 162 55 } }
+				b_3419wenming={ province = 3419 color = { 189 70 235 } }
+				b_3420yanshou={ province = 3420 color = { 108 201 160 } }
+				b_3421sanjiangkou={ province = 3421 color = { 248 246 148 } }			   
+			}
+		}
+		d_xiang_yongzhou = { # 永州
+			color = { 243 83 54 }
+			capital = c_yongzhou_lingling
+			
+			c_yongzhou_lanshan = { # 蓝山
+				color = { 243 83 54 }
+				b_3422tafeng={ province = 3422 color = { 12 177 115 } }
+				b_3423tushi={ province = 3423 color = { 61 214 173 } }
+				b_3424litou={ province = 3424 color = { 214 98 36 } }
+				b_3425suocheng={ province = 3425 color = { 114 120 218 } }
+				b_3426daqiao={ province = 3426 color = { 123 39 194 } }			   
+			}
+			c_yongzhou_jianghua = { # 江华
+				color = { 243 83 54 }
+				b_3427tuojiang={ province = 3427 color = { 228 139 98 } }
+				b_3428wujiang={ province = 3428 color = { 187 91 94 } }
+				b_3429shuikou={ province = 3429 color = { 197 9 243 } }
+				b_3430mashi={ province = 3430 color = { 202 51 236 } }
+				b_3431xiaoxu={ province = 3431 color = { 147 227 51 } }
+				b_3432helukou={ province = 3432 color = { 97 54 140 } }
+				b_3433baimangying={ province = 3433 color = { 151 202 222 } }			   
+			}
+			c_yongzhou_jiangyong = { # 江永
+				color = { 243 83 54 }
+				b_3434xiaopu={ province = 3434 color = { 239 118 245 } }
+				b_3435huilongxu={ province = 3435 color = { 85 205 111 } }
+				b_3436yunshan={ province = 3436 color = { 207 25 193 } }
+				b_3437taochuan={ province = 3437 color = { 236 168 140 } }
+				b_3438cushi={ province = 3438 color = { 23 24 97 } }			   
+			}
+			c_yongzhou_dao = { # 道
+				color = { 243 83 54 }
+				b_3439lianxi={ province = 3439 color = { 242 78 62 } }
+				b_3440qingtang={ province = 3440 color = { 150 142 24 } }
+				b_3441baimadu={ province = 3441 color = { 243 236 19 } }
+				b_3442xianzijiao={ province = 3442 color = { 166 155 174 } }
+				b_3443gongba={ province = 3443 color = { 144 20 208 } }
+				b_3444xianglin={ province = 3444 color = { 81 105 48 } }
+				b_3445hengling={ province = 3445 color = { 91 71 181 } }			   
+			}
+			c_yongzhou_ningyuan = { # 宁远
+				color = { 243 83 54 }
+				b_3446ningyuan={ province = 3446 color = { 113 28 13 } }
+				b_3447tiantang={ province = 3447 color = { 35 92 94 } }
+				b_3448jiuyishan={ province = 3448 color = { 71 121 188 } }
+				b_3449lengshui={ province = 3449 color = { 75 203 239 } }
+				b_3450zhonghe={ province = 3450 color = { 41 174 44 } }
+				b_3451baijiaping={ province = 3451 color = { 232 218 236 } }
+				b_3452tongmuluo={ province = 3452 color = { 199 248 137 } }			   
+			}
+			c_yongzhou_xintian = { # 新田
+				color = { 243 83 54 }
+				b_3453xintian={ province = 3453 color = { 89 136 164 } }
+				b_3454menlouxia={ province = 3454 color = { 41 187 232 } }
+				b_3455taoling={ province = 3455 color = { 44 136 189 } }
+				b_3456jiantou={ province = 3456 color = { 181 61 28 } }			   
+			}
+			c_yongzhou_shuangpai = { # 双牌
+				color = { 243 83 54 }
+				b_3457longbo={ province = 3457 color = { 78 222 98 } }
+				b_3458yongjiang={ province = 3458 color = { 95 220 252 } }
+				b_3459jiangcun={ province = 3459 color = { 243 139 66 } }
+				b_3460wuxingling={ province = 3460 color = { 66 44 154 } }
+				b_3461majiang={ province = 3461 color = { 184 201 16 } }			   
+			}
+			c_yongzhou_lingling = { # 零陵
+				color = { 243 83 54 }
+				b_3462lingling={ province = 3462 color = { 45 47 228 } }
+				b_3463youtingxu={ province = 3463 color = { 96 195 198 } }
+				b_3464shishanjiao={ province = 3464 color = { 133 76 222 } }
+				b_3465fujiaqiao={ province = 3465 color = { 232 113 95 } }
+				b_3466shuikoushan={ province = 3466 color = { 160 76 219 } }
+				b_3467zhushan={ province = 3467 color = { 227 160 79 } }
+				b_3468renwan={ province = 3468 color = { 146 141 96 } }
+				b_3469shanglingqiao={ province = 3469 color = { 90 127 65 } }
+				b_3470huangyangsi={ province = 3470 color = { 155 163 215 } }
+				b_3471puliqiao={ province = 3471 color = { 40 120 163 } }			   
+			}
+			c_yongzhou_qiyang = { # 祁阳
+				color = { 243 83 54 }
+				b_3472qiyang={ province = 3472 color = { 183 181 43 } }
+				b_3473wenmingpu={ province = 3473 color = { 211 126 237 } }
+				b_3474panshi={ province = 3474 color = { 190 141 221 } }
+				b_3475meixi={ province = 3475 color = { 157 47 2 } }
+				b_3476maozhu={ province = 3476 color = { 38 236 205 } }
+				b_3477jinbaotang={ province = 3477 color = { 12 200 25 } }
+				b_3478baiguoshi={ province = 3478 color = { 19 138 69 } }
+				b_3479jindong={ province = 3479 color = { 5 57 18 } }			   
+			}
+			c_yongzhou_dongan = { # 东安
+				color = { 243 83 54 }
+				b_3480dongan={ province = 3480 color = { 205 101 144 } }
+				b_3481damiaokou={ province = 3481 color = { 78 94 174 } }
+				b_3482zixishi={ province = 3482 color = { 79 252 89 } }
+				b_3483shiqishi={ province = 3483 color = { 132 91 59 } }
+				b_3484jingtouxu={ province = 3484 color = { 227 99 82 } }
+				b_3485lumaqiao={ province = 3485 color = { 239 208 12 } }
+				b_3486dasheng={ province = 3486 color = { 12 121 194 } }			   
+			}
+		}
+		d_xiang_shaoyang = { # 邵阳
+			color = { 203 58 36 }
+			capital = c_shaoyang_shaoyang
+
+			c_shaoyang_shaoyang = { # 邵阳
+				color = { 203 58 36 }
+				b_3487shaoyang={ province = 3487 color = { 9 112 45 } }
+				b_3488huangtingshi={ province = 3488 color = { 8 253 165 } }
+				b_3489changyangpu={ province = 3489 color = { 65 236 143 } }
+				b_3490tangdukou={ province = 3490 color = { 118 109 174 } }
+				b_3491baicang={ province = 3491 color = { 255 239 207 } }
+				b_3492guzhou={ province = 3492 color = { 253 117 86 } }			   
+			}
+			c_shaoyang_shaodong = { # 邵东
+				color = { 203 58 36 }
+				b_3493dahetang={ province = 3493 color = { 31 4 204 } }
+				b_3494jiulongling={ province = 3494 color = { 32 133 112 } }
+				b_3495lingguandian={ province = 3495 color = { 216 144 186 } }
+				b_3496lianqiao={ province = 3496 color = { 144 56 246 } }			   
+			}
+			c_shaoyang_xinshao = { # 新邵
+				color = { 203 58 36 }
+				b_3497niangxi={ province = 3497 color = { 203 43 141 } }
+				b_3498jukoupu={ province = 3498 color = { 13 141 239 } }
+				b_3499tanxi={ province = 3499 color = { 23 115 47 } }
+				b_3500pingshang={ province = 3500 color = { 121 247 145 } }
+				b_3501longxipu={ province = 3501 color = { 58 123 135 } }			   
+			}
+			c_shaoyang_longhui = { # 隆回
+				color = { 203 58 36 }
+				b_3502huamen={ province = 3502 color = { 230 116 162 } }
+				b_3503sangesi={ province = 3503 color = { 212 236 10 } }
+				b_3504hexiangqiao={ province = 3504 color = { 33 3 149 } }
+				b_3505yankou={ province = 3505 color = { 172 44 241 } }
+				b_3506simenqian={ province = 3506 color = { 9 121 135 } }
+				b_3507huxingshan={ province = 3507 color = { 15 20 246 } }
+				b_3508gaoping={ province = 3508 color = { 170 200 230 } }			   
+			}
+			c_shaoyang_dongkou = { # 洞口
+				color = { 203 58 36 }
+				b_3509dongkou={ province = 3509 color = { 0 201 253 } }
+				b_3510changtang={ province = 3510 color = { 48 196 132 } }
+				b_3511naxi={ province = 3511 color = { 95 91 207 } }
+				b_3512shanmen={ province = 3512 color = { 251 110 25 } }
+				b_3513gaosha={ province = 3513 color = { 69 194 88 } }
+				b_3514shijiang={ province = 3514 color = { 79 118 12 } }			   
+			}
+			c_shaoyang_wugang = { # 武冈
+				color = { 203 58 36 }
+				b_3515yingchunting={ province = 3515 color = { 142 224 174 } }
+				b_3516wenping={ province = 3516 color = { 164 134 23 } }
+				b_3517wantouqiao={ province = 3517 color = { 180 156 110 } }
+				b_3518shuangpai={ province = 3518 color = { 77 14 222 } }			   
+			}
+			c_shaoyang_xinning = { # 新宁
+				color = { 203 58 36 }
+				b_3519jinshi={ province = 3519 color = { 75 149 157 } }
+				b_3520langshan={ province = 3520 color = { 93 75 58 } }
+				b_3521huangjin={ province = 3521 color = { 65 75 194 } }
+				b_3522huanglong={ province = 3522 color = { 252 64 252 } }
+				b_3523huilongsi={ province = 3523 color = { 101 112 62 } }
+				b_3524yidushui={ province = 3524 color = { 44 212 44 } }			   
+			}
+			c_shaoyang_chengbu = { # 城步
+				color = { 203 58 36 }
+				b_3525rulin={ province = 3525 color = { 147 111 231 } }
+				b_3526xiyan={ province = 3526 color = { 127 84 79 } }
+				b_3527baimaoping={ province = 3527 color = { 111 91 143 } }
+				b_3528wutuan={ province = 3528 color = { 248 81 184 } }
+				b_3529changanying={ province = 3529 color = { 76 39 69 } }			   
+			}
+			c_shaoyang_suining = { # 绥宁
+				color = { 203 58 36 }
+				b_3530changpu={ province = 3530 color = { 193 158 99 } }
+				b_3531wuyang={ province = 3531 color = { 72 179 4 } }
+				b_3532guanxia={ province = 3532 color = { 123 173 220 } }
+				b_3533wawutang={ province = 3533 color = { 78 1 129 } }
+				b_3534fengmutuan={ province = 3534 color = { 26 215 52 } }
+				b_3535huangsangping={ province = 3535 color = { 194 192 117 } }
+				b_3536dongshan={ province = 3536 color = { 25 222 181 } }			   
+			}
+		}
+		d_xiang_loudi = { # 娄底
+			color = { 255 45 81 }
+			capital = c_loudi_lianyuan
+	
+			c_loudi_xinhua = { # 新化
+				color = { 255 45 81 }
+				b_3537shangmei={ province = 3537 color = { 29 63 62 } }
+				b_3538lengshuijiang={ province = 3538 color = { 185 186 229 } }
+				b_3539wentang={ province = 3539 color = { 203 254 214 } }
+				b_3540yangxi={ province = 3540 color = { 12 60 187 } }
+				b_3541tianmen={ province = 3541 color = { 115 227 196 } }
+				b_3542xihe={ province = 3542 color = { 23 193 36 } }
+				b_3543youxi={ province = 3543 color = { 145 60 208 } }
+				b_3544zhenshang={ province = 3544 color = { 29 68 114 } }			   
+			}
+			c_loudi_lianyuan = { # 涟源
+				color = { 255 45 81 }
+				b_3545louxing={ province = 3545 color = { 163 171 128 } }
+				b_3546lantian={ province = 3546 color = { 72 91 9 } }
+				b_3547longtang={ province = 3547 color = { 243 196 118 } }
+				b_3548fukou={ province = 3548 color = { 180 154 241 } }
+				b_3549hetang={ province = 3549 color = { 39 68 192 } }
+				b_3550fengping={ province = 3550 color = { 47 135 25 } }			   
+			}
+			c_loudi_shuangfeng = { # 双峰
+				color = { 255 45 81 }
+				b_3551yongfeng={ province = 3551 color = { 199 227 106 } }
+				b_3552heye={ province = 3552 color = { 26 236 90 } }
+				b_3553shiniu={ province = 3553 color = { 36 166 124 } }
+				b_3554huamen={ province = 3554 color = { 105 132 205 } }
+				b_3555zimenqiao={ province = 3555 color = { 167 24 196 } }
+				b_3556hongshandian={ province = 3556 color = { 90 18 182 } }			   
+			}
+		}
+		d_xiang_huaihua = { # 怀化
+			color = { 201 31 55 }
+			capital = c_huaihua_huaihua
+
+			c_huaihua_xupu = { # 溆浦
+				color = { 201 31 55 }
+				b_3557lufeng={ province = 3557 color = { 210 16 168 } }
+				b_3558liangjiang={ province = 3558 color = { 93 52 44 } }
+				b_3559dizhuang={ province = 3559 color = { 207 165 1 } }
+				b_3560longtan={ province = 3560 color = { 185 136 205 } }
+				b_3561fushuiwan={ province = 3561 color = { 132 19 25 } }
+				b_3562jiuxijiang={ province = 3562 color = { 229 74 66 } }
+				b_3563yanxi={ province = 3563 color = { 168 118 85 } }			   
+			}
+			c_huaihua_yuanling = { # 沅陵
+				color = { 201 31 55 }
+				b_3564yuanling={ province = 3564 color = { 178 99 177 } }
+				b_3565chouxikou={ province = 3565 color = { 24 240 242 } }
+				b_3566luoheping={ province = 3566 color = { 189 164 199 } }
+				b_3567mingxikou={ province = 3567 color = { 89 212 118 } }
+				b_3568shenxikou={ province = 3568 color = { 185 28 123 } }
+				b_3569qinglang={ province = 3569 color = { 227 134 26 } }
+				b_3570huangrangping={ province = 3570 color = { 73 169 67 } }
+				b_3571dongxi={ province = 3571 color = { 233 134 210 } }
+				b_3572nanmupu={ province = 3572 color = { 105 120 248 } }
+				b_3573zhangjiaping={ province = 3573 color = { 81 110 126 } }
+				b_3574zhuyuan={ province = 3574 color = { 45 121 66 } }			   
+			}
+			c_huaihua_chenxi = { # 辰溪
+				color = { 201 31 55 }
+				b_3575chenyang={ province = 3575 color = { 36 3 253 } }
+				b_3576xiuxi={ province = 3576 color = { 20 121 121 } }
+				b_3577jinbin={ province = 3577 color = { 100 75 104 } }
+				b_3578huomachong={ province = 3578 color = { 207 68 141 } }
+				b_3579huangxikou={ province = 3579 color = { 183 228 199 } }			   
+			}
+			c_huaihua_huaihua = { # 怀化
+				color = { 201 31 55 }
+				b_3580hecheng={ province = 3580 color = { 128 30 159 } }
+				b_3581huangjinao={ province = 3581 color = { 99 252 215 } }
+				b_3582zhongfang={ province = 3582 color = { 57 91 177 } }
+				b_3583luyang={ province = 3583 color = { 222 145 15 } }
+				b_3584xinjian={ province = 3584 color = { 183 126 224 } }
+				b_3585jielong={ province = 3585 color = { 0 8 240 } }			   
+			}
+			c_huaihua_mayang = { # 麻阳
+				color = { 201 31 55 }
+				b_3586gaocun={ province = 3586 color = { 32 247 15 } }
+				b_3587lanli={ province = 3587 color = { 242 96 43 } }
+				b_3588jiangkouxu={ province = 3588 color = { 220 58 154 } }
+				b_3589jinhe={ province = 3589 color = { 80 162 181 } }
+				b_3590tuochong={ province = 3590 color = { 251 174 12 } }			   
+			}
+			c_huaihua_zhijiang = { # 芷江
+				color = { 201 31 55 }
+				b_3591zhijiang={ province = 3591 color = { 108 111 114 } }
+				b_3592luoyang={ province = 3592 color = { 103 151 210 } }
+				b_3593shuikuan={ province = 3593 color = { 19 165 43 } }
+				b_3594biyong={ province = 3594 color = { 77 102 47 } }
+				b_3595xindianping={ province = 3595 color = { 190 16 206 } }			   
+			}
+			c_huaihua_xinhuang = { # 新晃
+				color = { 201 31 55 }
+				b_3596xinhuang={ province = 3596 color = { 17 253 226 } }
+				b_3597hetan={ province = 3597 color = { 33 147 34 } }
+				b_3598mibei={ province = 3598 color = { 93 46 180 } }
+				b_3599liangsan={ province = 3599 color = { 134 44 108 } }			   
+			}
+			c_huaihua_hongjiang = { # 洪江
+				color = { 201 31 55 }
+				b_3600qiancheng={ province = 3600 color = { 46 121 42 } }
+				b_3601shawan={ province = 3601 color = { 217 36 131 } }
+				b_3602longchuantang={ province = 3602 color = { 97 180 173 } }
+				b_3603anjiang={ province = 3603 color = { 77 220 255 } }
+				b_3604xuefeng={ province = 3604 color = { 17 194 189 } }			   
+			}
+			c_huaihua_huitong = { # 会同
+				color = { 201 31 55 }
+				b_3605lincheng={ province = 3605 color = { 252 85 20 } }
+				b_3606guangping={ province = 3606 color = { 11 19 85 } }
+				b_3607baotian={ province = 3607 color = { 14 222 180 } }
+				b_3608baozi={ province = 3608 color = { 65 9 47 } }
+				b_3609ruoshui={ province = 3609 color = { 69 21 132 } }
+				b_3610tuanhe={ province = 3610 color = { 29 222 73 } }			   
+			}
+			c_huaihua_jingzhou = { # 靖州
+				color = { 201 31 55 }
+				b_3611quyang={ province = 3611 color = { 33 59 226 } }
+				b_3612taiyangping={ province = 3612 color = { 78 126 117 } }
+				b_3613aoshang={ province = 3613 color = { 216 82 200 } }
+				b_3614pukou={ province = 3614 color = { 1 34 186 } }
+				b_3615xinchang={ province = 3615 color = { 6 77 78 } }			   
+			}
+			c_huaihua_tongdao = { # 通道
+				color = { 201 31 55 }
+				b_3616shuangjiang={ province = 3616 color = { 51 122 175 } }
+				b_3617linkou={ province = 3617 color = { 17 25 86 } }
+				b_3618xikou={ province = 3618 color = { 232 170 160 } }
+				b_3619jingwuzhou={ province = 3619 color = { 85 118 189 } }
+				b_3620xianxi={ province = 3620 color = { 238 94 131 } }
+				b_3621dupo={ province = 3621 color = { 7 138 43 } }			   
+			}
+		}
+		d_xiang_xiangxi = { # 湘西
+			color = { 239 122 130 }
+			capital = c_xiangxi_jishou
+
+			c_xiangxi_luxi = { # 泸溪
+				color = { 239 122 130 }
+				b_3622baisha={ province = 3622 color = { 18 83 193 } }
+				b_3623pushi={ province = 3623 color = { 113 66 72 } }
+				b_3624tahu={ province = 3624 color = { 255 116 122 } }
+				b_3625tanxi={ province = 3625 color = { 241 132 65 } }			   
+			}
+			c_xiangxi_fenghuang = { # 凤凰
+				color = { 239 122 130 }
+				b_3626tuojiang={ province = 3626 color = { 37 228 178 } }
+				b_3627xinchang={ province = 3627 color = { 146 184 140 } }
+				b_3628alaying={ province = 3628 color = { 69 2 177 } }
+				b_3629laershan={ province = 3629 color = { 69 29 96 } }
+				b_3630jixin={ province = 3630 color = { 38 93 186 } }			   
+			}
+			c_xiangxi_jishou = { # 吉首
+				color = { 239 122 130 }
+				b_3631qianzhou={ province = 3631 color = { 22 47 118 } }
+				b_3632aizhai={ province = 3632 color = { 167 207 138 } }
+				b_3633hexi={ province = 3633 color = { 251 245 239 } }
+				b_3634danqing={ province = 3634 color = { 200 200 100 } }			   
+			}
+			c_xiangxi_guzhang = { # 古丈
+				color = { 239 122 130 }
+				b_3635guyang={ province = 3635 color = { 232 35 212 } }
+				b_3636duanlongshan={ province = 3636 color = { 26 161 23 } }
+				b_3637morong={ province = 3637 color = { 22 203 248 } }
+				b_3638caotan={ province = 3638 color = { 13 133 204 } }
+				b_3639gaofeng={ province = 3639 color = { 92 39 192 } }			   
+			}
+			c_xiangxi_baojing = { # 保靖
+				color = { 239 122 130 }
+				b_3640qianling={ province = 3640 color = { 64 165 172 } }
+				b_3641tanglang={ province = 3641 color = { 126 198 49 } }
+				b_3642bamao={ province = 3642 color = { 85 252 93 } }
+				b_3643qingshuiping={ province = 3643 color = { 6 0 241 } }
+				b_3644boji={ province = 3644 color = { 192 85 111 } }			   
+			}
+			c_xiangxi_huayuan = { # 花垣
+				color = { 239 122 130 }
+				b_3645huayuan={ province = 3645 color = { 126 85 116 } }
+				b_3646tuanjie={ province = 3646 color = { 16 72 85 } }
+				b_3647malichang={ province = 3647 color = { 162 200 8 } }
+				b_3648jiwei={ province = 3648 color = { 239 29 3 } }			   
+			}
+			c_xiangxi_longshan = { # 龙山
+				color = { 239 122 130 }
+				b_3649longshan={ province = 3649 color = { 185 147 157 } }
+				b_3650shuitianba={ province = 3650 color = { 72 97 37 } }
+				b_3651ciyantang={ province = 3651 color = { 133 120 21 } }
+				b_3652zhaoshi={ province = 3652 color = { 50 63 100 } }
+				b_3653jiaba={ province = 3653 color = { 192 55 108 } }
+				b_3654tani={ province = 3654 color = { 161 255 62 } }
+				b_3655pojiao={ province = 3655 color = { 58 8 120 } }
+				b_3656fengxi={ province = 3656 color = { 211 216 76 } }
+				b_3657liye={ province = 3657 color = { 69 97 241 } }			   
+			}
+			c_xiangxi_yongshun = { # 永顺
+				color = { 239 122 130 }
+				b_3658lingxi={ province = 3658 color = { 150 240 162 } }
+				b_3659shouche={ province = 3659 color = { 151 127 48 } }
+				b_3660liangcha={ province = 3660 color = { 191 130 104 } }
+				b_3661tawo={ province = 3661 color = { 213 236 162 } }
+				b_3662macha={ province = 3662 color = { 21 33 197 } }
+				b_3663huilong={ province = 3663 color = { 51 136 59 } }
+				b_3664furong={ province = 3664 color = { 128 83 55 } }
+				b_3665fuzhi={ province = 3665 color = { 240 63 112 } }			   
+			}
+		}
+																
+	}
+	k_qian = { # 黔
+		color = { 242 12 0 }
+		capital = c_changsha_changsha
+		
+		ai_primary_priority = {
+			if = {
+				limit = {
+					OR = {
+						culture = culture:han
+						culture = culture:yue
+					}
+				}
+				add = @correct_culture_primary_score
+			}
+		}
+
+		d_qian_qiandongnan = { # 黔东南
+			color = { 59 46 126 }
+			capital = c_qiandongnan_kaili
+
+			c_qiandongnan_tianzhu = { # 天柱
+				color = { 255 0 151 }
+				b_3666fengcheng={ province = 3666 color = { 112 226 93 } }
+				b_3667shidong={ province = 3667 color = { 133 216 255 } }
+				b_3668bangdong={ province = 3668 color = { 177 39 80 } }
+				b_3669wengdong={ province = 3669 color = { 111 147 45 } }
+				b_3670baishi={ province = 3670 color = { 69 69 171 } }
+				b_3671yuankou={ province = 3671 color = { 255 96 50 } }			   
+			}
+			c_qiandongnan_sansui = { # 三穗
+				color = { 255 0 151 }
+				b_3672wenbi={ province = 3672 color = { 7 211 50 } }
+				b_3673tailie={ province = 3673 color = { 178 255 77 } }
+				b_3674changji={ province = 3674 color = { 148 189 55 } }
+				b_3675tonglin={ province = 3675 color = { 53 108 151 } }			   
+			}
+			c_qiandongnan_jianhe = { # 剑河
+				color = { 255 0 151 }
+				b_3676liuchuan={ province = 3676 color = { 141 229 195 } }
+				b_3677taiyong={ province = 3677 color = { 80 250 205 } }
+				b_3678gedong={ province = 3678 color = { 222 46 201 } }
+				b_3679mindong={ province = 3679 color = { 164 84 193 } }
+				b_3680nanming={ province = 3680 color = { 218 232 193 } }
+				b_3681nanjia={ province = 3681 color = { 53 193 31 } }
+				b_3682panxi={ province = 3682 color = { 209 255 119 } }			   
+			}
+			c_qiandongnan_taijiang = { # 台江
+				color = { 255 0 151 }
+				b_3683taigong={ province = 3683 color = { 198 69 159 } }
+				b_3684shidong={ province = 3684 color = { 15 254 122 } }
+				b_3685taipan={ province = 3685 color = { 168 162 127 } }
+				b_3686nangong={ province = 3686 color = { 33 99 82 } }
+				b_3687paiyang={ province = 3687 color = { 225 9 197 } }			   
+			}
+			c_qiandongnan_kaili = { # 凯里
+				color = { 255 0 151 }
+				b_3688ximahe={ province = 3688 color = { 155 86 17 } }
+				b_3689sankeshu={ province = 3689 color = { 205 91 192 } }
+				b_3690kaitang={ province = 3690 color = { 131 210 118 } }
+				b_3691xiasi={ province = 3691 color = { 27 8 50 } }
+				b_3692lushan={ province = 3692 color = { 70 211 196 } }			   
+			}
+			c_qiandongnan_majiang = { # 麻江
+				color = { 255 0 151 }
+				b_3693xingshan={ province = 3693 color = { 80 132 36 } }
+				b_3694gudong={ province = 3694 color = { 194 50 254 } }
+				b_3695xianchang={ province = 3695 color = { 21 143 186 } }
+				b_3696xuanwei={ province = 3696 color = { 129 198 51 } }			   
+			}
+			c_qiandongnan_huangping = { # 黄平
+				color = { 255 0 151 }
+				b_3697xinzhou={ province = 3697 color = { 156 206 117 } }
+				b_3698zhongan={ province = 3698 color = { 70 213 141 } }
+				b_3699gulong={ province = 3699 color = { 108 151 191 } }
+				b_3700jiuzhou={ province = 3700 color = { 211 5 80 } }
+				b_3701pingxi={ province = 3701 color = { 145 14 87 } }
+				b_3702shangtang={ province = 3702 color = { 25 205 249 } }			   
+			}
+			c_qiandongnan_shibing = { # 施秉
+				color = { 255 0 151 }
+				b_3703shibing={ province = 3703 color = { 201 5 239 } }
+				b_3704shuangjing={ province = 3704 color = { 76 245 3 } }
+				b_3705ganxi={ province = 3705 color = { 238 45 160 } }
+				b_3706maxi={ province = 3706 color = { 10 227 35 } }
+				b_3707niudachang={ province = 3707 color = { 95 108 208 } }			   
+			}
+			c_qiandongnan_zhenyuan = { # 镇远
+				color = { 255 0 151 }
+				b_3708wuyang={ province = 3708 color = { 138 160 3 } }
+				b_3709jinbao={ province = 3709 color = { 252 161 170 } }
+				b_3710yongxi={ province = 3710 color = { 29 93 204 } }
+				b_3711qingxi={ province = 3711 color = { 183 92 46 } }
+				b_3712yangchang={ province = 3712 color = { 204 14 44 } }
+				b_3713douping={ province = 3713 color = { 109 35 242 } }			   
+			}
+			c_qiandongnan_cengong = { # 岑巩
+				color = { 255 0 151 }
+				b_3714wushui={ province = 3714 color = { 224 92 167 } }
+				b_3715longtian={ province = 3715 color = { 193 205 117 } }
+				b_3716tianma={ province = 3716 color = { 104 145 135 } }
+				b_3717tianxing={ province = 3717 color = { 6 146 2 } }			   
+			}
+			c_qiandongnan_jinping = { # 锦屏
+				color = { 255 0 151 }
+				b_3719sanjiang={ province = 3719 color = { 225 113 86 } }
+				b_3720dunzhai={ province = 3720 color = { 84 251 20 } }
+				b_3721zhongling={ province = 3721 color = { 188 250 8 } }
+				b_3722pinglue={ province = 3722 color = { 97 106 194 } }
+				b_3723qimeng={ province = 3723 color = { 242 145 231 } }			   
+			}
+			c_qiandongnan_liping = { # 黎平
+				color = { 255 0 151 }
+				b_3724defeng={ province = 3724 color = { 60 242 48 } }
+				b_3725gaotun={ province = 3725 color = { 56 7 96 } }
+				b_3726yandong={ province = 3726 color = { 188 80 57 } }
+				b_3727zhongchao={ province = 3727 color = { 137 137 67 } }
+				b_3728yongcong={ province = 3728 color = { 107 26 140 } }
+				b_3729hongzhou={ province = 3729 color = { 104 21 76 } }
+				b_3730shuikou={ province = 3730 color = { 174 223 47 } }
+				b_3731zhaoxing={ province = 3731 color = { 103 235 165 } }
+				b_3732jiuchao={ province = 3732 color = { 29 42 125 } }
+				b_3733mengyan={ province = 3733 color = { 8 0 30 } }
+				b_3734shangzhong={ province = 3734 color = { 180 220 58 } }			   
+			}
+			c_qiandongnan_congjiang = { # 从江
+				color = { 255 0 151 }
+				b_3735bingmei={ province = 3735 color = { 193 214 235 } }
+				b_3736luoxiang={ province = 3736 color = { 85 137 194 } }
+				b_3737xiajiang={ province = 3737 color = { 208 189 111 } }
+				b_3738douli={ province = 3738 color = { 128 125 203 } }
+				b_3739tingdong={ province = 3739 color = { 46 92 28 } }
+				b_3740jiabang={ province = 3740 color = { 116 121 187 } }
+				b_3741zaibian={ province = 3741 color = { 71 55 222 } }
+				b_3742guanghui={ province = 3742 color = { 193 51 224 } }			   
+			}
+			c_qiandongnan_rongjiang = { # 榕江
+				color = { 255 0 151 }
+				b_3743guzhou={ province = 3743 color = { 21 4 112 } }
+				b_3744zhongcheng={ province = 3744 color = { 130 92 224 } }
+				b_3745zhaihao={ province = 3745 color = { 221 208 85 } }
+				b_3746langdong={ province = 3746 color = { 127 123 10 } }
+				b_3747leli={ province = 3747 color = { 127 88 105 } }
+				b_3748pingyong={ province = 3748 color = { 161 107 149 } }
+				b_3749pingjiang={ province = 3749 color = { 91 103 235 } }
+				b_3750dingwei={ province = 3750 color = { 49 112 36 } }
+				b_3751shuiwei={ province = 3751 color = { 3 66 29 } }
+				b_3752jihua={ province = 3752 color = { 93 5 202 } }			   
+			}
+			c_qiandongnan_leishan = { # 雷山
+				color = { 255 0 151 }
+				b_3753danjiang={ province = 3753 color = { 249 140 245 } }
+				b_3754xijiang={ province = 3754 color = { 32 227 2 } }
+				b_3755yongle={ province = 3755 color = { 38 207 81 } }
+				b_3756langde={ province = 3756 color = { 117 13 149 } }
+				b_3757dadi={ province = 3757 color = { 137 166 199 } }			   
+			}
+			c_qiandongnan_danzhai = { # 丹寨
+				color = { 255 0 151 }
+				b_3758longquan={ province = 3758 color = { 152 142 166 } }
+				b_3759paidiao={ province = 3759 color = { 193 207 171 } }
+				b_3760xingren={ province = 3760 color = { 164 192 0 } }
+				b_3761nangao={ province = 3761 color = { 235 71 8 } }
+				b_3762yahui={ province = 3762 color = { 136 46 1 } }			   
+			}
+		}	
+		d_qian_tongren = { # 铜仁
+			color = { 55 51 0 }
+			capital = c_tongren_tongren
+
+			c_tongren_yuping = { # 玉屏
+				color = { 55 51 0 }
+				b_3763pingxi={ province = 3763 color = { 26 236 236 } }
+				b_3764tianping={ province = 3764 color = { 252 65 209 } }			   
+			}
+			c_tongren_tongren = { # 铜仁
+				color = { 55 51 0 }
+				b_3765tongren={ province = 3765 color = { 10 18 28 } }
+				b_3766wawu={ province = 3766 color = { 153 30 64 } }
+				b_3767aozhai={ province = 3767 color = { 126 215 117 } }
+				b_3768wanshan={ province = 3768 color = { 244 194 229 } }
+				b_3769chadian={ province = 3769 color = { 179 164 135 } }
+				b_3770yutang={ province = 3770 color = { 193 207 26 } }
+				b_3771heping={ province = 3771 color = { 96 2 122 } }
+				b_3772bahuang={ province = 3772 color = { 222 4 3 } }			   
+			}
+			c_tongren_songtao = { # 松桃
+				color = { 55 51 0 }
+				b_3773liaogao={ province = 3773 color = { 88 209 192 } }
+				b_3774panshi={ province = 3774 color = { 62 62 137 } }
+				b_3775changxing={ province = 3775 color = { 126 125 227 } }
+				b_3776panxin={ province = 3776 color = { 33 229 208 } }
+				b_3777zhengda={ province = 3777 color = { 37 96 127 } }
+				b_3778pingtou={ province = 3778 color = { 91 130 233 } }
+				b_3779mengxi={ province = 3779 color = { 231 190 38 } }
+				b_3780zhaiying={ province = 3780 color = { 18 232 37 } }
+				b_3781wuluo={ province = 3781 color = { 103 153 69 } }
+				b_3782yongan={ province = 3782 color = { 57 168 234 } }
+				b_3783ganlong={ province = 3783 color = { 67 171 69 } }			   
+			}
+			c_tongren_yinjiang = { # 印江
+				color = { 55 51 0 }
+				b_3784eling={ province = 3784 color = { 172 54 136 } }
+				b_3785chanxi={ province = 3785 color = { 84 66 55 } }
+				b_3786yangxi={ province = 3786 color = { 148 111 153 } }
+				b_3787banxi={ province = 3787 color = { 138 182 234 } }
+				b_3788daoba={ province = 3788 color = { 148 221 118 } }
+				b_3789muhuang={ province = 3789 color = { 167 1 173 } }
+				b_3790heshui={ province = 3790 color = { 166 50 178 } }			   
+			}
+			c_tongren_jiangkou = { # 江口
+				color = { 55 51 0 }
+				b_3791shuangjiang={ province = 3791 color = { 117 186 44 } }
+				b_3792taoying={ province = 3792 color = { 63 26 167 } }
+				b_3793taiping={ province = 3793 color = { 136 63 244 } }
+				b_3794dewang={ province = 3794 color = { 96 215 92 } }
+				b_3795minxiao={ province = 3795 color = { 242 32 106 } }
+				b_3796guanhe={ province = 3796 color = { 85 92 180 } }			   
+			}
+			c_tongren_shiqian = { # 石阡
+				color = { 55 51 0 }
+				b_3797quandou={ province = 3797 color = { 27 177 112 } }
+				b_3798shigu={ province = 3798 color = { 92 78 142 } }
+				b_3799wude={ province = 3799 color = { 29 194 20 } }
+				b_3800jufeng={ province = 3800 color = { 42 85 204 } }
+				b_3801benzhuang={ province = 3801 color = { 73 202 42 } }
+				b_3802longjing={ province = 3802 color = { 49 134 180 } }			   
+			}
+			c_tongren_sinan = { # 思南
+				color = { 55 51 0 }
+				b_3803sitang={ province = 3803 color = { 240 146 90 } }
+				b_3804tangtou={ province = 3804 color = { 34 209 204 } }
+				b_3805xinglong={ province = 3805 color = { 189 91 9 } }
+				b_3806wengxi={ province = 3806 color = { 132 138 194 } }
+				b_3807silin={ province = 3807 color = { 190 165 152 } }
+				b_3808hepeng={ province = 3808 color = { 25 231 255 } }
+				b_3809kuanping={ province = 3809 color = { 247 133 38 } }
+				b_3810donghua={ province = 3810 color = { 234 160 100 } }			   
+			}
+			c_tongren_dejiang = { # 德江
+				color = { 55 51 0 }
+				b_3811anhua={ province = 3811 color = { 105 128 86 } }
+				b_3812jiancha={ province = 3812 color = { 155 68 78 } }
+				b_3813hexing={ province = 3813 color = { 157 76 223 } }
+				b_3814changbao={ province = 3814 color = { 112 7 9 } }
+				b_3815chaodi={ province = 3815 color = { 143 187 126 } }
+				b_3816jingjiao={ province = 3816 color = { 91 193 56 } }
+				b_3817fuxing={ province = 3817 color = { 10 158 59 } }
+				b_3818nangan={ province = 3818 color = { 3 56 74 } }
+				b_3819quankou={ province = 3819 color = { 132 112 191 } }			   
+			}
+			c_tongren_yanhe = { # 沿河
+				color = { 55 51 0 }
+				b_3820tuanjie={ province = 3820 color = { 19 182 93 } }
+				b_3821xiaojing={ province = 3821 color = { 37 157 24 } }
+				b_3822qitan={ province = 3822 color = { 198 111 250 } }
+				b_3823guanzhou={ province = 3823 color = { 168 86 108 } }
+				b_3824siqu={ province = 3824 color = { 92 193 38 } }
+				b_3825huangtu={ province = 3825 color = { 246 37 76 } }
+				b_3826gongtan={ province = 3826 color = { 54 81 93 } }
+				b_3827hongdu={ province = 3827 color = { 218 203 194 } }			   
+			}
+		}	
+		d_qian_zunyi = { # 遵义
+			color = { 59 46 126 }
+			capital = c_zunyi_zunyi
+
+			c_zunyi_wuchuan = { # 务川
+				color = { 195 395 43 }
+				b_3828dansha={ province = 3828 color = { 181 112 97 } }
+				b_3829shichao={ province = 3829 color = { 57 9 240 } }
+				b_3830jiaoba={ province = 3830 color = { 49 14 175 } }
+				b_3831yanshan={ province = 3831 color = { 145 218 0 } }
+				b_3832zhuoshui={ province = 3832 color = { 164 242 36 } }
+				b_3833nigao={ province = 3833 color = { 241 170 7 } }
+				b_3834fengle={ province = 3834 color = { 229 143 135 } }			   
+			}
+			c_zunyi_daozhen = { # 道真
+				color = { 195 395 43 }
+				b_3835yuxi={ province = 3835 color = { 119 75 135 } }
+				b_3836jiucheng={ province = 3836 color = { 166 52 81 } }
+				b_3837longxing={ province = 3837 color = { 162 79 210 } }
+				b_3838luolong={ province = 3838 color = { 32 112 82 } }
+				b_3839hekou={ province = 3839 color = { 108 100 175 } }
+				b_3840sanqiao={ province = 3840 color = { 225 51 1 } }
+				b_3841dalian={ province = 3841 color = { 88 48 49 } }			   
+			}
+			c_zunyi_zhengan = { # 正安
+				color = { 195 395 43 }
+				b_3842fengyi={ province = 3842 color = { 169 239 121 } }
+				b_3843zhongguan={ province = 3843 color = { 35 55 10 } }
+				b_3844anchang={ province = 3844 color = { 245 233 116 } }
+				b_3845xinzhou={ province = 3845 color = { 32 212 87 } }
+				b_3846miaotang={ province = 3846 color = { 124 63 87 } }
+				b_3847tuping={ province = 3847 color = { 202 130 85 } }
+				b_3848liudu={ province = 3848 color = { 209 251 70 } }
+				b_3849xieba={ province = 3849 color = { 96 151 182 } }			   
+			}
+			c_zunyi_suiyang = { # 绥阳
+				color = { 195 395 43 }
+				b_3850yangchuan={ province = 3850 color = { 223 210 77 } }
+				b_3851xiaoguan={ province = 3851 color = { 56 93 240 } }
+				b_3852fenghua={ province = 3852 color = { 76 108 194 } }
+				b_3853wangcao={ province = 3853 color = { 0 67 73 } }
+				b_3854wenquan={ province = 3854 color = { 90 81 114 } }
+				b_3855kuankuo={ province = 3855 color = { 51 173 3 } }
+				b_3856jianba={ province = 3856 color = { 10 80 221 } }
+				b_3857taibai={ province = 3857 color = { 161 150 226 } }			   
+			}
+			c_zunyi_tongzi = { # 桐梓
+				color = { 195 395 43 }
+				b_3858haixiao={ province = 3858 color = { 87 36 175 } }
+				b_3859guancang={ province = 3859 color = { 85 179 185 } }
+				b_3860huaqiu={ province = 3860 color = { 164 70 204 } }
+				b_3861mazong={ province = 3861 color = { 64 0 177 } }
+				b_3862chumi={ province = 3862 color = { 226 107 17 } }
+				b_3863yelang={ province = 3863 color = { 203 167 195 } }
+				b_3864songkan={ province = 3864 color = { 122 151 150 } }
+				b_3865yangdeng={ province = 3865 color = { 198 121 159 } }
+				b_3866shixi={ province = 3866 color = { 209 180 23 } }			   
+			}
+			c_zunyi_xishui = { # 习水
+				color = { 195 395 43 }
+				b_3867donghuang={ province = 3867 color = { 97 86 80 } }
+				b_3868tucheng={ province = 3868 color = { 7 190 112 } }
+				b_3869xijiu={ province = 3869 color = { 51 129 90 } }
+				b_3870sangmu={ province = 3870 color = { 14 15 171 } }
+				b_3871taolin={ province = 3871 color = { 165 22 214 } }
+				b_3872xianyuan={ province = 3872 color = { 173 68 181 } }
+				b_3873wenshui={ province = 3873 color = { 154 218 48 } }
+				b_3874chengzhai={ province = 3874 color = { 23 221 69 } }
+				b_3875zhaiba={ province = 3875 color = { 172 131 143 } }			   
+			}
+			c_zunyi_chishui = { # 赤水
+				color = { 195 395 43 }
+				b_3876chishui={ province = 3876 color = { 17 121 233 } }
+				b_3877bingan={ province = 3877 color = { 0 7 45 } }
+				b_3878wanglong={ province = 3878 color = { 111 121 31 } }
+				b_3879yuanhou={ province = 3879 color = { 142 170 4 } }
+				b_3880guandu={ province = 3880 color = { 213 203 253 } }
+				b_3881changsha={ province = 3881 color = { 251 243 144 } }			   
+			}
+			c_zunyi_renhuai = { # 仁怀
+				color = { 195 395 43 }
+				b_3882yanjin={ province = 3882 color = { 93 124 209 } }
+				b_3883maotai={ province = 3883 color = { 0 58 129 } }
+				b_3884hema={ province = 3884 color = { 136 182 41 } }
+				b_3885xuekong={ province = 3885 color = { 166 119 45 } }
+				b_3886wuma={ province = 3886 color = { 240 154 48 } }
+				b_3887jiucang={ province = 3887 color = { 248 220 196 } }			   
+			}
+			c_zunyi_zunyi = { # 遵义
+				color = { 195 395 43 }
+				b_3888zunyi={ province = 3888 color = { 126 3 25 } }
+				b_3889jindingshan={ province = 3889 color = { 101 20 176 } }
+				b_3890gaoping={ province = 3890 color = { 115 212 246 } }
+				b_3891sidu={ province = 3891 color = { 134 21 103 } }
+				b_3892tuanze={ province = 3892 color = { 28 64 248 } }
+				b_3893songlin={ province = 3893 color = { 57 185 55 } }
+				b_3894zhima={ province = 3894 color = { 195 87 118 } }
+				b_3895laba={ province = 3895 color = { 166 245 19 } }
+				b_3896xiazi={ province = 3896 color = { 240 90 90 } }
+				b_3897yongle={ province = 3897 color = { 19 68 133 } }			   
+			}
+			c_zunyi_bozhou = { # 播州
+				color = { 195 395 43 }
+				b_3898nanbai={ province = 3898 color = { 132 217 174 } }
+				b_3899yaxi={ province = 3899 color = { 232 93 128 } }
+				b_3900fengxiang={ province = 3900 color = { 204 18 194 } }
+				b_3901mati={ province = 3901 color = { 130 96 171 } }
+				b_3902wujiang={ province = 3902 color = { 110 208 195 } }
+				b_3903shangji={ province = 3903 color = { 169 155 33 } }
+				b_3904goujiang={ province = 3904 color = { 106 70 112 } }
+				b_3905tuanxi={ province = 3905 color = { 118 246 34 } }			   
+			}
+			c_zunyi_meitan = { # 湄潭
+				color = { 195 395 43 }
+				b_3906meijiang={ province = 3906 color = { 132 190 72 } }
+				b_3907gaotai={ province = 3907 color = { 136 98 133 } }
+				b_3908shilian={ province = 3908 color = { 237 194 42 } }
+				b_3909chaole={ province = 3909 color = { 112 8 84 } }
+				b_3910yongxing={ province = 3910 color = { 36 115 31 } }
+				b_3911mashan={ province = 3911 color = { 180 96 232 } }			   
+			}
+			c_zunyi_fenggang = { # 凤冈
+				color = { 195 395 43 }
+				b_3912longquan={ province = 3912 color = { 130 105 20 } }
+				b_3913yachuan={ province = 3913 color = { 34 157 24 } }
+				b_3914fengyan={ province = 3914 color = { 183 130 36 } }
+				b_3915shijing={ province = 3915 color = { 128 180 242 } }
+				b_3916suiyang={ province = 3916 color = { 83 204 185 } }
+				b_3917yongan={ province = 3917 color = { 3 198 61 } }
+				b_3918tuxi={ province = 3918 color = { 108 82 132 } }			   
+			}
+			c_zunyi_yuqing = { # 余庆
+				color = { 195 395 43 }
+				b_3919baini={ province = 3919 color = { 72 114 202 } }
+				b_3920longxi={ province = 3920 color = { 9 36 247 } }
+				b_3921huashan={ province = 3921 color = { 162 100 199 } }
+				b_3922aoxi={ province = 3922 color = { 140 239 226 } }
+				b_3923songyan={ province = 3923 color = { 159 250 120 } }
+				b_3924guanxing={ province = 3924 color = { 91 109 195 } }			   
+			}
+		}	
+		# d_xiang_huanggang = { # 黄冈
+		# 	color = { 59 46 126 }
+		# 	capital = c_huanggang_tuanfeng
+		# }	
+		# d_xiang_huanggang = { # 黄冈
+		# 	color = { 59 46 126 }
+		# 	capital = c_huanggang_tuanfeng
+		# }	
+		# d_xiang_huanggang = { # 黄冈
+		# 	color = { 59 46 126 }
+		# 	capital = c_huanggang_tuanfeng
+		# }													
 	}	
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }
