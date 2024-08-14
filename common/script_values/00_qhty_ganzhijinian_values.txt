@@ -1,0 +1,19 @@
+﻿
+# 天干
+qhty_tiangan_modulo = {
+	value = current_year
+    add = 60
+	modulo = 10
+}
+# 地支
+qhty_dizhi_modulo = {
+	value = current_year
+    add = 60
+	modulo = 12
+}
+# 生肖
+qhty_shengxiao_modulo = {
+    value = current_year
+    add = 60
+	modulo = 12
+}

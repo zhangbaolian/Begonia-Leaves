@@ -6,7 +6,7 @@
 #jenne
 
 jenne = { # An important centre of Siguic influence, albeit not an intrinsically sacred one.
-	county = c_canarias
+	county = c_hangzhou_tonglu
 
 	character_modifier = {
 		name = holy_site_jenne_effect_name

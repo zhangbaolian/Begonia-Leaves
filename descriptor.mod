@@ -3,7 +3,7 @@ tags={
 	"Total Conversion"
 	"Map"
 }
-name="Begonia Leaves"
+name="秋海棠叶：Begonia Leaves"
 replace_path="history/artifacts"
 replace_path="history/cultures"
 replace_path="history/characters"
