@@ -29,7 +29,7 @@ caravanserai_01 = {
 		building_caravanserai_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder.culture = {
-			has_innovation = innovation_metal_coinage
+			has_innovation = innovation_guilds
 		}
 	}
 
@@ -428,7 +428,7 @@ watermills_01 = {
 		building_watermills_requirement_terrain = yes
 		building_requirement_castle_city_church = { LEVEL = 01 }
 		scope:holder.culture = {
-			innovation_conservancy_irrigation
+			has_innovation = innovation_windmills
 		}
 	}
 

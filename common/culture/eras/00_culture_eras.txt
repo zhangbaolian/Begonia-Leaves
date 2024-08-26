@@ -2,7 +2,6 @@
 culture_era_tribal = {
 	year = 0
 }
-
 culture_era_early_medieval = {	
 	year = 2222
 	invalid_for_government = tribal_government
