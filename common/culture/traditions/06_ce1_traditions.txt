@@ -5,7 +5,7 @@
 #######################
 # Generic
 #######################
-
+# 水之仪式
 tradition_ce1_ritual_washing = {
 	category = ritual
 
@@ -84,15 +84,15 @@ tradition_ce1_ritual_washing = {
 					desc = cheaper_tradition_physician_or_whole_of_body
 				}
 			}
-			if = {
-				limit = {
-					has_cultural_pillar = heritage_north_germanic
-				}
-				add = {
-					value = tradition_heritage_discount
-					desc = cheaper_tradition_norse_washing
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		has_cultural_pillar = heritage_north_germanic
+			# 	}
+			# 	add = {
+			# 		value = tradition_heritage_discount
+			# 		desc = cheaper_tradition_norse_washing
+			# 	}
+			# }
 
 			multiply = tradition_replacement_cost_if_relevant
 		}
