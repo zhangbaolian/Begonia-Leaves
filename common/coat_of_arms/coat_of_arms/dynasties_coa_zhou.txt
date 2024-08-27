@@ -1,4 +1,8 @@
 ﻿2222010102 = {
+<<<<<<< HEAD
+=======
+	custom=yes
+>>>>>>> 2940f4769ca459c66971a1917fb64abcd7e5b65e
 	pattern="pattern__solid_designer.dds"
 	color1=red
 	color2=white

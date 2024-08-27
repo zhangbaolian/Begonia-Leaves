@@ -19,10 +19,14 @@
 # 1  2  3  4  5  6  7  8  9 10  11 0
 
 
+<<<<<<< HEAD
 ###########################
 # 获取干支纪年天干
 ###########################
 
+=======
+# 天干
+>>>>>>> 2940f4769ca459c66971a1917fb64abcd7e5b65e
 QHTY_TIANGAN = {
 	type = character
 	text = {
@@ -66,11 +70,15 @@ QHTY_TIANGAN = {
 		localization_key = QHTY_TIANGAN_GUI
 	}
 }
+<<<<<<< HEAD
 
 ###########################
 # 获取干支纪年地支
 ###########################
 
+=======
+# 地支
+>>>>>>> 2940f4769ca459c66971a1917fb64abcd7e5b65e
 QHTY_DIZHI = {
 	type = character
 	text = {
