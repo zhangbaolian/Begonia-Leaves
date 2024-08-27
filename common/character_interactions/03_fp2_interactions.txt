@@ -3433,12 +3433,12 @@ contract_assistance_interaction = {
 		modifier = {  
 			add = -300
 			exists = scope:target
-			scope:target = {
-				OR = {
-					using_cb = peasant_war
-					using_cb = fp2_border_raid
-				}
-			}
+			# scope:target = {
+			# 	OR = {
+			# 		using_cb = peasant_war
+			# 		using_cb = fp2_border_raid
+			# 	}
+			# }
 			desc = OA_AI_UNINTERESTED_WAR_REASON
 		}
 		modifier = {
@@ -3879,17 +3879,17 @@ request_contract_assistance_interaction = {
 			desc = OA_AI_EXTRA_GOLD_REASON
 		}
 		# Recipient is not interested in help for certain wars
-		modifier = {
-			add = -500
-			exists = scope:target
-			scope:target = {
-				OR = {
-					using_cb = peasant_war
-					using_cb = fp2_border_raid
-				}
-			}
-			desc = OA_AI_UNINTERESTED_WAR_REASON
-		}
+		# modifier = {
+		# 	add = -500
+		# 	exists = scope:target
+		# 	scope:target = {
+		# 		OR = {
+		# 			using_cb = peasant_war
+		# 			using_cb = fp2_border_raid
+		# 		}
+		# 	}
+		# 	desc = OA_AI_UNINTERESTED_WAR_REASON
+		# }
 		modifier = {
 			add = {
 				value = scope:actor.martial
@@ -4179,7 +4179,7 @@ enforce_truce_interaction = {
 		scope:target = {
 			is_war_leader = scope:recipient
 			is_civil_war = no
-			NOT = { using_cb = fp2_border_raid }
+			# NOT = { using_cb = fp2_border_raid }
 			trigger_if = {
 				limit = {
 					scope:recipient = {
@@ -4473,13 +4473,13 @@ enforce_truce_interaction = {
 				scope:recipient = {
 					NOT = { has_trait = cynical }
 				}
-				scope:target = {
-					OR = {
-						using_cb = minor_religious_war
-						using_cb = religious_war
-						using_cb = major_religious_war
-					}
-				}
+				# scope:target = {
+				# 	OR = {
+				# 		using_cb = minor_religious_war
+				# 		using_cb = religious_war
+				# 		using_cb = major_religious_war
+				# 	}
+				# }
 			}
 			trigger_else = { always = no }
 			desc = ET_AI_HOLY_WAR_REASON
@@ -4595,11 +4595,11 @@ bargain_fealty_interaction = {
 			primary_defender = scope:actor
 			custom_tooltip = {
 				text = bargain_fealty_border_raid_tt
-				NOT = { using_cb = fp2_border_raid }
+				# NOT = { using_cb = fp2_border_raid }
 			}
 			custom_tooltip = {
 				text = bargain_fealty_struggle_clash_tt
-				NOT = { using_cb = county_struggle_cb }
+				# NOT = { using_cb = county_struggle_cb }
 			}
 		}
 		# Actor is not involved in a war involving Recipient
@@ -4764,10 +4764,10 @@ bargain_fealty_interaction = {
 			any_character_war = {
 				is_war_leader = prev
 				primary_defender = prev
-				NOR = {
-					using_cb = fp2_border_raid
-					using_cb = county_struggle_cb
-				}
+				# NOR = {
+				# 	using_cb = fp2_border_raid
+				# 	using_cb = county_struggle_cb
+				# }
 				casus_belli = {
 					any_target_title = { holder = scope:actor }
 				}
@@ -4778,10 +4778,10 @@ bargain_fealty_interaction = {
 			any_character_war = {
 				is_war_leader = prev
 				primary_defender = prev
-				NOR = {
-					using_cb = fp2_border_raid
-					using_cb = county_struggle_cb
-				}
+				# NOR = {
+				# 	using_cb = fp2_border_raid
+				# 	using_cb = county_struggle_cb
+				# }
 				war_defender_total_strength_value < war_attacker_total_strength_halved_value
 			}
 		}

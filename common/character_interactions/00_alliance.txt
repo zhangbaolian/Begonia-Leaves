@@ -1,4 +1,5 @@
-﻿call_ally_interaction = {
+﻿# 呼叫盟友
+call_ally_interaction = {
 	category = interaction_category_diplomacy
 	desc = call_ally_interaction_desc
 	interface_priority = 60
@@ -47,14 +48,14 @@
 
 		scope:actor = {
 			trigger_if = {
-				limit = {
-					scope:target = {
-						OR = {
-							using_cb = undirected_great_holy_war
-							using_cb = directed_great_holy_war
-						}
-					}
-				}
+				# limit = {
+				# 	scope:target = {
+				# 		OR = {
+				# 			using_cb = undirected_great_holy_war
+				# 			using_cb = directed_great_holy_war
+				# 		}
+				# 	}
+				# }
 
 				trigger_if = {
 					limit = {
@@ -132,12 +133,12 @@
 					text = is_of_wrong_faith_for_holy_war
 					subject = scope:actor
 					object = scope:recipient
-					any_character_war = {
-						NOR = {
-							using_cb = undirected_great_holy_war
-							using_cb = directed_great_holy_war
-						}
-					}
+					# any_character_war = {
+					# 	NOR = {
+					# 		using_cb = undirected_great_holy_war
+					# 		using_cb = directed_great_holy_war
+					# 	}
+					# }
 				}
 			}
 		}
@@ -357,7 +358,7 @@
 			desc = WONT_FIGHT_MEANINGLESS_REASON
 			trigger_if = {
 				limit = { exists = scope:target }
-				scope:target = { using_cb = fp2_border_raid }
+				# scope:target = { using_cb = fp2_border_raid }
 				scope:recipient = { # Unless they like going on raids
 					NOR = {
 						has_trait = viking
@@ -671,15 +672,15 @@
 			NOT = { scope:recipient.faith = scope:actor.faith }
 			scope:target.casus_belli.primary_attacker = scope:actor
 			scope:target.casus_belli.primary_defender.faith = scope:recipient.faith
-			scope:target.casus_belli.war = {
-				OR = {
-					using_cb = minor_religious_war
-					using_cb = religious_war
-					using_cb = major_religious_war
-					using_cb = undirected_great_holy_war
-					using_cb = directed_great_holy_war
-				}
-			}
+			# scope:target.casus_belli.war = {
+			# 	OR = {
+			# 		using_cb = minor_religious_war
+			# 		using_cb = religious_war
+			# 		using_cb = major_religious_war
+			# 		using_cb = undirected_great_holy_war
+			# 		using_cb = directed_great_holy_war
+			# 	}
+			# }
 			desc = WONT_ATTACK_RELIGIOUS_BRETHREN_REASON
 		}
 
@@ -830,6 +831,7 @@
 	}
 }
 
+# 协商联盟
 negotiate_alliance_interaction = {
 	category = interaction_category_diplomacy
 	ai_min_reply_days = 4
@@ -1981,6 +1983,7 @@ negotiate_alliance_interaction = {
 	}
 }
 
+# 技能点互动
 perk_alliance_interaction = {
 	category = interaction_category_diplomacy
 	ai_min_reply_days = 4
@@ -2734,6 +2737,7 @@ perk_alliance_interaction = {
 	
 }
 
+# 加入战争互动
 join_war_interaction = {
 	category = interaction_category_diplomacy
 	interface = interfere_in_war

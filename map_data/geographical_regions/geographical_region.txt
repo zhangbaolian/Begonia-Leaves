@@ -103,6 +103,7 @@ world_europe = {}
 world_middle_east = {}
 world_india = {}
 
+
 ###########################################################################
 # Material Regions
 ###########################################################################
@@ -587,3 +588,9 @@ hunt_animal_elk_region = {}
 
 # Chiefly the Celtic Rim.
 board_game_fidchell_region = {}
+
+
+################
+# 区域 #
+################
+world_zg_xb = {}

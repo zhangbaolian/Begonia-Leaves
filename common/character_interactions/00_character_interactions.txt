@@ -1,4 +1,6 @@
 ﻿# Add general actions here, if any.
+# 此处添加一般操作（如果有）。
+
 
 offer_vassalization_interaction = {
 	category = interaction_category_vassal
@@ -572,20 +574,20 @@ offer_vassalization_interaction = {
 			}
 		}
 
-		modifier = { # Iberian Struggle, less likely for outsiders to vassalize inside
-			add = -35
-			desc = iberian_struggle_reason_reason
-			trigger = {
-				scope:actor = {
-					NOT = {
-						any_character_struggle = { is_struggle_type = iberian_struggle }
-					}
-				}
-				scope:recipient = {
-					any_character_struggle = { is_struggle_type = iberian_struggle }
-				}
-			}
-		}
+		# modifier = { # Iberian Struggle, less likely for outsiders to vassalize inside
+		# 	add = -35
+		# 	desc = iberian_struggle_reason_reason
+		# 	trigger = {
+		# 		scope:actor = {
+		# 			NOT = {
+		# 				any_character_struggle = { is_struggle_type = iberian_struggle }
+		# 			}
+		# 		}
+		# 		scope:recipient = {
+		# 			any_character_struggle = { is_struggle_type = iberian_struggle }
+		# 		}
+		# 	}
+		# }
 
 		modifier = { #Ageism modifier vs kids.
 			desc = offer_vassalization_interaction_aibehavior_child_tt
@@ -700,17 +702,17 @@ offer_vassalization_interaction = {
 			add = 5
 		}
 
-		modifier = { # FP3 modifier.
-			desc = GENERIC_YOUR_PIETY_LEVEL_MODIFIER
-			trigger = { scope:actor = { any_character_struggle = { has_struggle_phase_parameter = piety_level_affects_vassalage_acceptance } } }
-			add = {
-				value = {
-					value = scope:actor.piety_level
-					subtract = low_piety_level
-				}
-				multiply = 10
-			}
-		}
+		# modifier = { # FP3 modifier.
+		# 	desc = GENERIC_YOUR_PIETY_LEVEL_MODIFIER
+		# 	trigger = { scope:actor = { any_character_struggle = { has_struggle_phase_parameter = piety_level_affects_vassalage_acceptance } } }
+		# 	add = {
+		# 		value = {
+		# 			value = scope:actor.piety_level
+		# 			subtract = low_piety_level
+		# 		}
+		# 		multiply = 10
+		# 	}
+		# }
 
 		# OPINION INFLUENCE
 		modifier = {
@@ -862,8 +864,8 @@ offer_vassalization_interaction = {
 
 		modifier = { # AI-only weights, keep the pope from vassalizing too fast
 			trigger = {
-				exists = faith:catholic.religious_head
-				faith:catholic.religious_head = scope:actor
+				# exists = faith:catholic.religious_head
+				# faith:catholic.religious_head = scope:actor
 				scope:actor = { is_ai = yes }
 			}
 			add = -50

@@ -1,5 +1,6 @@
 ﻿#Interactions relating to the head of the dynasty
 
+# 取消交互继承权
 disinherit_interaction = {
 	icon = icon_dynasty
 	category = interaction_category_hostile
@@ -414,6 +415,7 @@ disinherit_interaction = {
 	}
 }
 
+# 剥夺儿童互动的继承权
 disinherit_children_interaction = {
 	icon = icon_dynasty
 	category = interaction_category_hostile
@@ -695,6 +697,7 @@ disinherit_children_interaction = {
 	}
 }
 
+# 恢复继承交互
 restore_inheritance_interaction = {
 	icon = icon_dynasty
 	category = interaction_category_friendly
@@ -1352,21 +1355,21 @@ call_dynasty_member_to_war_interaction = {
 	ai_accept = {
 		base = 20
 
-		modifier = {  # Refuse call to conflicts of little benefit
-			add = -1000
-			desc = WONT_FIGHT_MEANINGLESS_REASON
-			trigger_if = {
-				limit = { exists = scope:target }
-				scope:target = { using_cb = fp2_border_raid }
-				scope:recipient = { # Unless they like going on raids
-					NOR = {
-						has_trait = viking
-						has_trait = reaver
-					}
-				}
-			}
-			trigger_else = { always = no }
-		}
+		# modifier = {  # Refuse call to conflicts of little benefit
+		# 	add = -1000
+		# 	desc = WONT_FIGHT_MEANINGLESS_REASON
+		# 	trigger_if = {
+		# 		limit = { exists = scope:target }
+		# 		scope:target = { using_cb = fp2_border_raid }
+		# 		scope:recipient = { # Unless they like going on raids
+		# 			NOR = {
+		# 				has_trait = viking
+		# 				has_trait = reaver
+		# 			}
+		# 		}
+		# 	}
+		# 	trigger_else = { always = no }
+		# }
 
 		modifier = {  # Refuse call against Heir
 			add = -1000
@@ -1485,15 +1488,15 @@ call_dynasty_member_to_war_interaction = {
 			NOT = { scope:recipient.faith = scope:actor.faith }
 			scope:target.casus_belli.primary_attacker = scope:actor
 			scope:target.casus_belli.primary_defender.faith = scope:recipient.faith
-			scope:target.casus_belli.war = {
-				OR = {
-					using_cb = minor_religious_war
-					using_cb = religious_war
-					using_cb = major_religious_war
-					using_cb = undirected_great_holy_war
-					using_cb = directed_great_holy_war
-				}
-			}
+			# scope:target.casus_belli.war = {
+			# 	OR = {
+			# 		using_cb = minor_religious_war
+			# 		using_cb = religious_war
+			# 		using_cb = major_religious_war
+			# 		using_cb = undirected_great_holy_war
+			# 		using_cb = directed_great_holy_war
+			# 	}
+			# }
 			desc = WONT_ATTACK_RELIGIOUS_BRETHREN_REASON
 		}
 
@@ -1752,186 +1755,187 @@ dynast_legitimize_bastard_interaction = {
 	}
 }
 
-send_to_varangian_guard_interaction = {
-	category = interaction_category_friendly
-	interface_priority = 60
-	icon = send_to_varangian_guard_interaction
+# 发送至瓦兰吉安守卫互动
+# send_to_varangian_guard_interaction = {
+# 	category = interaction_category_friendly
+# 	interface_priority = 60
+# 	icon = send_to_varangian_guard_interaction
 
-	desc = send_to_varangian_guard_interaction_desc
-	use_diplomatic_range = no
-	common_interaction = yes
+# 	desc = send_to_varangian_guard_interaction_desc
+# 	use_diplomatic_range = no
+# 	common_interaction = yes
 	
-	is_shown = {
-		NOT = { scope:recipient = scope:actor }
+# 	is_shown = {
+# 		NOT = { scope:recipient = scope:actor }
 
-		scope:actor = {
-			is_dynast = yes
-			dynasty = scope:recipient.dynasty
+# 		scope:actor = {
+# 			is_dynast = yes
+# 			dynasty = scope:recipient.dynasty
 			
-			dynasty = {
-				has_dynasty_perk = fp1_adventure_legacy_1
-			}
+# 			dynasty = {
+# 				has_dynasty_perk = fp1_adventure_legacy_1
+# 			}
 			
-			exists = title:e_byzantium.holder
-			NOR = {
-				faith = {
-					has_doctrine_parameter = pacifist_opinion_active
-				}
-				this = title:e_byzantium.holder
-				has_truce = title:e_byzantium.holder
-				is_at_war_with = title:e_byzantium.holder
-			}
-		}
-	}
+# 			exists = title:e_byzantium.holder
+# 			NOR = {
+# 				faith = {
+# 					has_doctrine_parameter = pacifist_opinion_active
+# 				}
+# 				this = title:e_byzantium.holder
+# 				has_truce = title:e_byzantium.holder
+# 				is_at_war_with = title:e_byzantium.holder
+# 			}
+# 		}
+# 	}
 	
-	cooldown = { years = 2 }
+# 	cooldown = { years = 2 }
 
-	is_valid_showing_failures_only = {
-		scope:actor = {
-			is_at_war = no
-			NOT = {
-				has_relation_rival = title:e_byzantium.holder
-			}
-		}
-		scope:recipient = {
-			is_busy_in_events_localised = yes
-			is_ruler = no
-			is_adult = yes
-			is_married = no
-			NOT = {
-				has_trait = varangian
-			}
-		}
-		trigger_if = {
-			limit = {
-				scope:recipient = {
-					is_adult = yes
-					NOT = {
-						can_be_knight_trigger = {
-							ARMY_OWNER = title:e_byzantium.holder
-						}
-					}
-				}
-			}
-			custom_description = {
-				scope:recipient = {
-					can_be_knight_trigger = {
-						ARMY_OWNER = title:e_byzantium.holder
-					}
-				}
-				text = "not_allowed_in_varangian_guard"
-			}
-		}
-		trigger_if = {
-			limit = {
-				scope:recipient = {
-					NOR = {
-						is_child_of = scope:actor
-						is_grandchild_of = scope:actor
-						is_great_grandchild_of = scope:actor
-					}
-				}
-			}
-			custom_description = {
-				scope:recipient.top_liege = scope:actor.top_liege
-				text = "same_realm_as"
-			}
-		}
-	}
+# 	is_valid_showing_failures_only = {
+# 		scope:actor = {
+# 			is_at_war = no
+# 			NOT = {
+# 				has_relation_rival = title:e_byzantium.holder
+# 			}
+# 		}
+# 		scope:recipient = {
+# 			is_busy_in_events_localised = yes
+# 			is_ruler = no
+# 			is_adult = yes
+# 			is_married = no
+# 			NOT = {
+# 				has_trait = varangian
+# 			}
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				scope:recipient = {
+# 					is_adult = yes
+# 					NOT = {
+# 						can_be_knight_trigger = {
+# 							ARMY_OWNER = title:e_byzantium.holder
+# 						}
+# 					}
+# 				}
+# 			}
+# 			custom_description = {
+# 				scope:recipient = {
+# 					can_be_knight_trigger = {
+# 						ARMY_OWNER = title:e_byzantium.holder
+# 					}
+# 				}
+# 				text = "not_allowed_in_varangian_guard"
+# 			}
+# 		}
+# 		trigger_if = {
+# 			limit = {
+# 				scope:recipient = {
+# 					NOR = {
+# 						is_child_of = scope:actor
+# 						is_grandchild_of = scope:actor
+# 						is_great_grandchild_of = scope:actor
+# 					}
+# 				}
+# 			}
+# 			custom_description = {
+# 				scope:recipient.top_liege = scope:actor.top_liege
+# 				text = "same_realm_as"
+# 			}
+# 		}
+# 	}
 	
-	on_accept = {
-		title:e_byzantium.holder = {
-			save_scope_as = emperor
-			if = {
-				limit = { capital_county = title:c_byzantion }
-				set_local_variable = {
-					name = to_miklagard
-					value = yes
-				}
-			}
-		}
+# 	on_accept = {
+# 		title:e_byzantium.holder = {
+# 			save_scope_as = emperor
+# 			if = {
+# 				limit = { capital_county = title:c_byzantion }
+# 				set_local_variable = {
+# 					name = to_miklagard
+# 					value = yes
+# 				}
+# 			}
+# 		}
 		
-		scope:actor = {
-			stress_impact = {
-				paranoid = minor_stress_impact_gain
-			}
-			hidden_effect = {
-				send_interface_toast = {
-					title = send_to_varangian_guard_interaction_toast
+# 		scope:actor = {
+# 			stress_impact = {
+# 				paranoid = minor_stress_impact_gain
+# 			}
+# 			hidden_effect = {
+# 				send_interface_toast = {
+# 					title = send_to_varangian_guard_interaction_toast
 
-					left_icon = scope:recipient					
-					right_icon = scope:emperor
+# 					left_icon = scope:recipient					
+# 					right_icon = scope:emperor
 					
-					custom_tooltip = send_to_varangian_guard_interaction_toast_desc
-				}
-			}
-		}
+# 					custom_tooltip = send_to_varangian_guard_interaction_toast_desc
+# 				}
+# 			}
+# 		}
 
-		scope:recipient = {
-			save_scope_as = varangian_candidate
+# 		scope:recipient = {
+# 			save_scope_as = varangian_candidate
 			
-		}
+# 		}
 		
-		show_as_tooltip = {
-			scope:varangian_candidate = {
-				visit_court_of = scope:emperor
-				add_trait = varangian
-				custom_description_no_bullet = {
-					text = send_to_varangian_guard_interaction_effect
-				}
-			}
-		}
-		hidden_effect = {
-			scope:emperor = {
-				trigger_event = varangian.0003
-			}
-		}
+# 		show_as_tooltip = {
+# 			scope:varangian_candidate = {
+# 				visit_court_of = scope:emperor
+# 				add_trait = varangian
+# 				custom_description_no_bullet = {
+# 					text = send_to_varangian_guard_interaction_effect
+# 				}
+# 			}
+# 		}
+# 		hidden_effect = {
+# 			scope:emperor = {
+# 				trigger_event = varangian.0003
+# 			}
+# 		}
 		
-		# If we're a clan this interaction affects unity
-		add_clan_unity_interaction_effect = {
-			CHARACTER = scope:actor
-			TARGET = scope:recipient
-			VALUE = miniscule_unity_loss
-			DESC = clan_unity_vaering.desc
-			REVERSE_NON_HOUSE_TARGET = no
-		}		
-	}
+# 		# If we're a clan this interaction affects unity
+# 		add_clan_unity_interaction_effect = {
+# 			CHARACTER = scope:actor
+# 			TARGET = scope:recipient
+# 			VALUE = miniscule_unity_loss
+# 			DESC = clan_unity_vaering.desc
+# 			REVERSE_NON_HOUSE_TARGET = no
+# 		}		
+# 	}
 	
-	cost = {
-		prestige = {
-			value = 350
-		}
-	}
+# 	cost = {
+# 		prestige = {
+# 			value = 350
+# 		}
+# 	}
 	
-	auto_accept = yes
+# 	auto_accept = yes
 
-	ai_potential = {
-		is_at_war = no
-		is_dynast = yes
+# 	ai_potential = {
+# 		is_at_war = no
+# 		is_dynast = yes
 		
-		dynasty = {
-			has_dynasty_perk = fp1_adventure_legacy_1
-		}
+# 		dynasty = {
+# 			has_dynasty_perk = fp1_adventure_legacy_1
+# 		}
 		
-		exists = title:e_byzantium.holder
-		NOR = {
-			faith = {
-				has_doctrine_parameter = pacifist_opinion_active
-			}
-			this = title:e_byzantium.holder
-			has_truce = title:e_byzantium.holder
-			is_at_war_with = title:e_byzantium.holder
-		}
-	}
+# 		exists = title:e_byzantium.holder
+# 		NOR = {
+# 			faith = {
+# 				has_doctrine_parameter = pacifist_opinion_active
+# 			}
+# 			this = title:e_byzantium.holder
+# 			has_truce = title:e_byzantium.holder
+# 			is_at_war_with = title:e_byzantium.holder
+# 		}
+# 	}
 	
-	ai_targets = {
-		ai_recipients = children
-		max = 10
-	}
+# 	ai_targets = {
+# 		ai_recipients = children
+# 		max = 10
+# 	}
 	
-	ai_frequency = 120
+# 	ai_frequency = 120
 	
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }

@@ -2319,45 +2319,45 @@ learn_language_interaction = {
 			}
 		}
 		
-		modifier = { # Catholic clergy/pious people want to learn latin
-			add = 50
-			scope:actor = {
-				faith = faith:catholic
-				OR = {
-					has_trait = zealous
-					has_trait = humble
-					is_clergy = yes
-				}
-				NOT = {
-					knows_language = language_latin
-				}
-			}
-			scope:recipient = {
-				culture = {
-					has_cultural_pillar = language_latin
-				}
-			}
-		}
+		# modifier = { # Catholic clergy/pious people want to learn latin
+		# 	add = 50
+		# 	scope:actor = {
+		# 		faith = faith:catholic
+		# 		OR = {
+		# 			has_trait = zealous
+		# 			has_trait = humble
+		# 			is_clergy = yes
+		# 		}
+		# 		NOT = {
+		# 			knows_language = language_latin
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		culture = {
+		# 			has_cultural_pillar = language_latin
+		# 		}
+		# 	}
+		# }
 		
-		modifier = { # Catholic clergy/pious people want to learn Italian
-			add = 50
-			scope:actor = {
-				faith = faith:catholic
-				OR = {
-					has_trait = zealous
-					has_trait = humble
-					is_clergy = yes
-				}
-				NOT = {
-					knows_language = language_italian
-				}
-			}
-			scope:recipient = {
-				culture = {
-					has_cultural_pillar = language_italian
-				}
-			}
-		}
+		# modifier = { # Catholic clergy/pious people want to learn Italian
+		# 	add = 50
+		# 	scope:actor = {
+		# 		faith = faith:catholic
+		# 		OR = {
+		# 			has_trait = zealous
+		# 			has_trait = humble
+		# 			is_clergy = yes
+		# 		}
+		# 		NOT = {
+		# 			knows_language = language_italian
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		culture = {
+		# 			has_cultural_pillar = language_italian
+		# 		}
+		# 	}
+		# }
 		
 		modifier = { # Clergy/pious people want to learn their HoF's language
 			add = 50
@@ -2372,48 +2372,48 @@ learn_language_interaction = {
 			scope:recipient = { knows_language_of_culture = scope:actor.faith.religious_head.culture }
 		}
 		
-		modifier = { # Coptic/Orthodox clergy/pious people want to learn greek
-			add = 50
-			scope:actor = {
-				OR = {
-					faith = faith:orthodox
-					faith = faith:coptic
-				}
-				OR = {
-					has_trait = zealous
-					has_trait = humble
-					is_clergy = yes
-				}
-				NOT = {
-					knows_language = language_greek
-				}
-			}
-			scope:recipient = {
-				culture = {
-					has_cultural_pillar = language_greek
-				}
-			}
-		}
+		# modifier = { # Coptic/Orthodox clergy/pious people want to learn greek
+		# 	add = 50
+		# 	scope:actor = {
+		# 		OR = {
+		# 			faith = faith:orthodox
+		# 			faith = faith:coptic
+		# 		}
+		# 		OR = {
+		# 			has_trait = zealous
+		# 			has_trait = humble
+		# 			is_clergy = yes
+		# 		}
+		# 		NOT = {
+		# 			knows_language = language_greek
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		culture = {
+		# 			has_cultural_pillar = language_greek
+		# 		}
+		# 	}
+		# }
 		
-		modifier = { # Nestorian clergy/pious people want to learn aramaic
-			add = 50
-			scope:actor = {
-				faith = faith:nestorian
-				OR = {
-					has_trait = zealous
-					has_trait = humble
-					is_clergy = yes
-				}
-				NOT = {
-					knows_language = language_aramaic
-				}
-			}
-			scope:recipient = {
-				culture = {
-					has_cultural_pillar = language_aramaic
-				}
-			}
-		}
+		# modifier = { # Nestorian clergy/pious people want to learn aramaic
+		# 	add = 50
+		# 	scope:actor = {
+		# 		faith = faith:nestorian
+		# 		OR = {
+		# 			has_trait = zealous
+		# 			has_trait = humble
+		# 			is_clergy = yes
+		# 		}
+		# 		NOT = {
+		# 			knows_language = language_aramaic
+		# 		}
+		# 	}
+		# 	scope:recipient = {
+		# 		culture = {
+		# 			has_cultural_pillar = language_aramaic
+		# 		}
+		# 	}
+		# }
 		
 		modifier = {
 			add = 20

@@ -1,4 +1,5 @@
 ﻿#Give characters money to improve their opinion of you
+#给角色金钱来提高他们对你的看法
 gift_interaction = {
 	icon = icon_gold
 	category = interaction_category_friendly
@@ -407,10 +408,10 @@ gift_interaction = {
 					AND = { # Zealous characters want to support the defending side in GHW's
 						gold < 200
 						any_character_war = {
-							OR = {
-								using_cb = undirected_great_holy_war
-								using_cb = directed_great_holy_war
-							}
+							# OR = {
+							# 	using_cb = undirected_great_holy_war
+							# 	using_cb = directed_great_holy_war
+							# }
 							primary_defender = scope:recipient
 						}
 						scope:actor = {
@@ -568,18 +569,18 @@ gift_interaction = {
 			}
 		}
 		
-		modifier = {
-			add = 100
-			scope:actor = {
-				is_at_war = no
-				has_trait = fp3_struggle_supporter
-				any_character_struggle = { is_struggle_type = persian_struggle }
-			}
-			scope:recipient = {
-				title:d_sunni.holder ?= this
-				gold < 0
-			}
-		}
+		# modifier = {
+		# 	add = 100
+		# 	scope:actor = {
+		# 		is_at_war = no
+		# 		has_trait = fp3_struggle_supporter
+		# 		any_character_struggle = { is_struggle_type = persian_struggle }
+		# 	}
+		# 	scope:recipient = {
+		# 		title:d_sunni.holder ?= this
+		# 		gold < 0
+		# 	}
+		# }
 		
 		modifier = {
 			factor = 0.1
