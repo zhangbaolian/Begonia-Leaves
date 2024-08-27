@@ -45,10 +45,10 @@ walls_01_tribal = {
 			has_building_or_higher = "hill_forts_01"
 			has_building_or_higher = "ramparts_01"
 			has_building_or_higher = "watchtowers_01"
-			has_building_or_higher = "theodosian_walls_01"
+			# has_building_or_higher = "theodosian_walls_01"
 			has_building_or_higher = "walls_of_benin_01"
 			has_building_or_higher = "walls_of_genoa_01"
-			has_building_or_higher = "aurelian_walls_01"
+			# has_building_or_higher = "aurelian_walls_01"
 			has_building_or_higher = "city_wall_of_toledo_01"
 			has_building_or_higher = "roman_wall_of_lugo_01"
 		}
@@ -130,10 +130,10 @@ walls_01 = {
 			has_building_or_higher = "hill_forts_02"
 			has_building_or_higher = "ramparts_02"
 			has_building_or_higher = "watchtowers_02"
-			has_building_or_higher = "theodosian_walls_01"
+			# has_building_or_higher = "theodosian_walls_01"
 			has_building_or_higher = "walls_of_benin_01"
 			has_building_or_higher = "walls_of_genoa_01"
-			has_building_or_higher = "aurelian_walls_01"
+			# has_building_or_higher = "aurelian_walls_01"
 			has_building_or_higher = "city_wall_of_toledo_01"
 			has_building_or_higher = "roman_wall_of_lugo_01"
 		}
@@ -215,10 +215,10 @@ walls_02 = {
 			has_building_or_higher = "hill_forts_03"
 			has_building_or_higher = "ramparts_03"
 			has_building_or_higher = "watchtowers_03"
-			has_building_or_higher = "theodosian_walls_01"
+			# has_building_or_higher = "theodosian_walls_01"
 			has_building_or_higher = "walls_of_benin_01"
 			has_building_or_higher = "walls_of_genoa_01"
-			has_building_or_higher = "aurelian_walls_01"
+			# has_building_or_higher = "aurelian_walls_01"
 			has_building_or_higher = "city_wall_of_toledo_01"
 			has_building_or_higher = "roman_wall_of_lugo_01"
 		}
@@ -296,7 +296,7 @@ walls_03 = {
 			has_building_or_higher = "watchtowers_03"
 			has_building_or_higher = "walls_of_benin_01"
 			has_building_or_higher = "walls_of_genoa_01"
-			has_building_or_higher = "aurelian_walls_01"
+			# has_building_or_higher = "aurelian_walls_01"
 		}
 		NOR = {
 			# Disabling this level of walled graphics for holdings with special walls and other fortifications so that they always look appropriately fortified. Note: If any of these buildings are given unique 3D assets, this should be looked at again.
@@ -304,7 +304,7 @@ walls_03 = {
 			has_building_or_higher = "hill_forts_06"
 			has_building_or_higher = "ramparts_06"
 			has_building_or_higher = "watchtowers_06"
-			has_building_or_higher = "theodosian_walls_01"
+			# has_building_or_higher = "theodosian_walls_01"
 			has_building_or_higher = "city_wall_of_toledo_01"
 			has_building_or_higher = "roman_wall_of_lugo_01"
 		}
@@ -380,7 +380,7 @@ walls_04 = {
 			has_building_or_higher = "hill_forts_06"
 			has_building_or_higher = "ramparts_06"
 			has_building_or_higher = "watchtowers_06"
-			has_building_or_higher = "theodosian_walls_01"
+			# has_building_or_higher = "theodosian_walls_01"
 		}
 	}
 }

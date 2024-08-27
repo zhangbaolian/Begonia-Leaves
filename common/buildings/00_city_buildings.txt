@@ -257,11 +257,11 @@ city_01 = {
 		barony_cannot_construct_holding = no
 	}
 	
-	can_construct = {
-		culture = {
-			has_innovation = innovation_city_planning
-		}
-	}
+	# can_construct = {
+	# 	culture = {
+	# 		has_innovation = innovation_city_planning
+	# 	}
+	# }
 	
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no

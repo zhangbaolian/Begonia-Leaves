@@ -231,11 +231,11 @@ temple_01 = {
 		barony_cannot_construct_holding = no
 	}
 	
-	can_construct = {
-		culture = {
-			has_innovation = innovation_city_planning
-		}
-	}
+	# can_construct = {
+	# 	culture = {
+	# 		has_innovation = innovation_city_planning
+	# 	}
+	# }
 	
 	can_construct_showing_failures_only = {
 		building_requirement_tribal = no
@@ -1587,9 +1587,9 @@ scriptorium_02 = {
 
 	can_construct_potential = {
 		has_building_or_higher = temple_01
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 		scope:holder = { has_dlc_feature = legends }
 	}
 
@@ -1923,9 +1923,9 @@ monastic_schools_02 = {
 
 	can_construct_potential = {
 		has_building_or_higher = temple_01
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {
@@ -2298,9 +2298,9 @@ megalith_03 = {
 		scope:holder.faith = {
 			has_doctrine_parameter = can_build_megaliths
 		}
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {
@@ -2340,9 +2340,9 @@ megalith_04 = {
 		scope:holder.faith = {
 			has_doctrine_parameter = can_build_megaliths
 		}
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {
@@ -2383,9 +2383,9 @@ megalith_05 = {
 		scope:holder.faith = {
 			has_doctrine_parameter = can_build_megaliths
 		}
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {
@@ -2427,9 +2427,9 @@ megalith_06 = {
 		scope:holder.faith = {
 			has_doctrine_parameter = can_build_megaliths
 		}
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {
@@ -2471,9 +2471,9 @@ megalith_07 = {
 		scope:holder.faith = {
 			has_doctrine_parameter = can_build_megaliths
 		}
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {
@@ -2515,9 +2515,9 @@ megalith_08 = {
 		scope:holder.faith = {
 			has_doctrine_parameter = can_build_megaliths
 		}
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {

@@ -604,73 +604,73 @@ holy_site_great_mosque_of_mecca_01 = {
 # Great Mosque of Cordoba
 ##########
 
-holy_site_great_mosque_of_cordoba_01 = {
+# holy_site_great_mosque_of_cordoba_01 = {
 
-	asset = {
-		type = pdxmesh
-		name = "monument_mezquita_de_cordoba_mesh"
-	}
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "monument_mezquita_de_cordoba_mesh"
+# 	}
 
-	construction_time = very_slow_construction_time
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_great_mosque_of_cordoba.dds"
+# 	type_icon = "icon_structure_great_mosque_of_cordoba.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_muslim_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_muslim_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:islam_religion
+# 				}
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		different_culture_opinion = 5
-		character_capital_county_monthly_development_growth_add = 0.2
-		monthly_piety = 0.5
-		monthly_dynasty_prestige_mult = 0.05
-	}
+# 	character_modifier = {
+# 		different_culture_opinion = 5
+# 		character_capital_county_monthly_development_growth_add = 0.2
+# 		monthly_piety = 0.5
+# 		monthly_dynasty_prestige_mult = 0.05
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.15
-		levy_size = 0.15
-		development_growth_factor = 0.2
-		development_growth = 0.15
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.15
+# 		levy_size = 0.15
+# 		development_growth_factor = 0.2
+# 		development_growth = 0.15
+# 	}
 	
-	province_modifier = {
-		monthly_income = 3
-	}
+# 	province_modifier = {
+# 		monthly_income = 3
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Great Mosque of Djenne
@@ -836,346 +836,346 @@ holy_site_great_mosque_of_samarra_01 = {
 # Cologne Cathedral
 ##########
 
-holy_site_cologne_cathedral_01 = {
-	construction_time = very_slow_construction_time
+# holy_site_cologne_cathedral_01 = {
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_cologne_cathedral.dds"
+# 	type_icon = "icon_structure_cologne_cathedral.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_crop_rotation
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_crop_rotation
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety_gain_mult = 0.15
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_piety_gain_per_knight_add = 0.1
-		knight_effectiveness_mult = 0.2
-		monthly_county_control_growth_factor = 0.05
-	}
+# 	character_modifier = {
+# 		monthly_piety_gain_mult = 0.15
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_piety_gain_per_knight_add = 0.1
+# 		knight_effectiveness_mult = 0.2
+# 		monthly_county_control_growth_factor = 0.05
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.2
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.2
+# 		development_growth_factor = 0.2
+# 		development_growth = 0.2
+# 	}
 	
-	province_modifier = {
-		monthly_income = 2
-	}
+# 	province_modifier = {
+# 		monthly_income = 2
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Canterbury Cathedral
 ##########
 
-holy_site_canterbury_cathedral_01 = {
-	construction_time = very_slow_construction_time
+# holy_site_canterbury_cathedral_01 = {
+# 	construction_time = very_slow_construction_time
 	
-	asset = {
-		type = pdxmesh
-		name = "ep2_building_special_canterbury_01_mesh"
-	}
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "ep2_building_special_canterbury_01_mesh"
+# 	}
 
-	type_icon = "icon_structure_canterbury_cathedral.dds"
+# 	type_icon = "icon_structure_canterbury_cathedral.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_crop_rotation
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_crop_rotation
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_growth_factor = 0.05
-		monthly_piety_gain_per_happy_powerful_vassal_add = 0.1
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.25
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_county_control_growth_factor = 0.05
+# 		monthly_piety_gain_per_happy_powerful_vassal_add = 0.1
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.1
-		development_growth = 0.1
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.2
+# 		development_growth_factor = 0.1
+# 		development_growth = 0.1
+# 	}
 	
-	province_modifier = {
-		monthly_income = 3
-	}
+# 	province_modifier = {
+# 		monthly_income = 3
+# 	}
 	
-	next_building = holy_site_canterbury_cathedral_02
+# 	next_building = holy_site_canterbury_cathedral_02
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
-holy_site_canterbury_cathedral_02 = {
-	construction_time = very_slow_construction_time
+# holy_site_canterbury_cathedral_02 = {
+# 	construction_time = very_slow_construction_time
 	
-	asset = {
-		type = pdxmesh
-		name = "ep2_building_special_canterbury_02_mesh"
-	}
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "ep2_building_special_canterbury_02_mesh"
+# 	}
 
-	type_icon = "icon_structure_canterbury_cathedral.dds"
+# 	type_icon = "icon_structure_canterbury_cathedral.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_crop_rotation
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_crop_rotation
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety = 0.5
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_growth_factor = 0.1
-		monthly_piety_gain_per_happy_powerful_vassal_add = 0.2
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.5
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_county_control_growth_factor = 0.1
+# 		monthly_piety_gain_per_happy_powerful_vassal_add = 0.2
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.2
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.2
+# 		development_growth_factor = 0.2
+# 		development_growth = 0.2
+# 	}
 	
-	province_modifier = {
-		monthly_income = 5
-	}
+# 	province_modifier = {
+# 		monthly_income = 5
+# 	}
 	
-	next_building = holy_site_canterbury_cathedral_03
+# 	next_building = holy_site_canterbury_cathedral_03
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
-holy_site_canterbury_cathedral_03 = {
-	construction_time = very_slow_construction_time
+# holy_site_canterbury_cathedral_03 = {
+# 	construction_time = very_slow_construction_time
 	
-	asset = {
-		type = pdxmesh
-		name = "ep2_building_special_canterbury_03_mesh"
-	}
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "ep2_building_special_canterbury_03_mesh"
+# 	}
 
-	type_icon = "icon_structure_canterbury_cathedral.dds"
+# 	type_icon = "icon_structure_canterbury_cathedral.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_crop_rotation
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_crop_rotation
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety = 1
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_growth_factor = 0.25
-		monthly_piety_gain_per_happy_powerful_vassal_add = 0.3
-	}
+# 	character_modifier = {
+# 		monthly_piety = 1
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_county_control_growth_factor = 0.25
+# 		monthly_piety_gain_per_happy_powerful_vassal_add = 0.3
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.30
-		development_growth = 0.3
-		county_opinion_add = 5
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.3
+# 		development_growth_factor = 0.30
+# 		development_growth = 0.3
+# 		county_opinion_add = 5
+# 	}
 	
-	province_modifier = {
-		monthly_income = 6
-	}
+# 	province_modifier = {
+# 		monthly_income = 6
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 
 ##########
@@ -1445,93 +1445,93 @@ walls_of_benin_01 = {
 # Theodosian Walls
 ##########
 
-theodosian_walls_01 = {
-	construction_time = very_slow_construction_time
+# theodosian_walls_01 = {
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_theodosian_walls.dds"
+# 	type_icon = "icon_structure_theodosian_walls.dds"
 	
-	can_construct_potential = {
-		barony = title:b_constantinople
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		barony = title:b_constantinople
+# 		building_requirement_tribal = no
+# 	}
 	
-	cost_gold = 3000
+# 	cost_gold = 3000
 	
-	max_garrison = 1000
-	duchy_capital_county_modifier = {
-		levy_size = 0.15
-		tax_mult = 0.15
-	}
-	province_modifier = {
-		monthly_income = 10
-		fort_level = 5
-		garrison_size = 1
-		travel_danger = -20
-	}
-	county_modifier = {
-		development_growth = 0.4
-		development_growth_factor = 0.2
-		levy_size = 0.3
-		tax_mult = 0.3
-		hostile_raid_time = 0.5
-	}
+# 	max_garrison = 1000
+# 	duchy_capital_county_modifier = {
+# 		levy_size = 0.15
+# 		tax_mult = 0.15
+# 	}
+# 	province_modifier = {
+# 		monthly_income = 10
+# 		fort_level = 5
+# 		garrison_size = 1
+# 		travel_danger = -20
+# 	}
+# 	county_modifier = {
+# 		development_growth = 0.4
+# 		development_growth_factor = 0.2
+# 		levy_size = 0.3
+# 		tax_mult = 0.3
+# 		hostile_raid_time = 0.5
+# 	}
 	
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = duchy_capital
-}
+# 	type = duchy_capital
+# }
 
 ##########
 # Aurelian Walls
 ##########
 
-aurelian_walls_01 = {
-	construction_time = very_slow_construction_time
+# aurelian_walls_01 = {
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_aurelian_walls.dds"
+# 	type_icon = "icon_structure_aurelian_walls.dds"
 	
-	can_construct_potential = {
-		barony = title:b_roma
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		barony = title:b_roma
+# 		building_requirement_tribal = no
+# 	}
 	
-	cost_gold = 3000
+# 	cost_gold = 3000
 	
-	max_garrison = 500
+# 	max_garrison = 500
 	
-	duchy_capital_county_modifier = {
-		levy_size = 0.15
-		tax_mult = 0.15
-	}
-	county_modifier = {
-		development_growth = 0.3
-		development_growth_factor = 0.1
-		hostile_raid_time = 0.5
-	}
-	province_modifier = {
-		fort_level = 3
-		garrison_size = 0.5
-		travel_danger = -20
-	}
+# 	duchy_capital_county_modifier = {
+# 		levy_size = 0.15
+# 		tax_mult = 0.15
+# 	}
+# 	county_modifier = {
+# 		development_growth = 0.3
+# 		development_growth_factor = 0.1
+# 		hostile_raid_time = 0.5
+# 	}
+# 	province_modifier = {
+# 		fort_level = 3
+# 		garrison_size = 0.5
+# 		travel_danger = -20
+# 	}
 	
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = duchy_capital
-}
+# 	type = duchy_capital
+# }
 
 ##########
 # The Colosseum
@@ -2207,68 +2207,68 @@ the_tower_of_london_01 = {
 # Notre Dame
 ##########
 
-notre_dame_01 = {
+# notre_dame_01 = {
 
-	asset = {
-		type = pdxmesh
-		name = "building_special_notre_dame_mesh"
-	}
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "building_special_notre_dame_mesh"
+# 	}
 
-	construction_time = very_slow_construction_time
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_notre_dame.dds"
+# 	type_icon = "icon_structure_notre_dame.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		scope:holder = {
-			religion = religion:christianity_religion
-			culture = {
-				has_innovation = innovation_windmills
-			}
-		}
-	}
+# 	can_construct = {
+# 		scope:holder = {
+# 			religion = religion:christianity_religion
+# 			culture = {
+# 				has_innovation = innovation_windmills
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		scope:holder = {
-			religion = religion:christianity_religion
-		}
-	}
+# 	is_enabled = {
+# 		scope:holder = {
+# 			religion = religion:christianity_religion
+# 		}
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety = 1
-		stewardship_per_piety_level = 1
-		monthly_dynasty_prestige_mult = 0.05
-	}
-	county_modifier = {
-		county_opinion_add = 5
-		tax_mult = 0.2
-		development_growth_factor = 0.3
-		development_growth = 0.3
-	}
+# 	character_modifier = {
+# 		monthly_piety = 1
+# 		stewardship_per_piety_level = 1
+# 		monthly_dynasty_prestige_mult = 0.05
+# 	}
+# 	county_modifier = {
+# 		county_opinion_add = 5
+# 		tax_mult = 0.2
+# 		development_growth_factor = 0.3
+# 		development_growth = 0.3
+# 	}
 	
-	province_modifier = {
-		monthly_income = 2
-	}
+# 	province_modifier = {
+# 		monthly_income = 2
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Brihadeeswarar Temple
@@ -2476,9 +2476,9 @@ the_friday_mosque_01 = {
 				scope:holder = {
 					religion = religion:islam_religion
 				}
-				scope:holder = {
-					religion = religion:zoroastrianism_religion
-				}
+				# scope:holder = {
+				# 	religion = religion:zoroastrianism_religion
+				# }
 				custom_description = {
 					text = holy_site_building_trigger
 					barony = {
@@ -2745,135 +2745,135 @@ hagia_sophia_02 = {
 # Dome of the Rock / Temple in Jerusalem
 ##########
 
-dome_of_the_rock_01 = {
-	construction_time = very_slow_construction_time
+# dome_of_the_rock_01 = {
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_dome_of_the_rock.dds"
+# 	type_icon = "icon_structure_dome_of_the_rock.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_building_trigger
-			barony = {
-				is_holy_site_of = scope:holder.faith
-			}
-		}
-		NOT = { scope:holder.religion = religion:judaism_religion }
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_building_trigger
+# 			barony = {
+# 				is_holy_site_of = scope:holder.faith
+# 			}
+# 		}
+# 		NOT = { scope:holder.religion = religion:judaism_religion }
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety_gain_per_knight_mult = 0.03
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_growth_factor = 0.1
-		martial_per_piety_level = 1
-		knight_effectiveness_mult = 0.2
-	}
+# 	character_modifier = {
+# 		monthly_piety_gain_per_knight_mult = 0.03
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_county_control_growth_factor = 0.1
+# 		martial_per_piety_level = 1
+# 		knight_effectiveness_mult = 0.2
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.3
-		development_growth = 0.3
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.3
+# 		development_growth_factor = 0.3
+# 		development_growth = 0.3
+# 	}
 	
-	province_modifier = {
-		monthly_income = 3
-	}
+# 	province_modifier = {
+# 		monthly_income = 3
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	next_building = temple_in_jerusalem_01
+# 	next_building = temple_in_jerusalem_01
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
-temple_in_jerusalem_01 = {
-	construction_time = very_slow_construction_time
+# temple_in_jerusalem_01 = {
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_temple_in_jerusalem.dds"
+# 	type_icon = "icon_structure_temple_in_jerusalem.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		custom_description = {
-			text = holy_site_building_trigger
-			barony = {
-				is_holy_site_of = scope:holder.faith
-			}
-		}
-		scope:holder.religion = religion:judaism_religion
-	}
+# 	can_construct = {
+# 		custom_description = {
+# 			text = holy_site_building_trigger
+# 			barony = {
+# 				is_holy_site_of = scope:holder.faith
+# 			}
+# 		}
+# 		scope:holder.religion = religion:judaism_religion
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_jewish_or_holy_site_trigger
-			OR = {
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-				scope:holder = {
-					religion = religion:judaism_religion
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_jewish_or_holy_site_trigger
+# 			OR = {
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 				scope:holder = {
+# 					religion = religion:judaism_religion
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	show_disabled = yes
+# 	show_disabled = yes
 	
-	cost_gold = 1000
-	cost_piety = 1000
+# 	cost_gold = 1000
+# 	cost_piety = 1000
 
-	character_modifier = {
-		monthly_piety_gain_per_knight_mult = 0.03
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_growth_factor = 0.1
-		martial_per_piety_level = 1
-		learning_per_prestige_level = 1
-		knight_effectiveness_mult = 0.2
-		same_faith_opinion = 5
-	}
+# 	character_modifier = {
+# 		monthly_piety_gain_per_knight_mult = 0.03
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_county_control_growth_factor = 0.1
+# 		martial_per_piety_level = 1
+# 		learning_per_prestige_level = 1
+# 		knight_effectiveness_mult = 0.2
+# 		same_faith_opinion = 5
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.3
-		development_growth = 0.3
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.3
+# 		development_growth_factor = 0.3
+# 		development_growth = 0.3
+# 	}
 	
-	province_modifier = {
-		monthly_income = 3
-	}
+# 	province_modifier = {
+# 		monthly_income = 3
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Hall of Heroes
@@ -3595,11 +3595,11 @@ heddal_stave_church_01 = {
 	can_construct_potential = {
 	}
 	
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_city_planning
-		}
-	}
+	# can_construct = {
+	# 	scope:holder.culture = {
+	# 		has_innovation = innovation_city_planning
+	# 	}
+	# }
 	
 	cost_gold = 1000
 	
@@ -3635,230 +3635,230 @@ heddal_stave_church_01 = {
 # Temple of Uppsala
 ##########
 
-temple_of_uppsala_01 = {
-	construction_time = very_slow_construction_time
+# temple_of_uppsala_01 = {
+# 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_temple_of_uppsala.dds"
+# 	type_icon = "icon_structure_temple_of_uppsala.dds"
 	
-	can_construct_potential = {
-	}
+# 	can_construct_potential = {
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_city_planning
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_city_planning
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 	
-	character_modifier = {
-		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		men_at_arms_maintenance = -0.1
-		knight_effectiveness_mult = 0.15
-	}
-	province_modifier = {
-		monthly_income = 1
-	}
-	county_modifier = {
-		tax_mult = 0.1
-		levy_size = 0.1
-		development_growth_factor = 0.2
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.25
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		men_at_arms_maintenance = -0.1
+# 		knight_effectiveness_mult = 0.15
+# 	}
+# 	province_modifier = {
+# 		monthly_income = 1
+# 	}
+# 	county_modifier = {
+# 		tax_mult = 0.1
+# 		levy_size = 0.1
+# 		development_growth_factor = 0.2
+# 	}
 	
-	next_building = temple_of_uppsala_02
+# 	next_building = temple_of_uppsala_02
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
-temple_of_uppsala_02 = {
-	construction_time = very_slow_construction_time
+# temple_of_uppsala_02 = {
+# 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_cologne_cathedral.dds"
+# 	type_icon = "icon_structure_cologne_cathedral.dds"
 	
-	can_construct_potential = {
-	}
+# 	can_construct_potential = {
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_manorialism
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_manorialism
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 	
-	character_modifier = {
-		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_prestige_gain_per_knight_mult = 0.02
-		men_at_arms_maintenance = -0.1
-		knight_effectiveness_mult = 0.2
-	}
-	province_modifier = {
-		monthly_income = 2
-	}
-	county_modifier = {
-		tax_mult = 0.15
-		levy_size = 0.15
-		development_growth_factor = 0.25
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.25
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_prestige_gain_per_knight_mult = 0.02
+# 		men_at_arms_maintenance = -0.1
+# 		knight_effectiveness_mult = 0.2
+# 	}
+# 	province_modifier = {
+# 		monthly_income = 2
+# 	}
+# 	county_modifier = {
+# 		tax_mult = 0.15
+# 		levy_size = 0.15
+# 		development_growth_factor = 0.25
+# 	}
 	
-	ai_value = {
-		base = 8
-	}
+# 	ai_value = {
+# 		base = 8
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Lund Cathedral
 ##########
 
-lund_cathedral_01 = {
-	construction_time = very_slow_construction_time
+# lund_cathedral_01 = {
+# 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_lund_cathedral.dds"
+# 	type_icon = "icon_structure_lund_cathedral.dds"
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	can_construct = {
-		OR = {
-			scope:holder = {
-				religion = religion:christianity_religion
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-		scope:holder = {
-			culture = {
-				has_innovation = innovation_crop_rotation
-			}
-		}
-	}
+# 	can_construct = {
+# 		OR = {
+# 			scope:holder = {
+# 				religion = religion:christianity_religion
+# 			}
+# 			custom_description = {
+# 				text = holy_site_building_trigger
+# 				barony = {
+# 					is_holy_site_of = scope:holder.faith
+# 				}
+# 			}
+# 		}
+# 		scope:holder = {
+# 			culture = {
+# 				has_innovation = innovation_crop_rotation
+# 			}
+# 		}
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 	
-	character_modifier = {
-		monthly_piety = 0.3
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_growth_factor = 0.1
-	}
-	province_modifier = {
-		monthly_income = 2
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.2
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.3
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		monthly_county_control_growth_factor = 0.1
+# 	}
+# 	province_modifier = {
+# 		monthly_income = 2
+# 	}
+# 	county_modifier = {
+# 		tax_mult = 0.2
+# 		development_growth_factor = 0.2
+# 		development_growth = 0.2
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Danevirke
@@ -4194,73 +4194,73 @@ alcazar_of_segovia_01 = {
 # The Santiago de Compostela Archcathedral Basilica 
 ##########
 
-holy_site_basilica_santiago_01 = {
+# holy_site_basilica_santiago_01 = {
 
-	asset = {
-		type = pdxmesh
-		name = "fp2_building_special_basilica_santiago_mesh"
-	}
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "fp2_building_special_basilica_santiago_mesh"
+# 	}
 
-	construction_time = very_slow_construction_time
+# 	construction_time = very_slow_construction_time
 
-	type_icon = "compostela.dds"  
+# 	type_icon = "compostela.dds"  
 	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
 	
-	is_enabled = {
-		custom_description = {
-			text = holy_site_muslim_christian_or_holy_site_trigger
-			OR = {
-				scope:holder = {
-					religion = religion:islam_religion
-				}
-				scope:holder = {
-					religion = religion:christianity_religion
-				}
-				custom_description = {
-					text = holy_site_building_trigger
-					barony = {
-						is_holy_site_of = scope:holder.faith
-					}
-				}
-			}
-		}
-	}
+# 	is_enabled = {
+# 		custom_description = {
+# 			text = holy_site_muslim_christian_or_holy_site_trigger
+# 			OR = {
+# 				scope:holder = {
+# 					religion = religion:islam_religion
+# 				}
+# 				scope:holder = {
+# 					religion = religion:christianity_religion
+# 				}
+# 				custom_description = {
+# 					text = holy_site_building_trigger
+# 					barony = {
+# 						is_holy_site_of = scope:holder.faith
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
 	
-	cost_gold = 1000
+# 	cost_gold = 1000
 
-	character_modifier = {
-		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		holy_order_hire_cost_mult = -0.15
-		clergy_opinion = 5
-		learn_language_scheme_power_mult = 0.2
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.25
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		holy_order_hire_cost_mult = -0.15
+# 		clergy_opinion = 5
+# 		learn_language_scheme_power_mult = 0.2
+# 	}
 	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.2
-		development_growth = 0.2
-	}
+# 	county_modifier = {
+# 		tax_mult = 0.3
+# 		development_growth_factor = 0.2
+# 		development_growth = 0.2
+# 	}
 	
-	province_modifier = {
-		monthly_income = 3
-	}
+# 	province_modifier = {
+# 		monthly_income = 3
+# 	}
 	
-	ai_value = {
-		base = 100
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious
-}
+# 	flag = travel_point_of_interest_religious
+# }
 
 ##########
 # Sancutary of Imam Reza
@@ -4916,105 +4916,105 @@ ark_of_bukhara_01 = {
 }
 
 ##########
-# Shah-i-Zinda
+# Shah-i-Zinda 沙阿津达
 ##########
 
-shah_i_zinda_01 = {
+# shah_i_zinda_01 = {
 
-	construction_time = very_slow_construction_time
+# 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_shah_i_zindah.dds" 
+# 	type_icon = "icon_structure_shah_i_zindah.dds" 
 	
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_development_01
-		}
-	}
+# 	can_construct = {
+# 		scope:holder.culture = {
+# 			has_innovation = innovation_development_01
+# 		}
+# 	}
 	
-	cost_gold = 400
+# 	cost_gold = 400
 
-	character_modifier = {
-		monthly_piety = 0.1
-		learning_per_stress_level = 1
-	}
+# 	character_modifier = {
+# 		monthly_piety = 0.1
+# 		learning_per_stress_level = 1
+# 	}
 
-	county_modifier = {
-		monthly_county_control_growth_add = 0.5
-	}
+# 	county_modifier = {
+# 		monthly_county_control_growth_add = 0.5
+# 	}
 
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 
-	next_building = shah_i_zinda_02
+# 	next_building = shah_i_zinda_02
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious # religious tomb
-}
+# 	flag = travel_point_of_interest_religious # religious tomb
+# }
 
-shah_i_zinda_02 = {
+# shah_i_zinda_02 = {
 
-	construction_time = very_slow_construction_time
+# 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_ruins_of_ctesiphon.dds" 
+# 	type_icon = "icon_structure_ruins_of_ctesiphon.dds" 
 	
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_hoardings 
-		}
-	}
+# 	can_construct = {
+# 		scope:holder.culture = {
+# 			has_innovation = innovation_hoardings 
+# 		}
+# 	}
 	
-	cost_gold = 800
+# 	cost_gold = 800
 
-	character_modifier = {
-		monthly_piety_gain_per_happy_powerful_vassal_add = 0.1
-		clan_government_opinion_same_faith = 5
-		learning_per_stress_level = 1
-	}
+# 	character_modifier = {
+# 		monthly_piety_gain_per_happy_powerful_vassal_add = 0.1
+# 		clan_government_opinion_same_faith = 5
+# 		learning_per_stress_level = 1
+# 	}
 
-	county_modifier = {
-		monthly_county_control_growth_add = 0.5
-		development_growth_factor = 0.1
-		development_growth = 0.2
-	}
+# 	county_modifier = {
+# 		monthly_county_control_growth_add = 0.5
+# 		development_growth_factor = 0.1
+# 		development_growth = 0.2
+# 	}
 
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-		modifier = { # Fill all building slots before going for special buildings
-			factor = 0
-			free_building_slots > 0
-		}
-	}
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
 	
-	type = special
+# 	type = special
 
-	flag = travel_point_of_interest_religious # religious tomb
-}
+# 	flag = travel_point_of_interest_religious # religious tomb
+# }
 
 ##########
 # Alamut Castle

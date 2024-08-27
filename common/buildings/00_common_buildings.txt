@@ -1,4 +1,4 @@
-﻿### Hospices
+﻿### Hospices 病患小屋
 
 hospices_01 = {
 	construction_time = standard_construction_time
@@ -77,9 +77,9 @@ hospices_02 = {
 
 	can_construct = {
 		building_requirement_castle_city_church = { LEVEL = 01 }
-		culture = {
-			has_innovation = innovation_city_planning
-		}
+		# culture = {
+		# 	has_innovation = innovation_city_planning
+		# }
 	}
 
 	can_construct_showing_failures_only = {

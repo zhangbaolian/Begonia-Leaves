@@ -167,9 +167,9 @@ tribe_02 = {
 	can_construct_potential = {
 	}
 	can_construct_showing_failures_only = {
-		scope:holder = {
-			culture = { has_innovation = innovation_plenary_assemblies }
-		}
+		# scope:holder = {
+		# 	culture = { has_innovation = innovation_plenary_assemblies }
+		# }
 	}
 	
 	cost_prestige = expensive_building_tier_3_cost
@@ -466,9 +466,9 @@ market_villages_02 = {
 		has_building_or_higher = tribe_01
 	}
 	can_construct_showing_failures_only = {
-		scope:holder = {
-			culture = { has_innovation = innovation_city_planning }
-		}
+		# scope:holder = {
+		# 	culture = { has_innovation = innovation_city_planning }
+		# }
 	}	
 	
 	cost_prestige = expensive_building_tier_2_cost
