@@ -238,11 +238,11 @@
 			color = { 0.8 0.4 0.0 }
 			icon = buddhism
 
-			holy_site = kusinagara
-			holy_site = bodh_gaya
-			holy_site = sarnath
-			holy_site = atamasthana
-			holy_site = dagon
+			# holy_site = kusinagara
+			# holy_site = bodh_gaya
+			# holy_site = sarnath
+			# holy_site = atamasthana
+			# holy_site = dagon
 
 			doctrine = tenet_dharmic_pacifism
 			doctrine = tenet_monasticism
