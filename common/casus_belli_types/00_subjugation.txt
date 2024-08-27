@@ -212,19 +212,19 @@
 			multiply = common_cb_piety_cost_multiplier
 			# FP3: caliphal discounts.
 			## We have to do this here as we otherwise can't select what the war is.
-			if = {
-				limit = {
-					scope:attacker = {
-						has_title = title:d_sunni
-						# We scope directly to the struggle because e_arabia might not actually be _in_ the struggle.
-						struggle:persian_struggle = { has_struggle_phase_parameter = fp3_caliph_gets_cheaper_subjugation_cb }
-					}
-				}
-				multiply = {
-					value = fp3_caliph_gets_cheaper_subjugation_cb_actual_value
-					desc = CB_STRUGGLE_PHASE_DISCOUNT
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		scope:attacker = {
+			# 			has_title = title:d_sunni
+			# 			# We scope directly to the struggle because e_arabia might not actually be _in_ the struggle.
+			# 			struggle:persian_struggle = { has_struggle_phase_parameter = fp3_caliph_gets_cheaper_subjugation_cb }
+			# 		}
+			# 	}
+			# 	multiply = {
+			# 		value = fp3_caliph_gets_cheaper_subjugation_cb_actual_value
+			# 		desc = CB_STRUGGLE_PHASE_DISCOUNT
+			# 	}
+			# }
 		}
 	}
 	
