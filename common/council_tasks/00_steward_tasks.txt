@@ -942,14 +942,14 @@ task_promote_culture = {
 								scope:county.culture = culture:pictish
 							}
 						}
-						AND = { # The modern scandinavians want to convert the Norse
-							OR = {
-								scope:councillor_liege.culture = culture:swedish
-								scope:councillor_liege.culture = culture:danish
-								scope:councillor_liege.culture = culture:norwegian
-							}
-							scope:county.culture = culture:norse
-						}
+						# AND = { # The modern scandinavians want to convert the Norse
+						# 	OR = {
+						# 		scope:councillor_liege.culture = culture:swedish
+						# 		scope:councillor_liege.culture = culture:danish
+						# 		scope:councillor_liege.culture = culture:norwegian
+						# 	}
+						# 	scope:county.culture = culture:norse
+						# }
 						#AND = { # The vikings want to culture convert the Brits, OBSOLETE as of the Hybrid Culture update - they want to create hybrids instead!
 						#	OR = {
 						#		scope:councillor_liege.culture = culture:norse
@@ -1050,17 +1050,17 @@ task_promote_culture = {
 			}
 			add = 10000 # Always keep going if this is already chosen
 		}
-		else_if = {
-			limit = {
-				scope:councillor_liege.culture = {
-					has_innovation = innovation_desert_tactics #Best way to check if the culture is Outremer
-				}
-				scope:councillor_liege = {
-					gold >= steward_convert_culture_value
-				}
-			}
-			add = 500
-		}
+		# else_if = {
+		# 	limit = {
+		# 		scope:councillor_liege.culture = {
+		# 			has_innovation = innovation_desert_tactics #Best way to check if the culture is Outremer
+		# 		}
+		# 		scope:councillor_liege = {
+		# 			gold >= steward_convert_culture_value
+		# 		}
+		# 	}
+		# 	add = 500
+		# }
 		else_if = {
 			limit = {
 				scope:councillor_liege = {
@@ -1489,15 +1489,15 @@ task_accept_culture = {
 			add = 15
 		}
 		
-		if = {
-			# And the norse!
-			limit = {
-				scope:councillor_liege = {
-					culture = culture:norse
-				}
-			}
-			add = 15
-		}
+		# if = {
+		# 	# And the norse!
+		# 	limit = {
+		# 		scope:councillor_liege = {
+		# 			culture = culture:norse
+		# 		}
+		# 	}
+		# 	add = 15
+		# }
 		
 		if = {
 			# Rulers with a capital culture that isn't particularly accepted like this if they have some more counties in their realm of the culture
