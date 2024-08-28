@@ -957,57 +957,57 @@ FavoriteTreatUppercase = {
 GetLocalStreetFood = {
 	type = character
 
-	text = {
-		trigger = {
-			OR = {
-				root.location.culture = { has_cultural_pillar = heritage_arabic }
-				root.location.culture = { has_cultural_pillar = heritage_iranian }
-			}
-		}
-		localization_key = sambusa
-	}
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			root.location.culture = { has_cultural_pillar = heritage_arabic }
+	# 			root.location.culture = { has_cultural_pillar = heritage_iranian }
+	# 		}
+	# 	}
+	# 	localization_key = sambusa
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_byzantine }
-		}
-		localization_key = honey_fritter
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_byzantine }
+	# 	}
+	# 	localization_key = honey_fritter
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_latin }
-		}
-		localization_key = pizza
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_latin }
+	# 	}
+	# 	localization_key = pizza
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_indo_aryan }
-		}
-		localization_key = pakhala
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_indo_aryan }
+	# 	}
+	# 	localization_key = pakhala
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_turkic }
-		}
-		localization_key = pilau
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_turkic }
+	# 	}
+	# 	localization_key = pilau
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_berber }
-		}
-		localization_key = pastilla
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_berber }
+	# 	}
+	# 	localization_key = pastilla
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_iberian }
-		}
-		localization_key = empanada
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_iberian }
+	# 	}
+	# 	localization_key = empanada
+	# }
 
 	text = {
 		trigger = {
@@ -1024,57 +1024,57 @@ GetLocalStreetFood = {
 GetLocalStreetFoodPlural = {
 	type = character
 
-	text = {
-		trigger = {
-			OR = {
-				root.location.culture = { has_cultural_pillar = heritage_arabic }
-				root.location.culture = { has_cultural_pillar = heritage_iranian }
-			}
-		}
-		localization_key = sambusa_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			root.location.culture = { has_cultural_pillar = heritage_arabic }
+	# 			root.location.culture = { has_cultural_pillar = heritage_iranian }
+	# 		}
+	# 	}
+	# 	localization_key = sambusa_plural
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_byzantine }
-		}
-		localization_key = honey_fritter_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_byzantine }
+	# 	}
+	# 	localization_key = honey_fritter_plural
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_latin }
-		}
-		localization_key = pizza_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_latin }
+	# 	}
+	# 	localization_key = pizza_plural
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_indo_aryan }
-		}
-		localization_key = pakhala_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_indo_aryan }
+	# 	}
+	# 	localization_key = pakhala_plural
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_turkic }
-		}
-		localization_key = pilau_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_turkic }
+	# 	}
+	# 	localization_key = pilau_plural
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_berber }
-		}
-		localization_key = pastilla_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_berber }
+	# 	}
+	# 	localization_key = pastilla_plural
+	# }
 
-	text = {
-		trigger = {
-			root.location.culture = { has_cultural_pillar = heritage_iberian }
-		}
-		localization_key = empanada_plural
-	}
+	# text = {
+	# 	trigger = {
+	# 		root.location.culture = { has_cultural_pillar = heritage_iberian }
+	# 	}
+	# 	localization_key = empanada_plural
+	# }
 
 	text = {
 		trigger = {
@@ -1125,17 +1125,17 @@ GetExpensiveMeal = {
 			}
 		}
 	}
-	text = {
-		localization_key = expensive_food_veal_cutlets
-		# trigger = {
-		# 	faith = {
-		# 		NOR = {
-		# 			religion_tag = hinduism_religion
-		# 			has_doctrine_parameter = pacifist_opinion_active
-		# 		}
-		# 	}
-		# }
-	}
+	# text = {
+	# 	localization_key = expensive_food_veal_cutlets
+	# 	trigger = {
+	# 		faith = {
+	# 			NOR = {
+	# 				religion_tag = hinduism_religion
+	# 				has_doctrine_parameter = pacifist_opinion_active
+	# 			}
+	# 		}
+	# 	}
+	# }
 	text = {
 		localization_key = expensive_food_fresh_quail
 		trigger = {

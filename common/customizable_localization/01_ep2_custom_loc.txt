@@ -460,18 +460,18 @@ GetPeriodOfTimeWord = {
 GetMeleeVariant = {
 	type = character
 
-	text = { # German
-		trigger = {
-			root.culture = {
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_central_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = tournament_melee_german
-	}
+	# text = { # German
+	# 	trigger = {
+	# 		root.culture = {
+	# 			OR = {
+	# 				has_cultural_pillar = heritage_north_germanic
+	# 				has_cultural_pillar = heritage_central_germanic
+	# 				has_cultural_pillar = heritage_west_germanic
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = tournament_melee_german
+	# }
 
 	text = { #Fallback
 		localization_key = tournament_melee_fallback
@@ -481,57 +481,57 @@ GetMeleeVariant = {
 GetWrestlingVariant = {
 	type = character
 
-	text = { # Koshti - Persian
-		trigger = {
-			root.culture = {
-				has_cultural_pillar = heritage_iranian
-			}
-		}
-		localization_key = tournament_wrestling_persian
-	}
+	# text = { # Koshti - Persian
+	# 	trigger = {
+	# 		root.culture = {
+	# 			has_cultural_pillar = heritage_iranian
+	# 		}
+	# 	}
+	# 	localization_key = tournament_wrestling_persian
+	# }
 
-	text = { # Naban - Burmese
-		trigger = {
-			root.culture = {
-				has_cultural_pillar = heritage_burman
-			}
-		}
-		localization_key = tournament_wrestling_burmese
-	}
+	# text = { # Naban - Burmese
+	# 	trigger = {
+	# 		root.culture = {
+	# 			has_cultural_pillar = heritage_burman
+	# 		}
+	# 	}
+	# 	localization_key = tournament_wrestling_burmese
+	# }
 
-	text = { # Ringen - Germanic
-		trigger = {
-			root.culture = {
-				OR = {
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_central_germanic
-					has_cultural_pillar = heritage_west_germanic
-				}
-			}
-		}
-		localization_key = tournament_wrestling_german
-	}
+	# text = { # Ringen - Germanic
+	# 	trigger = {
+	# 		root.culture = {
+	# 			OR = {
+	# 				has_cultural_pillar = heritage_north_germanic
+	# 				has_cultural_pillar = heritage_central_germanic
+	# 				has_cultural_pillar = heritage_west_germanic
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = tournament_wrestling_german
+	# }
 
-	text = { # Malla-yuddha - Indian
-		trigger = {
-			root.culture = {
-				OR = {
-					has_cultural_pillar = heritage_indo_aryan
-					has_cultural_pillar = heritage_dravidian
-				}
-			}
-		}
-		localization_key = tournament_wrestling_indian
-	}
+	# text = { # Malla-yuddha - Indian
+	# 	trigger = {
+	# 		root.culture = {
+	# 			OR = {
+	# 				has_cultural_pillar = heritage_indo_aryan
+	# 				has_cultural_pillar = heritage_dravidian
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = tournament_wrestling_indian
+	# }
 
-	text = { # Gidigbo - Yoruba
-		trigger = {
-			root.culture = {
-				has_cultural_pillar = heritage_yoruba
-			}
-		}
-		localization_key = tournament_wrestling_yoruba
-	}
+	# text = { # Gidigbo - Yoruba
+	# 	trigger = {
+	# 		root.culture = {
+	# 			has_cultural_pillar = heritage_yoruba
+	# 		}
+	# 	}
+	# 	localization_key = tournament_wrestling_yoruba
+	# }
 
 	text = { #Fallback
 		localization_key = tournament_wrestling_fallback
@@ -541,14 +541,14 @@ GetWrestlingVariant = {
 GetRecitalVariant = {
 	type = character
 
-	text = { # Eisteddfodd - Welsh
-		trigger = {
-			root.culture = {
-				has_cultural_pillar = heritage_brythonic
-			}
-		}
-		localization_key = tournament_recital_welsh
-	}
+	# text = { # Eisteddfodd - Welsh
+	# 	trigger = {
+	# 		root.culture = {
+	# 			has_cultural_pillar = heritage_brythonic
+	# 		}
+	# 	}
+	# 	localization_key = tournament_recital_welsh
+	# }
 
 	text = { #Fallback
 		localization_key = tournament_recital_fallback

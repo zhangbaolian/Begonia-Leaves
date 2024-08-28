@@ -1,4 +1,5 @@
-﻿hire_physician_decision = {
+﻿# 聘请医生的决定
+hire_physician_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_physician.dds"
 	
 	sort_order = 81
@@ -48,6 +49,7 @@
 	}
 }
 
+# 增重决定
 gain_weight_decision = { #by Linnéa Thimrén
 	picture = "gfx/interface/illustrations/decisions/decision_misc.dds"
 

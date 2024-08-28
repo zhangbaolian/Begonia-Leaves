@@ -2025,92 +2025,92 @@
 
 
 # 武功歌
-# tradition_chanson_de_geste = {
-# 	#Replaces Martial Admiration
-# 	category = regional
+tradition_chanson_de_geste = {
+	#Replaces Martial Admiration
+	category = regional
 
-# 	layers = {
-# 		0 = martial
-# 		1 = indian
-# 		4 = knight.dds
-# 	}
+	layers = {
+		0 = martial
+		1 = indian
+		4 = knight.dds
+	}
 	
-# 	is_shown = {
-# 		has_cultural_pillar = heritage_frankish
-# 		NOR = { #Replaces Martial Admiration
-# 			has_cultural_tradition = tradition_futuwaa
-# 			has_cultural_tradition = tradition_druzhina
-# 			has_cultural_tradition = tradition_martial_admiration
-# 		}
-# 	}
-# 	can_pick = {
-# 		has_cultural_pillar = heritage_frankish
-# 		NOR = { #Replaces Martial Admiration
-# 			has_cultural_tradition = tradition_futuwaa
-# 			has_cultural_tradition = tradition_druzhina
-# 			has_cultural_tradition = tradition_martial_admiration
-# 		}
-# 	}
+	is_shown = {
+		has_cultural_pillar = heritage_frankish
+		NOR = { #Replaces Martial Admiration
+			has_cultural_tradition = tradition_futuwaa
+			has_cultural_tradition = tradition_druzhina
+			has_cultural_tradition = tradition_martial_admiration
+		}
+	}
+	can_pick = {
+		has_cultural_pillar = heritage_frankish
+		NOR = { #Replaces Martial Admiration
+			has_cultural_tradition = tradition_futuwaa
+			has_cultural_tradition = tradition_druzhina
+			has_cultural_tradition = tradition_martial_admiration
+		}
+	}
 
-# 	parameters = {
-# 		unlock_valets_innovation = yes
-# 		poet_trait_gives_bonuses = yes
-# 		poet_trait_more_common = yes
-# 		martial_education_more_valued = yes
-# 		prowess_traits_more_valued = yes
-# 		blademaster_trait_bonuses = yes
-# 		craven_and_content_traits_looked_down_upon = yes
-# 		knights_slightly_more_prone_to_injury = yes
-# 		can_duel_rivals = yes
-# 		can_host_joust_contests = yes
-# 	}
-# 	character_modifier = {
-# 		knight_limit = 2
-# 		negate_prowess_penalty_add = 5 # Wounded knights fight better!
-# 		accolade_glory_gain_mult = 0.2
-# 		owned_legend_spread_mult = 0.05
-# 	}
+	parameters = {
+		unlock_valets_innovation = yes
+		poet_trait_gives_bonuses = yes
+		poet_trait_more_common = yes
+		martial_education_more_valued = yes
+		prowess_traits_more_valued = yes
+		blademaster_trait_bonuses = yes
+		craven_and_content_traits_looked_down_upon = yes
+		knights_slightly_more_prone_to_injury = yes
+		can_duel_rivals = yes
+		can_host_joust_contests = yes
+	}
+	character_modifier = {
+		knight_limit = 2
+		negate_prowess_penalty_add = 5 # Wounded knights fight better!
+		accolade_glory_gain_mult = 0.2
+		owned_legend_spread_mult = 0.05
+	}
 	
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_bellicose = { is_in_list = traits }
-# 						culture_pillar:ethos_stoic = { is_in_list = traits }
-# 						culture_pillar:ethos_courtly = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_bellicose_stoic_or_courtly_desc
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOT = {
-# 						scope:character = {
-# 							any_knight = {
-# 								count >= 6
-# 								prowess >= 12
-# 							}
-# 						}
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_unfulfilled_criteria_penalty
-# 					desc = knights_with_prowess_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_stoic = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_knight = {
+								count >= 6
+								prowess >= 12
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = knights_with_prowess_desc
+				}
+			}
 			
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 	
-# 	ai_will_do = { value = 100 }
-# }
+	ai_will_do = { value = 100 }
+}

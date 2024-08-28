@@ -8269,26 +8269,26 @@ GetFriendNoun = {
 	text = {
 		localization_key = relation_pal
 	}
-	text = {
-		trigger = {
-			culture = { has_cultural_pillar = heritage_west_germanic }
-		}
-		localization_key = relation_mucker
-	}
-	text = {
-		trigger = {
-			is_male = yes
-			culture = { has_cultural_pillar = language_arabic }
-		}
-		localization_key = relation_habibi
-	}
-	text = {
-		trigger = {
-			is_female = yes
-			culture = { has_cultural_pillar = language_arabic }
-		}
-		localization_key = relation_habiba
-	}
+	# text = {
+	# 	trigger = {
+	# 		culture = { has_cultural_pillar = heritage_west_germanic }
+	# 	}
+	# 	localization_key = relation_mucker
+	# }
+	# text = {
+	# 	trigger = {
+	# 		is_male = yes
+	# 		culture = { has_cultural_pillar = language_arabic }
+	# 	}
+	# 	localization_key = relation_habibi
+	# }
+	# text = {
+	# 	trigger = {
+	# 		is_female = yes
+	# 		culture = { has_cultural_pillar = language_arabic }
+	# 	}
+	# 	localization_key = relation_habiba
+	# }
 }
 
 GetRivalNemesis = {

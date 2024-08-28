@@ -336,7 +336,7 @@ WarCasusBelliShort = {
 			OR = {
 				using_cb = county_conquest_cb
 				using_cb = duchy_conquest_cb
-				using_cb = county_struggle_cb
+				# using_cb = county_struggle_cb
 				# using_cb = fp2_mediterranean_conquest_cb
 				# using_cb = hungarian_migration_cb
 				# using_cb = sons_of_lothbrok_invasion_cb
@@ -372,8 +372,8 @@ WarCasusBelliShort = {
 			OR = {
 				using_cb = invasion_war
 				using_cb = clan_invasion_war
-				using_cb = mongol_invasion_war
-				using_cb = mongol_realm_invasion_war
+				# using_cb = mongol_invasion_war
+				# using_cb = mongol_realm_invasion_war
 			}
 		}
 		localization_key = war_memory_cb_invasion
@@ -476,7 +476,7 @@ WarCasusBelliShort = {
 
 	text = {
 		trigger = {
-			using_cb = vassalization_cb
+			# using_cb = vassalization_cb
 			using_cb = diarch_vassalisation_cb
 		}
 		localization_key = war_memory_cb_vassalization
@@ -492,15 +492,15 @@ WarCasusBelliShort = {
 	# 	localization_key = war_memory_cb_varangian
 	# }
 
-	text = {
-		trigger = { using_cb = fp2_border_raid }
-		localization_key = war_memory_cb_border
-	}
+	# text = {
+	# 	trigger = { using_cb = fp2_border_raid }
+	# 	localization_key = war_memory_cb_border
+	# }
 
-	text = {
-		trigger = { using_cb = fp2_expel_interloper }
-		localization_key = war_memory_cb_expel
-	}
+	# text = {
+	# 	trigger = { using_cb = fp2_expel_interloper }
+	# 	localization_key = war_memory_cb_expel
+	# }
 
 	text = {
 		trigger = { using_cb = diarch_vassalisation_cb }
