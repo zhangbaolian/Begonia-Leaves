@@ -6,6 +6,7 @@
 # MAA Traditions 	 #
 ######################
 
+#侠义结社
 # tradition_futuwaa = {
 # 	category = regional
 

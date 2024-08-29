@@ -36,17 +36,15 @@
 innovation_motte = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/tulei.dds"
-	character_modifier = {
-		fort_level = 1
-	}
+	icon = @fortifications
+
 	custom = unlock_tribal_fortification_buildings
 
 	flag = global_regular
 	flag = tribal_era_regular
 }
 
-innovation_siege_work = {
+innovation_catapult = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @siege_weapons
@@ -61,44 +59,44 @@ innovation_barracks = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @levy_building
-	character_modifier = {
-		army_maintenance_mult = -0.02
-	}
+
 	custom = unlock_tribal_military_buildings
 
 	flag = global_regular
 	flag = tribal_era_regular
 }
 
-innovation_trained_soliders = {
+innovation_mustering_grounds = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/changbeijun.dds"
+	icon = @leadership_2
 
 	character_modifier = {
 		men_at_arms_cap = 1
+		men_at_arms_limit = 2
 	}
-	unlock_maa = bowmen
+
 	flag = global_regular
 	flag = tribal_era_regular
 }
 
-innovation_levy = {
+innovation_bannus = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/minbing.dds"
+	icon = @raised_banner
 
 	custom = unlock_march_contract
 
 	character_modifier = {
-		levy_reinforcement_rate = 0.05
+		levy_reinforcement_rate = 0.15
+		active_accolades = 1
 	}
 
 	flag = global_regular
 	flag = tribal_era_regular
 }
 
-innovation_leather_armor = {
+innovation_quilted_armor = {
 	group = culture_group_military
 	culture_era = culture_era_tribal
 	icon = @weapons_and_armor_02
@@ -111,10 +109,10 @@ innovation_leather_armor = {
 	flag = tribal_era_regular
 }
 
-innovation_iron_farming_tool = {
+innovation_development_01 = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/tiezhinongju.dds"
+	icon = @civil_construction_1
 
 	custom = reduce_develop_county_penalty_01
 
@@ -122,10 +120,10 @@ innovation_iron_farming_tool = {
 	flag = tribal_era_regular
 }
 
-innovation_metal_coinage = {
+innovation_currency_01 = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/zhubi.dds"
+	icon = @majesty_02
 
 	character_modifier = {
 		development_growth_factor = 0.1
@@ -136,15 +134,15 @@ innovation_metal_coinage = {
 }
 
 #culture_group_civic
-innovation_management = {
+innovation_gavelkind = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/guanli.dds"
+	icon = @administration_3
 
+	unlock_law = confederate_partition_succession_law
 	
 	character_modifier = {
 		domain_limit = 1
-		vassal_limit= 5
 	}
 
 	flag = global_regular
@@ -162,35 +160,41 @@ innovation_crop_rotation = {
 	flag = tribal_era_regular
 }
 
-innovation_cattle_farming = {
+innovation_city_planning = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/niugeng.dds"
+	icon = @civil_construction_2
 
-	# unlock_building = rice_paddies_01
-	# development_growth_factor= 0.1
+	unlock_building = city_01
+	unlock_building = temple_01
+	unlock_building = monastic_schools_01
+	unlock_building = megalith_01
+	unlock_building = market_villages_01
 
 	flag = global_regular
 	flag = tribal_era_regular
 }
 
-innovation_swamp_drainage = {
+innovation_casus_belli = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/zhaoze.dds"
-	# unlock_building = swamp_02
-	
+	icon = @administration_1
+
+	unlock_casus_belli = individual_county_de_jure_cb
+	unlock_casus_belli = individual_duchy_de_jure_cb
+
 	flag = global_regular
 	flag = tribal_era_regular
 }
 
-innovation_conservancy_irrigation = {
+innovation_plenary_assemblies = {
 	group = culture_group_civic
 	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/guangai.dds"
+	icon = @leadership_1
 
-	# tax_mult= 0.2
-	# unlock_building = irrigation_01
+	unlock_law = crown_authority_1
+
+	unlock_building = tribe_02
 
 	flag = global_regular
 	flag = tribal_era_regular
@@ -208,44 +212,105 @@ innovation_ledger = {
 	flag = global_regular
 	flag = tribal_era_regular
 }
-innovation_herb = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/paiganshidi.dds"
-	
 
-	county_modifier = {
-		epidemic_resistance = 5
+#culture_group_regional
+innovation_table_of_princes = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	icon = @nobility_01
+	
+	potential = {
+		OR = {
+			#West Slavic
+			this = culture:czech
+			this = culture:slovien
+		}
 	}
-
-	#custom = unlocks_innovation_sanitation
-
-	flag = global_regular
-	flag = tribal_era_regular
-}
-innovation_star = {
-	group = culture_group_civic
-	culture_era = culture_era_tribal
-	icon = "gfx/interface/icons/star.dds"
 	
+	unlock_law = single_heir_dynasty_house
+	custom = unlock_single_heir_dynasty_house_changing
+	
+	flag = global_regional
+	flag = tribal_era_regional
+}
+
+innovation_longboats = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_europe_north
+	icon = @longboats
 
 	character_modifier = {
-		monthly_prestige = 1
+		embarkation_cost_mult = -0.75
+		naval_movement_speed_mult = 0.25
 	}
 
-	#custom = unlocks_innovation_sanitation
+	custom = unlocks_naval_raiding
+	custom = unlocks_sailable_major_rivers
 
-	flag = global_regular
-	flag = tribal_era_regular
+	flag = global_regional
+	flag = tribal_era_regional
 }
-innovation_casus_belli = {
-	group = culture_group_civic
+
+innovation_elephantry = {
+	group = culture_group_regional
 	culture_era = culture_era_tribal
-	icon = @administration_1
+	region = world_innovation_elephants
+	icon = @elephant
 
-	unlock_casus_belli = individual_county_de_jure_cb
-	unlock_casus_belli = individual_duchy_de_jure_cb
+	unlock_maa = war_elephant
+	unlock_building = elephant_pens_01
 
-	flag = global_regular
-	flag = tribal_era_regular
+	custom = eligible_accolade_elephantry_attribute
+
+	flag = global_regional
+	flag = tribal_era_regional
+}
+
+innovation_war_camels = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_innovation_camels
+	icon = @camel
+
+	unlock_maa = camel_rider
+	unlock_building = camel_farms_01
+
+	custom = eligible_accolade_camelry_attribute
+
+	flag = global_regional
+	flag = tribal_era_regional
+}
+
+innovation_wootz_steel = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_india_deccan
+	icon = @weapons_and_armor_01
+
+	character_modifier = {
+		prowess = 1
+	}
+	custom = unlock_wind_furnaces
+
+	flag = global_regional
+	flag = tribal_era_regional
+}
+
+innovation_african_canoes = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = world_africa_west
+	icon = @majesty_01
+
+	character_modifier = {
+		embarkation_cost_mult = -0.25
+		raid_speed = 0.1
+	}
+	
+	custom = unlocks_naval_raiding
+	custom = unlocks_sailable_major_rivers
+
+	flag = global_regional
+	flag = tribal_era_regional
 }

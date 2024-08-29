@@ -3,6 +3,7 @@
 ################################
 # 移除原版
 
+# 拜占庭传统
 # tradition_byzantine_succession = {
 # 	category = regional
 
@@ -94,6 +95,7 @@
 # 	ai_will_do = { value = 100 }
 # }
 
+# 大象之主
 # tradition_lords_of_the_elephant = {
 # 	category = regional
 
@@ -185,6 +187,7 @@
 # 	}
 # }
 
+# 非洲的包容性
 # tradition_african_tolerance = {
 # 	category = regional
 
@@ -281,6 +284,7 @@
 # 	}
 # }
 
+# 贤人会议
 # tradition_the_witenagemot = {
 # 	category = regional
 
@@ -374,6 +378,7 @@
 # 	}
 # }
 
+# 庭会议
 # tradition_things = {
 # 	category = regional
 
@@ -448,6 +453,7 @@
 # 	}
 # }
 
+# 陆上商队
 # tradition_caravaneers = {
 # 	category = regional
 
@@ -499,96 +505,98 @@
 # 	ai_will_do = { value = 100 }
 # }
 
-# tradition_horse_lords = {
-# 	category = regional
+# 马上领主
+tradition_horse_lords = {
+	category = regional
 
-# 	layers = {
-# 		0 = martial
-# 		1 = mena
-# 		4 = horses.dds
-# 	}
+	layers = {
+		0 = martial
+		1 = mena
+		4 = horses.dds
+	}
 
-# 	is_shown = {
-# 		OR = {
-# 			has_cultural_pillar = heritage_mongolic
-# 			has_cultural_pillar = heritage_turkic
-# 		}
-# 	}
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_mongolic
+			# has_cultural_pillar = heritage_turkic
+		}
+	}
 
-# 	can_pick = {
-# 		custom_description = {
-# 			text = culture_in_steppe_desc
-# 			any_culture_county = {
-# 				percent >= 0.4
-# 				any_county_province = {
-# 					geographical_region = world_steppe
-# 				}
-# 			}
-# 		}
-# 	}
+	can_pick = {
+		custom_description = {
+			text = culture_in_steppe_desc
+			any_culture_county = {
+				percent >= 0.4
+				any_county_province = {
+					geographical_region = world_steppe
+				}
+			}
+		}
+	}
 
-# 	parameters = {
-# 		unlock_maa_horse_archers = yes
-# 		can_recruit_open_specialist = yes
-# 		unlock_horse_pastures_building = yes
-# 		steppe_hunt_success_chance = yes
-# 	}
+	parameters = {
+		unlock_maa_horse_archers = yes
+		can_recruit_open_specialist = yes
+		unlock_horse_pastures_building = yes
+		steppe_hunt_success_chance = yes
+	}
 
-# 	character_modifier = {
-# 		light_cavalry_damage_mult = 0.1
-# 		light_cavalry_screen_mult = 0.1
-# 		steppe_cancel_negative_supply = yes
-# 		supply_duration = 1
-# 		movement_speed = 0.1
-# 		character_travel_speed_mult = 0.2
-# 		character_travel_safety_mult = 0.2
-# 		steppe_travel_danger = steppe_high_danger_reduction
-# 		movement_speed_land_raiding = 0.3
-# 		hostile_county_attrition_raiding = -0.5
+	character_modifier = {
+		light_cavalry_damage_mult = 0.1
+		light_cavalry_screen_mult = 0.1
+		steppe_cancel_negative_supply = yes
+		supply_duration = 1
+		movement_speed = 0.1
+		character_travel_speed_mult = 0.2
+		character_travel_safety_mult = 0.2
+		steppe_travel_danger = steppe_high_danger_reduction
+		movement_speed_land_raiding = 0.3
+		hostile_county_attrition_raiding = -0.5
 
-# 	}
+	}
 
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_bellicose = { is_in_list = traits }
-# 						culture_pillar:ethos_communal = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_bellicose_or_communal_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_or_communal_desc
+				}
+			}
 
-# 			multiply = tradition_replacement_cost_if_relevant
-# 			#if = {
-# 			#	limit = {
-# 			#		NOR = {
-# 			#			has_cultural_pillar = heritage_turkic
-# 			#			has_cultural_pillar = heritage_mongolic
-# 			#		}
-# 			#	}
-# 			#	add = {
-# 			#		value = tradition_unfulfilled_criteria_penalty
-# 			#		desc = steppe_heritage_reduction_desc
-# 			#	}
-# 			#}
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+			if = {
+				limit = {
+					NOR = {
+						# has_cultural_pillar = heritage_turkic
+						has_cultural_pillar = heritage_mongolic
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = steppe_heritage_reduction_desc
+				}
+			}
+		}
+	}
 
-# 	ai_will_do = {
-# 		value = 100
-# 	}
-# }
+	ai_will_do = {
+		value = 100
+	}
+}
 
+# 撒哈拉游牧民
 # tradition_saharan_nomads = {
 # 	category = regional
 
@@ -674,6 +682,7 @@
 # 	ai_will_do = { value = 100 }
 # }
 
+# 西哥特法典
 # tradition_visigothic_codes = {
 # 	category = regional
 
@@ -774,6 +783,7 @@
 # 	ai_will_do = { value = 100 }
 # }
 
+# 喜马拉雅定居者
 # tradition_himalayan_settlers = {
 # 	category = regional
 
@@ -884,6 +894,7 @@
 # 	}
 # }
 
+# 沙漠旅者
 # tradition_desert_nomads = {
 # 	category = regional
 
@@ -993,6 +1004,7 @@
 # 	}
 # }
 
+# 山地农田
 # tradition_mountaineer_ruralism = {
 # 	category = regional
 
@@ -1114,86 +1126,88 @@
 # 	}
 # }
 
-# tradition_steppe_tolerance = {
-# 	category = regional
+# 草原的宽容
+tradition_steppe_tolerance = {
+	category = regional
 
-# 	layers = {
-# 		0 = intrigue
-# 		1 = mena
-# 		4 = greeting.dds
-# 	}
+	layers = {
+		0 = intrigue
+		1 = mena
+		4 = greeting.dds
+	}
 
-# 	is_shown = {
-# 		NOR = {
-# 			culture_tradition:tradition_african_tolerance = { is_in_list = traits }
-# 			culture_tradition:tradition_religion_blending = { is_in_list = traits }
-# 		}
-# 		OR = {
-# 			has_cultural_pillar = heritage_mongolic
-# 			has_cultural_pillar = heritage_turkic
-# 		}
-# 	}
-# 	can_pick = {
-# 		custom_tooltip = {
-# 			text = culture_in_steppe_desc
-# 			any_culture_county = {
-# 				percent >= 0.4
-# 				any_county_province = {
-# 					geographical_region = world_steppe
-# 				}
-# 			}
-# 		}
-# 	}
+	is_shown = {
+		NOR = {
+			culture_tradition:tradition_african_tolerance = { is_in_list = traits }
+			culture_tradition:tradition_religion_blending = { is_in_list = traits }
+		}
+		OR = {
+			has_cultural_pillar = heritage_mongolic
+			has_cultural_pillar = heritage_turkic
+		}
+	}
+	can_pick = {
+		custom_tooltip = {
+			text = culture_in_steppe_desc
+			any_culture_county = {
+				percent >= 0.4
+				any_county_province = {
+					geographical_region = world_steppe
+				}
+			}
+		}
+	}
 
-# 	parameters = { #easily convert and don't force conversion
-# 		more_easily_converted = yes
-# 		less_likely_to_force_conversion = yes
-# 	}
+	parameters = { #easily convert and don't force conversion
+		more_easily_converted = yes
+		less_likely_to_force_conversion = yes
+	}
 
-# 	character_modifier = { # easier to self-convert and create or reform faith
-# 		faith_creation_piety_cost_mult = -0.2
-# 		faith_conversion_piety_cost_mult = -0.2
-# 		different_faith_opinion = 10
-# 		different_faith_county_opinion_mult = -0.25 # reduced penalty for different faiths (note this appears confusing in the UI right now)
-# 	}
+	character_modifier = { # easier to self-convert and create or reform faith
+		faith_creation_piety_cost_mult = -0.2
+		faith_conversion_piety_cost_mult = -0.2
+		different_faith_opinion = 10
+		different_faith_county_opinion_mult = -0.25 # reduced penalty for different faiths (note this appears confusing in the UI right now)
+	}
 
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_bellicose = { is_in_list = traits }
-# 						culture_pillar:ethos_egalitarian = { is_in_list = traits }
-# 						culture_pillar:ethos_communal = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_bellicose_egalitarian_or_communal_desc
-# 				}
-# 			}
-# 			# No extra cost here, since we have a fairly restrictive can_pick block.
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_communal_desc
+				}
+			}
+			# No extra cost here, since we have a fairly restrictive can_pick block.
 
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 
-# 	ai_will_do = {
-# 		value = 100
-# 		if = {
-# 			limit = {
-# 				culture_pillar:ethos_spiritual = { is_in_list = traits }
-# 			}
-# 			multiply = 0.25
-# 		}
-# 	}
-# }
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				culture_pillar:ethos_spiritual = { is_in_list = traits }
+			}
+			multiply = 0.25
+		}
+	}
+}
 
+# 战士女王
 # tradition_nubian_warrior_queens = {
 # 	category = regional
 
@@ -1286,6 +1300,8 @@
 # 	ai_will_do = { value = 100 }
 # }
 
+
+# 战士国王
 # tradition_nubian_warrior_kings = {
 # 	category = regional
 

@@ -375,115 +375,115 @@ convert_to_tribalism_decision = {
 # DYNASTY DECISIONS
 
 ##################################################
-# Declare Bloodline Holy
+# Declare Bloodline Holy 祝圣血脉
 # by (probably) Mathilda Bjarnehed
 ##################################################
 
-declare_bloodline_holy_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_family_tree.dds"
-	major = yes
-	desc = declare_bloodline_holy_decision_desc
+# declare_bloodline_holy_decision = {
+# 	picture = "gfx/interface/illustrations/decisions/decision_family_tree.dds"
+# 	major = yes
+# 	desc = declare_bloodline_holy_decision_desc
 
-	ai_check_interval = 120
+# 	ai_check_interval = 120
 
-	is_shown = {
-		is_lowborn = no
-		highest_held_title_tier >= 3 #Dukes and higher.
-		NOT = { #Just once per Faith.
-			faith = {
-				exists = var:variable_savior_found
-			}
-		}
-		NOR = {
-			has_trait = saoshyant
-			has_trait = saoshyant_descendant
-			has_trait = sayyid
-			has_trait = blood_of_prophet
-			has_trait = savior
-			has_trait = divine_blood
-			has_trait = paragon
-			has_trait = consecrated_blood
-			faith.religion = faith:ashari.religion #Uses Sayyid mechanics already.
-			faith.religion = faith:mazdayasna.religion #Must aim to become Saoshyant instead.
-			dynasty = {
-				exists = var:variable_made_bloodline_holy
-			}
-		}
-		OR = { #Should not be available to non-Temporal religious heads.
-			root.faith = { has_doctrine = doctrine_temporal_head }
-			NOT = { root = root.faith.religious_head }
-		}
-		OR = {  #Either headless faith, religious head himself, or in good relations with other religious head.
-			root.faith = { has_doctrine = doctrine_no_head }
-			AND = {
-				faith = { has_doctrine = doctrine_temporal_head } #Should not be available for the Pope and such.
-				root = root.faith.religious_head
-			}
-			AND = {
-				exists = root.faith.religious_head
-				NOT = { root = root.faith.religious_head }
-			}
-		}
-	}
+# 	is_shown = {
+# 		is_lowborn = no
+# 		highest_held_title_tier >= 3 #Dukes and higher.
+# 		NOT = { #Just once per Faith.
+# 			faith = {
+# 				exists = var:variable_savior_found
+# 			}
+# 		}
+# 		NOR = {
+# 			has_trait = saoshyant
+# 			has_trait = saoshyant_descendant
+# 			has_trait = sayyid
+# 			has_trait = blood_of_prophet
+# 			has_trait = savior
+# 			has_trait = divine_blood
+# 			has_trait = paragon
+# 			has_trait = consecrated_blood
+# 			faith.religion = faith:ashari.religion #Uses Sayyid mechanics already.
+# 			faith.religion = faith:mazdayasna.religion #Must aim to become Saoshyant instead.
+# 			dynasty = {
+# 				exists = var:variable_made_bloodline_holy
+# 			}
+# 		}
+# 		OR = { #Should not be available to non-Temporal religious heads.
+# 			root.faith = { has_doctrine = doctrine_temporal_head }
+# 			NOT = { root = root.faith.religious_head }
+# 		}
+# 		OR = {  #Either headless faith, religious head himself, or in good relations with other religious head.
+# 			root.faith = { has_doctrine = doctrine_no_head }
+# 			AND = {
+# 				faith = { has_doctrine = doctrine_temporal_head } #Should not be available for the Pope and such.
+# 				root = root.faith.religious_head
+# 			}
+# 			AND = {
+# 				exists = root.faith.religious_head
+# 				NOT = { root = root.faith.religious_head }
+# 			}
+# 		}
+# 	}
 
-	is_valid = {
-		trigger_if = {
-			limit = {
-				exists = root.faith.religious_head
-				NOT = { root = root.faith.religious_head }
-			}
-			root.faith.religious_head = {
-				opinion = {
-					target = root
-					value >= 75
-				}
-			}
-		}
-		custom_description = {
-			text = faith_is_reformed
-			subject = root
-			faith = { NOT = { has_doctrine_parameter = unreformed } }
-		}
-		custom_description = {
-			text = "consecrate_bloodline_holy_site"
-			faith = {
-				any_holy_site = {
-					OR = {
-						county.holder = root
-						county.holder.top_liege = { this = root }
-					}
-					count >= 1
-				}
-			}
-		}
-		piety_level >= 5
-	}
+# 	is_valid = {
+# 		trigger_if = {
+# 			limit = {
+# 				exists = root.faith.religious_head
+# 				NOT = { root = root.faith.religious_head }
+# 			}
+# 			root.faith.religious_head = {
+# 				opinion = {
+# 					target = root
+# 					value >= 75
+# 				}
+# 			}
+# 		}
+# 		custom_description = {
+# 			text = faith_is_reformed
+# 			subject = root
+# 			faith = { NOT = { has_doctrine_parameter = unreformed } }
+# 		}
+# 		custom_description = {
+# 			text = "consecrate_bloodline_holy_site"
+# 			faith = {
+# 				any_holy_site = {
+# 					OR = {
+# 						county.holder = root
+# 						county.holder.top_liege = { this = root }
+# 					}
+# 					count >= 1
+# 				}
+# 			}
+# 		}
+# 		piety_level >= 5
+# 	}
 
-	cost = {
-		piety = 2500
-	}
+# 	cost = {
+# 		piety = 2500
+# 	}
 
-	effect = {
-		gain_legitimizing_legend_seed_tooltip_effect = yes
-		trigger_event = major_decisions.0100
-		show_as_tooltip = {
-			declare_bloodline_holy_decision_effect = yes
-		}
+# 	effect = {
+# 		gain_legitimizing_legend_seed_tooltip_effect = yes
+# 		trigger_event = major_decisions.0100
+# 		show_as_tooltip = {
+# 			declare_bloodline_holy_decision_effect = yes
+# 		}
 
-		stress_impact = {
-			content = massive_stress_impact_gain
-			humble = massive_stress_impact_gain
-		}
-	}
+# 		stress_impact = {
+# 			content = massive_stress_impact_gain
+# 			humble = massive_stress_impact_gain
+# 		}
+# 	}
 
-	ai_potential = {
-		always = yes
-	}
+# 	ai_potential = {
+# 		always = yes
+# 	}
 
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }
 
 ##################################################
 # Strengthen your Bloodline

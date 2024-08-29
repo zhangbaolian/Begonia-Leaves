@@ -853,7 +853,7 @@ unity_improve_logistics_decision = {
 
 	is_shown = {
 		has_fp3_dlc_trigger = yes
-		culture = { has_cultural_pillar = heritage_iranian }
+		# culture = { has_cultural_pillar = heritage_iranian }
 		government_has_flag = government_is_clan
 		is_landed = yes
 		exists = house
@@ -861,7 +861,7 @@ unity_improve_logistics_decision = {
 
 	is_valid = {
 		# We show the culture requirement here to tell the player why they have the decision available
-		culture = { has_cultural_pillar = heritage_iranian }
+		# culture = { has_cultural_pillar = heritage_iranian }
 		house = {
 			OR = {
 				has_house_unity_stage = antagonistic
@@ -935,7 +935,7 @@ unity_promote_development_decision = {
 
 	is_shown = {
 		has_fp3_dlc_trigger = yes
-		culture = { has_cultural_pillar = heritage_iranian }
+		# culture = { has_cultural_pillar = heritage_iranian }
 		government_has_flag = government_is_clan
 		is_landed = yes
 		exists = house
@@ -943,7 +943,7 @@ unity_promote_development_decision = {
 
 	is_valid = {
 		# We show the culture requirement here to tell the player why they have the decision available
-		culture = { has_cultural_pillar = heritage_iranian }
+		# culture = { has_cultural_pillar = heritage_iranian }
 		house = {
 			OR = {
 				has_house_unity_stage = friendly
@@ -1099,7 +1099,7 @@ unity_establish_futuwaa_lodges_decision = {
 						has_character_modifier = ignores_gender_army_rules
 						culture = { 
 							OR = {
-								has_cultural_parameter = has_access_to_shieldmaidens
+								# has_cultural_parameter = has_access_to_shieldmaidens
 								has_cultural_parameter = high_prowess_ignores_knight_restrictions
 							}
 						}
@@ -1146,7 +1146,7 @@ unity_establish_futuwaa_lodges_decision = {
 		exists = capital_province # Sanity check
 		# TODO_CD_EREN: Allow this for people w/o the tradition but nerf it (and rename it)
 		# Otherwise, put it in the valid as well so the tooltip is surfaced to the player
-		culture = { has_cultural_tradition = tradition_futuwaa }
+		# culture = { has_cultural_tradition = tradition_futuwaa }
 	}
 
 	is_valid = {
@@ -1173,7 +1173,7 @@ unity_establish_futuwaa_lodges_decision = {
 					has_character_modifier = ignores_gender_army_rules
 					culture = {
 						OR = {
-							has_cultural_parameter = has_access_to_shieldmaidens
+							# has_cultural_parameter = has_access_to_shieldmaidens
 							has_cultural_parameter = high_prowess_ignores_knight_restrictions
 						}
 					}
@@ -1322,7 +1322,7 @@ unity_educate_youth_in_madrasas_decision = {
 		is_landed = yes
 		exists = house
 		exists = capital_province # Sanity check
-		culture = { has_cultural_tradition = tradition_fp3_beacon_of_learning } # TODO_CD_EREN: Allow this for people w/o the tradition, but nerf it. See the futuwaa decision
+		# culture = { has_cultural_tradition = tradition_fp3_beacon_of_learning } # TODO_CD_EREN: Allow this for people w/o the tradition, but nerf it. See the futuwaa decision
 	}
 
 	is_valid = {

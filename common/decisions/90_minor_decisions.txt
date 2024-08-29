@@ -185,6 +185,7 @@ stop_lose_weight_decision = { #by Linnéa Thimrén
 	}
 }
 
+# 尝试自杀
 commit_suicide_decision = { #by Linnéa Thimrén
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	desc = {
@@ -297,7 +298,7 @@ commit_suicide_decision = { #by Linnéa Thimrén
 
 	is_shown = {
 		is_adult = yes
-		NOT = { can_execute_decision = initiate_consolamentum_decision }
+		# NOT = { can_execute_decision = initiate_consolamentum_decision }
 		OR = {
 			has_trait = depressed
 			has_trait = incapable

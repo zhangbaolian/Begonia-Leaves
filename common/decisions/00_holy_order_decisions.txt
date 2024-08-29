@@ -1,4 +1,5 @@
-﻿create_holy_order_decision = {
+﻿# 建立骑士团
+create_holy_order_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
 	major = yes
 
@@ -15,12 +16,12 @@
 			}
 		}
 		# Jomsvikings should use their special decision if appropriate.
-		trigger_if = {
-			limit = { has_fp1_dlc_trigger = yes }
-			faith = {
-				NOT = { fp1_valid_norse_faith_for_jomsvikings_trigger = yes }
-			}
-		}
+		# trigger_if = {
+		# 	limit = { has_fp1_dlc_trigger = yes }
+		# 	faith = {
+		# 		NOT = { fp1_valid_norse_faith_for_jomsvikings_trigger = yes }
+		# 	}
+		# }
 
 		trigger_if = {
 			limit = {
