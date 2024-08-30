@@ -397,7 +397,7 @@ duke_feudal_independent = {
 	priority = 27
 	only_independent = yes
 	governments = { feudal_government }
-	heritages = { heritage_north_germanic heritage_west_germanic heritage_goidelic heritage_brythonic heritage_east_african heritage_tibetan }
+	heritages = { heritage_tibetan }
 }
 duke_feudal_independent_female = {
 	type = character
@@ -407,13 +407,13 @@ duke_feudal_independent_female = {
 	priority = 27
 	only_independent = yes
 	governments = { feudal_government }
-	heritages = { heritage_north_germanic heritage_west_germanic heritage_goidelic heritage_brythonic heritage_east_african heritage_tibetan }
+	heritages = { heritage_tibetan }
 }
 duchy_feudal_independent = {
 	type = title
 	tier = duchy
 	governments = { feudal_government }
-	heritages = { heritage_north_germanic heritage_west_germanic heritage_goidelic heritage_brythonic heritage_east_african heritage_tibetan }
+	heritages = { heritage_tibetan }
 	only_independent = yes
 	priority = 28
 }

@@ -518,9 +518,9 @@ faith = {
 	background = {
 		trigger = {
 			NOR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = temple
@@ -528,9 +528,9 @@ faith = {
 	background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = ep2_holy_site_indian
@@ -1791,22 +1791,22 @@ pilgrimage_destination = {
 	sound = {
 		reference = "event:/DLC/EP2/SFX/Events/Grand_Activities/Pilgrimages/ep2_event_revamp_pilgrimage_arrive"
 	}
-	background = {
-		trigger = {
-			OR = {
-				AND = {
-					exists = scope:activity
-					scope:activity.activity_location.county = title:c_jerusalem
-				}
-				AND = {
-					exists = scope:activity
-					scope:activity.activity_location.county = title:c_mecca
-				}
-			}
+	# background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			AND = {
+	# 				exists = scope:activity
+	# 				scope:activity.activity_location.county = title:c_jerusalem
+	# 			}
+	# 			AND = {
+	# 				exists = scope:activity
+	# 				scope:activity.activity_location.county = title:c_mecca
+	# 			}
+	# 		}
 			
-		}
-		reference = holy_site_unique
-	}
+	# 	}
+	# 	reference = holy_site_unique
+	# }
 	background = {
 		reference = holy_site_generic
 	}

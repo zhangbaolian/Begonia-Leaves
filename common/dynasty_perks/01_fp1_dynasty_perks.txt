@@ -1,5 +1,6 @@
 ﻿# ADVENTURE LEGACIES
 
+# 漫游癖好
 fp1_adventure_legacy_1 = { # Wanderlust
 	legacy = fp1_adventure_legacy_track
 
@@ -22,7 +23,7 @@ fp1_adventure_legacy_1 = { # Wanderlust
 		value = 11
 		if = {
 			limit = {
-				culture = { has_cultural_pillar = heritage_north_germanic }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 			multiply = 10
 		}
@@ -126,7 +127,7 @@ fp1_pillage_legacy_1 = { # Sea-Wolves
 		value = 11
 		if = {
 			limit = {
-				culture = { has_cultural_pillar = heritage_north_germanic }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 			multiply = 10
 		}

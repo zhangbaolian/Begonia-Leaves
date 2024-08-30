@@ -17,8 +17,8 @@ fp2_urbanism_legacy_1 = { # Flourishing Cities
 			limit = {
 				culture = {
 					OR = {
-						has_cultural_pillar = heritage_iberian
-						has_cultural_pillar = heritage_arabic
+						has_cultural_pillar = heritage_virtual
+						# has_cultural_pillar = heritage_arabic
 					}
 				}
 			}
@@ -109,8 +109,8 @@ fp2_coterie_legacy_1 = { # Inner Circle
 			limit = {
 				culture = {
 					OR = {
-						has_cultural_pillar = heritage_iberian
-						has_cultural_pillar = heritage_arabic
+						has_cultural_pillar = heritage_virtual
+						# has_cultural_pillar = heritage_arabic
 					}
 				}
 			}

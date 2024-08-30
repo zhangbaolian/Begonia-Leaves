@@ -147,15 +147,15 @@ ancestral_glory = {
 				}
 				desc = legend_ayedawbon
 			}
-			triggered_desc = {
-				trigger = {
-					OR = {
-						religion = religion:jainism_religion
-						religion = religion:hinduism_religion
-					}
-				}
-				desc = legend_purana
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		OR = {
+			# 			religion = religion:jainism_religion
+			# 			religion = religion:hinduism_religion
+			# 		}
+			# 	}
+			# 	desc = legend_purana
+			# }
 			random_valid = {
 				desc = legend_history
 				desc = legend_chronicles
@@ -333,62 +333,62 @@ ancestral_glory_not_in_history = { #This should only be used for seeds
 ancient_people = {
 	name = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hebrew
-					scope:title = title:k_georgia
-					scope:original_region = geographical_region:world_middle_east_jerusalem
-				}
-				desc = legend_sons_of_david
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:gothic
-					scope:title = title:e_spain
-					scope:original_region = geographical_region:world_steppe_west
-				}
-				desc = legend_gothic_kings
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:trojan
-					scope:title = title:e_britannia
-					scope:original_region = geographical_region:troy_region
-				}
-				desc = legend_new_troy_london
-			}
-			triggered_desc = {
-				trigger = {
-					culture = culture:trojan
-					title = title:c_cornwall
-					scope:original_region = geographical_region:troy_region
-				}
-				desc = legend_corineus
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:ancient_egyptian
-					scope:title = title:k_scotland
-					scope:original_region = geographical_region:ghw_region_egypt_et_al
-				}
-				desc = legend_scota
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hebrew
-					scope:title = title:e_abyssinia
-					scope:original_region = geographical_region:ghw_region_jerusalem
-				}
-				desc = legend_menelik_i
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hebrew
-					scope:title = title:e_abyssinia
-					scope:original_region = geographical_region:israel_region
-				}
-				desc = legend_kings_of_semien
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hebrew
+			# 		scope:title = title:k_georgia
+			# 		scope:original_region = geographical_region:world_middle_east_jerusalem
+			# 	}
+			# 	desc = legend_sons_of_david
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:gothic
+			# 		scope:title = title:e_spain
+			# 		scope:original_region = geographical_region:world_steppe_west
+			# 	}
+			# 	desc = legend_gothic_kings
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:trojan
+			# 		scope:title = title:e_britannia
+			# 		scope:original_region = geographical_region:troy_region
+			# 	}
+			# 	desc = legend_new_troy_london
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		culture = culture:trojan
+			# 		title = title:c_cornwall
+			# 		scope:original_region = geographical_region:troy_region
+			# 	}
+			# 	desc = legend_corineus
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:ancient_egyptian
+			# 		scope:title = title:k_scotland
+			# 		scope:original_region = geographical_region:ghw_region_egypt_et_al
+			# 	}
+			# 	desc = legend_scota
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hebrew
+			# 		scope:title = title:e_abyssinia
+			# 		scope:original_region = geographical_region:ghw_region_jerusalem
+			# 	}
+			# 	desc = legend_menelik_i
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hebrew
+			# 		scope:title = title:e_abyssinia
+			# 		scope:original_region = geographical_region:israel_region
+			# 	}
+			# 	desc = legend_kings_of_semien
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:culture = culture:roman
@@ -396,90 +396,90 @@ ancient_people = {
 				}
 				desc = legend_roman_heritage
 			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hunnic
-					scope:title = title:e_caspian-pontic_steppe
-					scope:original_region = geographical_region:world_steppe_west
-				}
-				desc = legend_hunnic_heritage
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hunnic
+			# 		scope:title = title:e_caspian-pontic_steppe
+			# 		scope:original_region = geographical_region:world_steppe_west
+			# 	}
+			# 	desc = legend_hunnic_heritage
+			# }
 			desc = legend_ancient_people_name
 		}
 	}
 	description = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hebrew
-					scope:title = title:k_georgia
-					scope:original_region = geographical_region:world_middle_east_jerusalem
-				}
-				desc = legend_sons_of_david_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:gothic
-					scope:title = title:e_spain
-					scope:original_region = geographical_region:world_steppe_west
-				}
-				desc = legend_gothic_kings_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:trojan
-					scope:title = title:e_britannia
-					scope:original_region = geographical_region:troy_region
-				}
-				desc = legend_new_troy_london_desc
-			}
-			triggered_desc = {
-				trigger = {
-					culture = culture:trojan
-					title = title:c_cornwall
-					scope:original_region = geographical_region:troy_region
-				}
-				desc = legend_corineus_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:ancient_egyptian
-					scope:title = title:k_scotland
-					scope:original_region = geographical_region:ghw_region_egypt_et_al
-				}
-				desc = legend_scota_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hebrew
-					scope:title = title:e_abyssinia
-					scope:original_region = geographical_region:ghw_region_jerusalem
-				}
-				desc = legend_menelik_i_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hebrew
-					scope:title = title:e_abyssinia
-					scope:original_region = geographical_region:israel_region
-				}
-				desc = legend_kings_of_semien_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:roman
-					scope:original_region = geographical_region:custom_roman_full_borders
-				}
-				desc = legend_roman_heritage_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:culture = culture:hunnic
-					scope:title = title:e_caspian-pontic_steppe
-					scope:original_region = geographical_region:world_steppe_west
-				}
-				desc = legend_hunnic_heritage_desc
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hebrew
+			# 		scope:title = title:k_georgia
+			# 		scope:original_region = geographical_region:world_middle_east_jerusalem
+			# 	}
+			# 	desc = legend_sons_of_david_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:gothic
+			# 		scope:title = title:e_spain
+			# 		scope:original_region = geographical_region:world_steppe_west
+			# 	}
+			# 	desc = legend_gothic_kings_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:trojan
+			# 		scope:title = title:e_britannia
+			# 		scope:original_region = geographical_region:troy_region
+			# 	}
+			# 	desc = legend_new_troy_london_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		culture = culture:trojan
+			# 		title = title:c_cornwall
+			# 		scope:original_region = geographical_region:troy_region
+			# 	}
+			# 	desc = legend_corineus_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:ancient_egyptian
+			# 		scope:title = title:k_scotland
+			# 		scope:original_region = geographical_region:ghw_region_egypt_et_al
+			# 	}
+			# 	desc = legend_scota_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hebrew
+			# 		scope:title = title:e_abyssinia
+			# 		scope:original_region = geographical_region:ghw_region_jerusalem
+			# 	}
+			# 	desc = legend_menelik_i_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hebrew
+			# 		scope:title = title:e_abyssinia
+			# 		scope:original_region = geographical_region:israel_region
+			# 	}
+			# 	desc = legend_kings_of_semien_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:roman
+			# 		scope:original_region = geographical_region:custom_roman_full_borders
+			# 	}
+			# 	desc = legend_roman_heritage_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:culture = culture:hunnic
+			# 		scope:title = title:e_caspian-pontic_steppe
+			# 		scope:original_region = geographical_region:world_steppe_west
+			# 	}
+			# 	desc = legend_hunnic_heritage_desc
+			# }
 			desc = legend_ancient_people_desc
 		}
 	}
@@ -792,13 +792,13 @@ mythical_descent = {
 godly_descent = {
 	name = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:god = flag:germanic_high_god_name
-					scope:title = title:k_norway
-				}
-				desc = legend_hieros_gamos_skirnismal
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:god = flag:germanic_high_god_name
+			# 		scope:title = title:k_norway
+			# 	}
+			# 	desc = legend_hieros_gamos_skirnismal
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:god = flag:hinduism_high_god_name
@@ -810,13 +810,13 @@ godly_descent = {
 	}
 	description = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:god = flag:germanic_high_god_name
-					scope:title = title:k_norway
-				}
-				desc = legend_hieros_gamos_skirnismal_desc
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:god = flag:germanic_high_god_name
+			# 		scope:title = title:k_norway
+			# 	}
+			# 	desc = legend_hieros_gamos_skirnismal_desc
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:god = flag:hinduism_high_god_name
@@ -864,83 +864,83 @@ war_won_chronicle = {
 new_title = {
 	name = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_roman_empire
-				}
-				desc = legend_of_rome_name
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:k_israel
-				}
-				desc = legend_of_israel_name
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_slavia
-				}
-				desc = legend_of_slavia_name
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_north_sea
-				}
-				desc = legend_of_n_sea_name
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:k_mann_the_isles
-				}
-				desc = legend_of_mann_name
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_mongol_empire
-				}
-				desc = legend_of_genghis_name
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_roman_empire
+			# 	}
+			# 	desc = legend_of_rome_name
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:k_israel
+			# 	}
+			# 	desc = legend_of_israel_name
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_slavia
+			# 	}
+			# 	desc = legend_of_slavia_name
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_north_sea
+			# 	}
+			# 	desc = legend_of_n_sea_name
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:k_mann_the_isles
+			# 	}
+			# 	desc = legend_of_mann_name
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_mongol_empire
+			# 	}
+			# 	desc = legend_of_genghis_name
+			# }
 			desc = new_title_name
 		}
 	}
 	description = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_roman_empire
-				}
-				desc = legend_of_rome_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:k_israel
-				}
-				desc = legend_of_israel_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_slavia
-				}
-				desc = legend_of_slavia_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_north_sea
-				}
-				desc = legend_of_n_sea_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:k_mann_the_isles
-				}
-				desc = legend_of_mann_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:title = title:e_mongol_empire
-				}
-				desc = legend_of_genghis_desc
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_roman_empire
+			# 	}
+			# 	desc = legend_of_rome_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:k_israel
+			# 	}
+			# 	desc = legend_of_israel_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_slavia
+			# 	}
+			# 	desc = legend_of_slavia_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_north_sea
+			# 	}
+			# 	desc = legend_of_n_sea_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:k_mann_the_isles
+			# 	}
+			# 	desc = legend_of_mann_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:title = title:e_mongol_empire
+			# 	}
+			# 	desc = legend_of_genghis_desc
+			# }
 			desc = new_title_desc
 		}
 	}
@@ -1272,35 +1272,35 @@ accolade_chronicle = {
 priesthood_restoration = {
 	name = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:religion = religion:judaism_religion
-				}
-				desc = jewish_priesthood_name
-			}
-			triggered_desc = {
-				trigger = {
-					scope:religion = religion:zoroastrianism_religion
-				}
-				desc = zoroast_priesthood_name
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:religion = religion:judaism_religion
+			# 	}
+			# 	desc = jewish_priesthood_name
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:religion = religion:zoroastrianism_religion
+			# 	}
+			# 	desc = zoroast_priesthood_name
+			# }
 			desc = priesthood_restoration_name
 		}
 	}
 	description = {
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:religion = religion:judaism_religion
-				}
-				desc = jewish_priesthood_desc
-			}
-			triggered_desc = {
-				trigger = {
-					scope:religion = religion:zoroastrianism_religion
-				}
-				desc = zoroast_priesthood_desc
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:religion = religion:judaism_religion
+			# 	}
+			# 	desc = jewish_priesthood_desc
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:religion = religion:zoroastrianism_religion
+			# 	}
+			# 	desc = zoroast_priesthood_desc
+			# }
 			desc = priesthood_restoration_desc
 		}
 	}

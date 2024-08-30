@@ -504,91 +504,91 @@
 #######################
 
 # 支尔格大会
-# tradition_fp3_jirga = {
-# 	category = regional
+tradition_fp3_jirga = {
+	category = regional
 
-# 	layers = {
-# 		0 = learning
-# 		1 = indian
-# 		4 = jirga.dds
-# 	}
+	layers = {
+		0 = learning
+		1 = indian
+		4 = jirga.dds
+	}
 	
-# 	is_shown = {
-# 		# DLC check.
-# 		has_fp3_dlc_trigger = yes
-# 		OR = {
-# 			has_cultural_pillar = heritage_iranian
-# 			has_cultural_pillar = heritage_indo_aryan
-# 		}
-# 	}
+	is_shown = {
+		# DLC check.
+		has_fp3_dlc_trigger = yes
+		# OR = {
+		# 	has_cultural_pillar = heritage_iranian
+		# 	has_cultural_pillar = heritage_indo_aryan
+		# }
+	}
 	
-# 	can_pick = {
-# 		scope:character = {
-# 			government_has_flag = government_is_tribal #This tradition is really a holdover from tribal culture, and though the Afghanis might have it despite having changed government forms, others cannot pick it now.
-# 		}
-# 	}
+	can_pick = {
+		scope:character = {
+			government_has_flag = government_is_tribal #This tradition is really a holdover from tribal culture, and though the Afghanis might have it despite having changed government forms, others cannot pick it now.
+		}
+	}
 	
-# 	parameters = {
-# 		tribal_elective_enabled = yes
-# 		just_trait_gives_bonuses = yes
-# 		pardoning_gives_prestige = yes
-# 	}
-# 	character_modifier = {
-# 		owned_personal_scheme_success_chance_add = 10
-# 	}
+	parameters = {
+		tribal_elective_enabled = yes
+		just_trait_gives_bonuses = yes
+		pardoning_gives_prestige = yes
+	}
+	character_modifier = {
+		owned_personal_scheme_success_chance_add = 10
+	}
 	
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_communal = { is_in_list = traits }
-# 						culture_pillar:ethos_stoic = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_stoic_or_communal_desc
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOT = {
-# 						scope:character = {
-# 							any_sub_realm_county = {
-# 								county_opinion < 0
-# 							}
-# 						}
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_unfulfilled_criteria_penalty
-# 					desc = counties_with_low_county_opinion_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_stoic = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_stoic_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							any_sub_realm_county = {
+								county_opinion < 0
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = counties_with_low_county_opinion_desc
+				}
+			}
 			
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 	
-# 	ai_will_do = {
-# 		value = 100
-# 		if = {
-# 			limit = {
-# 				OR = {
-# 					culture_tradition:tradition_things = { is_in_list = traits }
-# 					culture_tradition:tradition_the_witenagemot = { is_in_list = traits }
-# 				}
-# 			}
-# 			multiply = 0
-# 		}
-# 	}
-# }
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				OR = {
+					culture_tradition:tradition_things = { is_in_list = traits }
+					culture_tradition:tradition_the_witenagemot = { is_in_list = traits }
+				}
+			}
+			multiply = 0
+		}
+	}
+}
 
 # 务实信条
 # tradition_fp3_pragmatic_creed = {

@@ -15,7 +15,7 @@
 		value = 11
 		if = {
 			limit = {
-				culture = { has_cultural_pillar = heritage_iranian }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 			multiply = 10
 		}

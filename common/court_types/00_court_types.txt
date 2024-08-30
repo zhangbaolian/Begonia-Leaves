@@ -602,7 +602,7 @@ court_tribal = {
 				if = {
 					limit = {
 						OR = {
-							culture = { has_cultural_pillar = heritage_turkic }
+							# culture = { has_cultural_pillar = heritage_turkic }
 							culture = { has_cultural_pillar = heritage_mongolic }
 						}
 					}

@@ -845,13 +845,13 @@ common_faction_modifiers = {
 	}
 
 	#FP3 Strengthern Caliphate
-	modifier = {
-		desc = "FACTION_REASON_FP3_SUPPORTER"
-		add = -50
-		global_var:fp3_struggle_ending ?= flag:fp3_struggle_strengthen_caliphate_ending
-		has_trait = fp3_struggle_supporter
-		$FACTION_TARGET$ = { has_title = title:d_sunni }
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_FP3_SUPPORTER"
+	# 	add = -50
+	# 	global_var:fp3_struggle_ending ?= flag:fp3_struggle_strengthen_caliphate_ending
+	# 	has_trait = fp3_struggle_supporter
+	# 	$FACTION_TARGET$ = { has_title = title:d_sunni }
+	# }
 }
 
 independence_faction_create_blockers = {
@@ -882,18 +882,18 @@ independence_faction_modifiers = {
 	modifier = { # Electors are less likely to join independence factions, if their faith is astray or below
 		desc = "FACTION_REASON_ELECTOR"
 
-		add = {
-			value = -150
-			if = {
-				limit = {
-					exists = title:e_hre
-					$FACTION_TARGET$ = {
-						has_primary_title = title:e_hre
-					}
-				}
-				add = -150
-			}
-		}
+		# add = {
+		# 	value = -150
+		# 	if = {
+		# 		limit = {
+		# 			exists = title:e_hre
+		# 			$FACTION_TARGET$ = {
+		# 				has_primary_title = title:e_hre
+		# 			}
+		# 		}
+		# 		add = -150
+		# 	}
+		# }
 		$FACTION_TARGET$.primary_title = {
 			has_order_of_succession = election
 			any_elector = {
@@ -975,12 +975,12 @@ independence_faction_modifiers = {
 	}
 
 	# Stem Duchies innovation
-	modifier = {
-		desc = "FACTION_REASON_INNOVATION_STEM_DUCHIES"
-		add = -25
-		$FACTION_TARGET$ = { culture = { has_innovation = innovation_stem_duchies }	}
-		culture = { has_same_culture_heritage = $FACTION_TARGET$.culture }
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_INNOVATION_STEM_DUCHIES"
+	# 	add = -25
+	# 	$FACTION_TARGET$ = { culture = { has_innovation = innovation_stem_duchies }	}
+	# 	culture = { has_same_culture_heritage = $FACTION_TARGET$.culture }
+	# }
 
 	# Characters are less likely to join if cultural acceptance is high
 	modifier = {
@@ -1084,24 +1084,24 @@ independence_faction_modifiers = {
 	}
 	
 	# Less likely for Anglosaxons to want to destroy England
-	modifier = {
-		desc = "FACTION_REASON_ANGLOSAXON"
-		add = -200
-		culture = {
-			has_cultural_pillar = heritage_west_germanic
-		}
-	 	$FACTION_TARGET$.primary_title = title:k_england
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_ANGLOSAXON"
+	# 	add = -200
+	# 	culture = {
+	# 		has_cultural_pillar = heritage_west_germanic
+	# 	}
+	#  	$FACTION_TARGET$.primary_title = title:k_england
+	# }
 	
 	# Less likely for French vassals
-	modifier = {
-		desc = "FACTION_REASON_FRENCH_VASSAL"
-		add = -200
-		culture = {
-			has_cultural_pillar = heritage_frankish
-		}
-	 	$FACTION_TARGET$.primary_title = title:k_france
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_FRENCH_VASSAL"
+	# 	add = -200
+	# 	culture = {
+	# 		has_cultural_pillar = heritage_frankish
+	# 	}
+	#  	$FACTION_TARGET$.primary_title = title:k_france
+	# }
 	
 	modifier = { # New vassals do not want to join independence factions
 		desc = "FACTION_REASON_NEW_VASSAL"
@@ -1363,56 +1363,56 @@ nation_fracturing_faction_modifiers = {
 	}
 	
 	# Less likely for French vassals
-	modifier = {
-		desc = "FACTION_REASON_FRENCH_VASSAL"
-		add = -200
-		culture = {
-			has_cultural_pillar = heritage_frankish
-		}
-	 	$FACTION_TARGET$.primary_title = title:k_france
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_FRENCH_VASSAL"
+	# 	add = -200
+	# 	culture = {
+	# 		has_cultural_pillar = heritage_frankish
+	# 	}
+	#  	$FACTION_TARGET$.primary_title = title:k_france
+	# }
 	
 	# Less likely for Anglosaxons to want to destroy England
-	modifier = {
-		desc = "FACTION_REASON_ANGLOSAXON"
-		add = -200
-		culture = {
-			has_cultural_pillar = heritage_west_germanic
-		}
-	 	$FACTION_TARGET$.primary_title = title:k_england
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_ANGLOSAXON"
+	# 	add = -200
+	# 	culture = {
+	# 		has_cultural_pillar = heritage_west_germanic
+	# 	}
+	#  	$FACTION_TARGET$.primary_title = title:k_england
+	# }
 	
 	# Less likely for Normans to want to destroy England
-	modifier = {
-		desc = "FACTION_REASON_NORMAN"
-		add = -200
-		culture = {
-			has_cultural_pillar = heritage_frankish
-		}
-	 	$FACTION_TARGET$.primary_title = title:k_england
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_NORMAN"
+	# 	add = -200
+	# 	culture = {
+	# 		has_cultural_pillar = heritage_frankish
+	# 	}
+	#  	$FACTION_TARGET$.primary_title = title:k_england
+	# }
 	
 	# Less likely for Brythonic to want to destroy England
-	modifier = {
-		desc = "FACTION_REASON_BRYTHONIC"
-		add = -200
-		culture = {
-			has_cultural_pillar = heritage_brythonic
-		}
-	 	$FACTION_TARGET$.primary_title = title:k_england
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_BRYTHONIC"
+	# 	add = -200
+	# 	culture = {
+	# 		has_cultural_pillar = heritage_brythonic
+	# 	}
+	#  	$FACTION_TARGET$.primary_title = title:k_england
+	# }
 
 	# Less likely for vassals with Byzantine Traditions
-	modifier = {
-		desc = "FACTION_REASON_BYZANTINE"
-		add = -500
-	 	culture = {
-			has_cultural_parameter = byzantine_faction_differences
-		}
-	 	$FACTION_TARGET$ = {
-			has_title = title:e_byzantium
-		}
-	}
+	# modifier = {
+	# 	desc = "FACTION_REASON_BYZANTINE"
+	# 	add = -500
+	#  	culture = {
+	# 		has_cultural_parameter = byzantine_faction_differences
+	# 	}
+	#  	$FACTION_TARGET$ = {
+	# 		has_title = title:e_byzantium
+	# 	}
+	# }
 
 	modifier = {
 		desc = "FACTION_REASON_BYZANTINE_RELIGION"
@@ -1460,28 +1460,28 @@ nation_fracturing_faction_blockers = {
 	## Game ruler specifics
 
 	# Keep it while the Calip is alive
-	modifier = {
-		add = -1000
-		$FACTION_TARGET$ = {
-			this = character:73683
-			any_held_title = {
-				this = title:k_andalusia
-			}
-		}
-		has_game_rule = dissolution_after_caliph_death
-	}
+	# modifier = {
+	# 	add = -1000
+	# 	$FACTION_TARGET$ = {
+	# 		this = character:73683
+	# 		any_held_title = {
+	# 			this = title:k_andalusia
+	# 		}
+	# 	}
+	# 	has_game_rule = dissolution_after_caliph_death
+	# }
 
 	# Historical time blocker
-	modifier = {
-		add = -1000
-		current_date < 1020.1.1
-		$FACTION_TARGET$ = {
-			any_held_title = {
-				this = title:k_andalusia
-			}
-		}
-		has_game_rule = dissolution_historical_date
-	}
+	# modifier = {
+	# 	add = -1000
+	# 	current_date < 1020.1.1
+	# 	$FACTION_TARGET$ = {
+	# 		any_held_title = {
+	# 			this = title:k_andalusia
+	# 		}
+	# 	}
+	# 	has_game_rule = dissolution_historical_date
+	# }
 }
 
 liberty_faction_modifiers = {
@@ -2061,17 +2061,17 @@ claimant_faction_modifiers = {
 		}
 	}
 
-	modifier = { # Byzantium has extra trouble with Unpreferred Heirs
-		desc = "FACTION_REASON_BYZANTINE"
-		factor = 1.2
-	 	culture = {
-			has_cultural_parameter = byzantine_faction_differences
-		}
-	 	$FACTION_TARGET$ = {
-			has_title = title:e_byzantium
-		}
-		was_preferred_heir = $FACTION_TARGET$
-	}
+	# modifier = { # Byzantium has extra trouble with Unpreferred Heirs
+	# 	desc = "FACTION_REASON_BYZANTINE"
+	# 	factor = 1.2
+	#  	culture = {
+	# 		has_cultural_parameter = byzantine_faction_differences
+	# 	}
+	#  	$FACTION_TARGET$ = {
+	# 		has_title = title:e_byzantium
+	# 	}
+	# 	was_preferred_heir = $FACTION_TARGET$
+	# }
 	
 	modifier = {
 		desc = "FACTION_REASON_PERSIAN_STRUGGLE"

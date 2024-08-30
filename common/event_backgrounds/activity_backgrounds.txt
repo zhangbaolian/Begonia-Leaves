@@ -572,14 +572,14 @@
 	}
 	# End Travel
 
-	background = {	# FP1
-		trigger = {
-			activity_location.culture = { has_building_gfx = norse_building_gfx }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_viking_feast.dds"
-		environment = "environment_event_fp1_viking_feast"
-		ambience = "event:/DLC/FP1/SFX/Events/event_viking_feast"
-	}
+	# background = {	# FP1
+	# 	trigger = {
+	# 		activity_location.culture = { has_building_gfx = norse_building_gfx }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_viking_feast.dds"
+	# 	environment = "environment_event_fp1_viking_feast"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_viking_feast"
+	# }
 	background = {
 		trigger = {
 			activity_location.culture = { has_building_gfx = indian_building_gfx }
@@ -588,19 +588,19 @@
 		environment = "environment_indian_feast"
 		ambience = "event:/SFX/Events/Backgrounds/feasthall"
 	}
-	background = {
-		trigger = {
-			OR = {
-				activity_location.culture = { has_building_gfx = arabic_group_building_gfx }
-				activity_location.culture = { has_building_gfx = berber_group_building_gfx }
-				activity_location.culture = { has_building_gfx = iberian_building_gfx }
-				activity_location.culture = { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_mena.dds"
-		environment = "environment_mena_feast"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
-	}
+	# background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			activity_location.culture = { has_building_gfx = arabic_group_building_gfx }
+	# 			activity_location.culture = { has_building_gfx = berber_group_building_gfx }
+	# 			activity_location.culture = { has_building_gfx = iberian_building_gfx }
+	# 			activity_location.culture = { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_mena.dds"
+	# 	environment = "environment_mena_feast"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
+	# }
 	background = {
 		trigger = {
 			activity_location.culture = { has_building_gfx = steppe_building_gfx }
@@ -609,14 +609,14 @@
 		environment = "environment_steppe_feast"
 		ambience = "event:/SFX/Events/Backgrounds/feasthall"
 	}
-	background = {
-		trigger = {
-			activity_location.culture = { has_building_gfx = african_building_gfx }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_sub_saharan.dds"
-		environment = "environment_sub-saharan_feast"
-		ambience = "event:/SFX/Events/Backgrounds/feasthall"
-	}
+	# background = {
+	# 	trigger = {
+	# 		activity_location.culture = { has_building_gfx = african_building_gfx }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_sub_saharan.dds"
+	# 	environment = "environment_sub-saharan_feast"
+	# 	ambience = "event:/SFX/Events/Backgrounds/feasthall"
+	# }
 	background = {
 		reference = "gfx/interface/illustrations/event_scenes/feast.dds"
 		environment = "environment_activity_western_feast"
@@ -1685,40 +1685,40 @@ activity_pilgrimage = {
 	}
 	# End Travel
 	#Unique holy sites
-	background = {
-		trigger = {
-			activity_location.county = title:c_mecca
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_mecca.dds"
-		environment = "environment_mecca"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_holysite_mena"
-	}
-	background = {
-		trigger = {
-			activity_location.county = title:c_jerusalem
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_jerusalem.dds"
-		environment = "environment_jerusalem"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jerusalem"
-	}
+	# background = {
+	# 	trigger = {
+	# 		activity_location.county = title:c_mecca
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_mecca.dds"
+	# 	environment = "environment_mecca"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_holysite_mena"
+	# }
+	# background = {
+	# 	trigger = {
+	# 		activity_location.county = title:c_jerusalem
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_jerusalem.dds"
+	# 	environment = "environment_jerusalem"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_jerusalem"
+	# }
 	#Generic holy sites
-	background = {
-		trigger = { scope:host.religion = religion:zoroastrianism_religion }
-		reference = "gfx/interface/illustrations/event_scenes/fp3_temple.dds"
-		environment = "environment_event_fp3_temple"
-		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
-	}
-	background = {
-		trigger = {
-			OR = {
-				activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture = { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_mena.dds"
-		environment = "environment_generic_holy_site_mena"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_holysite_mena"
-	}
+	# background = {
+	# 	trigger = { scope:host.religion = religion:zoroastrianism_religion }
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp3_temple.dds"
+	# 	environment = "environment_event_fp3_temple"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	# }
+	# background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_mena.dds"
+	# 	environment = "environment_generic_holy_site_mena"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_holysite_mena"
+	# }
 	background = {
 		trigger = {
 			activity_location.culture = { has_graphical_india_culture_group_trigger = yes }
@@ -2388,18 +2388,18 @@ activity_tour = {
 		environment = "environment_event_bp1_courtyard_indian" 
 		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
 	}
-	background = {	#MENA Courtyard
-		trigger = {
-			has_current_phase = tour_phase_tour_grounds
-			OR = {
-				activity_location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture ?= { has_building_gfx = iranian_building_gfx } 
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
-		environment = "environment_event_bp1_courtyard_mena"
-		ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
-	}
+	# background = {	#MENA Courtyard
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_tour_grounds
+	# 		OR = {
+	# 			activity_location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture ?= { has_building_gfx = iranian_building_gfx } 
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/bp1_courtyard_mena.dds"
+	# 	environment = "environment_event_bp1_courtyard_mena"
+	# 	ambience = "event:/SFX/Events/Backgrounds/castle_courtyard_western"
+	# }
 
 	background = { #Fallback
 		trigger = {
@@ -2411,15 +2411,15 @@ activity_tour = {
 	}
 	
 	# Hosted Dinner
-	background = {	# FP1
-		trigger = {
-			has_current_phase = tour_phase_dinner
-			activity_location.culture = { has_building_gfx = norse_building_gfx }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_viking_feast.dds"
-		environment = "environment_event_fp1_viking_feast"
-		ambience = "event:/DLC/FP1/SFX/Events/event_viking_feast"
-	}
+	# background = {	# FP1
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_dinner
+	# 		activity_location.culture = { has_building_gfx = norse_building_gfx }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_viking_feast.dds"
+	# 	environment = "environment_event_fp1_viking_feast"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_viking_feast"
+	# }
 	background = {
 		trigger = {
 			has_current_phase = tour_phase_dinner
@@ -2429,20 +2429,20 @@ activity_tour = {
 		environment = "environment_indian_feast"
 		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_india"
 	}
-	background = {
-		trigger = {
-			has_current_phase = tour_phase_dinner
-			OR = {
-				activity_location.culture = { has_building_gfx = arabic_group_building_gfx }
-				activity_location.culture = { has_building_gfx = berber_group_building_gfx }
-				activity_location.culture = { has_building_gfx = iberian_building_gfx }
-				activity_location.culture = { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_mena.dds"
-		environment = "environment_mena_feast"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
-	}
+	# background = {
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_dinner
+	# 		OR = {
+	# 			activity_location.culture = { has_building_gfx = arabic_group_building_gfx }
+	# 			activity_location.culture = { has_building_gfx = berber_group_building_gfx }
+	# 			activity_location.culture = { has_building_gfx = iberian_building_gfx }
+	# 			activity_location.culture = { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_mena.dds"
+	# 	environment = "environment_mena_feast"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_feast_mena"
+	# }
 	background = {
 		trigger = {
 			has_current_phase = tour_phase_dinner
@@ -2452,15 +2452,15 @@ activity_tour = {
 		environment = "environment_steppe_feast"
 		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
 	}
-	background = {
-		trigger = {
-			has_current_phase = tour_phase_dinner
-			activity_location.culture = { has_building_gfx = african_building_gfx }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_feast_sub_saharan.dds"
-		environment = "environment_sub-saharan_feast"
-		ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
-	}
+	# background = {
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_dinner
+	# 		activity_location.culture = { has_building_gfx = african_building_gfx }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_feast_sub_saharan.dds"
+	# 	environment = "environment_sub-saharan_feast"
+	# 	ambience = "event:/DLC/EP2/SFX/Events/Backgrounds/evn_background_steppe"
+	# }
 	background = {
 		trigger = {
 			has_current_phase = tour_phase_dinner
@@ -2496,25 +2496,25 @@ activity_tour = {
 		environment = "environment_event_docks"
 		ambience = "event:/SFX/Events/Backgrounds/docks_day"
 	} 
-	background = { #Eastern
-		trigger = {
-			has_current_phase = tour_phase_cultural_festival
-			activity_location = {
-				OR = {
-					geographical_region = graphical_mena
-					geographical_region = graphical_india
-					culture ?= { has_building_gfx = iranian_building_gfx }
-					AND = {
-			 			geographical_region = world_europe_west_iberia
-			 			faith ?= { religion = religion:islam_religion }
-			 		}
-				}
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/market_east.dds"
-		environment = "environment_event_market_east"
-		ambience = "event:/SFX/Events/Backgrounds/town_market_middleeastern_day"
-	}
+	# background = { #Eastern
+	# 	trigger = {
+	# 		has_current_phase = tour_phase_cultural_festival
+	# 		activity_location = {
+	# 			OR = {
+	# 				geographical_region = graphical_mena
+	# 				geographical_region = graphical_india
+	# 				culture ?= { has_building_gfx = iranian_building_gfx }
+	# 				AND = {
+	# 		 			geographical_region = world_europe_west_iberia
+	# 		 			faith ?= { religion = religion:islam_religion }
+	# 		 		}
+	# 			}
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/market_east.dds"
+	# 	environment = "environment_event_market_east"
+	# 	ambience = "event:/SFX/Events/Backgrounds/town_market_middleeastern_day"
+	# }
 	background = { #Western (standard/fallback)
 		trigger = {
 			has_current_phase = tour_phase_cultural_festival
@@ -2537,15 +2537,15 @@ activity_tour = {
 		ambience = "event:/DLC/FP2/SFX/Events/throneroom" 
 	}	
 
-	background = { #FP1 Tribal
-		trigger = {
-			activity_location.culture ?= { has_building_gfx = norse_building_gfx }
-			activity_location.barony.holder = { government_has_flag = government_is_tribal }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_throneroom_tribal.dds"
-		environment = "environment_event_fp1_throneroom_tribal"
-		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
-	}
+	# background = { #FP1 Tribal
+	# 	trigger = {
+	# 		activity_location.culture ?= { has_building_gfx = norse_building_gfx }
+	# 		activity_location.barony.holder = { government_has_flag = government_is_tribal }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_throneroom_tribal.dds"
+	# 	environment = "environment_event_fp1_throneroom_tribal"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+	# }
 
 	background = { #Tribal
 		trigger = { activity_location.barony.holder = { should_use_tribal_realm_palace_graphics_trigger = yes } }
@@ -2554,27 +2554,27 @@ activity_tour = {
 		ambience = "event:/SFX/Events/Backgrounds/throneroom_tribal_pagan"
 	}
 
-	background = {	#FP1 Non-Tribal
-		trigger = {
-			activity_location.culture ?= { has_building_gfx = norse_building_gfx }
-			activity_location.barony.holder = { NOT = { government_has_flag = government_is_tribal } }
-		}
-		reference = "gfx/interface/illustrations/event_scenes/fp1_throneroom_nontribal.dds"
-		environment = "environment_event_fp1_throneroom_nontribal"
-		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom_nontribal"
-	}
+	# background = {	#FP1 Non-Tribal
+	# 	trigger = {
+	# 		activity_location.culture ?= { has_building_gfx = norse_building_gfx }
+	# 		activity_location.barony.holder = { NOT = { government_has_flag = government_is_tribal } }
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/fp1_throneroom_nontribal.dds"
+	# 	environment = "environment_event_fp1_throneroom_nontribal"
+	# 	ambience = "event:/DLC/FP1/SFX/Events/event_throneroom_nontribal"
+	# }
 
-	background = {
-		trigger = {
-			OR = {
-				activity_location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture ?= { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/throneroom_east.dds"
-		environment = "environment_frontend_east_main"
-		ambience = "event:/SFX/Events/Backgrounds/throneroom_middleeastern_african"
-	}
+	# background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			activity_location.culture ?= { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture ?= { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/throneroom_east.dds"
+	# 	environment = "environment_frontend_east_main"
+	# 	ambience = "event:/SFX/Events/Backgrounds/throneroom_middleeastern_african"
+	# }
 
 	background = {
 		trigger = {
@@ -3182,19 +3182,19 @@ activity_wedding = {
 		environment = "environment_indian_wedding" 
 		ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_11_wedding_india"
 	}
-	background = {	 #MENA (also steppes and African )
-		trigger = {
-			OR = {
-				activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
-				activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
-				activity_location.culture = { has_graphical_african_culture_group_trigger = yes }
-				activity_location.culture = { has_building_gfx = iranian_building_gfx }
-			}
-		}
-		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
-		environment = "environment_mena_wedding" 
-		ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_10_wedding_mena"
-	}
+	# background = {	 #MENA (also steppes and African )
+	# 	trigger = {
+	# 		OR = {
+	# 			activity_location.culture = { has_graphical_mena_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_graphical_steppe_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_graphical_african_culture_group_trigger = yes }
+	# 			activity_location.culture = { has_building_gfx = iranian_building_gfx }
+	# 		}
+	# 	}
+	# 	reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_mena.dds"
+	# 	environment = "environment_mena_wedding" 
+	# 	ambience = "event:/DLC/EP2/MX/Cuetracks/mx_cuetrack_10_wedding_mena"
+	# }
 	background = {	 # Western - Fallback
 		reference = "gfx/interface/illustrations/event_scenes/ep2_wedding_ceremony_western.dds"
 		environment = "environment_western_wedding" 

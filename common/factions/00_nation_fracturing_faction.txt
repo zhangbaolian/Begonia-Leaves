@@ -89,20 +89,20 @@
 			is_ai = no
 		}
 		
-		trigger_if = {
-			limit = {
-				faith.religion = religion:islam_religion
-				liege = { has_title = title:d_sunni }
-				title:d_sunni = {
-					has_variable = dar_al_islam
-				}
-			}
-			liege = {
-				NOT = {
-					has_title = title:d_sunni
-				}
-			}
-		}
+		# trigger_if = {
+		# 	limit = {
+		# 		faith.religion = religion:islam_religion
+		# 		liege = { has_title = title:d_sunni }
+		# 		title:d_sunni = {
+		# 			has_variable = dar_al_islam
+		# 		}
+		# 	}
+		# 	liege = {
+		# 		NOT = {
+		# 			has_title = title:d_sunni
+		# 		}
+		# 	}
+		# }
 	}
 
 	can_character_create = {
@@ -128,20 +128,20 @@
 			is_ai = no
 		}
 		
-		trigger_if = {
-			limit = {
-				faith.religion = religion:islam_religion
-				liege = { has_title = title:d_sunni }
-				title:d_sunni = {
-					has_variable = dar_al_islam
-				}
-			}
-			liege = {
-				NOT = {
-					has_title = title:d_sunni
-				}
-			}
-		}
+		# trigger_if = {
+		# 	limit = {
+		# 		faith.religion = religion:islam_religion
+		# 		liege = { has_title = title:d_sunni }
+		# 		title:d_sunni = {
+		# 			has_variable = dar_al_islam
+		# 		}
+		# 	}
+		# 	liege = {
+		# 		NOT = {
+		# 			has_title = title:d_sunni
+		# 		}
+		# 	}
+		# }
 	}
 
 	ai_create_score = {
@@ -179,20 +179,20 @@
 			FACTION_TARGET = scope:faction.faction_target
 		}
 		
-		trigger_if = {
-			limit = {
-				faith.religion = religion:islam_religion
-				liege = { has_title = title:d_sunni }
-				title:d_sunni = {
-					has_variable = dar_al_islam
-				}
-			}
-			liege = {
-				NOT = {
-					has_title = title:d_sunni
-				}
-			}
-		}
+		# trigger_if = {
+		# 	limit = {
+		# 		faith.religion = religion:islam_religion
+		# 		liege = { has_title = title:d_sunni }
+		# 		title:d_sunni = {
+		# 			has_variable = dar_al_islam
+		# 		}
+		# 	}
+		# 	liege = {
+		# 		NOT = {
+		# 			has_title = title:d_sunni
+		# 		}
+		# 	}
+		# }
 	}
 
 	ai_join_score = {

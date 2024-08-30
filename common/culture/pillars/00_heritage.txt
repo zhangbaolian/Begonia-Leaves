@@ -17,3 +17,23 @@ heritage_mongolic = {
 	}
 	audio_parameter = european
 }
+
+heritage_virtual = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_virtual
+		}
+	}
+	audio_parameter = european
+}
+
+heritage_tibetan = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_tibetan
+		}
+	}
+	audio_parameter = european
+}

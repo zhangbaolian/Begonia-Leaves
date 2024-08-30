@@ -181,99 +181,99 @@
 		}
 	}
 
-	can_character_create_ui = {
-		base_faction_trigger = { FACTION_TYPE = independence_faction }
+	# can_character_create_ui = {
+	# 	base_faction_trigger = { FACTION_TYPE = independence_faction }
 
-		common_can_character_create_trigger = {
-			FACTION_TARGET = scope:target
-		}
+	# 	common_can_character_create_trigger = {
+	# 		FACTION_TARGET = scope:target
+	# 	}
 
-		liege = {
-			is_independent_ruler = yes
-		}
+	# 	liege = {
+	# 		is_independent_ruler = yes
+	# 	}
 		
-		trigger_if = {
-			limit = {
-				faith.religion = religion:islam_religion
-				liege = { has_title = title:d_sunni }
-				title:d_sunni = {
-					has_variable = dar_al_islam
-				}
-			}
-			liege = {
-				NOT = {
-					has_title = title:d_sunni
-				}
-			}
-		}
-	}
+	# 	trigger_if = {
+	# 		limit = {
+	# 			faith.religion = religion:islam_religion
+	# 			liege = { has_title = title:d_sunni }
+	# 			title:d_sunni = {
+	# 				has_variable = dar_al_islam
+	# 			}
+	# 		}
+	# 		liege = {
+	# 			NOT = {
+	# 				has_title = title:d_sunni
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	can_character_create = {
-		common_can_character_create_trigger = {
-			FACTION_TARGET = scope:target
-		}
+	# can_character_create = {
+	# 	common_can_character_create_trigger = {
+	# 		FACTION_TARGET = scope:target
+	# 	}
 		
-		liege = {
-			is_independent_ruler = yes
-		}
+	# 	liege = {
+	# 		is_independent_ruler = yes
+	# 	}
 
-		custom_description = {
-			text = character_blocked_from_joining # will never be displayed but without it, errors are triggered
-			OR = {
-		        is_ai = no
-		        NOT = { culture = scope:target.culture }
-		        NOT = { faith = scope:target.faith }
-		        NOT = {
-		            scope:target = {
-		                is_rightful_liege_of = root
-		            }
-		        }
-		        any_sub_realm_county = {
-		            percent <= 0.5
-		            save_temporary_scope_as = current_county
-		            scope:target.primary_title = {
-		                any_in_de_jure_hierarchy = { this = scope:current_county }
-		            }
-		        }
-	    	}
-		}
+	# 	custom_description = {
+	# 		text = character_blocked_from_joining # will never be displayed but without it, errors are triggered
+	# 		OR = {
+	# 	        is_ai = no
+	# 	        NOT = { culture = scope:target.culture }
+	# 	        NOT = { faith = scope:target.faith }
+	# 	        NOT = {
+	# 	            scope:target = {
+	# 	                is_rightful_liege_of = root
+	# 	            }
+	# 	        }
+	# 	        any_sub_realm_county = {
+	# 	            percent <= 0.5
+	# 	            save_temporary_scope_as = current_county
+	# 	            scope:target.primary_title = {
+	# 	                any_in_de_jure_hierarchy = { this = scope:current_county }
+	# 	            }
+	# 	        }
+	#     	}
+	# 	}
 		
-		trigger_if = {
-			limit = {
-				faith.religion = religion:islam_religion
-				liege = { has_title = title:d_sunni }
-				title:d_sunni = {
-					has_variable = dar_al_islam
-				}
-			}
-			liege = {
-				NOT = {
-					has_title = title:d_sunni
-				}
-			}
-		}
-	}
+	# 	trigger_if = {
+	# 		limit = {
+	# 			faith.religion = religion:islam_religion
+	# 			liege = { has_title = title:d_sunni }
+	# 			title:d_sunni = {
+	# 				has_variable = dar_al_islam
+	# 			}
+	# 		}
+	# 		liege = {
+	# 			NOT = {
+	# 				has_title = title:d_sunni
+	# 			}
+	# 		}
+	# 	}
+	# }
 
-	can_character_join = {
-		common_can_character_join_trigger = {
-			FACTION_TARGET = scope:faction.faction_target
-		}
+	# can_character_join = {
+	# 	common_can_character_join_trigger = {
+	# 		FACTION_TARGET = scope:faction.faction_target
+	# 	}
 		
-		trigger_if = {
-			limit = {
-				faith.religion = religion:islam_religion
-				liege = { has_title = title:d_sunni }
-				title:d_sunni = {
-					has_variable = dar_al_islam
-				}
-			}
-			liege = {
-				NOT = {
-					has_title = title:d_sunni
-				}
-			}
-		}
-	}
+	# 	trigger_if = {
+	# 		limit = {
+	# 			faith.religion = religion:islam_religion
+	# 			liege = { has_title = title:d_sunni }
+	# 			title:d_sunni = {
+	# 				has_variable = dar_al_islam
+	# 			}
+	# 		}
+	# 		liege = {
+	# 			NOT = {
+	# 				has_title = title:d_sunni
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	county_allow_join = no
 	county_allow_create = no
