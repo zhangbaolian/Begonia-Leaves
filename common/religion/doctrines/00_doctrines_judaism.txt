@@ -1,7 +1,8 @@
 ﻿doctrine_temple_authority = {
 	group = "main_group"
 	is_available_on_create = {
-		religion_tag = judaism_religion
+		# religion_tag = judaism_religion
+		always = no 
 	}
 	# Tracks the way in which Halakha is supposed to be interpreted
 	temple_authority_rabbinic_doctrine = { # Rabbis argue and interpret the Halakha

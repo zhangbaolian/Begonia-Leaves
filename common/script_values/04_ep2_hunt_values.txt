@@ -550,7 +550,7 @@ hunt_success_chance_value = {
 			}
 			if = { # Deserts
 				limit = {
-					has_cultural_parameter = desert_hunt_success_chance
+					# has_cultural_parameter = desert_hunt_success_chance
 					scope:activity_temp.activity_location = {
 						OR = {
 							terrain = desert

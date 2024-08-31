@@ -2161,29 +2161,31 @@ tournament_active_phase_count_value = {
 		}
 	}
 	# Some cultures like practicing war and words; unlock another slot in High medieval age as opposed to Late
-	culture = {
-		if = {
-			limit = {
-				NOT = {
-					has_cultural_era_or_later = culture_era_late_medieval
-				}
-				AND = {
-					has_cultural_era_or_later = culture_era_high_medieval
-					OR = {
-						has_cultural_pillar = heritage_north_germanic
-						has_cultural_pillar = heritage_frankish
-						has_cultural_pillar = heritage_iberian
-						has_cultural_pillar = heritage_latin
-						has_cultural_pillar = heritage_mongolic
-						has_cultural_pillar = heritage_north_germanic
-						has_cultural_pillar = heritage_west_germanic
-						has_cultural_pillar = heritage_central_germanic
-					}
-				}
-			}
-			add = 1
-		}
-	}
+	# culture = {
+	# 	if = {
+	# 		limit = {
+	# 			NOT = {
+	# 				has_cultural_era_or_later = culture_era_late_medieval
+	# 			}
+	# 			AND = {
+	# 				has_cultural_era_or_later = culture_era_high_medieval
+	# 				OR = {
+	# 					has_cultural_pillar = heritage_north_germanic
+	# 					has_cultural_pillar = heritage_frankish
+	# 					has_cultural_pillar = heritage_iberian
+	# 					has_cultural_pillar = heritage_latin
+	# 					has_cultural_pillar = heritage_mongolic
+	# 					has_cultural_pillar = heritage_north_germanic
+	# 					has_cultural_pillar = heritage_west_germanic
+	# 					has_cultural_pillar = heritage_central_germanic
+	# 					has_cultural_pillar = heritage_central_germanic
+
+	# 				}
+	# 			}
+	# 		}
+	# 		add = 1
+	# 	}
+	# }
 }
 
 contest_contestants_count_value = {

@@ -4,42 +4,45 @@
 @maa_high_maintenance_cost = 5.0
 @cultural_maa_extra_ai_score = 80 # Equivalent to having 8 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
 
-huscarl = {
-	type = heavy_infantry
 
-	damage = 40
-	toughness = 26
-	pursuit = 0
-	screen = 24
-	
-	terrain_bonus = {
-		taiga = { damage = 8 }
-		forest = { damage = 8 }
-	}
-	
-	counters = {
-		pikemen = 1
-		archers = 1
-	}
+# 侍卫
+# huscarl = {
+# 	type = heavy_infantry
 
-	can_recruit = {
-		culture = { has_cultural_parameter = unlock_maa_huscarls }
-	}
-
-	winter_bonus = {
-		normal_winter = { toughness = 6 screen = 6 }
-		harsh_winter = { toughness = 6 screen = 6 }
-	}
+# 	damage = 40
+# 	toughness = 26
+# 	pursuit = 0
+# 	screen = 24
 	
-	buy_cost = { gold = huscarls_recruitment_cost }
-	low_maintenance_cost = { gold = huscarls_low_maint_cost }
-	high_maintenance_cost = { gold = huscarls_high_maint_cost }
+# 	terrain_bonus = {
+# 		taiga = { damage = 8 }
+# 		forest = { damage = 8 }
+# 	}
 	
-	stack = 100
-	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = danish_huskarls
-}
+# 	counters = {
+# 		pikemen = 1
+# 		archers = 1
+# 	}
 
+# 	can_recruit = {
+# 		culture = { has_cultural_parameter = unlock_maa_huscarls }
+# 	}
+
+# 	winter_bonus = {
+# 		normal_winter = { toughness = 6 screen = 6 }
+# 		harsh_winter = { toughness = 6 screen = 6 }
+# 	}
+	
+# 	buy_cost = { gold = huscarls_recruitment_cost }
+# 	low_maintenance_cost = { gold = huscarls_low_maint_cost }
+# 	high_maintenance_cost = { gold = huscarls_high_maint_cost }
+	
+# 	stack = 100
+# 	ai_quality = { value = @cultural_maa_extra_ai_score }
+# 	icon = danish_huskarls
+# }
+
+# 国土佣仆
 landsknecht = {
 	type = pikemen
 	
@@ -69,6 +72,7 @@ landsknecht = {
 	icon = pikemen
 }
 
+# 长弓手
 longbowmen = {
 	type = archers
 	can_recruit = {
@@ -100,6 +104,7 @@ longbowmen = {
 	icon = bowmen
 }
 
+# 胡登达赫民兵
 goedendag = {
 	type = skirmishers
 	
@@ -122,6 +127,7 @@ goedendag = {
 	icon = skirmishers
 }
 
+# 敕令骑兵
 gendarme = {
 	type = heavy_cavalry
 	
@@ -158,6 +164,7 @@ gendarme = {
 	icon = heavy_cavalry
 }
 
+# 猎骑兵
 chasseur = {
 	type = light_cavalry
 	
@@ -193,6 +200,7 @@ chasseur = {
 	icon = light_cavalry
 }
 
+# 长矛兵
 picchieri = {
 	type = pikemen
 	
@@ -223,6 +231,7 @@ picchieri = {
 	icon = pikemen
 }
 
+# 禁军
 praetorian = {
 	type = heavy_infantry
 	
@@ -244,6 +253,7 @@ praetorian = {
 	icon = heavy_infantry
 }
 
+# 伊比利亚骑手
 caballero = {
 	type = light_cavalry
 	
@@ -278,6 +288,7 @@ caballero = {
 	icon = light_cavalry
 }
 
+# 铁甲圣骑兵
 monaspa = {
 	type = heavy_cavalry
 	
@@ -315,7 +326,7 @@ monaspa = {
 	icon = heavy_cavalry
 }
 
-
+# 莫纳斯帕
 cataphract = {
 	type = heavy_cavalry
 	
@@ -355,6 +366,7 @@ cataphract = {
 	icon = heavy_cavalry
 }
 
+# 矮种马骑兵
 hobelar = {
 	type = light_cavalry
 	
@@ -388,6 +400,7 @@ hobelar = {
 	icon = light_cavalry
 }
 
+# 苏格兰长枪兵
 schiltron = {
 	type = pikemen
 	
@@ -417,6 +430,7 @@ schiltron = {
 	icon = pikemen
 }
 
+# 森林守卫
 metsanvartija = {
 	type = archers
 	
@@ -452,6 +466,7 @@ metsanvartija = {
 	icon = bowmen
 }
 
+# 弓骑兵
 horse_archers = {
 	type = archer_cavalry
 	
@@ -488,6 +503,7 @@ horse_archers = {
 	icon = horse_archers
 }
 
+# 游侠
 ayyar = {
 	type = heavy_infantry
 	
@@ -513,6 +529,7 @@ ayyar = {
 	icon = ayyar
 }
 
+# 穆巴里尊
 mubarizun = {
 	type = heavy_infantry
 	
@@ -539,6 +556,7 @@ mubarizun = {
 	icon = mubarizun
 }
 
+# 蒙面者
 mulaththamun = { #Murabit Cavalry
 	type = light_cavalry
 	
@@ -580,7 +598,7 @@ mulaththamun = { #Murabit Cavalry
 	icon = light_cavalry
 }
 
-
+# 尼罗河弓箭手
 archers_of_the_nile = { #Nile Archers
 	type = archers
 	
@@ -613,6 +631,7 @@ archers_of_the_nile = { #Nile Archers
 	icon = bowmen
 }
 
+# 波陀底迦步兵
 paiks = { #Indian Footmen - carrying bows but also swords and spears.
 	type = archers
 	
@@ -640,6 +659,7 @@ paiks = { #Indian Footmen - carrying bows but also swords and spears.
 	icon = bowmen
 }
 
+# 伙伴卫队
 druzhina = {
 	type = heavy_infantry
 	
@@ -665,6 +685,7 @@ druzhina = {
 	icon = heavy_infantry
 }
 
+# 骠骑兵
 hussar = {
 	type = light_cavalry
 	
@@ -703,6 +724,7 @@ hussar = {
 	icon = light_cavalry
 }
 
+# 非洲之角勇士
 horn_warrior = {
 	type = skirmishers
 	
@@ -734,6 +756,7 @@ horn_warrior = {
 	icon = skirmishers
 }
 
+# 荒野猎手
 bush_hunter = {
 	type = archers
 	
@@ -765,6 +788,7 @@ bush_hunter = {
 	icon = bowmen
 }
 
+# 守卫
 shomer = {
 	type = skirmishers
 	
@@ -790,6 +814,7 @@ shomer = {
 	icon = skirmishers
 }
 
+# 楞伽战士
 garudas = {
 	type = heavy_infantry
 	
@@ -824,6 +849,7 @@ garudas = {
 	icon = heavy_infantry
 }
 
+# 朅伽剑师
 khandayat = {
 	type = heavy_infantry
 	
@@ -854,6 +880,7 @@ khandayat = {
 	icon = heavy_infantry
 }
 
+# 山地兵
 mountaineer = {
 	type = heavy_infantry
 	
@@ -889,6 +916,7 @@ mountaineer = {
 	icon = heavy_infantry
 }
 
+# 萨赫勒骑手
 sahel_horsemen = {
 	type = light_cavalry
 	
@@ -926,6 +954,7 @@ sahel_horsemen = {
 	icon = light_cavalry
 }
 
+# 几内亚山民
 guinea_warrior = { #AKA Guinean uplander
 	type = skirmishers
 	
@@ -957,6 +986,7 @@ guinea_warrior = { #AKA Guinean uplander
 	icon = skirmishers
 }
 
+# 瑟拉维特
 sarawit = { #AKA Ethiopian mountaineer
 	type = heavy_infantry
 	
@@ -986,6 +1016,7 @@ sarawit = { #AKA Ethiopian mountaineer
 	icon = heavy_infantry
 }
 
+ # 山民
 abudrar = { #AKA Jabali - Berber mountaineer
 	type = skirmishers
 	
@@ -1019,6 +1050,7 @@ abudrar = { #AKA Jabali - Berber mountaineer
 	icon = skirmishers
 }
 
+# 着甲侍从
 zbrojnosh = {
 	type = heavy_infantry
 	
@@ -1052,6 +1084,7 @@ zbrojnosh = {
 	icon = heavy_infantry
 }
 
+# 宫殿卫队
 palace_guards = {
 	type = heavy_infantry
 	
@@ -1082,6 +1115,7 @@ palace_guards = {
 	icon = heavy_infantry
 }
 
+# 连弩士
 chu_ko_nu = {
 	type = archers
 	
@@ -1110,6 +1144,7 @@ chu_ko_nu = {
 	icon = crossbowmen
 }
 
+# 撑杆天兵
 guanch_vaulter = {
 	type = skirmishers
 	

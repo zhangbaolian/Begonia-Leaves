@@ -1,7 +1,8 @@
 ﻿doctrine_zoroastrian_branches = {
 	group = "main_group"
 	is_available_on_create = {
-		religion_tag = zoroastrianism_religion
+		# religion_tag = zoroastrianism_religion
+		always = no 
 	}
 
 

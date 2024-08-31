@@ -589,32 +589,32 @@ court_language_ai_score = {
 				}
 			}
 		}
-		else_if = {	#Christian cares about other Christians - especially of the same faith
-			limit = {
-				faith.religion = religion:christianity_religion
-				scope:target.faith.religion = religion:christianity_religion
-			}
-			add = {
-				value = scope:target.court_grandeur_current
-				if = { #Reduce further if not same faith
-					limit = {
-						NOT = { faith = scope:target.faith }
-					}
-					divide = 3
-				}
-			}
-		}
+		# else_if = {	#Christian cares about other Christians - especially of the same faith
+		# 	limit = {
+		# 		faith.religion = religion:christianity_religion
+		# 		scope:target.faith.religion = religion:christianity_religion
+		# 	}
+		# 	add = {
+		# 		value = scope:target.court_grandeur_current
+		# 		if = { #Reduce further if not same faith
+		# 			limit = {
+		# 				NOT = { faith = scope:target.faith }
+		# 			}
+		# 			divide = 3
+		# 		}
+		# 	}
+		# }
 		else_if = {	#Eastern Faiths
 			limit = {
 				OR = {
-					faith.religion = religion:hinduism_religion
+					# faith.religion = religion:hinduism_religion
 					faith.religion = religion:buddhism_religion
-					faith.religion = religion:jainism_religion
+					# faith.religion = religion:jainism_religion
 				}
 				OR = {
-					scope:target.faith.religion = religion:hinduism_religion
+					# scope:target.faith.religion = religion:hinduism_religion
 					scope:target.faith.religion = religion:buddhism_religion
-					scope:target.faith.religion = religion:jainism_religion
+					# scope:target.faith.religion = religion:jainism_religion
 				}
 			}
 			add = {
@@ -631,7 +631,7 @@ court_language_ai_score = {
 			limit = {
 				OR = {
 					faith.religion = religion:islam_religion
-					faith.religion = religion:christianity_religion
+					# faith.religion = religion:christianity_religion
 				}
 				NOT = { faith.religion = scope:target.faith.religion }
 			}
@@ -640,14 +640,14 @@ court_language_ai_score = {
 		else_if = { #Eastern religion matching vs non Eastern religion - CGV Ignored
 			limit = {
 				OR = {
-					faith.religion = religion:hinduism_religion
+					# faith.religion = religion:hinduism_religion
 					faith.religion = religion:buddhism_religion
-					faith.religion = religion:jainism_religion
+					# faith.religion = religion:jainism_religion
 				}
 				NOR = {
-					scope:target.faith.religion = religion:hinduism_religion
+					# scope:target.faith.religion = religion:hinduism_religion
 					scope:target.faith.religion = religion:buddhism_religion
-					scope:target.faith.religion = religion:jainism_religion
+					# scope:target.faith.religion = religion:jainism_religion
 				}
 			}
 			#Add nothing
@@ -664,7 +664,7 @@ court_language_ai_score = {
 		multiply = 1.5
 	}
 
-	#Arbitrary Geographical Bias - if our courts are not in the same region the score is divided by 2.
+	#							
 	divide = {
 		value = 1
 		if = {

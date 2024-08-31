@@ -574,8 +574,8 @@ on_war_started = {
 						NOR = {
 							using_cb = peasant_war
 							using_cb = populist_war
-							using_cb = undirected_great_holy_war
-							using_cb = directed_great_holy_war
+							# using_cb = undirected_great_holy_war
+							# using_cb = directed_great_holy_war
 						}
 					}
 					scope:attacker = {
@@ -752,12 +752,12 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 			limit = {
 				scope:attacker = {
 					has_dlc_feature = legends
-					NOT = { has_triggered_legend_seed = holy_warrior }
+					# NOT = { has_triggered_legend_seed = holy_warrior }
 				}
 				scope:war ={
 					OR = {
-						using_cb = undirected_great_holy_war
-						using_cb = directed_great_holy_war
+						# using_cb = undirected_great_holy_war
+						# using_cb = directed_great_holy_war
 					}
 				}
 				OR = {
@@ -968,8 +968,8 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 			limit = {
 				scope:war ={
 					NOR = {
-						using_cb = undirected_great_holy_war
-						using_cb = directed_great_holy_war
+						# using_cb = undirected_great_holy_war
+						# using_cb = directed_great_holy_war
 					}
 				}
 				scope:chronicle_title.tier ?= tier_empire
@@ -1006,8 +1006,8 @@ on_war_won_attacker = { # As in, won BY attacker. Only one of the two on_actions
 			limit = {
 				scope:war ={
 					NOR = {
-						using_cb = undirected_great_holy_war
-						using_cb = directed_great_holy_war
+						# using_cb = undirected_great_holy_war
+						# using_cb = directed_great_holy_war
 					}
 				}
 				scope:chronicle_title.tier ?= tier_kingdom
@@ -1085,12 +1085,12 @@ on_war_won_defender = {
 			limit = {
 				scope:defender = {
 					has_dlc_feature = legends
-					NOT = { has_triggered_legend_seed = holy_warrior }
+					# NOT = { has_triggered_legend_seed = holy_warrior }
 				}
 				scope:war ={
 					OR = {
-						using_cb = undirected_great_holy_war
-						using_cb = directed_great_holy_war
+						# using_cb = undirected_great_holy_war
+						# using_cb = directed_great_holy_war
 					}
 				}
 				OR = {

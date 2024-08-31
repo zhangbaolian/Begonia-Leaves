@@ -1456,7 +1456,7 @@ spread_chance_epidemics_default_value = {
 				OR = {
 					has_cultural_tradition = tradition_esteemed_hospitality
 					has_cultural_tradition = tradition_horse_lords
-					has_cultural_tradition = tradition_caravaneers
+					# has_cultural_tradition = tradition_caravaneers
 					has_cultural_tradition = tradition_seafaring
 				}
 			}

@@ -220,8 +220,10 @@ artifact_armor_type_scale_weight_value = {
 			#Fairly common everywhere, but use in Europe had declined
 			culture_has_european_heritage_pillar_trigger = yes
 			NOR = {
-				culture = { has_cultural_pillar = heritage_byzantine }
-				culture = { has_cultural_pillar = heritage_turkic }
+				# culture = { has_cultural_pillar = heritage_byzantine }
+				# culture = { has_cultural_pillar = heritage_turkic }
+				culture = { has_cultural_pillar = heritage_virtual }
+
 			}
 		}
 		add = -10
@@ -255,7 +257,7 @@ artifact_armor_type_laminar_weight_value = {
 		limit = {
 			OR = {
 				culture_has_asian_heritage_pillar_trigger = yes
-				culture = { has_cultural_pillar = heritage_ugro_permian }
+				culture = { has_cultural_pillar = heritage_virtual }
 				culture_has_mena_heritage_pillar_trigger = yes
 			}
 		}

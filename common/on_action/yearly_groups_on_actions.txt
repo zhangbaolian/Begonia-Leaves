@@ -2,14 +2,14 @@
 	trigger = { fp1_eligible_for_yearly_events_trigger = yes }
 	weight_multiplier = {
 		base = 1
-		modifier = { # Reduces frequency for characters with non-matching cultures
-			factor = 0.33
-			religion = religion:germanic_religion
+		# modifier = { # Reduces frequency for characters with non-matching cultures
+		# 	factor = 0.33
+		# 	religion = religion:germanic_religion
 
-			NOT = {
-				culture = { has_cultural_pillar = heritage_north_germanic }
-			}
-		}
+		# 	NOT = {
+		# 		culture = { has_cultural_pillar = heritage_north_germanic }
+		# 	}
+		# }
 		modifier = { # Reduces frequency for having both sets of FP events valid
 			factor = 0.5
 			OR = {
@@ -94,7 +94,7 @@ fp2_yearly_events = {
 			factor = 0.33
 
 			NOT = {
-				culture = { has_cultural_pillar = heritage_iberian }
+				# culture = { has_cultural_pillar = heritage_iberian }
 			}
 		}
 		modifier = { # Reduces chance after recently having had an event from this pulse
@@ -118,7 +118,7 @@ fp2_yearly_events = {
 		10 = fp2_yearly.1002	# A Compromising Position 
 		160 = fp2_yearly.1003   # Tilting at...Giants?  
 		160 = fp2_yearly.1004   # The Hawk of Quarysh 
-		160 = fp2_yearly.1005   # Lost Viking  
+		# 160 = fp2_yearly.1005   # Lost Viking  
 		80 = fp2_yearly.1006	# Viking Cheese?
 		180 = fp2_yearly.2020	# Horchata colonialism event
 		160 = fp2_yearly.4004	# The Wandering Master
@@ -323,10 +323,10 @@ fp3_yearly_events = {
 			factor = 0.33
 
 			NOR = {
-				culture = { has_cultural_pillar = heritage_iranian }
-				culture = { has_cultural_pillar = heritage_turkic }
+				# culture = { has_cultural_pillar = heritage_iranian }
+				# culture = { has_cultural_pillar = heritage_turkic }
 				culture = { has_cultural_pillar = heritage_mongolic }
-				culture = { has_cultural_pillar = heritage_arabic }
+				# culture = { has_cultural_pillar = heritage_arabic }
 			}
 		}
 		modifier = { # Reduces chance after recently having had an event from this pulse

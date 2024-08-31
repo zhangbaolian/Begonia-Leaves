@@ -480,12 +480,12 @@ fp2_expel_interloper_ai_targeting_value = {
 		}
 	}
 	# Weight up with interloper land
-	scope:defender = {
-		every_realm_county = {
-			limit = { target_is_de_jure_liege_or_above = title:e_spain }
-			add = fp2_expel_interloper_county_cost_value
-		}
-	}
+	# scope:defender = {
+	# 	every_realm_county = {
+	# 		limit = { target_is_de_jure_liege_or_above = title:e_spain }
+	# 		add = fp2_expel_interloper_county_cost_value
+	# 	}
+	# }
 }
 
 fp2_expel_interloper_county_cost_value = 25
@@ -533,16 +533,16 @@ struggle_iberia_ending_ending_decision_foreign_realm_total_value = {
 }
 
 # Counts completely controlled de jure kingdoms of Hispania
-fp2_struggle_ending_kingdom_counter_value = {
-	every_held_title = {
-		limit = {
-			tier = tier_kingdom
-			de_jure_liege = title:e_spain
-			root = { completely_controls = prev }
-		}
-		add = 1
-	}
-}
+# fp2_struggle_ending_kingdom_counter_value = {
+# 	every_held_title = {
+# 		limit = {
+# 			tier = tier_kingdom
+# 			de_jure_liege = title:e_spain
+# 			root = { completely_controls = prev }
+# 		}
+# 		add = 1
+# 	}
+# }
 
 ### Hostility
 

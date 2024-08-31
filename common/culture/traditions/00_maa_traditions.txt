@@ -1454,99 +1454,99 @@
 # }
 
 # 血浓于水
-# tradition_strong_kinship = { #There can be only one!
-# 	category = regional
+tradition_strong_kinship = { #There can be only one!
+	category = regional
 
-# 	layers = {
-# 		0 = martial
-# 		1 = western
-# 		4 = conversation.dds
-# 	}
+	layers = {
+		0 = martial
+		1 = western
+		4 = conversation.dds
+	}
 
-# 	is_shown = {
-# 		OR = {
-# 			this = culture:gaelic
-# 			this = culture:scottish
-# 			any_parent_culture_or_above = {
-# 				OR = {
-# 					this = culture:gaelic
-# 					this = culture:scottish
-# 				}
-# 			}
-# 		}
-# 	}
-# 	can_pick = {
-# 		OR = {
-# 			this = culture:gaelic
-# 			this = culture:scottish
-# 			any_parent_culture_or_above = {
-# 				OR = {
-# 					this = culture:gaelic
-# 					this = culture:scottish
-# 				}
-# 			}
-# 		}
-# 	}
+	is_shown = {
+		# OR = {
+		# 	this = culture:gaelic
+		# 	this = culture:scottish
+		# 	any_parent_culture_or_above = {
+		# 		OR = {
+		# 			this = culture:gaelic
+		# 			this = culture:scottish
+		# 		}
+		# 	}
+		# }
+	}
+	can_pick = {
+		# OR = {
+		# 	this = culture:gaelic
+		# 	this = culture:scottish
+		# 	any_parent_culture_or_above = {
+		# 		OR = {
+		# 			this = culture:gaelic
+		# 			this = culture:scottish
+		# 		}
+		# 	}
+		# }
+	}
 	
-# 	parameters = {
-# 		unlock_schiltron_innovation = yes
-# 		bonuses_from_patriarch_matriarch_trait = yes
-# 		cultural_house_personal_scheme_success_chance = yes
-# 		landing_house_members_give_prestige = yes
-# 		penalty_for_revoking_titles_from_house_members = yes
-# 		loyal_trait_more_common = yes
-# 	}
-# 	character_modifier = {
-# 		dynasty_house_opinion = 15
-# 		opinion_of_liege = -10
-# 	}
+	parameters = {
+		unlock_schiltron_innovation = yes
+		bonuses_from_patriarch_matriarch_trait = yes
+		cultural_house_personal_scheme_success_chance = yes
+		landing_house_members_give_prestige = yes
+		penalty_for_revoking_titles_from_house_members = yes
+		loyal_trait_more_common = yes
+	}
+	character_modifier = {
+		dynasty_house_opinion = 15
+		opinion_of_liege = -10
+	}
 
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_bellicose = { is_in_list = traits }
-# 						culture_pillar:ethos_stoic = { is_in_list = traits }
-# 						culture_pillar:ethos_bureaucratic = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_bellicose_stoic_or_bureaucratic_desc
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					exists = scope:character.house
-# 					NOT = {
-# 						scope:character.house = {
-# 							any_house_member = {
-# 								count >= 3
-# 								has_relation_friend = scope:character
-# 							}
-# 						}
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_unfulfilled_criteria_penalty
-# 					desc = house_friends_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_stoic = { is_in_list = traits }
+						culture_pillar:ethos_bureaucratic = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_stoic_or_bureaucratic_desc
+				}
+			}
+			if = {
+				limit = {
+					exists = scope:character.house
+					NOT = {
+						scope:character.house = {
+							any_house_member = {
+								count >= 3
+								has_relation_friend = scope:character
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = house_friends_desc
+				}
+			}
 			
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 	
-# 	ai_will_do = {
-# 		value = 100
-# 	}
-# }
+	ai_will_do = {
+		value = 100
+	}
+}
 
 # 阿姆哈拉山民
 # tradition_amharic_highlanders = { #Ethiopian Unique Tradition, replaces hill dwellers, Unlocks MAA innovation & Castration

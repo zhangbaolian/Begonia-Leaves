@@ -272,7 +272,8 @@ not_allowed_to_hof = {
 			first_valid = {
 				triggered_desc = {
 					trigger = {
-						religion_tag = judaism_religion
+						# religion_tag = judaism_religion
+						always = no
 					}
 					desc = prophecy_of_malachi_name
 				}
@@ -284,7 +285,8 @@ not_allowed_to_hof = {
 			first_valid = {
 				triggered_desc = {
 					trigger = {
-						religion_tag = judaism_religion
+						# religion_tag = judaism_religion
+						always = no 
 					}
 					desc = prophecy_of_malachi_desc
 				}

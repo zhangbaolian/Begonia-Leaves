@@ -3,6 +3,7 @@
 @maa_low_maintenance_cost = 1.0
 @maa_high_maintenance_cost = 5.0
 
+# 轻步兵
 light_footmen = {
 	type = skirmishers
 	
@@ -32,6 +33,7 @@ light_footmen = {
 	icon = skirmishers
 }
 
+# 弓箭手
 bowmen = {
 	type = archers
 	
@@ -63,6 +65,7 @@ bowmen = {
 	}
 }
 
+# 轻骑兵
 light_horsemen = {
 	type = light_cavalry
 	
@@ -102,6 +105,7 @@ light_horsemen = {
 	icon = light_cavalry
 }
 
+# 长枪兵
 pikemen_unit = {
 	type = pikemen
 	
@@ -140,6 +144,7 @@ pikemen_unit = {
 
 
 #Tribal Era
+# 披甲步兵
 armored_footmen = {
 	type = heavy_infantry
 	
@@ -166,6 +171,7 @@ armored_footmen = {
 	icon = heavy_infantry
 }
 
+# 野驴炮
 onager = {
 	type = siege_weapon
 	fights_in_main_phase = no
@@ -185,6 +191,7 @@ onager = {
 }
 
 #Medieval Era
+# 披甲骑兵
 armored_horsemen = {
 	type = heavy_cavalry
 	
@@ -220,6 +227,7 @@ armored_horsemen = {
 	icon = heavy_cavalry
 }
 
+# 射石机
 mangonel = {
 	type = siege_weapon
 	fights_in_main_phase = no
@@ -239,6 +247,7 @@ mangonel = {
 }
 
 #High Medieval Era
+# 弩手
 crossbowmen = {
 	type = archers
 	
@@ -273,6 +282,7 @@ crossbowmen = {
 	stack = 100
 }
 
+# 重力抛石机
 trebuchet = {
 	type = siege_weapon
 	fights_in_main_phase = no
@@ -293,6 +303,7 @@ trebuchet = {
 }
 
 #Late Medieval Era
+# 射石炮
 bombard = {
 	type = siege_weapon
 	fights_in_main_phase = no
@@ -311,7 +322,8 @@ bombard = {
 	allowed_in_hired_troops = no
 }
 
-# Special
+# Special 
+# 家族近卫
 house_guard = {
 	type = heavy_infantry
 	can_recruit = {

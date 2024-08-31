@@ -348,18 +348,18 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_the_great
 					trigger_event = lifestyle_nicknames.1000
 				}
-				50 = {
-					trigger = {
-						religion = religion:christianity_religion
-						has_trait = faith_warrior
-					}
-					modifier = {
-						has_education_martial_trigger = yes
-						factor = 4
-					}
-					give_nickname = nick_the_crusader
-					trigger_event = lifestyle_nicknames.1000
-				}
+				# 50 = {
+				# 	trigger = {
+				# 		religion = religion:christianity_religion
+				# 		has_trait = faith_warrior
+				# 	}
+				# 	modifier = {
+				# 		has_education_martial_trigger = yes
+				# 		factor = 4
+				# 	}
+				# 	give_nickname = nick_the_crusader
+				# 	trigger_event = lifestyle_nicknames.1000
+				# }
 				100 = {
 					trigger = {
 						martial >= 16
@@ -521,25 +521,25 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_the_greedy
 					trigger_event = lifestyle_nicknames.1000
 				}
-				100 = {
-					trigger = {
-						culture = culture:anglo_saxon
-						is_male = yes
-						OR = {
-							has_trait = greedy
-							has_trait = avaricious
-							has_trait = gluttonous
-						}
-						ai_greed >= 50
-						gold >= 200
-					}
-					modifier = {
-						has_trait = greedy
-						factor = 2
-					}
-					give_nickname = nick_pennyfather
-					trigger_event = lifestyle_nicknames.1000
-				}
+				# 100 = {
+				# 	trigger = {
+				# 		culture = culture:anglo_saxon
+				# 		is_male = yes
+				# 		OR = {
+				# 			has_trait = greedy
+				# 			has_trait = avaricious
+				# 			has_trait = gluttonous
+				# 		}
+				# 		ai_greed >= 50
+				# 		gold >= 200
+				# 	}
+				# 	modifier = {
+				# 		has_trait = greedy
+				# 		factor = 2
+				# 	}
+				# 	give_nickname = nick_pennyfather
+				# 	trigger_event = lifestyle_nicknames.1000
+				# }
 				100 = {
 					trigger = {
 						OR = {
@@ -657,17 +657,17 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_cuckoo
 					trigger_event = lifestyle_nicknames.1000
 				}
-				50 = {
-					trigger = {
-						is_male = yes
-						culture = culture:anglo_saxon
-						any_child = {
-							count >= 10
-						}
-					}
-					give_nickname = nick_aurei_testiculi
-					trigger_event = lifestyle_nicknames.1000
-				}
+				# 50 = {
+				# 	trigger = {
+				# 		is_male = yes
+				# 		culture = culture:anglo_saxon
+				# 		any_child = {
+				# 			count >= 10
+				# 		}
+				# 	}
+				# 	give_nickname = nick_aurei_testiculi
+				# 	trigger_event = lifestyle_nicknames.1000
+				# }
 				100 = {
 					trigger = {
 						num_of_relation_lover >= 1
@@ -1773,29 +1773,29 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_the_fair
 					trigger_event = lifestyle_nicknames.1000
 				}
-				100 = {
-					trigger = {
-						culture = culture:anglo_saxon
-						is_female = yes
-						has_conventionally_attractive_trigger = yes
-						age <= 40
-						NOR = {
-							has_trait = disfigured
-							has_trait = leper
-							has_trait = scaly
-							has_trait = beauty_bad
-						}
-					}
-					modifier = {
-						OR = {
-							has_trait = beauty_good_2
-							has_trait = beauty_good_3
-						}
-						factor = 2
-					}
-					give_nickname = nick_swan_neck
-					trigger_event = lifestyle_nicknames.1000
-				}
+				# 100 = {
+				# 	trigger = {
+				# 		culture = culture:anglo_saxon
+				# 		is_female = yes
+				# 		has_conventionally_attractive_trigger = yes
+				# 		age <= 40
+				# 		NOR = {
+				# 			has_trait = disfigured
+				# 			has_trait = leper
+				# 			has_trait = scaly
+				# 			has_trait = beauty_bad
+				# 		}
+				# 	}
+				# 	modifier = {
+				# 		OR = {
+				# 			has_trait = beauty_good_2
+				# 			has_trait = beauty_good_3
+				# 		}
+				# 		factor = 2
+				# 	}
+				# 	give_nickname = nick_swan_neck
+				# 	trigger_event = lifestyle_nicknames.1000
+				# }
 				100 = {
 					trigger = {
 						OR = {
@@ -2071,22 +2071,22 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_the_fat
 					trigger_event = lifestyle_nicknames.1000
 				}
-				100 = {
-					trigger = {
-						culture = culture:anglo_saxon
-						current_weight >= 50
-						OR = {
-							loves_food_trigger = yes
-							has_trait = lifestyle_reveler
-						}
-					}
-					modifier = {
-						current_weight >= 75
-						factor = 2
-					}
-					give_nickname = nick_chubbycheeks
-					trigger_event = lifestyle_nicknames.1000
-				}
+				# 100 = {
+				# 	trigger = {
+				# 		culture = culture:anglo_saxon
+				# 		current_weight >= 50
+				# 		OR = {
+				# 			loves_food_trigger = yes
+				# 			has_trait = lifestyle_reveler
+				# 		}
+				# 	}
+				# 	modifier = {
+				# 		current_weight >= 75
+				# 		factor = 2
+				# 	}
+				# 	give_nickname = nick_chubbycheeks
+				# 	trigger_event = lifestyle_nicknames.1000
+				# }
 				50 = {
 					trigger = {
 						current_weight >= 50
@@ -2939,21 +2939,21 @@ chance_for_random_nickname_effect = {
 					give_nickname = nick_the_effeminate
 					trigger_event = lifestyle_nicknames.1000
 				}
-				100 = {
-					trigger = {
-						is_male = yes
-						culture = culture:anglo_saxon
-						prowess <= 4
-						fertility <= 0.4
-						NOT = {
-							any_child = {
-								count > 1
-							}
-						}
-					}
-					give_nickname = nick_softsword
-					trigger_event = lifestyle_nicknames.1000
-				}
+				# 100 = {
+				# 	trigger = {
+				# 		is_male = yes
+				# 		culture = culture:anglo_saxon
+				# 		prowess <= 4
+				# 		fertility <= 0.4
+				# 		NOT = {
+				# 			any_child = {
+				# 				count > 1
+				# 			}
+				# 		}
+				# 	}
+				# 	give_nickname = nick_softsword
+				# 	trigger_event = lifestyle_nicknames.1000
+				# }
 				100 = {
 					trigger = {
 						has_trait = fickle

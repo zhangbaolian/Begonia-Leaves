@@ -170,5 +170,6 @@ sub_realm_size_value = {
 }
 
 caliph_realm_size_value = {
-	value = title:d_sunni.holder.realm_size
+	# value = title:d_sunni.holder.realm_size
+	value = 0 
 }

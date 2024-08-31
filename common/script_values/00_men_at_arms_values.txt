@@ -291,9 +291,10 @@ culture_ai_weight_skirmishers = {
 		limit = {
 			culture = {
 				OR = {
-					has_cultural_pillar = heritage_baltic
-					has_cultural_pillar = heritage_ugro_permian
-					has_cultural_pillar = heritage_balto_finnic
+					# has_cultural_pillar = heritage_baltic
+					# has_cultural_pillar = heritage_ugro_permian
+					# has_cultural_pillar = heritage_balto_finnic
+					has_cultural_pillar = heritage_virtual
 				}
 			}
 		}
@@ -303,11 +304,12 @@ culture_ai_weight_skirmishers = {
 		limit = {
 			culture = {
 				OR = {
-					has_cultural_pillar = heritage_central_germanic
-					has_cultural_pillar = heritage_frankish
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_latin
-					has_cultural_pillar = heritage_byzantine
+					# has_cultural_pillar = heritage_central_germanic
+					# has_cultural_pillar = heritage_frankish
+					# has_cultural_pillar = heritage_iberian
+					# has_cultural_pillar = heritage_latin
+					# has_cultural_pillar = heritage_byzantine
+					has_cultural_pillar = heritage_virtual
 				}
 			}
 		}
@@ -331,13 +333,14 @@ culture_ai_weight_archers = {
 		limit = {
 			culture = {
 				OR = {
-					has_cultural_pillar = heritage_west_germanic
-					has_cultural_pillar = heritage_brythonic
-					has_cultural_pillar = heritage_east_african
-					has_cultural_pillar = heritage_indo_aryan
-					has_cultural_pillar = heritage_dravidian
-					has_cultural_pillar = heritage_burman
+					# has_cultural_pillar = heritage_west_germanic
+					# has_cultural_pillar = heritage_brythonic
+					# has_cultural_pillar = heritage_east_african
+					# has_cultural_pillar = heritage_indo_aryan
+					# has_cultural_pillar = heritage_dravidian
+					# has_cultural_pillar = heritage_burman
 					has_cultural_pillar = heritage_chinese
+					
 				}
 			}
 		}
@@ -346,8 +349,10 @@ culture_ai_weight_archers = {
 	if = { # Cultures that dislike archers
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_central_germanic }
-				culture = { has_cultural_pillar = heritage_frankish }
+				# culture = { has_cultural_pillar = heritage_central_germanic }
+				# culture = { has_cultural_pillar = heritage_frankish }
+				culture = { has_cultural_pillar = heritage_virtual }
+
 			}
 		}
 		add = -60
@@ -370,10 +375,11 @@ culture_ai_weight_heavy_infantry = {
 		limit = {
 			culture = {
 				OR = {
-					has_cultural_pillar = heritage_central_germanic
-					has_cultural_pillar = heritage_north_germanic
-					has_cultural_pillar = heritage_west_germanic
-					has_cultural_pillar = heritage_east_slavic
+					# has_cultural_pillar = heritage_central_germanic
+					# has_cultural_pillar = heritage_north_germanic
+					# has_cultural_pillar = heritage_west_germanic
+					# has_cultural_pillar = heritage_east_slavic
+					has_cultural_pillar = heritage_virtual
 				}
 			}
 		}
@@ -396,8 +402,9 @@ culture_ai_weight_pikemen = {
 	if = { # Cultures that favours spearmen
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_central_germanic }
-				culture = { has_cultural_pillar = heritage_latin }
+				# culture = { has_cultural_pillar = heritage_central_germanic }
+				# culture = { has_cultural_pillar = heritage_latin }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 		}
 		add = 40
@@ -419,10 +426,10 @@ culture_ai_weight_light_cavalry = {
 	if = { # Cultures that REALLY like light cavalry
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_iranian }
+				# culture = { has_cultural_pillar = heritage_iranian }
 				
 				# Steppe cultures
-				culture = { has_cultural_pillar = heritage_turkic }
+				# culture = { has_cultural_pillar = heritage_turkic }
 				culture = { has_cultural_pillar = heritage_mongolic }
 			}
 		}
@@ -432,11 +439,12 @@ culture_ai_weight_light_cavalry = {
 		limit = {
 			culture = {
 				OR = {
-					has_cultural_pillar = heritage_arabic
-					has_cultural_pillar = heritage_iranian
-					has_cultural_pillar = heritage_berber
-					has_cultural_pillar = heritage_iberian
-					has_cultural_pillar = heritage_indo_aryan
+					# has_cultural_pillar = heritage_arabic
+					# has_cultural_pillar = heritage_iranian
+					# has_cultural_pillar = heritage_berber
+					# has_cultural_pillar = heritage_iberian
+					# has_cultural_pillar = heritage_indo_aryan
+					has_cultural_pillar = heritage_virtual
 				}
 			}
 		}
@@ -445,11 +453,13 @@ culture_ai_weight_light_cavalry = {
 	if = { # Cultures that dislike light cavalry
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_central_germanic }
-				culture = { has_cultural_pillar = heritage_tibetan }
-				culture = { has_cultural_pillar = heritage_baltic }
-				culture = { has_cultural_pillar = heritage_burman }
-				culture = { has_cultural_pillar = heritage_somalian }
+				# culture = { has_cultural_pillar = heritage_central_germanic }
+				# culture = { has_cultural_pillar = heritage_tibetan }
+				# culture = { has_cultural_pillar = heritage_baltic }
+				# culture = { has_cultural_pillar = heritage_burman }
+				# culture = { has_cultural_pillar = heritage_somalian }
+				culture = { has_cultural_pillar = heritage_virtual }
+
 			}
 		}
 		add = -60
@@ -466,12 +476,13 @@ culture_ai_weight_light_cavalry = {
 	
 	if = { # Cultures with a preference for Camel Riders should buy those over normal light cavalry
 		limit = {
-			culture = {
-				has_innovation = innovation_war_camels
-			}
+			# culture = {
+			# 	has_innovation = innovation_war_camels
+			# }
 			OR = {
-				culture = { has_cultural_pillar = heritage_arabic }
-				culture = { has_cultural_pillar = heritage_berber }
+				# culture = { has_cultural_pillar = heritage_arabic }
+				# culture = { has_cultural_pillar = heritage_berber }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 		}
 		add = -200
@@ -484,10 +495,10 @@ culture_ai_weight_heavy_cavalry = {
 	if = { # Cultures that REALLY like heavy cavalry
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_iranian }
+				# culture = { has_cultural_pillar = heritage_iranian }
 				
 				# Steppe cultures
-				culture = { has_cultural_pillar = heritage_turkic }
+				# culture = { has_cultural_pillar = heritage_turkic }
 				culture = { has_cultural_pillar = heritage_mongolic }
 			}
 		}
@@ -496,32 +507,33 @@ culture_ai_weight_heavy_cavalry = {
 	if = { # Cultures that favours heavy cavalry
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_central_germanic }
-				culture = { has_cultural_pillar = heritage_frankish }
-				culture = { has_cultural_pillar = heritage_indo_aryan }
+				# culture = { has_cultural_pillar = heritage_central_germanic }
+				# culture = { has_cultural_pillar = heritage_frankish }
+				# culture = { has_cultural_pillar = heritage_indo_aryan }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 		}
 		add = 40
 	}
-	if = { # Cultures that dislike heavy cavalry
-		limit = {
-			culture = {
-				OR = {
-					has_cultural_pillar = heritage_tibetan
-					has_cultural_pillar = heritage_baltic
-					has_cultural_pillar = heritage_south_slavic
-					has_cultural_pillar = heritage_sahelian
-					has_cultural_pillar = heritage_senegambian
-					has_cultural_pillar = heritage_west_african
-					has_cultural_pillar = heritage_yoruba
-					has_cultural_pillar = heritage_somalian
-					has_cultural_pillar = heritage_east_african
-					has_cultural_pillar = heritage_burman
-				}
-			}
-		}
-		add = -60
-	}
+	# if = { # Cultures that dislike heavy cavalry
+	# 	limit = {
+	# 		culture = {
+	# 			OR = {
+	# 				has_cultural_pillar = heritage_tibetan
+	# 				has_cultural_pillar = heritage_baltic
+	# 				has_cultural_pillar = heritage_south_slavic
+	# 				has_cultural_pillar = heritage_sahelian
+	# 				has_cultural_pillar = heritage_senegambian
+	# 				has_cultural_pillar = heritage_west_african
+	# 				has_cultural_pillar = heritage_yoruba
+	# 				has_cultural_pillar = heritage_somalian
+	# 				has_cultural_pillar = heritage_east_african
+	# 				has_cultural_pillar = heritage_burman
+	# 			}
+	# 		}
+	# 	}
+	# 	add = -60
+	# }
 	
 	if = { # Cultures with a special MaA of that type should avoid the base version of the unit
 		limit = {
@@ -539,8 +551,9 @@ culture_ai_weight_camels = {
 	if = { # Cultures that favours camel riders
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_arabic }
-				culture = { has_cultural_pillar = heritage_berber }
+				# culture = { has_cultural_pillar = heritage_arabic }
+				# culture = { has_cultural_pillar = heritage_berber }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 		}
 		add = 80
@@ -553,9 +566,10 @@ culture_ai_weight_elephants = {
 	if = { # Cultures that favours war elephants
 		limit = {
 			OR = {
-				culture = { has_cultural_pillar = heritage_dravidian }
-				culture = { has_cultural_pillar = heritage_indo_aryan }
-				culture = { has_cultural_pillar = heritage_burman }
+				# culture = { has_cultural_pillar = heritage_dravidian }
+				# culture = { has_cultural_pillar = heritage_indo_aryan }
+				# culture = { has_cultural_pillar = heritage_burman }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 		}
 		add = 60

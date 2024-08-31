@@ -179,102 +179,102 @@ on_faith_created = {
 		root = {
 			add_achievement_flag_effect = { FLAG = achievement_its_not_a_cult_flag }
 		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = west_african_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_siguic
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = west_african_orisha_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_orisha
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = west_african_bori_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_bori
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = west_african_roog_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_roog_sene
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = akom_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_akom
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = kushitism_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_kushitism
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = waaqism_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_waaqism
-				VALUE = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:old_faith = {
-					religion_tag = north_african_religion
-					has_doctrine_parameter = unreformed
-				}
-			}
-			add_achievement_global_variable_effect = {
-				VARIABLE = achievement_mother_of_us_all_achamanism
-				VALUE = yes
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = west_african_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_siguic
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = west_african_orisha_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_orisha
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = west_african_bori_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_bori
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = west_african_roog_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_roog_sene
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = akom_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_akom
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = kushitism_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_kushitism
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = waaqism_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_waaqism
+		# 		VALUE = yes
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		scope:old_faith = {
+		# 			religion_tag = north_african_religion
+		# 			has_doctrine_parameter = unreformed
+		# 		}
+		# 	}
+		# 	add_achievement_global_variable_effect = {
+		# 		VARIABLE = achievement_mother_of_us_all_achamanism
+		# 		VALUE = yes
+		# 	}
+		# }
 	}
 
 	events = {
@@ -333,26 +333,26 @@ on_character_faith_change = {
 		}
 		## Struggle Effects
 		### persian_struggle: switching faith to anything that isn't an orthodox Sunni creed'll flip you to detractor.
-		if = {
-			limit = {
-				# Gotta be in the appropriate struggle.
-				any_character_struggle = { this = struggle:persian_struggle }
-				# Filter out pre-existing detractors.
-				NOT = { has_trait = fp3_struggle_detractor }
-				# Now, check the new faith.
-				exists = title:d_sunni.holder
-				OR = {
-					NOT = { exists = faith.religious_head }
-					NOT = { faith.religious_head = title:d_sunni.holder }
-				}
-			}
-			send_interface_toast = {
-				title = persian_struggle.tt.converted_away_from_sunni_orthodoxy
-				left_icon = root
-				hidden_effect = { remove_trait = fp3_struggle_supporter }
-				add_trait_force_tooltip = fp3_struggle_detractor
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		# Gotta be in the appropriate struggle.
+		# 		any_character_struggle = { this = struggle:persian_struggle }
+		# 		# Filter out pre-existing detractors.
+		# 		NOT = { has_trait = fp3_struggle_detractor }
+		# 		# Now, check the new faith.
+		# 		exists = title:d_sunni.holder
+		# 		OR = {
+		# 			NOT = { exists = faith.religious_head }
+		# 			NOT = { faith.religious_head = title:d_sunni.holder }
+		# 		}
+		# 	}
+		# 	send_interface_toast = {
+		# 		title = persian_struggle.tt.converted_away_from_sunni_orthodoxy
+		# 		left_icon = root
+		# 		hidden_effect = { remove_trait = fp3_struggle_supporter }
+		# 		add_trait_force_tooltip = fp3_struggle_detractor
+		# 	}
+		# }
 
 		# Local conversion
 		if = {
@@ -428,17 +428,17 @@ on_character_faith_change = {
 
 
 		# Achievements
-		if = {
-			limit = { is_ai = no }
+		# if = {
+		# 	limit = { is_ai = no }
 
-			if = { # FP2 - Basque In My Glory
-				limit = { faith = faith:basque_pagan }
-				add_achievement_global_variable_effect = {
-					VARIABLE = fp2_basque_in_my_glory_achievement_unlocked
-					VALUE = yes
-				}
-			}
-		}
+		# 	if = { # FP2 - Basque In My Glory
+		# 		limit = { faith = faith:basque_pagan }
+		# 		add_achievement_global_variable_effect = {
+		# 			VARIABLE = fp2_basque_in_my_glory_achievement_unlocked
+		# 			VALUE = yes
+		# 		}
+		# 	}
+		# }
 
 		# Hostage story cycle
 		if = {

@@ -710,17 +710,17 @@ court_chaplain_conversion_contextual_bonuses = {
 			desc = COURT_CHAPLAIN_CONVERSION_SYNCRETIC_WITH_RELIGION_MODIFIER
 		}
 	}
-	if = {
-		limit = {
-			exists = scope:county
-			scope:councillor.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
-			scope:county.faith = { religion_tag = christianity_religion }
-		}
-		add = {
-			value = scope:councillor.conversion_syncretic_with_religion_malus
-			desc = COURT_CHAPLAIN_CONVERSION_SYNCRETIC_WITH_RELIGION_MODIFIER
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:councillor.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
+	# 		scope:county.faith = { religion_tag = christianity_religion }
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_syncretic_with_religion_malus
+	# 		desc = COURT_CHAPLAIN_CONVERSION_SYNCRETIC_WITH_RELIGION_MODIFIER
+	# 	}
+	# }
 	if = {
 		limit = {
 			exists = scope:county
@@ -732,17 +732,17 @@ court_chaplain_conversion_contextual_bonuses = {
 			desc = COURT_CHAPLAIN_CONVERSION_SYNCRETIC_WITH_RELIGION_MODIFIER
 		}
 	}
-	if = {
-		limit = {
-			exists = scope:county
-			scope:councillor.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
-			scope:county.faith = { religion_tag = judaism_religion }
-		}
-		add = {
-			value = scope:councillor.conversion_syncretic_with_religion_malus
-			desc = COURT_CHAPLAIN_CONVERSION_SYNCRETIC_WITH_RELIGION_MODIFIER
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:councillor.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
+	# 		scope:county.faith = { religion_tag = judaism_religion }
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_syncretic_with_religion_malus
+	# 		desc = COURT_CHAPLAIN_CONVERSION_SYNCRETIC_WITH_RELIGION_MODIFIER
+	# 	}
+	# }
 
 	#Various Modifier Penalties
 	if = {
@@ -765,24 +765,24 @@ court_chaplain_conversion_contextual_bonuses = {
 			desc = COURT_CHAPLAIN_CONVERSION_LOCAL_COUNTY_MODIFIERS
 		}
 	}
-	if = {
-		limit = {
-			scope:councillor.liege = {
-				OR = {
-					has_character_modifier = defiant_high_king_conversion_boost_modifier
-					has_character_modifier = defiant_high_queen_conversion_boost_modifier
-				}
-				religion = religion:germanic_religion
-			}
-			scope:county.faith = {
-				NOT = { has_doctrine_parameter = unreformed }
-			}
-		}
-		add = {
-			value = scope:councillor.defiant_high_monarch_conversion_boost_value
-			desc = COURT_CHAPLAIN_CONVERSION_LIEGE_IS_DEFIANT_HIGH_MONARCH
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		scope:councillor.liege = {
+	# 			OR = {
+	# 				has_character_modifier = defiant_high_king_conversion_boost_modifier
+	# 				has_character_modifier = defiant_high_queen_conversion_boost_modifier
+	# 			}
+	# 			religion = religion:germanic_religion
+	# 		}
+	# 		scope:county.faith = {
+	# 			NOT = { has_doctrine_parameter = unreformed }
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.defiant_high_monarch_conversion_boost_value
+	# 		desc = COURT_CHAPLAIN_CONVERSION_LIEGE_IS_DEFIANT_HIGH_MONARCH
+	# 	}
+	# }
 	if = {
 		limit = {
 			exists = scope:county
@@ -815,96 +815,96 @@ court_chaplain_conversion_contextual_bonuses = {
 	}
 
 	#Conversion bonuses from certain Holy Sites.
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = jerusalem
-			}
-			title:b_jerusalem = {
-				is_holy_site_of = scope:councillor.faith
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_holy_site_jerusalem
-			desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_JERUSALEM
-		}
-	}
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = kerala
-			}
-			title:b_honnore = {
-				is_holy_site_of = scope:councillor.faith
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_holy_site_kerala
-			desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_KERALA
-		}
-	}
-	if = {
-		limit = {
-			exists = scope:county
-			scope:councillor.faith = {
-				controls_holy_site = iona
-			}
-			title:b_islay = {
-				is_holy_site_of = scope:councillor.faith
-			}
-			scope:county.title_province = {
-				geographical_region = world_europe_west_britannia
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_holy_site_iona
-			desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_IONA
-		}
-	}
-	if = {
-		limit = {
-			exists = scope:county
-			scope:county.faith = {
-				controls_holy_site = wadi_el_milk
-			}
-			title:b_wadi_el-milk = {
-				is_holy_site_of = scope:councillor.faith
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_holy_site_wadi_el_milk
-			desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_WADI_EL_MILK
-		}
-	}
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = cordoba
-			}
-			title:b_cordoba = {
-				is_holy_site_of = scope:councillor.faith
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_holy_site_cordoba
-			desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_CORDOBA
-		}
-	}
-	if = {
-		limit = {
-			exists = scope:county
-			scope:county.faith = {
-				controls_holy_site = visoki
-			}
-			title:b_visoki = {
-				is_holy_site_of = scope:councillor.faith
-			}
-		}
-		add = {
-			value = scope:councillor.conversion_holy_site_visoki
-			desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_VISOKI
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		scope:councillor.faith = {
+	# 			controls_holy_site = jerusalem
+	# 		}
+	# 		title:b_jerusalem = {
+	# 			is_holy_site_of = scope:councillor.faith
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_holy_site_jerusalem
+	# 		desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_JERUSALEM
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		scope:councillor.faith = {
+	# 			controls_holy_site = kerala
+	# 		}
+	# 		title:b_honnore = {
+	# 			is_holy_site_of = scope:councillor.faith
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_holy_site_kerala
+	# 		desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_KERALA
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:councillor.faith = {
+	# 			controls_holy_site = iona
+	# 		}
+	# 		title:b_islay = {
+	# 			is_holy_site_of = scope:councillor.faith
+	# 		}
+	# 		scope:county.title_province = {
+	# 			geographical_region = world_europe_west_britannia
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_holy_site_iona
+	# 		desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_IONA
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:county.faith = {
+	# 			controls_holy_site = wadi_el_milk
+	# 		}
+	# 		title:b_wadi_el-milk = {
+	# 			is_holy_site_of = scope:councillor.faith
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_holy_site_wadi_el_milk
+	# 		desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_WADI_EL_MILK
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		scope:councillor.faith = {
+	# 			controls_holy_site = cordoba
+	# 		}
+	# 		title:b_cordoba = {
+	# 			is_holy_site_of = scope:councillor.faith
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_holy_site_cordoba
+	# 		desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_CORDOBA
+	# 	}
+	# }
+	# if = {
+	# 	limit = {
+	# 		exists = scope:county
+	# 		scope:county.faith = {
+	# 			controls_holy_site = visoki
+	# 		}
+	# 		title:b_visoki = {
+	# 			is_holy_site_of = scope:councillor.faith
+	# 		}
+	# 	}
+	# 	add = {
+	# 		value = scope:councillor.conversion_holy_site_visoki
+	# 		desc = COURT_CHAPLAIN_CONVERSION_HOLY_SITE_VISOKI
+	# 	}
+	# }
 
 	#Tradition modifiers
 	if = {
@@ -1486,83 +1486,83 @@ court_6090_almoners_modifier_value = {
 }
 
 ### Various Holy Site bonuses
-conversion_holy_site_jerusalem = {
-	value = 0
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = jerusalem
-			}
-		}
-		add = court_chaplain_conversion_base_total
-		multiply = 0.20
-	}
-}
+# conversion_holy_site_jerusalem = {
+# 	value = 0
+# 	if = {
+# 		limit = {
+# 			scope:councillor.faith = {
+# 				controls_holy_site = jerusalem
+# 			}
+# 		}
+# 		add = court_chaplain_conversion_base_total
+# 		multiply = 0.20
+# 	}
+# }
 
-conversion_holy_site_kerala = {
-	value = 0
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = kerala
-			}
-		}
-		add = court_chaplain_conversion_base_total
-		multiply = 0.50
-	}
-}
+# conversion_holy_site_kerala = {
+# 	value = 0
+# 	if = {
+# 		limit = {
+# 			scope:councillor.faith = {
+# 				controls_holy_site = kerala
+# 			}
+# 		}
+# 		add = court_chaplain_conversion_base_total
+# 		multiply = 0.50
+# 	}
+# }
 
-conversion_holy_site_iona = {
-	value = 0
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = iona
-			}
-		}
-		add = court_chaplain_conversion_base_total
-		multiply = 0.30
-	}
-}
+# conversion_holy_site_iona = {
+# 	value = 0
+# 	if = {
+# 		limit = {
+# 			scope:councillor.faith = {
+# 				controls_holy_site = iona
+# 			}
+# 		}
+# 		add = court_chaplain_conversion_base_total
+# 		multiply = 0.30
+# 	}
+# }
 
-conversion_holy_site_visoki = {
-	value = 0
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = visoki
-			}
-		}
-		add = court_chaplain_conversion_base_total
-		multiply = -0.50
-	}
-}
+# conversion_holy_site_visoki = {
+# 	value = 0
+# 	if = {
+# 		limit = {
+# 			scope:councillor.faith = {
+# 				controls_holy_site = visoki
+# 			}
+# 		}
+# 		add = court_chaplain_conversion_base_total
+# 		multiply = -0.50
+# 	}
+# }
 
-conversion_holy_site_wadi_el_milk = {
-	value = 0
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = wadi_el_milk
-			}
-		}
-		add = court_chaplain_conversion_base_total
-		multiply = -0.50
-	}
-}
+# conversion_holy_site_wadi_el_milk = {
+# 	value = 0
+# 	if = {
+# 		limit = {
+# 			scope:councillor.faith = {
+# 				controls_holy_site = wadi_el_milk
+# 			}
+# 		}
+# 		add = court_chaplain_conversion_base_total
+# 		multiply = -0.50
+# 	}
+# }
 
-conversion_holy_site_cordoba = {
-	value = 0
-	if = {
-		limit = {
-			scope:councillor.faith = {
-				controls_holy_site = cordoba
-			}
-		}
-		add = court_chaplain_conversion_base_total
-		multiply = 0.20
-	}
-}
+# conversion_holy_site_cordoba = {
+# 	value = 0
+# 	if = {
+# 		limit = {
+# 			scope:councillor.faith = {
+# 				controls_holy_site = cordoba
+# 			}
+# 		}
+# 		add = court_chaplain_conversion_base_total
+# 		multiply = 0.20
+# 	}
+# }
 
 ### Various trait bonuses
 conversion_savior_liege = {

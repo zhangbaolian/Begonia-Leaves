@@ -507,7 +507,7 @@ spread_chance_legends_mult_value = {
 			county.culture = {
 				OR = {
 					has_cultural_tradition = tradition_chanson_de_geste
-					has_cultural_tradition = tradition_fp1_northern_stories
+					# has_cultural_tradition = tradition_fp1_northern_stories
 					has_cultural_tradition = tradition_storytellers
 					has_cultural_tradition = tradition_poetry
 				}
@@ -521,7 +521,7 @@ spread_chance_legends_mult_value = {
 				OR = {
 					has_cultural_tradition = tradition_esteemed_hospitality
 					has_cultural_tradition = tradition_horse_lords
-					has_cultural_tradition = tradition_caravaneers
+					# has_cultural_tradition = tradition_caravaneers
 					has_cultural_tradition = tradition_seafaring
 					has_cultural_tradition = tradition_city_keepers
 					has_cultural_tradition = tradition_maritime_mercantilism
@@ -1215,7 +1215,7 @@ base_legend_promote_ai = {
 			culture = {
 				OR = {
 					has_cultural_tradition = tradition_chanson_de_geste
-					has_cultural_tradition = tradition_fp1_northern_stories
+					# has_cultural_tradition = tradition_fp1_northern_stories
 					has_cultural_tradition = tradition_storytellers
 					has_cultural_tradition = tradition_poetry
 				}
