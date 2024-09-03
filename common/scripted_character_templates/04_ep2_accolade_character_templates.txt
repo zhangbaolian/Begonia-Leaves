@@ -58,15 +58,15 @@ accolade_marauder_character = {
 	gender_female_chance = root_soldier_female_chance
 	after_creation = {
 		#berserker
-		if = {
-			limit = {
-				faith.religion = faith:norse_pagan.religion
-			}
-			random = {
-				chance = 20
-				add_trait = berserker
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		faith.religion = faith:norse_pagan.religion
+		# 	}
+		# 	random = {
+		# 		chance = 20
+		# 		add_trait = berserker
+		# 	}
+		# }
 		if = {
 			limit = {
 				current_date < 1400
@@ -232,13 +232,13 @@ accolade_idealist_character = {
 				add = 20
 				culture = { has_cultural_parameter = poet_trait_more_common }
 			}
-			modifier = {
-				add = 10
-				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
-				}
-			}
+			# modifier = {
+			# 	add = 10
+			# 	OR = {
+			# 		culture = { has_cultural_pillar = heritage_north_germanic }
+			# 		religion = religion:germanic_religion
+			# 	}
+			# }
 		}
 		
 		# Cultural Traditions
@@ -388,13 +388,13 @@ accolade_charmer_character = {
 				add = 20
 				culture = { has_cultural_parameter = poet_trait_more_common }
 			}
-			modifier = {
-				add = 10
-				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
-				}
-			}
+			# modifier = {
+			# 	add = 10
+			# 	OR = {
+			# 		culture = { has_cultural_pillar = heritage_north_germanic }
+			# 		religion = religion:germanic_religion
+			# 	}
+			# }
 		}
 		
 		# Cultural Traditions
@@ -548,15 +548,15 @@ accolade_thug_character = {
 			add_trait = varangian
 		}
 		#berserker
-		if = {
-			limit = {
-				faith.religion = faith:norse_pagan.religion
-			}
-			random = {
-				chance = 20
-				add_trait = berserker
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		faith.religion = faith:norse_pagan.religion
+		# 	}
+		# 	random = {
+		# 		chance = 20
+		# 		add_trait = berserker
+		# 	}
+		# }
 		
 		# Cultural Traditions
 		if = {
@@ -1008,15 +1008,15 @@ accolade_valiant_character = {
 			add_trait = varangian
 		}
 		#berserker
-		if = {
-			limit = {
-				faith.religion = faith:norse_pagan.religion
-			}
-			random = {
-				chance = 20
-				add_trait = berserker
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		faith.religion = faith:norse_pagan.religion
+		# 	}
+		# 	random = {
+		# 		chance = 20
+		# 		add_trait = berserker
+		# 	}
+		# }
 		random = {
 			chance = 1
 			
@@ -1026,13 +1026,13 @@ accolade_valiant_character = {
 				add = 10
 				culture = { has_cultural_parameter = poet_trait_more_common }
 			}
-			modifier = {
-				add = 5
-				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
-				}
-			}
+			# modifier = {
+			# 	add = 5
+			# 	OR = {
+			# 		culture = { has_cultural_pillar = heritage_north_germanic }
+			# 		religion = religion:germanic_religion
+			# 	}
+			# }
 		}
 		
 		# Cultural Traditions
@@ -1365,13 +1365,13 @@ accolade_scoundrel_character = {
 				add = 10
 				culture = { has_cultural_parameter = poet_trait_more_common }
 			}
-			modifier = {
-				add = 5
-				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
-				}
-			}
+			# modifier = {
+			# 	add = 5
+			# 	OR = {
+			# 		culture = { has_cultural_pillar = heritage_north_germanic }
+			# 		religion = religion:germanic_religion
+			# 	}
+			# }
 		}
 		# Cultural Traditions
 		if = {
@@ -1524,13 +1524,13 @@ accolade_politicker_character = {
 				add = 15
 				culture = { has_cultural_parameter = poet_trait_more_common }
 			}
-			modifier = {
-				add = 10
-				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
-				}
-			}
+			# modifier = {
+			# 	add = 10
+			# 	OR = {
+			# 		culture = { has_cultural_pillar = heritage_north_germanic }
+			# 		religion = religion:germanic_religion
+			# 	}
+			# }
 		}
 		# Cultural Traditions
 		if = {
@@ -2257,15 +2257,15 @@ accolade_contender_character = {
 	gender_female_chance = root_soldier_female_chance
 	after_creation = {
 		#berserker
-		if = {
-			limit = {
-				faith.religion = faith:norse_pagan.religion
-			}
-			random = {
-				chance = 20
-				add_trait = berserker
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		faith.religion = faith:norse_pagan.religion
+		# 	}
+		# 	random = {
+		# 		chance = 20
+		# 		add_trait = berserker
+		# 	}
+		# }
 		# Cultural Traditions
 		if = {
 			limit = {
@@ -3067,15 +3067,15 @@ accolade_vanguard_character = {
 
 		# Cultural Traditions
 		#berserker
-		if = {
-			limit = {
-				faith.religion = faith:norse_pagan.religion
-			}
-			random = {
-				chance = 20
-				add_trait = berserker
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		faith.religion = faith:norse_pagan.religion
+		# 	}
+		# 	random = {
+		# 		chance = 20
+		# 		add_trait = berserker
+		# 	}
+		# }
 		if = {
 			limit = {
 				current_date < 1400
@@ -4488,13 +4488,13 @@ accolade_master_of_revels_character = {
 				add = 30
 				culture = { has_cultural_parameter = poet_trait_more_common }
 			}
-			modifier = {
-				add = 15
-				OR = {
-					culture = { has_cultural_pillar = heritage_north_germanic }
-					religion = religion:germanic_religion
-				}
-			}
+			# modifier = {
+			# 	add = 15
+			# 	OR = {
+			# 		culture = { has_cultural_pillar = heritage_north_germanic }
+			# 		religion = religion:germanic_religion
+			# 	}
+			# }
 		}
 		if = {
 			limit = {

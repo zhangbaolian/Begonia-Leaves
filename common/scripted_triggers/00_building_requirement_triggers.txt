@@ -648,55 +648,56 @@ eastern_special_building_trigger = {
 
 # Religious special building triggers
 religious_special_building_exclusion_trigger = { # checks if any special buildings present do not fit your religion
-	OR = {
-		AND = { # Generic
-			NOT = {
-				barony = { is_holy_site_of = holder.faith }
-			}
-			OR = {
-				has_building = holy_site_cathedral_01
-				has_building = holy_site_mosque_01
-				has_building = holy_site_pagan_grand_temple_01
-				has_building = holy_site_indian_grand_temple_01
-				has_building = holy_site_other_grand_temple_01
-				has_building = hagia_sophia_01
-				has_building = holy_site_mahabodhi_temple_01
-				has_building = holy_site_imam_ali_mosque_01
-				has_building = holy_site_great_mosque_of_mecca_01
-				islamic_special_building_trigger = yes
-				christian_special_building_trigger = yes
-			}
-		}
-		AND = { # Islamic
-			NOT = { barony.holder.religion = religion:islam_religion }
-			islamic_special_building_trigger = yes
-		}
-		AND = { # Christian
-			NOT = { barony.holder.religion = religion:christianity_religion }
-			christian_special_building_trigger = yes
-		}
-		AND = { # Islamic/Zoroastrian
-			NOT = { barony.holder.religion = religion:zoroastrianism_religion }
-			has_building = the_friday_mosque_01 # shared muslim
-		}
-		AND = { # Eastern family
-			NOR = {
-				ROOT.religion = religion:hinduism_religion
-				ROOT.religion = religion:buddhism_religion
-				ROOT.religion = religion:jainism_religion
-				ROOT.religion = religion:taoism_religion
-				ROOT.religion = religion:zoroastrianism_religion
-			}
-			eastern_special_building_trigger = yes
-		}
-		# Judaism
-		AND = {
-			barony.holder.religion = religion:judaism_religion
-			has_building = dome_of_the_rock_01
-		}
-		AND = {
-			NOT = { barony.holder.religion = religion:judaism_religion }
-			has_building = temple_in_jerusalem_01
-		}
-	}
+	always = no
+	# OR = {
+	# 	AND = { # Generic
+	# 		NOT = {
+	# 			barony = { is_holy_site_of = holder.faith }
+	# 		}
+	# 		OR = {
+	# 			has_building = holy_site_cathedral_01
+	# 			has_building = holy_site_mosque_01
+	# 			has_building = holy_site_pagan_grand_temple_01
+	# 			has_building = holy_site_indian_grand_temple_01
+	# 			has_building = holy_site_other_grand_temple_01
+	# 			has_building = hagia_sophia_01
+	# 			has_building = holy_site_mahabodhi_temple_01
+	# 			has_building = holy_site_imam_ali_mosque_01
+	# 			has_building = holy_site_great_mosque_of_mecca_01
+	# 			islamic_special_building_trigger = yes
+	# 			christian_special_building_trigger = yes
+	# 		}
+	# 	}
+	# 	AND = { # Islamic
+	# 		NOT = { barony.holder.religion = religion:islam_religion }
+	# 		islamic_special_building_trigger = yes
+	# 	}
+	# 	AND = { # Christian
+	# 		NOT = { barony.holder.religion = religion:christianity_religion }
+	# 		christian_special_building_trigger = yes
+	# 	}
+	# 	AND = { # Islamic/Zoroastrian
+	# 		NOT = { barony.holder.religion = religion:zoroastrianism_religion }
+	# 		has_building = the_friday_mosque_01 # shared muslim
+	# 	}
+	# 	AND = { # Eastern family
+	# 		NOR = {
+	# 			ROOT.religion = religion:hinduism_religion
+	# 			ROOT.religion = religion:buddhism_religion
+	# 			ROOT.religion = religion:jainism_religion
+	# 			ROOT.religion = religion:taoism_religion
+	# 			ROOT.religion = religion:zoroastrianism_religion
+	# 		}
+	# 		eastern_special_building_trigger = yes
+	# 	}
+	# 	# Judaism
+	# 	AND = {
+	# 		barony.holder.religion = religion:judaism_religion
+	# 		has_building = dome_of_the_rock_01
+	# 	}
+	# 	AND = {
+	# 		NOT = { barony.holder.religion = religion:judaism_religion }
+	# 		has_building = temple_in_jerusalem_01
+	# 	}
+	# }
 }

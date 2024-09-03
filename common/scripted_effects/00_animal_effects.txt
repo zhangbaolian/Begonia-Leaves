@@ -1,4 +1,5 @@
 ﻿#Effects used in animal events
+# 动物事件效果
 
 
 #####################################################################
@@ -112,14 +113,14 @@ assign_name_options_cat_story_cycle_effect = {
 		10 = { #From old Irish legal texts
 			trigger = { 
 				NOT = { has_character_flag = name_meone }
-				culture = { has_cultural_pillar = heritage_goidelic }
+				# culture = { has_cultural_pillar = heritage_goidelic }
 			}
 			add_character_flag = name_meone
 		}
 		10 = { #From old Irish legal texts
 			trigger = {
 				NOT = { has_character_flag = name_cruibne }
-				culture = { has_cultural_pillar = heritage_goidelic }
+				# culture = { has_cultural_pillar = heritage_goidelic }
 			}
 			add_character_flag = name_cruibne
 		}

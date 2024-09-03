@@ -1946,167 +1946,167 @@ camelry_attribute = {
 }
 
 # Elephant Rider
-# elephantry_attribute = {
-# 	adjective = accolade_elephant_riding
-# 	noun = accolade_elephanteer
-# 	accolade_categories = { men_at_arms army_bonus militant forceful leader aggressive defensive cavalry heavy_fighter }
+elephantry_attribute = {
+	adjective = accolade_elephant_riding
+	noun = accolade_elephanteer
+	accolade_categories = { men_at_arms army_bonus militant forceful leader aggressive defensive cavalry heavy_fighter }
 
-# 	potential = {
-# 		prowess >= accolade_prowess_requirement_value
-# 		OR = {
-# 			has_trait_xp = {
-# 				trait = tourney_participant
-# 				track = horse
-# 				value >= 20
-# 			}
-# 			has_trait = jungle_stalker
-# 		}
-# 		culture ?= { has_innovation = innovation_elephantry }
-# 	}
+	potential = {
+		prowess >= accolade_prowess_requirement_value
+		OR = {
+			has_trait_xp = {
+				trait = tourney_participant
+				track = horse
+				value >= 20
+			}
+			has_trait = jungle_stalker
+		}
+		culture ?= { has_innovation = innovation_elephantry }
+	}
 
-# 	weight = {
-# 		value = accolade_uninteresting_base_value
-# 		scope:owner ?= {
-# 			# Should only be interested at all if they have a unit of the type OR if the maa type is exciting and foreign
-# 			if = {
-# 				limit = {
-# 					OR = {
-# 						number_maa_regiments_of_base_type = {
-# 							type = elephant_cavalry
-# 							value >= 1
-# 						}
-# 						culture ?= {
-# 							NOR = {
-# 								has_innovation = innovation_elephantry
-# 								has_cultural_tradition = tradition_lords_of_the_elephant
-# 							}
-# 						}
-# 					}
-# 				}
-# 				add = @has_relevant_maa_weight_up_value
-# 				# Weight up a bit further for more MaA of the same type.
-# 				## A few.
-# 				if = {
-# 					limit = {
-# 						number_maa_regiments_of_base_type = {
-# 							type = elephant_cavalry
-# 							value >= @number_maa_regiments_increment_1
-# 						}
-# 					}
-# 					add = @has_relevant_maa_weight_up_value
-# 				}
-# 				## Lots.
-# 				if = {
-# 					limit = {
-# 						number_maa_regiments_of_base_type = {
-# 							type = elephant_cavalry
-# 							value >= @number_maa_regiments_increment_2
-# 						}
-# 					}
-# 					add = @has_relevant_maa_weight_up_value
-# 				}
-# 				## Many.
-# 				if = {
-# 					limit = {
-# 						number_maa_regiments_of_base_type = {
-# 							type = elephant_cavalry
-# 							value >= @number_maa_regiments_increment_3
-# 						}
-# 					}
-# 					add = @has_relevant_maa_weight_up_value
-# 				}
-# 				## Many-lots.
-# 				if = {
-# 					limit = {
-# 						number_maa_regiments_of_base_type = {
-# 							type = elephant_cavalry
-# 							value >= @number_maa_regiments_increment_4
-# 						}
-# 					}
-# 					add = @has_relevant_maa_weight_up_value
-# 				}
-# 				# AI values.
-# 				add = {
-# 					value = ai_boldness
-# 					multiply = 1
-# 				}
-# 				add = {
-# 					value = ai_honor
-# 					multiply = 1
-# 				}
-# 				#Culture
-# 				if = {
-# 					limit = {
-# 						root.culture ?= {
-# 							OR = {
-# 								has_cultural_pillar = heritage_dravidian
-# 								has_cultural_pillar = heritage_indo_aryan
-# 								has_cultural_pillar = heritage_burman
-# 							}
-# 						}
-# 					}
-# 					add = @respected_culture_for_maa_type_value
-# 				}
-# 				# elephants are cool
-# 				add = 100
-# 				# Finally, weight for opinion.
-# 				multiply = accolade_opinion_multiplier_value
-# 			}
-# 		}
-# 	}
+	weight = {
+		value = accolade_uninteresting_base_value
+		scope:owner ?= {
+			# Should only be interested at all if they have a unit of the type OR if the maa type is exciting and foreign
+			if = {
+				limit = {
+					OR = {
+						number_maa_regiments_of_base_type = {
+							type = elephant_cavalry
+							value >= 1
+						}
+						culture ?= {
+							NOR = {
+								has_innovation = innovation_elephantry
+								has_cultural_tradition = tradition_lords_of_the_elephant
+							}
+						}
+					}
+				}
+				add = @has_relevant_maa_weight_up_value
+				# Weight up a bit further for more MaA of the same type.
+				## A few.
+				if = {
+					limit = {
+						number_maa_regiments_of_base_type = {
+							type = elephant_cavalry
+							value >= @number_maa_regiments_increment_1
+						}
+					}
+					add = @has_relevant_maa_weight_up_value
+				}
+				## Lots.
+				if = {
+					limit = {
+						number_maa_regiments_of_base_type = {
+							type = elephant_cavalry
+							value >= @number_maa_regiments_increment_2
+						}
+					}
+					add = @has_relevant_maa_weight_up_value
+				}
+				## Many.
+				if = {
+					limit = {
+						number_maa_regiments_of_base_type = {
+							type = elephant_cavalry
+							value >= @number_maa_regiments_increment_3
+						}
+					}
+					add = @has_relevant_maa_weight_up_value
+				}
+				## Many-lots.
+				if = {
+					limit = {
+						number_maa_regiments_of_base_type = {
+							type = elephant_cavalry
+							value >= @number_maa_regiments_increment_4
+						}
+					}
+					add = @has_relevant_maa_weight_up_value
+				}
+				# AI values.
+				add = {
+					value = ai_boldness
+					multiply = 1
+				}
+				add = {
+					value = ai_honor
+					multiply = 1
+				}
+				#Culture
+				if = {
+					limit = {
+						root.culture ?= {
+							OR = {
+								has_cultural_pillar = heritage_dravidian
+								has_cultural_pillar = heritage_indo_aryan
+								has_cultural_pillar = heritage_burman
+							}
+						}
+					}
+					add = @respected_culture_for_maa_type_value
+				}
+				# elephants are cool
+				add = 100
+				# Finally, weight for opinion.
+				multiply = accolade_opinion_multiplier_value
+			}
+		}
+	}
 
-# 	ranks = {
-# 		# Elephants are incredibly deadly but also really expensive. So what if. *What if*. We reduced the cost to run them as we started to buff them? Scream, cry, seethe, cope, etc.
-# 		100 = {
-# 			liege_modifier = {
-# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
-# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
-# 			}
-# 		}
-# 		300 = {
-# 			liege_modifier = {
-# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
-# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
-# 			}
-# 		}
-# 		600 = {
-# 			liege_modifier = {
-# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
-# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
-# 			}
-# 			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
-# 			men_at_arms = { accolade_maa_elephantiers }
-# 		}
-# 		1000 = {
-# 			liege_modifier = {
-# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
-# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
-# 			}
-# 			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
-# 		}
-# 		1500 = {
-# 			liege_modifier = {
-# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
-# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
-# 			}
-# 			knight_army_modifier = {
-# 				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
-# 				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
-# 			}
-# 			men_at_arms = { accolade_maa_elephantiers }
-# 		}
-# 		2100 = {
-# 			liege_modifier = {
-# 				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
-# 				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
-# 			}
-# 			knight_army_modifier = {
-# 				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
-# 				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
-# 			}
-# 		}
-# 	}
-# }
+	ranks = {
+		# Elephants are incredibly deadly but also really expensive. So what if. *What if*. We reduced the cost to run them as we started to buff them? Scream, cry, seethe, cope, etc.
+		100 = {
+			liege_modifier = {
+				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
+				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
+			}
+		}
+		300 = {
+			liege_modifier = {
+				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_1
+				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_1
+			}
+		}
+		600 = {
+			liege_modifier = {
+				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
+				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
+			}
+			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
+			men_at_arms = { accolade_maa_elephantiers }
+		}
+		1000 = {
+			liege_modifier = {
+				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_2
+				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_2
+			}
+			knight_army_modifier = { elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_2 }
+		}
+		1500 = {
+			liege_modifier = {
+				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
+				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
+			}
+			knight_army_modifier = {
+				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
+				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
+			}
+			men_at_arms = { accolade_maa_elephantiers }
+		}
+		2100 = {
+			liege_modifier = {
+				elephant_cavalry_maintenance_mult = @elephantry_attr_eleph_maint_3
+				elephant_cavalry_max_size_add = @elephantry_attr_eleph_max_size_3
+			}
+			knight_army_modifier = {
+				elephant_cavalry_damage_mult = @elephantry_attr_eleph_damage_3
+				elephant_cavalry_toughness_mult = @elephantry_attr_eleph_tough_3
+			}
+		}
+	}
+}
 
 # Horse Archers/Archer
 horse_archer_attribute = {

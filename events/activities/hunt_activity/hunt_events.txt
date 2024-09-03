@@ -12582,7 +12582,7 @@ hunt.4004 = {
 				faith = {
 					OR = {
 						religion = religion:islam_religion
-						religion = religion:judaism_religion
+						# religion = religion:judaism_religion
 					}
 				}
 			}
@@ -13337,7 +13337,7 @@ hunt.4007 = {
 							5 = { # Aurochs
 								trigger = {
 									scope:activity.activity_location = { hunt_animal_aurochs_trigger = yes }
-									NOT = { scope:host.religion = religion:hinduism_religion }
+									# NOT = { scope:host.religion = religion:hinduism_religion }
 								}
 								set_variable = { name = animal_type value = flag:aurochs }
 							}

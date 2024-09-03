@@ -864,7 +864,7 @@ major_decisions.1105 = {
 
 
 ################
-# Found University
+# Found University 创办大学
 # by Linnéa Thimrén
 ################
 major_decisions.2001 = {

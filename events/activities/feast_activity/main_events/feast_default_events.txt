@@ -9417,12 +9417,12 @@ feast_default.5005 = {
 		scope:activity.activity_host = {
 			is_alive = yes
 			is_imprisoned = no
-			culture = {		
-				OR = {
-					has_cultural_pillar = heritage_byzantine
-					has_cultural_pillar = heritage_arabic
-				}
-			}
+			# culture = {		
+			# 	OR = {
+			# 		has_cultural_pillar = heritage_byzantine
+			# 		has_cultural_pillar = heritage_arabic
+			# 	}
+			# }
 		}
 	}
 

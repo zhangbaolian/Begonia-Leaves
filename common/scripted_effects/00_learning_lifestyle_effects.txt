@@ -632,39 +632,39 @@ pick_translation_book_effect = {
 				value = flag:pali_canon
 			}
 		}
-		100 = { #The Sagas
-			trigger = {
-				trigger_if = {
-					limit = {
-						exists = scope:option_1
-					}
-					NOT = { scope:option_1 = flag:the_norse_sagas }
-				}
-				OR = {
-					AND = {
-						religion = religion:christianity_religion
-						current_date > 1000.1.1
-						capital_province = {
-							geographical_region = world_europe_north
-						}
-					}
-					AND = {
-						current_date > 1200.1.1
-						OR = {
-							capital_province = {
-								geographical_region = world_europe_north
-							}
-							religion = religion:germanic_religion
-						}
-					}
-				}
-			}
+		# 100 = { #The Sagas
+		# 	trigger = {
+		# 		trigger_if = {
+		# 			limit = {
+		# 				exists = scope:option_1
+		# 			}
+		# 			NOT = { scope:option_1 = flag:the_norse_sagas }
+		# 		}
+		# 		OR = {
+		# 			AND = {
+		# 				religion = religion:christianity_religion
+		# 				current_date > 1000.1.1
+		# 				capital_province = {
+		# 					geographical_region = world_europe_north
+		# 				}
+		# 			}
+		# 			AND = {
+		# 				current_date > 1200.1.1
+		# 				OR = {
+		# 					capital_province = {
+		# 						geographical_region = world_europe_north
+		# 					}
+		# 					religion = religion:germanic_religion
+		# 				}
+		# 			}
+		# 		}
+		# 	}
 			
-			save_scope_value_as = {
-				name = $OPTION$
-				value = flag:the_norse_sagas
-			}
-		}
+		# 	save_scope_value_as = {
+		# 		name = $OPTION$
+		# 		value = flag:the_norse_sagas
+		# 	}
+		# }
 		1 = { #Fallback: Family History
 			trigger = {
 				trigger_if = {

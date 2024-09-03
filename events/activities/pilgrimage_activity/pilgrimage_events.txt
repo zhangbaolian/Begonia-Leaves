@@ -1,4 +1,5 @@
 ﻿# Events for Pilgrimages
+# 朝圣活动
 
 namespace = pilgrimage
 
@@ -515,16 +516,16 @@ pilgrimage.1100 = {
 	title = {
 		desc = {
 			first_valid = {
-				triggered_desc = {
-					trigger = {
-						culture = { has_cultural_tradition = tradition_byzantine_succession }
-					}
-					desc = pilgrimage.1100.t.greek
-				}
-				triggered_desc = {
-					trigger = { religion = religion:christianity_religion }
-					desc = pilgrimage.1100.t.christian
-				}
+				# triggered_desc = {
+				# 	trigger = {
+				# 		culture = { has_cultural_tradition = tradition_byzantine_succession }
+				# 	}
+				# 	desc = pilgrimage.1100.t.greek
+				# }
+				# triggered_desc = {
+				# 	trigger = { religion = religion:christianity_religion }
+				# 	desc = pilgrimage.1100.t.christian
+				# }
 				triggered_desc = {
 					trigger = {
 						faith = { has_doctrine = unreformed_faith_doctrine }
@@ -893,48 +894,48 @@ pilgrimage.1110 = {
 	desc = {
 		desc = pilgrimage.1110.desc
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					scope:shared_holy_site ?= {
-						this = title:b_makka
-						this = root.involved_activity.activity_location.barony
-						county.county_controller.religion = scope:heathen_raider.religion
-					}
-				}
-				desc = pilgrimage.1110.shared_target_heathen_hajj
-			}
-			triggered_desc = {
-				trigger = {
-					scope:shared_holy_site ?= {
-						this = title:b_makka
-						this = root.involved_activity.activity_location.barony
-						county.county_controller.religion = root.religion
-						NOT = { county.county_controller.religion = scope:heathen_raider.religion }
-					}
-				}
-				desc = pilgrimage.1110.shared_target_controlled_hajj
-			}
-			triggered_desc = {
-				trigger = {
-					scope:shared_holy_site ?= {
-						this = title:b_jerusalem
-						this = root.involved_activity.activity_location.barony
-						county.county_controller.religion = scope:heathen_raider.religion
-					}
-				}
-				desc = pilgrimage.1110.shared_target_heathen_jerusalem
-			}
-			triggered_desc = {
-				trigger = {
-					scope:shared_holy_site ?= {
-						this = title:b_jerusalem
-						this = root.involved_activity.activity_location.barony
-						county.county_controller.religion = root.religion
-						NOT = { county.county_controller.religion = scope:heathen_raider.religion }
-					}
-				}
-				desc = pilgrimage.1110.shared_target_controlled_jerusalem
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:shared_holy_site ?= {
+			# 			this = title:b_makka
+			# 			this = root.involved_activity.activity_location.barony
+			# 			county.county_controller.religion = scope:heathen_raider.religion
+			# 		}
+			# 	}
+			# 	desc = pilgrimage.1110.shared_target_heathen_hajj
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:shared_holy_site ?= {
+			# 			this = title:b_makka
+			# 			this = root.involved_activity.activity_location.barony
+			# 			county.county_controller.religion = root.religion
+			# 			NOT = { county.county_controller.religion = scope:heathen_raider.religion }
+			# 		}
+			# 	}
+			# 	desc = pilgrimage.1110.shared_target_controlled_hajj
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:shared_holy_site ?= {
+			# 			this = title:b_jerusalem
+			# 			this = root.involved_activity.activity_location.barony
+			# 			county.county_controller.religion = scope:heathen_raider.religion
+			# 		}
+			# 	}
+			# 	desc = pilgrimage.1110.shared_target_heathen_jerusalem
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:shared_holy_site ?= {
+			# 			this = title:b_jerusalem
+			# 			this = root.involved_activity.activity_location.barony
+			# 			county.county_controller.religion = root.religion
+			# 			NOT = { county.county_controller.religion = scope:heathen_raider.religion }
+			# 		}
+			# 	}
+			# 	desc = pilgrimage.1110.shared_target_controlled_jerusalem
+			# }
 			triggered_desc = {
 				trigger = {
 					scope:shared_holy_site ?= {
@@ -4433,10 +4434,10 @@ pilgrimage.2021 = {
 	option = {
 		name = pilgrimage.2021.b
 		trigger = {
-			OR = {
-				religion = religion:christianity_religion
-				religion = religion:judaism_religion
-			}
+			# OR = {
+			# 	religion = religion:christianity_religion
+			# 	religion = religion:judaism_religion
+			# }
 			OR = {
 				has_trait = flagellant
 				has_trait = sadistic
@@ -6084,13 +6085,13 @@ pilgrimage.2511 = {
 	desc = {
 		desc = pilgrimage.2511.desc.start
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					religion = religion:christianity_religion
-					faith = { trait_is_sin = vengeful }
-				}
-				desc = pilgrimage.2511.desc.vengeful.christian
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		religion = religion:christianity_religion
+			# 		faith = { trait_is_sin = vengeful }
+			# 	}
+			# 	desc = pilgrimage.2511.desc.vengeful.christian
+			# }
 			triggered_desc = {
 				trigger = {
 					faith = { trait_is_sin = vengeful }
@@ -8498,604 +8499,604 @@ pilgrimage.4020 = {
 
 ###Christian
 #Rome
-pilgrimage.5001 = {
-	type = activity_event
-	title = pilgrimage.5001.t
-	desc = pilgrimage.5001.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_roma }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5001 = {
+# 	type = activity_event
+# 	title = pilgrimage.5001.t
+# 	desc = pilgrimage.5001.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_roma }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Jerusalem
-pilgrimage.5011 = {
-	type = activity_event
-	title = pilgrimage.5011.t
-	desc = {
-		desc = pilgrimage.5011.desc.beginning
-		first_valid = {
-			triggered_desc = {
-				trigger = { religion = religion:islam_religion }
-				desc = pilgrimage.5011.desc.muslim
-			}
-			triggered_desc = {
-				trigger = { religion = religion:judaism_religion }
-				desc = pilgrimage.5011.desc.jewish
-			}
-			desc = pilgrimage.5011.desc.christian
-		}
-		desc = pilgrimage.5011.desc.end
-	}
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = ecstasy
-	}
-	trigger = { scope:activity.activity_location.county = title:c_jerusalem }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5011 = {
+# 	type = activity_event
+# 	title = pilgrimage.5011.t
+# 	desc = {
+# 		desc = pilgrimage.5011.desc.beginning
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = { religion = religion:islam_religion }
+# 				desc = pilgrimage.5011.desc.muslim
+# 			}
+# 			triggered_desc = {
+# 				trigger = { religion = religion:judaism_religion }
+# 				desc = pilgrimage.5011.desc.jewish
+# 			}
+# 			desc = pilgrimage.5011.desc.christian
+# 		}
+# 		desc = pilgrimage.5011.desc.end
+# 	}
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = ecstasy
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_jerusalem }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
-#Constantinople
-pilgrimage.5021 = {
-	type = activity_event
-	title = pilgrimage.5021.t
-	desc = pilgrimage.5021.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_byzantion }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+#Constantinople 君士坦丁堡
+# pilgrimage.5021 = {
+# 	type = activity_event
+# 	title = pilgrimage.5021.t
+# 	desc = pilgrimage.5021.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_byzantion }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
-#Alexandria
-pilgrimage.5031 = {
-	type = activity_event
-	title = pilgrimage.5031.t
-	desc = pilgrimage.5031.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_alexandria }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+#Alexandria 亚历山大港
+# pilgrimage.5031 = {
+# 	type = activity_event
+# 	title = pilgrimage.5031.t
+# 	desc = pilgrimage.5031.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_alexandria }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 ###Jewish
 #Mount Sinai
-pilgrimage.5101 = {
-	type = activity_event
-	title = pilgrimage.5101.t
-	desc = pilgrimage.5101.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_sinai }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5101 = {
+# 	type = activity_event
+# 	title = pilgrimage.5101.t
+# 	desc = pilgrimage.5101.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_sinai }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 ###Muslim
 #Medina
-pilgrimage.5201 = {
-	type = activity_event
-	title = pilgrimage.5201.t
-	desc = pilgrimage.5201.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_medina }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5201 = {
+# 	type = activity_event
+# 	title = pilgrimage.5201.t
+# 	desc = pilgrimage.5201.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_medina }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 ###Hindu
 #Varanasi
-pilgrimage.5301 = {
-	type = activity_event
-	title = pilgrimage.5301.t
-	desc = pilgrimage.5301.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_varanasi }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5301 = {
+# 	type = activity_event
+# 	title = pilgrimage.5301.t
+# 	desc = pilgrimage.5301.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_varanasi }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Ayodhya
-pilgrimage.5311 = {
-	type = activity_event
-	title = pilgrimage.5311.t
-	desc = pilgrimage.5311.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_ayodhya }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5311 = {
+# 	type = activity_event
+# 	title = pilgrimage.5311.t
+# 	desc = pilgrimage.5311.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_ayodhya }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Mathura
-pilgrimage.5321 = {
-	type = activity_event
-	title = pilgrimage.5321.t
-	desc = pilgrimage.5321.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_mathura }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5321 = {
+# 	type = activity_event
+# 	title = pilgrimage.5321.t
+# 	desc = pilgrimage.5321.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_mathura }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Haridwar
-pilgrimage.5331 = {
-	type = activity_event
-	title = pilgrimage.5331.t
-	desc = pilgrimage.5331.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_sthanisvara }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5331 = {
+# 	type = activity_event
+# 	title = pilgrimage.5331.t
+# 	desc = pilgrimage.5331.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_sthanisvara }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Kanchipuram
-pilgrimage.5341 = {
-	type = activity_event
-	title = pilgrimage.5341.t
-	desc = pilgrimage.5341.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_kanchipuram }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5341 = {
+# 	type = activity_event
+# 	title = pilgrimage.5341.t
+# 	desc = pilgrimage.5341.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_kanchipuram }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Ujjayini
-pilgrimage.5351 = {
-	type = activity_event
-	title = pilgrimage.5351.t
-	desc = pilgrimage.5351.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_ujjayini }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5351 = {
+# 	type = activity_event
+# 	title = pilgrimage.5351.t
+# 	desc = pilgrimage.5351.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_ujjayini }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 #Dwarka
-pilgrimage.5361 = {
-	type = activity_event
-	title = pilgrimage.5361.t
-	desc = pilgrimage.5361.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_dvaraka }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5361 = {
+# 	type = activity_event
+# 	title = pilgrimage.5361.t
+# 	desc = pilgrimage.5361.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_dvaraka }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 ###Buddhism
 #Bodh Gaya
-pilgrimage.5401 = {
-	type = activity_event
-	title = pilgrimage.5401.t
-	desc = pilgrimage.5401.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_gaya }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5401 = {
+# 	type = activity_event
+# 	title = pilgrimage.5401.t
+# 	desc = pilgrimage.5401.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_gaya }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
-#Kushinagar
-pilgrimage.5411 = {
-	type = activity_event
-	title = pilgrimage.5411.t
-	desc = pilgrimage.5411.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_kusinagara }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# #Kushinagar
+# pilgrimage.5411 = {
+# 	type = activity_event
+# 	title = pilgrimage.5411.t
+# 	desc = pilgrimage.5411.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_kusinagara }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
-#Sarnath
-pilgrimage.5421 = {
-	type = activity_event
-	title = pilgrimage.5421.t
-	desc = pilgrimage.5421.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = {
-		#Sarnath is literally a mile from Varanasi
-		scope:activity.activity_location.county = title:c_varanasi
-	}
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# #Sarnath
+# pilgrimage.5421 = {
+# 	type = activity_event
+# 	title = pilgrimage.5421.t
+# 	desc = pilgrimage.5421.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = {
+# 		#Sarnath is literally a mile from Varanasi
+# 		scope:activity.activity_location.county = title:c_varanasi
+# 	}
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 ###Jainism
 #Shikharj
-pilgrimage.5501 = {
-	type = activity_event
-	title = pilgrimage.5501.t
-	desc = pilgrimage.5501.desc
-	theme = pilgrimage_destination
-	left_portrait = {
-		character = root
-		triggered_animation = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			animation = sadness
-		}
-		animation = happiness
-	}
-	trigger = { scope:activity.activity_location.county = title:c_radha }
-	immediate = {
-		play_music_cue = mx_cue_pilgrimage_arrival
-	}
-	#Alright
-	option = {
-		name = {
-			trigger = { has_variable = pilgrimage_death_bury_home }
-			text = pilgrimage.4001.a_dead
-		}
-		name = {
-			trigger = { has_trait = cynical }
-			text = pilgrimage.4001.a_cynical
-		}
-		name = pilgrimage.4001.a
-		give_pilgrim_trait_or_xp_effect = yes
-		pilgrimage_arrival_stress_loss_effect = yes
-	}
-}
+# pilgrimage.5501 = {
+# 	type = activity_event
+# 	title = pilgrimage.5501.t
+# 	desc = pilgrimage.5501.desc
+# 	theme = pilgrimage_destination
+# 	left_portrait = {
+# 		character = root
+# 		triggered_animation = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			animation = sadness
+# 		}
+# 		animation = happiness
+# 	}
+# 	trigger = { scope:activity.activity_location.county = title:c_radha }
+# 	immediate = {
+# 		play_music_cue = mx_cue_pilgrimage_arrival
+# 	}
+# 	#Alright
+# 	option = {
+# 		name = {
+# 			trigger = { has_variable = pilgrimage_death_bury_home }
+# 			text = pilgrimage.4001.a_dead
+# 		}
+# 		name = {
+# 			trigger = { has_trait = cynical }
+# 			text = pilgrimage.4001.a_cynical
+# 		}
+# 		name = pilgrimage.4001.a
+# 		give_pilgrim_trait_or_xp_effect = yes
+# 		pilgrimage_arrival_stress_loss_effect = yes
+# 	}
+# }
 
 ###Zoroastrian
 #Ushi-darena

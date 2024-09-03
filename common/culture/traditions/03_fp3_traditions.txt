@@ -275,124 +275,124 @@
 # }
 
 # 学术灯塔
-# tradition_fp3_beacon_of_learning = { # Offshoot of tradition_philosopher_culture
-# 	category = societal
+tradition_fp3_beacon_of_learning = { # Offshoot of tradition_philosopher_culture
+	category = societal
 
-# 	layers = {
-# 		0 = learning
-# 		1 = mena
-# 		4 = beacon_of_learning.dds
-# 	}
+	layers = {
+		0 = learning
+		1 = mena
+		4 = beacon_of_learning.dds
+	}
 	
-# 	is_shown = {
-# 		has_fp3_dlc_trigger = yes
-# 		has_cultural_pillar = heritage_iranian
-# 		NOT = { has_cultural_tradition = tradition_philosopher_culture } # Replaces Philosopher Culture
-# 	}
+	is_shown = {
+		has_fp3_dlc_trigger = yes
+		has_cultural_pillar = heritage_virtual
+		NOT = { has_cultural_tradition = tradition_philosopher_culture } # Replaces Philosopher Culture
+	}
 
-# 	can_pick = {
-# 		custom_description = {
-# 			text = culture_not_bellicose
-# 			NOT = {
-# 				culture_pillar:ethos_bellicose = { is_in_list = traits }
-# 			}
-# 		}
-# 		NOT = { has_cultural_tradition = tradition_warrior_culture }
-# 		NOT = { has_cultural_tradition = tradition_philosopher_culture }
-# 	}
-# 	can_pick_for_hybridization = {
-# 		custom_tooltip = {
-# 			text = no_warrior_culture
-# 			NOT = { # Only blocks polygamous to avoid duplicate warnings, but is blocked by concubines
-# 				culture_tradition:tradition_warrior_culture = { is_in_list = traits }
-# 			}
-# 		}
-# 		custom_tooltip = {
-# 			text = no_philosopher_culture
-# 			NOT = { # Only blocks polygamous to avoid duplicate warnings, but is blocked by concubines
-# 				culture_tradition:tradition_philosopher_culture = { is_in_list = traits }
-# 			}
-# 		}
-# 	}
+	can_pick = {
+		custom_description = {
+			text = culture_not_bellicose
+			NOT = {
+				culture_pillar:ethos_bellicose = { is_in_list = traits }
+			}
+		}
+		NOT = { has_cultural_tradition = tradition_warrior_culture }
+		NOT = { has_cultural_tradition = tradition_philosopher_culture }
+	}
+	can_pick_for_hybridization = {
+		custom_tooltip = {
+			text = no_warrior_culture
+			NOT = { # Only blocks polygamous to avoid duplicate warnings, but is blocked by concubines
+				culture_tradition:tradition_warrior_culture = { is_in_list = traits }
+			}
+		}
+		custom_tooltip = {
+			text = no_philosopher_culture
+			NOT = { # Only blocks polygamous to avoid duplicate warnings, but is blocked by concubines
+				culture_tradition:tradition_philosopher_culture = { is_in_list = traits }
+			}
+		}
+	}
 	
-# 	parameters = {
-# 		pensive_trait_more_common = yes
-# 		rowdy_trait_less_common = yes
-# 		innovation_from_learning_traits = yes
-# 		can_appoint_court_scholar = yes
-# 		guardian_education_better_outcomes = yes
-# 	}
+	parameters = {
+		pensive_trait_more_common = yes
+		rowdy_trait_less_common = yes
+		innovation_from_learning_traits = yes
+		can_appoint_court_scholar = yes
+		guardian_education_better_outcomes = yes
+	}
 
-# 	character_modifier = {
-# 		monthly_learning_lifestyle_xp_gain_mult = 0.2
-# 		learning_per_piety_level = 1
-# 	}
+	character_modifier = {
+		monthly_learning_lifestyle_xp_gain_mult = 0.2
+		learning_per_piety_level = 1
+	}
 	
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_courtly = { is_in_list = traits }
-# 						culture_pillar:ethos_communal = { is_in_list = traits }
-# 						culture_pillar:ethos_spiritual = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_courtly_communal_or_spiritual_desc
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					trigger_if = {
-# 						limit = {
-# 							scope:character = {
-# 								is_ai = no
-# 							}
-# 						}
-# 						NOT = {
-# 							any_ruler = {
-# 								count >= 5
-# 								culture = prev
-# 								primary_title.tier >= tier_county
-# 								has_trait = scholar
-# 							}
-# 						}
-# 					}
-# 					trigger_else = {
-# 						always = no
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_unfulfilled_criteria_penalty
-# 					desc = rulers_with_scholar_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_spiritual = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_courtly_communal_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					trigger_if = {
+						limit = {
+							scope:character = {
+								is_ai = no
+							}
+						}
+						NOT = {
+							any_ruler = {
+								count >= 5
+								culture = prev
+								primary_title.tier >= tier_county
+								has_trait = scholar
+							}
+						}
+					}
+					trigger_else = {
+						always = no
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = rulers_with_scholar_desc
+				}
+			}
 			
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 	
-# 	ai_will_do = {
-# 		value = 100
-# 		if = {
-# 			limit = {
-# 				NOR = {
-# 					culture_pillar:ethos_courtly = { is_in_list = traits }
-# 					culture_pillar:ethos_communal = { is_in_list = traits }
-# 					culture_pillar:ethos_spiritual = { is_in_list = traits }
-# 				}
-# 			}
-# 			multiply = 0
-# 		}
-# 	}
-# }
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOR = {
+					culture_pillar:ethos_courtly = { is_in_list = traits }
+					culture_pillar:ethos_communal = { is_in_list = traits }
+					culture_pillar:ethos_spiritual = { is_in_list = traits }
+				}
+			}
+			multiply = 0
+		}
+	}
+}
 
 # Replaces Refined Poetry
 # 开明的权贵

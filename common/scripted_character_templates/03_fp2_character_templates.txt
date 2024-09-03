@@ -523,51 +523,51 @@ celebration_chessmaster_character = {
 	}
 }
 
-spanish_jewish_merchant_character = {
-	age = { 25 50 }
+# spanish_jewish_merchant_character = {
+# 	age = { 25 50 }
 
-	random_traits_list = {
-		count = 1
-		education_stewardship_2 = {}
-		education_stewardship_3 = {}
-		education_stewardship_4 = {}
-	}
+# 	random_traits_list = {
+# 		count = 1
+# 		education_stewardship_2 = {}
+# 		education_stewardship_3 = {}
+# 		education_stewardship_4 = {}
+# 	}
 
-	random_traits = yes
+# 	random_traits = yes
 
-	culture = culture:sephardi
-	faith = faith:kabarism # temporary, see after_creation effect below
+# 	culture = culture:sephardi
+# 	faith = faith:kabarism # temporary, see after_creation effect below
 
-	gender_female_chance = 0
+# 	gender_female_chance = 0
 
-	stewardship = {
-		min_template_high_skill
-		max_template_high_skill
-	}
+# 	stewardship = {
+# 		min_template_high_skill
+# 		max_template_high_skill
+# 	}
 
-	after_creation = {
-		religion:judaism_religion = {
-			random_faith = {
-				limit = {
-					is_mainstream_jewish_faith = yes
-				}
-				save_scope_as = courtier_faith
-			}
-		}
-		set_character_faith = scope:courtier_faith
-	}
-}
+# 	after_creation = {
+# 		religion:judaism_religion = {
+# 			random_faith = {
+# 				limit = {
+# 					is_mainstream_jewish_faith = yes
+# 				}
+# 				save_scope_as = courtier_faith
+# 			}
+# 		}
+# 		set_character_faith = scope:courtier_faith
+# 	}
+# }
 
-spanish_conversos_character = {
-	age = { 25 50 }
+# spanish_conversos_character = {
+# 	age = { 25 50 }
 
-	random_traits = yes
+# 	random_traits = yes
 
-	faith = faith:conversos
-	culture = culture:sephardi
+# 	faith = faith:conversos
+# 	culture = culture:sephardi
 
-	gender_female_chance = 25
-}
+# 	gender_female_chance = 25
+# }
 
 toledan_night_character = {
 	age = { 25 50 }
