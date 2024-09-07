@@ -1,10 +1,11 @@
-﻿# Faction demand events
+﻿# Faction demand events 派系需求事件
+
 
 namespace = faction_demand
 
 
 
-# Independence Faction Demand
+# Independence Faction Demand 独立派需求
 # by Joakim Andreasson
 faction_demand.0001 = {
 	type = letter_event
@@ -130,20 +131,20 @@ faction_demand.0001 = {
 				is_at_war = no
 				primary_title.tier >= tier_empire
 			}
-			modifier = {
-				add = -5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = -5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 
@@ -206,20 +207,20 @@ faction_demand.0001 = {
 				value = debt_level
 				multiplier = -25
 			}
-			modifier = {
-				add = 5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = 5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 }
@@ -694,20 +695,20 @@ faction_demand.1001 = {
 				max = 50
 			}
 			
-			modifier = {
-				add = 50
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = 50
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 
@@ -830,20 +831,20 @@ faction_demand.1001 = {
 				primary_title.tier >= tier_empire
 			}
 			
-			modifier = {
-				add = -5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = -5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 	
@@ -904,20 +905,20 @@ faction_demand.1001 = {
 				value = debt_level
 				multiplier = -25
 			}
-			modifier = {
-				add = 5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = 5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 	
@@ -1568,20 +1569,20 @@ faction_demand.2001 = {
 				is_at_war = no
 				primary_title.tier >= tier_empire
 			}
-			modifier = {
-				add = -5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = -5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 
@@ -1639,20 +1640,20 @@ faction_demand.2001 = {
 				add = 1000
 				scope:faction = { faction_power < 40 }
 			}
-			modifier = {
-				add = 5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = 5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 
@@ -1965,20 +1966,20 @@ faction_demand.1000 = {
 				is_at_war = no
 				primary_title.tier >= tier_empire
 			}
-			modifier = {
-				add = -5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = -5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 
@@ -2023,20 +2024,20 @@ faction_demand.1000 = {
 				value = debt_level
 				multiplier = -25
 			}
-			modifier = {
-				add = 5000
-				OR = {
-					has_title = title:e_mongol_empire
-					has_title = title:e_ilkhanate
-					has_title = title:e_chagatai
-					has_title = title:e_black_horde
-					has_title = title:e_white_horde
-					has_title = title:e_aarlud_khanate
-					has_title = title:e_togskol_khanate
-					has_title = title:e_baruun_khanate
-					has_title = title:e_byzantium
-				}
-			}
+			# modifier = {
+			# 	add = 5000
+			# 	OR = {
+			# 		has_title = title:e_mongol_empire
+			# 		has_title = title:e_ilkhanate
+			# 		has_title = title:e_chagatai
+			# 		has_title = title:e_black_horde
+			# 		has_title = title:e_white_horde
+			# 		has_title = title:e_aarlud_khanate
+			# 		has_title = title:e_togskol_khanate
+			# 		has_title = title:e_baruun_khanate
+			# 		has_title = title:e_byzantium
+			# 	}
+			# }
 		}
 	}
 }
