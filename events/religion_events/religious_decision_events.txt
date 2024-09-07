@@ -573,245 +573,245 @@ scripted_trigger bhakti_foundational_faith_trigger = {
 	trigger_else = { always = no }
 }
 
-religious_decision.0101 = {
-	type = character_event
-	title = religious_decision.0101.t
-	desc = {
-		desc = religious_decision.0101.desc.start
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					OR = {
-						faith = faith:vaishnavism
-						bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-					}
-				}
-				desc = religious_decision.0101.desc.vaishnavism
-			}
-			triggered_desc = {
-				trigger = {
-					OR = {
-						faith = faith:shaivism
-						bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-					}
-				}
-				desc = religious_decision.0101.desc.shaivism
-			}
-			triggered_desc = {
-				trigger = {
-					OR = {
-						faith = faith:smartism
-						bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-					}
-				}
-				desc = religious_decision.0101.desc.smartism
-			}
-			desc = religious_decision.0101.desc.generic
-		}
-		desc = religious_decision.0101.desc.end
-	}
-	theme = faith
-	left_portrait = {
-		character = root
-		animation = personality_rational
-	}
+# religious_decision.0101 = {
+# 	type = character_event
+# 	title = religious_decision.0101.t
+# 	desc = {
+# 		desc = religious_decision.0101.desc.start
+# 		first_valid = {
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						faith = faith:vaishnavism
+# 						bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 					}
+# 				}
+# 				desc = religious_decision.0101.desc.vaishnavism
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						faith = faith:shaivism
+# 						bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 					}
+# 				}
+# 				desc = religious_decision.0101.desc.shaivism
+# 			}
+# 			triggered_desc = {
+# 				trigger = {
+# 					OR = {
+# 						faith = faith:smartism
+# 						bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 					}
+# 				}
+# 				desc = religious_decision.0101.desc.smartism
+# 			}
+# 			desc = religious_decision.0101.desc.generic
+# 		}
+# 		desc = religious_decision.0101.desc.end
+# 	}
+# 	theme = faith
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_rational
+# 	}
 
-	# 'Generic' Hinduism
-	option = {
-		name = religious_decision.0101.ganga
-		trigger = {
-			NOR = {
-				# vaishnavism includes this one
-				faith = faith:shaivism
-				faith = faith:smartism
-				has_character_modifier = bhakti_hinduism_ganga
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-			}
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_hinduism_ganga }
-	}
+# 	# 'Generic' Hinduism
+# 	option = {
+# 		name = religious_decision.0101.ganga
+# 		trigger = {
+# 			NOR = {
+# 				# vaishnavism includes this one
+# 				faith = faith:shaivism
+# 				faith = faith:smartism
+# 				has_character_modifier = bhakti_hinduism_ganga
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 			}
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_hinduism_ganga }
+# 	}
 
-	option = {
-		name = religious_decision.0101.saraswati
-		trigger = {
-			NOR = {
-				faith = faith:vaishnavism
-				faith = faith:shaivism
-				faith = faith:smartism
-				has_character_modifier = bhakti_hinduism_saraswati
-				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-			}
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_hinduism_saraswati }
-	}
+# 	option = {
+# 		name = religious_decision.0101.saraswati
+# 		trigger = {
+# 			NOR = {
+# 				faith = faith:vaishnavism
+# 				faith = faith:shaivism
+# 				faith = faith:smartism
+# 				has_character_modifier = bhakti_hinduism_saraswati
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 			}
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_hinduism_saraswati }
+# 	}
 
-	option = {
-		name = religious_decision.0101.kali
-		trigger = {
-			NOR = {
-				faith = faith:vaishnavism
-				faith = faith:shaivism
-				faith = faith:smartism
-				has_character_modifier = bhakti_hinduism_kali
-				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-			}
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_hinduism_kali }
-	}
+# 	option = {
+# 		name = religious_decision.0101.kali
+# 		trigger = {
+# 			NOR = {
+# 				faith = faith:vaishnavism
+# 				faith = faith:shaivism
+# 				faith = faith:smartism
+# 				has_character_modifier = bhakti_hinduism_kali
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 			}
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_hinduism_kali }
+# 	}
 
-	option = {
-		name = religious_decision.0101.kubera
-		trigger = {
-			NOR = {
-				faith = faith:vaishnavism
-				faith = faith:shaivism
-				# smartism includes this one
-				has_character_modifier = bhakti_hinduism_kubera
-				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-			}
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_hinduism_kubera }
-	}
+# 	option = {
+# 		name = religious_decision.0101.kubera
+# 		trigger = {
+# 			NOR = {
+# 				faith = faith:vaishnavism
+# 				faith = faith:shaivism
+# 				# smartism includes this one
+# 				has_character_modifier = bhakti_hinduism_kubera
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 			}
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_hinduism_kubera }
+# 	}
 
-	# Vaishnavism
-	option = {
-		name = religious_decision.0101.lakishmi
-		trigger = {
-			OR = {
-				faith = faith:vaishnavism
-				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-			}
-			NOT = { has_character_modifier = bhakti_vaishnavism_lakishmi }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_vaishnavism_lakishmi }
-	}
+# 	# Vaishnavism
+# 	option = {
+# 		name = religious_decision.0101.lakishmi
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:vaishnavism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_vaishnavism_lakishmi }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_vaishnavism_lakishmi }
+# 	}
 
-	option = {
-		name = religious_decision.0101.jagganath
-		trigger = {
-			OR = {
-				faith = faith:vaishnavism
-				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-			}
-			NOT = { has_character_modifier = bhakti_vaishnavism_jagganath }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_vaishnavism_jagganath }
-	}
+# 	option = {
+# 		name = religious_decision.0101.jagganath
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:vaishnavism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_vaishnavism_jagganath }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_vaishnavism_jagganath }
+# 	}
 
-	option = {
-		name = religious_decision.0101.hayagriva
-		trigger = {
-			OR = {
-				faith = faith:vaishnavism
-				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
-			}
-			NOT = { has_character_modifier = bhakti_vaishnavism_hayagriva }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_vaishnavism_hayagriva }
-	}
+# 	option = {
+# 		name = religious_decision.0101.hayagriva
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:vaishnavism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:vaishnavism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_vaishnavism_hayagriva }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_vaishnavism_hayagriva }
+# 	}
 
-	# Shaivism
-	option = {
-		name = religious_decision.0101.parvati
-		trigger = {
-			OR = {
-				faith = faith:shaivism
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-			}
-			NOT = { has_character_modifier = bhakti_shaivism_parvati }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_shaivism_parvati }
-	}
+# 	# Shaivism
+# 	option = {
+# 		name = religious_decision.0101.parvati
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:shaivism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_shaivism_parvati }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_shaivism_parvati }
+# 	}
 
-	option = {
-		name = religious_decision.0101.virabhadra
-		trigger = {
-			OR = {
-				faith = faith:shaivism
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-			}
-			NOT = { has_character_modifier = bhakti_shaivism_virabhadra }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_shaivism_virabhadra }
-	}
+# 	option = {
+# 		name = religious_decision.0101.virabhadra
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:shaivism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_shaivism_virabhadra }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_shaivism_virabhadra }
+# 	}
 
-	option = {
-		name = religious_decision.0101.munishwarar
-		trigger = {
-			OR = {
-				faith = faith:shaivism
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-			}
-			NOT = { has_character_modifier = bhakti_shaivism_munishwarar }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_shaivism_munishwarar }
-	}
+# 	option = {
+# 		name = religious_decision.0101.munishwarar
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:shaivism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_shaivism_munishwarar }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_shaivism_munishwarar }
+# 	}
 
-	option = {
-		name = religious_decision.0101.dakshinamoorthy
-		trigger = {
-			OR = {
-				faith = faith:shaivism
-				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
-			}
-			NOT = { has_character_modifier = bhakti_shaivism_dakshinamoorthy }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_shaivism_dakshinamoorthy }
-	}
+# 	option = {
+# 		name = religious_decision.0101.dakshinamoorthy
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:shaivism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:shaivism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_shaivism_dakshinamoorthy }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_shaivism_dakshinamoorthy }
+# 	}
 
-	# Smartism
-	option = {
-		name = religious_decision.0101.ganesha
-		trigger = {
-			OR = {
-				faith = faith:smartism
-				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-			}
-			NOT = { has_character_modifier = bhakti_smartism_ganesha }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_smartism_ganesha }
-	}
+# 	# Smartism
+# 	option = {
+# 		name = religious_decision.0101.ganesha
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:smartism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_smartism_ganesha }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_smartism_ganesha }
+# 	}
 
-	option = {
-		name = religious_decision.0101.vishnu
-		trigger = {
-			OR = {
-				faith = faith:smartism
-				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-			}
-			NOT = { has_character_modifier = bhakti_smartism_vishnu }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_smartism_vishnu }
-	}
+# 	option = {
+# 		name = religious_decision.0101.vishnu
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:smartism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_smartism_vishnu }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_smartism_vishnu }
+# 	}
 
-	option = {
-		name = religious_decision.0101.shiva
-		trigger = {
-			OR = {
-				faith = faith:smartism
-				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
-			}
-			NOT = { has_character_modifier = bhakti_smartism_shiva }
-		}
-		set_bhakti_effect = { BHAKTI = bhakti_smartism_shiva }
-	}
+# 	option = {
+# 		name = religious_decision.0101.shiva
+# 		trigger = {
+# 			OR = {
+# 				faith = faith:smartism
+# 				bhakti_foundational_faith_trigger = { FAITH = faith:smartism }
+# 			}
+# 			NOT = { has_character_modifier = bhakti_smartism_shiva }
+# 		}
+# 		set_bhakti_effect = { BHAKTI = bhakti_smartism_shiva }
+# 	}
 
-	# Opt-Out
-	option = {
-		name = religious_decision.0101.optout
-		flavor = religious_decision.0101.flavor
+# 	# Opt-Out
+# 	option = {
+# 		name = religious_decision.0101.optout
+# 		flavor = religious_decision.0101.flavor
 
-		ai_chance = {
-			base = 0
-		}
-	}
-}
+# 		ai_chance = {
+# 			base = 0
+# 		}
+# 	}
+# }
 
 religious_decision.0102 = {
 	type = character_event
@@ -1873,42 +1873,42 @@ religious_decision.0302 = {
 	desc = {
 		triggered_desc = {
 			trigger = {
-				NOR = {
-					religion = religion:zoroastrianism_religion
-					religion = religion:zunism_religion
-				}
+				# NOR = {
+				# 	# religion = religion:zoroastrianism_religion
+				# 	religion = religion:zunism_religion
+				# }
 			}
 			desc = religious_decision.0302.desc.wilderness
 		}
-		triggered_desc = {
-			trigger = {
-				OR = {
-					religion = religion:zoroastrianism_religion
-					religion = religion:zunism_religion
-				}
-			}
-			desc = religious_decision.0302.desc.zoroastrian
-		}
+		# triggered_desc = {
+		# 	trigger = {
+		# 		OR = {
+		# 			religion = religion:zoroastrianism_religion
+		# 			religion = religion:zunism_religion
+		# 		}
+		# 	}
+		# 	desc = religious_decision.0302.desc.zoroastrian
+		# }
 	}
 	theme = faith
 	override_background = {
-		trigger = {
-			NOR = {
-				religion = religion:zoroastrianism_religion
-				religion = religion:zunism_religion
-			}
-		}
+		# trigger = {
+		# 	NOR = {
+				# religion = religion:zoroastrianism_religion
+		# 		religion = religion:zunism_religion
+		# 	}
+		# }
 		reference = wilderness
 	}
-	override_background = {
-		trigger = {
-			OR = {
-				religion = religion:zoroastrianism_religion
-				religion = religion:zunism_religion
-			}
-		}
-		reference = temple
-	}
+	# override_background = {
+	# 	trigger = {
+	# 		OR = {
+	# 			# religion = religion:zoroastrianism_religion
+	# 			religion = religion:zunism_religion
+	# 		}
+	# 	}
+	# 	reference = temple
+	# }
 
 	left_portrait = {
 		character = var:ancestor_to_bury
@@ -2204,7 +2204,7 @@ religious_decision.0501 = {
 		every_vassal = {
 			custom = religious_decision.0501.jewish.tt
 			limit = {
-				has_religion = religion:judaism_religion
+				# has_religion = religion:judaism_religion
 			}
 			add_opinion = {
 				target = root
@@ -2215,7 +2215,7 @@ religious_decision.0501 = {
 		every_vassal = {
 			custom = religious_decision.0501.nonjewish.tt
 			limit = {
-				NOT = { has_religion = religion:judaism_religion }
+				# NOT = { has_religion = religion:judaism_religion }
 			}
 			add_opinion = {
 				target = root
@@ -2252,7 +2252,7 @@ religious_decision.0501 = {
 					NOT = { this = root }
 					OR = {
 						is_vassal_of = root
-						has_faith = faith:kabarism
+						# has_faith = faith:kabarism
 					}
 				}
 				trigger_event = religious_decision.0502
@@ -2275,7 +2275,7 @@ religious_decision.0501 = {
 		every_vassal = {
 			custom = religious_decision.0501.nonjewish.tt
 			limit = {
-				NOT = { has_religion = religion:judaism_religion }
+				# NOT = { has_religion = religion:judaism_religion }
 			}
 			add_opinion = {
 				target = root
@@ -2289,7 +2289,7 @@ religious_decision.0501 = {
 					NOT = { this = root }
 					OR = {
 						is_vassal_of = root
-						has_faith = faith:kabarism
+						# has_faith = faith:kabarism
 					}
 				}
 				trigger_event = religious_decision.0502
@@ -2312,7 +2312,7 @@ religious_decision.0501 = {
 		every_vassal = {
 			custom = religious_decision.0501.nonjewish.tt
 			limit = {
-				NOT = { has_religion = religion:judaism_religion }
+				# NOT = { has_religion = religion:judaism_religion }
 			}
 			add_opinion = {
 				target = root
@@ -2322,7 +2322,7 @@ religious_decision.0501 = {
 		}
 		every_vassal = {
 			limit = {
-				has_religion = religion:judaism_religion
+				# has_religion = religion:judaism_religion
 			}
 			custom = religious_decision.0501.jewish.tt
 			add_opinion = {
@@ -2337,7 +2337,7 @@ religious_decision.0501 = {
 					NOT = { this = root }
 					OR = {
 						is_vassal_of = root
-						has_faith = faith:kabarism
+						# has_faith = faith:kabarism
 					}
 				}
 				trigger_event = religious_decision.0502
@@ -2386,7 +2386,7 @@ religious_decision.0502 = {
 	option = {
 		name = religious_decision.0502.a
 		trigger = {
-			NOT = { has_faith = faith:kabarism }
+			# NOT = { has_faith = faith:kabarism }
 			scope:khazar_khan.faith = {
 				NOT = {
 					has_doctrine = doctrine_pluralism_fundamentalist
@@ -2406,7 +2406,7 @@ religious_decision.0502 = {
 	option = {
 		name = religious_decision.0502.a
 		trigger = {
-			NOT = { has_faith = faith:kabarism }
+			# NOT = { has_faith = faith:kabarism }
 			scope:khazar_khan.faith = { has_doctrine = doctrine_pluralism_fundamentalist }
 		}
 		show_as_tooltip = {
@@ -2419,7 +2419,7 @@ religious_decision.0502 = {
 	option = {
 		name = religious_decision.0502.b
 		trigger = {
-			has_faith = faith:kabarism
+			# has_faith = faith:kabarism
 			scope:khazar_khan.faith = {
 				NOT = {
 					has_doctrine = doctrine_pluralism_fundamentalist
@@ -2439,7 +2439,7 @@ religious_decision.0502 = {
 	option = {
 		name = religious_decision.0502.b
 		trigger = {
-			has_faith = faith:kabarism
+			# has_faith = faith:kabarism
 			scope:khazar_khan.faith = { has_doctrine = doctrine_pluralism_fundamentalist }
 		}
 		show_as_tooltip = {
@@ -2469,7 +2469,7 @@ religious_decision.0503 = {
 
 	option = { # Ah heck yeah
 		name = {
-			trigger = { root.faith.religion = religion:judaism_religion }
+			# trigger = { root.faith.religion = religion:judaism_religion }
 			text = religious_decision.0503.a.jewish
 		}
 		name = religious_decision.0503.a.non_jewish
@@ -2478,7 +2478,7 @@ religious_decision.0503 = {
 
 	option = { # Ah heck no
 		trigger = {
-			NOT = { root.faith.religion = religion:judaism_religion }
+			# NOT = { root.faith.religion = religion:judaism_religion }
 			NOT = { this = scope:hebrew_language_adopter_scope }
 			exists = scope:target_other_culture
 		}

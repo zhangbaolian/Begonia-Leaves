@@ -700,49 +700,49 @@ seek_aid_of_the_spirits_decision = {
 # 	}
 # }
 
-# meditate_in_seclusion_decision = {
-# 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+meditate_in_seclusion_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 
-# 	desc = meditate_in_seclusion_decision_desc
-# 	selection_tooltip = meditate_in_seclusion_decision_tooltip
+	desc = meditate_in_seclusion_decision_desc
+	selection_tooltip = meditate_in_seclusion_decision_tooltip
 
-# 	is_shown = {
-# 		OR = {
-# 			faith = {
-# 				has_doctrine_parameter = meditation_mechanics_active
-# 			}
-# 			has_character_modifier = fp3_sufi_initiate_modifier #FP3 addition
-# 			has_trait = calm 
-# 		}
-# 		holds_landed_title = yes
-# 	}
+	is_shown = {
+		OR = {
+			faith = {
+				has_doctrine_parameter = meditation_mechanics_active
+			}
+			has_character_modifier = fp3_sufi_initiate_modifier #FP3 addition
+			has_trait = calm 
+		}
+		holds_landed_title = yes
+	}
 
-# 	is_valid = {
+	is_valid = {
 
-# 	}
+	}
 
-# 	is_valid_showing_failures_only = {
-# 		is_available_adult = yes
-# 		location = capital_province
-# 	}
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		location = capital_province
+	}
 
-# 	effect = {
-# 		custom_tooltip = meditate_in_seclusion_tooltip
-# 		trigger_event = religious_decision.0201
-# 	}
+	effect = {
+		custom_tooltip = meditate_in_seclusion_tooltip
+		trigger_event = religious_decision.0201
+	}
 
-# 	ai_check_interval = 60
-# 	cooldown = { months = 36 }	
+	ai_check_interval = 60
+	cooldown = { months = 36 }	
 
-# 	ai_potential = {
-# 		is_at_war = no
-# 		stress >= 75
-# 	}
+	ai_potential = {
+		is_at_war = no
+		stress >= 75
+	}
 
-# 	ai_will_do = {
-# 		base = 100
-# 	}
-# }
+	ai_will_do = {
+		base = 100
+	}
+}
 
 give_sky_burial_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"

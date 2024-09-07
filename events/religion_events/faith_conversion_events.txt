@@ -98,22 +98,22 @@ faith_conversion.0002 = {
 		# No Friday prayer shenanigans unless you're involved in the Sunni caliphal drama.
 		## Friday prayers would absolutely happen for others but these modifiers are currently tied heavily to the struggle.
 		## Remove insubordination if you leave Islam.
-		if = {
-			limit = {
-				NOT = { faith.religion = religion:islam_religion }
-			}
-			remove_character_modifier = fp3_name_read_in_friday_prayer_modifier
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { faith.religion = religion:islam_religion }
+		# 	}
+		# 	remove_character_modifier = fp3_name_read_in_friday_prayer_modifier
+		# }
 		## Remove subordination.
 		### Special use-case because you might convert faith within the various ones that consider the caliph to be their HoF, in which case it'd stay.
-		if = {
-			limit = {
-				faith.religious_head_title ?= {
-					NOT = { this = title:d_sunni }
-				}
-			}
-			remove_character_modifier = fp3_displayed_pious_submission_to_caliph_modifier
-		}
+		# if = {
+		# 	limit = {
+		# 		faith.religious_head_title ?= {
+		# 			NOT = { this = title:d_sunni }
+		# 		}
+		# 	}
+		# 	remove_character_modifier = fp3_displayed_pious_submission_to_caliph_modifier
+		# }
 		bastard_to_wild_oat_conversion_effect = yes
 	}
 }
@@ -196,9 +196,9 @@ faith_conversion.0004 = {
 		if = {
 			limit = {
 				OR = {
-					culture = { has_cultural_pillar = heritage_arabic }
-					culture = { has_cultural_pillar = heritage_iranian }
-					culture = { has_cultural_pillar = heritage_turkic }
+					# culture = { has_cultural_pillar = heritage_arabic }
+					# culture = { has_cultural_pillar = heritage_iranian }
+					culture = { has_cultural_pillar = heritage_virtual }
 				}
 			}
 			change_government = clan_government

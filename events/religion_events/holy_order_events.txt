@@ -379,13 +379,15 @@ holy_order.0202 = {
 	option = { #Pretty please give me more time?
 		name = {
 			trigger = {
-				faith = { religion_tag = christianity_religion }
+				# faith = { religion_tag = christianity_religion }
+				always = no 
 			}
 			text = holy_order.0202.b_christian
 		}
 		name = {
 			trigger = {
-				NOT = { faith = { religion_tag = christianity_religion } }
+				# NOT = { faith = { religion_tag = christianity_religion } }
+				always = no 
 			}
 			text = holy_order.0202.b
 		}
