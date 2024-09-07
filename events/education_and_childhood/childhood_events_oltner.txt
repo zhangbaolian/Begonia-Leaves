@@ -1102,7 +1102,7 @@ childhood.7100 = {
 						age <= 6
 					}
 					NOR = {
-						faith.religion = religion:judaism_religion
+						# faith.religion = religion:judaism_religion
 						faith.religion = religion:islam_religion
 					}
 				}
