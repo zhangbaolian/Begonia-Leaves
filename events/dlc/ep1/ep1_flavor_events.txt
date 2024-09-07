@@ -2746,23 +2746,25 @@ ep1_flavor.2000 = {
 		name = {
 			trigger = {
 				scope:maa_type_1 = flag:cavalry
-				OR = {
-					culture = { has_cultural_pillar = heritage_byzantine }
-					OR = {
- 						has_title = title:e_byzantium	#Must be the current emperor.
- 						has_title = title:e_roman_empire	#Or the other emperor.
- 					}
-				}
+				always = no 
+				# OR = {
+				# 	culture = { has_cultural_pillar = heritage_byzantine }
+				# 	OR = {
+ 				# 		has_title = title:e_byzantium	#Must be the current emperor.
+ 				# 		has_title = title:e_roman_empire	#Or the other emperor.
+ 				# 	}
+				# }
 			}
 			text = ep1_flavor.2000.cavalry_tzykanion
 		}
 		name = {
 			trigger = {
 				scope:maa_type_1 = flag:cavalry
-				OR = {
-					culture = { has_cultural_pillar = heritage_iranian }
-					has_title = title:e_persia	#Must be the current emperor.
-				}
+				always = no
+				# OR = {
+				# 	culture = { has_cultural_pillar = heritage_iranian }
+				# 	has_title = title:e_persia	#Must be the current emperor.
+				# }
 			}
 			text = ep1_flavor.2000.cavalry_chovgan
 		}
@@ -2789,7 +2791,8 @@ ep1_flavor.2000 = {
 		name = {
 			trigger = {
 				scope:maa_type_1 = flag:levies
-				culture = { has_cultural_pillar = heritage_goidelic }
+				always = no 
+				# culture = { has_cultural_pillar = heritage_goidelic }
 			}
 			text = ep1_flavor.2000.levies_caid
 		}
@@ -2865,23 +2868,25 @@ ep1_flavor.2000 = {
 		name = { # Tyzkanion - byzaboo
 			trigger = {
 				scope:maa_type_2 = flag:cavalry
-				OR = {
-					culture = { has_cultural_pillar = heritage_byzantine }
-					OR = {
- 						has_title = title:e_byzantium	#Must be the current emperor.
- 						has_title = title:e_roman_empire	#Or the other emperor.
- 					}
-				}
+				always = no 
+				# OR = {
+				# 	culture = { has_cultural_pillar = heritage_byzantine }
+				# 	OR = {
+ 				# 		has_title = title:e_byzantium	#Must be the current emperor.
+ 				# 		has_title = title:e_roman_empire	#Or the other emperor.
+ 				# 	}
+				# }
 			}
 			text = ep1_flavor.2000.cavalry_tzykanion
 		}
 		name = { # Chovgan - parsi
 			trigger = {
 				scope:maa_type_2 = flag:cavalry
-				OR = {
-					culture = { has_cultural_pillar = heritage_iranian }
-					has_title = title:e_persia	#Must be the current emperor.
-				}
+				always = no
+				# OR = {
+				# 	culture = { has_cultural_pillar = heritage_iranian }
+				# 	has_title = title:e_persia	#Must be the current emperor.
+				# }
 			}
 			text = ep1_flavor.2000.cavalry_chovgan
 		}
@@ -2908,7 +2913,8 @@ ep1_flavor.2000 = {
 		name = { # Caid - gaelic
 			trigger = {
 				scope:maa_type_2 = flag:levies
-				culture = { has_cultural_pillar = heritage_goidelic }
+				always = no 
+				# culture = { has_cultural_pillar = heritage_goidelic }
 			}
 			text = ep1_flavor.2000.levies_caid
 		}

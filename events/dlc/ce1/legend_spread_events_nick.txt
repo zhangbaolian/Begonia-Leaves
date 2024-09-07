@@ -821,15 +821,16 @@ legend_spread_events.5020 = {
 	cooldown = { years = 20 }
 	
 	trigger = {
-		promoted_legend ?= {
-			legend_type = legend_type:holy
-			legend_protagonist = root
-		}
-		faith.religion = religion:christianity_religion
-		any_courtier = {
-			NOT = { this = root }
-			is_available_ai_adult = yes
-		}
+		# promoted_legend ?= {
+		# 	legend_type = legend_type:holy
+		# 	legend_protagonist = root
+		# }
+		# faith.religion = religion:christianity_religion
+		# any_courtier = {
+		# 	NOT = { this = root }
+		# 	is_available_ai_adult = yes
+		# }
+		always = no 
 	}
 	
 	immediate = {
@@ -7612,8 +7613,9 @@ legend_spread_events.5410 = {
 
 		trigger = {
 			AND = {
-				culture = { has_cultural_pillar = heritage_north_germanic }
-				current_year >= 1000 #Use a rough estimate of when rumours of Vinland were beginning to propagate
+				# culture = { has_cultural_pillar = heritage_north_germanic }
+				# current_year >= 1000 #Use a rough estimate of when rumours of Vinland were beginning to propagate
+				always = no 
 			}
 		}
 

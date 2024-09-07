@@ -1165,38 +1165,38 @@ scripted_effect fund_inspiration_0031_pick_options_to_show_effect = {
 						save_scope_as = restored_title
 					}
 				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_restored_dumnonia
-							global_var:flag_restored_dumnonia = root
-						}
-						NOT = { exists = scope:book_topic_restoration }
-					}
-					save_scope_value_as = {
-						name = book_topic_restoration
-						value = yes
-					}
-					title:k_cornwall = {
-						save_scope_as = restored_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_reformed_carolingian_empire
-							global_var:flag_reformed_carolingian_empire = root
-						}
-						NOT = { exists = scope:book_topic_restoration }
-					}
-					save_scope_value_as = {
-						name = book_topic_restoration
-						value = yes
-					}
-					title:e_france = {
-						save_scope_as = restored_title
-					}
-				}
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_restored_dumnonia
+				# 			global_var:flag_restored_dumnonia = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_restoration }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_restoration
+				# 		value = yes
+				# 	}
+				# 	title:k_cornwall = {
+				# 		save_scope_as = restored_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_reformed_carolingian_empire
+				# 			global_var:flag_reformed_carolingian_empire = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_restoration }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_restoration
+				# 		value = yes
+				# 	}
+				# 	title:e_france = {
+				# 		save_scope_as = restored_title
+				# 	}
+				# }
 				else_if = {
 					limit = {
 						AND = {
@@ -1230,22 +1230,22 @@ scripted_effect fund_inspiration_0031_pick_options_to_show_effect = {
 						save_scope_as = united_title
 					}
 				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:unite_the_slavs_decision
-							global_var:unite_the_slavs_decision = root
-						}
-						NOT = { exists = scope:book_topic_unification }
-					}
-					save_scope_value_as = {
-						name = book_topic_unification
-						value = yes
-					}
-					title:e_slavia = {
-						save_scope_as = united_title
-					}
-				}
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:unite_the_slavs_decision
+				# 			global_var:unite_the_slavs_decision = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_unification }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_unification
+				# 		value = yes
+				# 	}
+				# 	title:e_slavia = {
+				# 		save_scope_as = united_title
+				# 	}
+				# }
 				else_if = {
 					limit = {
 						AND = {
@@ -1280,182 +1280,182 @@ scripted_effect fund_inspiration_0031_pick_options_to_show_effect = {
 						save_scope_as = united_title
 					}
 				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_unified_burgundy_kingdom
-							global_var:flag_unified_burgundy_kingdom = root
-						}
-						NOT = { exists = scope:book_topic_unification }
-					}
-					save_scope_value_as = {
-						name = book_topic_unification
-						value = yes
-					}
-					title:k_burgundy = {
-						save_scope_as = united_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_unified_italian_empire
-							global_var:flag_unified_italian_empire = root
-						}
-						NOT = { exists = scope:book_topic_unification }
-					}
-					save_scope_value_as = {
-						name = book_topic_unification
-						value = yes
-					}
-					title:e_italy = {
-						save_scope_as = united_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:form_portugal_decision
-							global_var:form_portugal_decision = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_portugal = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_founded_kingdom_of_bosnia
-							global_var:flag_founded_kingdom_of_bosnia = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_bosnia = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_created_armenian_empire
-							global_var:flag_created_armenian_empire = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:e_armenia = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_formed_rum_sultanate
-							global_var:flag_formed_rum_sultanate = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_rum = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:create_israel_kingdom
-							global_var:create_israel_kingdom = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_israel = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_created_outremer_empire
-							global_var:flag_created_outremer_empire = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:e_outremer = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_formed_switzerland_kingdom
-							global_var:flag_formed_switzerland_kingdom = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_switzerland = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_formed_austria_kingdom
-							global_var:flag_formed_austria_kingdom = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_austria = {
-						save_scope_as = created_title
-					}
-				}
-				else_if = {
-					limit = {
-						AND = {
-							exists = global_var:flag_formed_kingdom_of_aragon
-							global_var:flag_formed_kingdom_of_aragon = root
-						}
-						NOT = { exists = scope:book_topic_creation }
-					}
-					save_scope_value_as = {
-						name = book_topic_creation
-						value = yes
-					}
-					title:k_aragon = {
-						save_scope_as = created_title
-					}
-				}
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_unified_burgundy_kingdom
+				# 			global_var:flag_unified_burgundy_kingdom = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_unification }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_unification
+				# 		value = yes
+				# 	}
+				# 	title:k_burgundy = {
+				# 		save_scope_as = united_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_unified_italian_empire
+				# 			global_var:flag_unified_italian_empire = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_unification }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_unification
+				# 		value = yes
+				# 	}
+				# 	title:e_italy = {
+				# 		save_scope_as = united_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:form_portugal_decision
+				# 			global_var:form_portugal_decision = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_portugal = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_founded_kingdom_of_bosnia
+				# 			global_var:flag_founded_kingdom_of_bosnia = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_bosnia = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_created_armenian_empire
+				# 			global_var:flag_created_armenian_empire = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:e_armenia = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_formed_rum_sultanate
+				# 			global_var:flag_formed_rum_sultanate = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_rum = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:create_israel_kingdom
+				# 			global_var:create_israel_kingdom = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_israel = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_created_outremer_empire
+				# 			global_var:flag_created_outremer_empire = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:e_outremer = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_formed_switzerland_kingdom
+				# 			global_var:flag_formed_switzerland_kingdom = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_switzerland = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_formed_austria_kingdom
+				# 			global_var:flag_formed_austria_kingdom = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_austria = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
+				# else_if = {
+				# 	limit = {
+				# 		AND = {
+				# 			exists = global_var:flag_formed_kingdom_of_aragon
+				# 			global_var:flag_formed_kingdom_of_aragon = root
+				# 		}
+				# 		NOT = { exists = scope:book_topic_creation }
+				# 	}
+				# 	save_scope_value_as = {
+				# 		name = book_topic_creation
+				# 		value = yes
+				# 	}
+				# 	title:k_aragon = {
+				# 		save_scope_as = created_title
+				# 	}
+				# }
 				else_if = {
 					limit = {
 						AND = {
@@ -11025,7 +11025,7 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level >= high_piety_level
-						has_trait = saoshyant
+						# has_trait = saoshyant
 						has_trait = savior
 						has_trait = saint
 					}
@@ -11047,7 +11047,7 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level >= high_piety_level
-				   		has_trait = saoshyant
+				   		# has_trait = saoshyant
 						has_trait = savior
 						has_trait = saint
 					}
@@ -11058,7 +11058,7 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level >= high_piety_level
-				   		has_trait = saoshyant
+				   		# has_trait = saoshyant
 						has_trait = savior
 						has_trait = saint
 					}
@@ -11089,10 +11089,10 @@ fund_inspiration.2060 = {
 				trigger = { piety_level >= high_piety_level }
 				desc =  fund_inspiration.2060.piety
 			}
-			triggered_desc = {
-				trigger = { has_trait = saoshyant }
-				desc =  fund_inspiration.2060.saoshyant
-			}
+			# triggered_desc = {
+			# 	trigger = { has_trait = saoshyant }
+			# 	desc =  fund_inspiration.2060.saoshyant
+			# }
 			triggered_desc = {
 				trigger = { has_trait = savior }
 				desc =  fund_inspiration.2060.savior
@@ -11133,7 +11133,7 @@ fund_inspiration.2060 = {
 		}
 		OR = {
 			piety_level = max_piety_level
-			has_trait = saoshyant
+			# has_trait = saoshyant
 			has_trait = savior
 			has_trait = saint
 			prestige_level = max_prestige_level
@@ -11159,7 +11159,7 @@ fund_inspiration.2060 = {
 				trigger = {
 					OR = {
 						piety_level = max_piety_level
-						has_trait = saoshyant
+						# has_trait = saoshyant
 						has_trait = savior
 						has_trait = saint
 					}
@@ -11244,7 +11244,7 @@ fund_inspiration.2060 = {
 			trigger = {
 				OR = {
 					piety_level = max_piety_level
-					has_trait = saoshyant
+					# has_trait = saoshyant
 					has_trait = savior
 					has_trait = saint
 				}
@@ -18374,11 +18374,11 @@ fund_inspiration.6500 = {
 
 scripted_trigger sisyphus_nickname_trigger = {
 	OR = {
-		has_title = title:k_italy
-		has_title = title:k_romagna
-		has_title = title:k_sardinia
-		has_title = title:e_italy
-		has_title = title:e_roman_empire
+		# has_title = title:k_italy
+		# has_title = title:k_romagna
+		# has_title = title:k_sardinia
+		# has_title = title:e_italy
+		# has_title = title:e_roman_empire
 		capital_province = {
 			geographical_region = world_europe_west_britannia
 			geographical_region = world_europe_west_germania
@@ -18388,7 +18388,8 @@ scripted_trigger sisyphus_nickname_trigger = {
 			geographical_region = world_europe_south_italy
 			geographical_region = world_europe_south
 		}
-		culture = { has_cultural_pillar = heritage_byzantine }
+		# culture = { has_cultural_pillar = heritage_byzantine }
+		always = no 
 	}
 }
 
@@ -19224,7 +19225,7 @@ fund_inspiration.6505 = {
 			modifier = insulted_opinion
 		}
 		if = {
-			limit = { NOT = { has_faith = faith:adamites } }
+			# limit = { NOT = { has_faith = faith:adamites } }
 			add_piety = medium_piety_gain
 		}
 		ai_chance = {
@@ -19263,9 +19264,9 @@ fund_inspiration.6505 = {
 
 	option = { # flex the naked tapestry in front of your whole court
 		name = fund_inspiration.6505.c
-		trigger = {
-			NOT = { has_faith = faith:adamites }
-		}
+		# trigger = {
+		# 	NOT = { has_faith = faith:adamites }
+		# }
 		scope:naked_tapestry = {
 			set_owner = root
 		}
@@ -19293,27 +19294,27 @@ fund_inspiration.6505 = {
 			}
 		}
 	}
-	option = { #adamites find it sacred
-		name = fund_inspiration.6505.d
-		trigger = {
-			has_faith = faith:adamites
-		}
-		scope:naked_tapestry = {
-			set_owner = root
-		}
-		add_piety = medium_piety_gain
-		reverse_add_opinion = {
-			target = scope:inspiration_owner
-			opinion = 20
-			modifier = pleased_opinion
-		}
-		ai_chance = {
-			base = 50
-			ai_value_modifier = {
-				ai_rationality = 0.5
-			}
-		}
-	}
+	# option = { #adamites find it sacred
+	# 	name = fund_inspiration.6505.d
+	# 	trigger = {
+	# 		has_faith = faith:adamites
+	# 	}
+	# 	scope:naked_tapestry = {
+	# 		set_owner = root
+	# 	}
+	# 	add_piety = medium_piety_gain
+	# 	reverse_add_opinion = {
+	# 		target = scope:inspiration_owner
+	# 		opinion = 20
+	# 		modifier = pleased_opinion
+	# 	}
+	# 	ai_chance = {
+	# 		base = 50
+	# 		ai_value_modifier = {
+	# 			ai_rationality = 0.5
+	# 		}
+	# 	}
+	# }
 }
 
 #Adventurer hasn't gone on the adventure, is in a local tavern by Isabella Welch
@@ -20150,23 +20151,23 @@ fund_inspiration.6509 = {
 		}
 	}
 
-	option = { #you know what crocodiles are, see em everyday
-		name = fund_inspiration.6509.c
-		trigger = {
-			any_held_title = {
-				this = title:k_egypt
-			}
-		}
-		add_learning_lifestyle_xp = medium_lifestyle_xp
-		add_prestige = medium_prestige_gain
+	# option = { #you know what crocodiles are, see em everyday
+	# 	name = fund_inspiration.6509.c
+	# 	trigger = {
+	# 		any_held_title = {
+	# 			this = title:k_egypt
+	# 		}
+	# 	}
+	# 	add_learning_lifestyle_xp = medium_lifestyle_xp
+	# 	add_prestige = medium_prestige_gain
 
-		ai_chance = {
-			base = 10
-			ai_value_modifier = {
-				ai_rationality = 0.5
-			}
-		}
-	}
+	# 	ai_chance = {
+	# 		base = 10
+	# 		ai_value_modifier = {
+	# 			ai_rationality = 0.5
+	# 		}
+	# 	}
+	# }
 }
 
 #Adventurer meeting a vigilante band who hide in the forest
@@ -21014,7 +21015,7 @@ fund_inspiration.8012 = {
 			NOT = {  has_character_flag = had_event_fund_inspiration_8012 }
 			has_no_inspiration_event_cooldown = yes
 		}
-		religion = religion:christianity_religion #Basically the Christian church were the only ones complaining about this
+		# religion = religion:christianity_religion #Basically the Christian church were the only ones complaining about this
 		exists = cp:councillor_court_chaplain
 		cp:councillor_court_chaplain = { is_physically_able_adult = yes }
 	}
@@ -21174,10 +21175,10 @@ fund_inspiration.8013 = {
 
 	weight_multiplier = {
 		base = 0.25
-		modifier = {
-			add = 1
-			culture = { has_cultural_pillar = heritage_arabic }
-		}
+		# modifier = {
+		# 	add = 1
+		# 	culture = { has_cultural_pillar = heritage_arabic }
+		# }
 	}
 	
 	immediate = {

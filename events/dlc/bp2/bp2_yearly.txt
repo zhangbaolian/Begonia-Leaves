@@ -3979,8 +3979,8 @@ bp2_yearly.8090 = {
 	override_background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:jainism_religion }
 				faith = { religion = religion:buddhism_religion }
 			}
 		}
@@ -4347,8 +4347,8 @@ bp2_yearly.8091 = {
 	override_background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:jainism_religion }
 				faith = { religion = religion:buddhism_religion }
 			}
 		}
@@ -4389,8 +4389,8 @@ bp2_yearly.8092 = {
 	override_background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:jainism_religion }
 				faith = { religion = religion:buddhism_religion }
 			}
 		}

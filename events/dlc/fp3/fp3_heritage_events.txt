@@ -66,37 +66,38 @@ fp3_yearly.8019 = {
 
 	trigger = { 
 		
-		#standard sanity checks
-		has_fp3_dlc_trigger = yes
-		is_ruler = yes
-		is_available_healthy_adult = yes
+		# #standard sanity checks
+		# has_fp3_dlc_trigger = yes
+		# is_ruler = yes
+		# is_available_healthy_adult = yes
 
 
-		#checking that the premise makes sense
-		root.capital_province = { 
-			OR = {
-				geographical_region = world_persian_empire 
-				geographical_region = world_steppe
-			}
-		}
-		NOR = { 
-			has_title = title:k_mesopotamia 
-			has_title = title:k_jazira 
-		}
+		# #checking that the premise makes sense
+		# root.capital_province = { 
+		# 	OR = {
+		# 		geographical_region = world_persian_empire 
+		# 		geographical_region = world_steppe
+		# 	}
+		# }
+		# NOR = { 
+		# 	has_title = title:k_mesopotamia 
+		# 	has_title = title:k_jazira 
+		# }
 
-		#checking for a ruler that would persecute the Manicheans in Mesopotamia. Ideally the caliph, but any ruler would do. 
-		any_independent_ruler = {
-			in_diplomatic_range = root 
-			any_realm_province = { 
-				OR = {
-					geographical_region = world_mesopotamia #this is where the Manichean communities were originally concentrated
-					geographical_region = world_jazira
-				}
-			}
-			fp3_hateful_ruler_trigger = yes	
-		}
+		# #checking for a ruler that would persecute the Manicheans in Mesopotamia. Ideally the caliph, but any ruler would do. 
+		# any_independent_ruler = {
+		# 	in_diplomatic_range = root 
+		# 	any_realm_province = { 
+		# 		OR = {
+		# 			geographical_region = world_mesopotamia #this is where the Manichean communities were originally concentrated
+		# 			geographical_region = world_jazira
+		# 		}
+		# 	}
+		# 	fp3_hateful_ruler_trigger = yes	
+		# }
 
-		any_held_county = { count >= 1 }
+		# any_held_county = { count >= 1 }
+		always = no 
 	}
 
 	cooldown = { years = 100 }
@@ -106,12 +107,12 @@ fp3_yearly.8019 = {
 		random_independent_ruler = { 
 			limit = {
 				in_diplomatic_range = root 
-				any_realm_province = {
-					OR = {
-						geographical_region = world_mesopotamia 
-						geographical_region = world_jazira
-					}
-				}
+				# any_realm_province = {
+				# 	OR = {
+				# 		geographical_region = world_mesopotamia 
+				# 		geographical_region = world_jazira
+				# 	}
+				# }
 				fp3_hateful_ruler_trigger = yes
 			}
 			weight = { #weighting for the most suitable candidate 
@@ -119,14 +120,14 @@ fp3_yearly.8019 = {
 					factor = 40
 					any_held_title = { is_head_of_faith = yes }
 				}
-				modifier = {
-					factor = 20
-					has_title = title:k_mesopotamia 
-				}
-				modifier = {
-					factor = 20
-					has_title = title:c_baghdad 
-				}
+				# modifier = {
+				# 	factor = 20
+				# 	has_title = title:k_mesopotamia 
+				# }
+				# modifier = {
+				# 	factor = 20
+				# 	has_title = title:c_baghdad 
+				# }
 				modifier = {
 					factor = 20
 					has_trait = zealous 
@@ -141,24 +142,24 @@ fp3_yearly.8019 = {
 
 		random_held_county = {
 			weight = {
-				modifier = {
-					factor = 70
-					any_county_province = { 
-						barony = { 
-							is_holy_site_of = faith:manichean #This will typically be Samarkand 
-						}
-					}
-				}
-				modifier = {
-					factor = 50
-					faith = faith:manichean
-				}
-				modifier = {
-					factor = 50
-					any_county_province = { 
-						geographical_region = dlc_fp3_greater_persian_frontier_regions
-					}
-				}
+				# modifier = {
+				# 	factor = 70
+				# 	any_county_province = { 
+				# 		barony = { 
+				# 			is_holy_site_of = faith:manichean #This will typically be Samarkand 
+				# 		}
+				# 	}
+				# }
+				# modifier = {
+				# 	factor = 50
+				# 	faith = faith:manichean
+				# }
+				# modifier = {
+				# 	factor = 50
+				# 	any_county_province = { 
+				# 		geographical_region = dlc_fp3_greater_persian_frontier_regions
+				# 	}
+				# }
 				modifier = {
 					factor = -40
 					any_county_province = {
@@ -174,21 +175,21 @@ fp3_yearly.8019 = {
 			location = root.capital_province
 			culture = scope:hateful_ruler.culture
 			gender_female_chance = {
-				if = {
-					limit = { 
-						faith:manichean = { has_doctrine = doctrine_gender_male_dominated }
-					}
-					add = 0	
-				}
-				else_if = {
-					limit = { 
-						faith:manichean = { has_doctrine = doctrine_gender_female_dominated } 
-					}
-					add = 100
-				}
-				else = {
-					add = 50
-				}
+				# if = {
+				# 	limit = { 
+				# 		faith:manichean = { has_doctrine = doctrine_gender_male_dominated }
+				# 	}
+				# 	add = 0	
+				# }
+				# else_if = {
+				# 	limit = { 
+				# 		faith:manichean = { has_doctrine = doctrine_gender_female_dominated } 
+				# 	}
+				# 	add = 100
+				# }
+				# else = {
+				# 	add = 50
+				# }
 			}
 			save_scope_as = manichean_leader	
 		}	
@@ -381,13 +382,14 @@ scripted_trigger fp3_assertive_female_believer_trigger = {
 
 scripted_trigger fp3_zoroastrian_holy_sites_province_trigger = {
 	OR = {
-		is_holy_site_of = faith:mazdayasna
-		is_holy_site_of = faith:zurvanism 
-		is_holy_site_of = faith:gayomarthianism 
-		is_holy_site_of = faith:khurmazta 
-		is_holy_site_of = faith:khurramism
-		is_holy_site_of = faith:mazdakism
-		is_holy_site_of = faith:urartuism
+		# is_holy_site_of = faith:mazdayasna
+		# is_holy_site_of = faith:zurvanism 
+		# is_holy_site_of = faith:gayomarthianism 
+		# is_holy_site_of = faith:khurmazta 
+		# is_holy_site_of = faith:khurramism
+		# is_holy_site_of = faith:mazdakism
+		# is_holy_site_of = faith:urartuism
+		always = no 
 	}
 }
 
@@ -415,75 +417,76 @@ fp3_yearly.8020 = {
 
 	trigger = {
 
-		#standard sanity checks
-		has_fp3_dlc_trigger = yes
-		is_ruler = yes
-		is_available_healthy_adult = yes
+		# #standard sanity checks
+		# has_fp3_dlc_trigger = yes
+		# is_ruler = yes
+		# is_available_healthy_adult = yes
 
-		#premise checks - we need ROOT's faith to not have been reformed into a matriarchal faith for this historical context 
-		OR = {
-			has_religion = religion:islam_religion
-			has_religion = religion:christianity_religion
-		}
+		# #premise checks - we need ROOT's faith to not have been reformed into a matriarchal faith for this historical context 
+		# OR = {
+		# 	has_religion = religion:islam_religion
+		# 	# has_religion = religion:christianity_religion
+		# }
 
-		has_game_rule = default_gender_equality #this triggers an error. Suspected code issue.
+		# has_game_rule = default_gender_equality #this triggers an error. Suspected code issue.
 
-		NOT = {
-			faith = { has_doctrine = doctrine_gender_female_dominated } 
-		}
+		# NOT = {
+		# 	faith = { has_doctrine = doctrine_gender_female_dominated } 
+		# }
 
-		#checking for approppriate county 
-		any_held_county = {
-			OR = {
-				this = title:c_rayy
-				any_county_province = { 
-					barony = { fp3_zoroastrian_holy_sites_province_trigger = yes }	
-				}
-			}
-		}
+		# #checking for approppriate county 
+		# any_held_county = {
+		# 	OR = {
+		# 		this = title:c_rayy
+		# 		any_county_province = { 
+		# 			barony = { fp3_zoroastrian_holy_sites_province_trigger = yes }	
+		# 		}
+		# 	}
+		# }
 
-		#checking that we have a HoF with the appropriate interests 
-		NOT = { faith.religious_head = root }
+		# #checking that we have a HoF with the appropriate interests 
+		# NOT = { faith.religious_head = root }
 
-		exists = root.faith.religious_head
+		# exists = root.faith.religious_head
 
-		root.faith.religious_head = { 
-			fp3_zealous_caliph_trigger = yes
-			#checking that his Islam hasn't been reformed into something that'd make the event's premise weird
-			faith = { 
-				NOT = {
-					has_doctrine = doctrine_gender_female_dominated 
-				}	
-			}	
-		}	
+		# root.faith.religious_head = { 
+		# 	fp3_zealous_caliph_trigger = yes
+		# 	#checking that his Islam hasn't been reformed into something that'd make the event's premise weird
+		# 	faith = { 
+		# 		NOT = {
+		# 			has_doctrine = doctrine_gender_female_dominated 
+		# 		}	
+		# 	}	
+		# }	
 
-		#checking that we have a spouse or daughter that would fit the scope
-		OR = { 
-			any_spouse = { 
-				fp3_bibi_shahrbanu_devotee_trigger = yes
-			}
-			any_concubine = { 
-				fp3_bibi_shahrbanu_devotee_trigger = yes
-			}
-			any_child = {
-				fp3_bibi_shahrbanu_devotee_trigger = yes
-			}
-			any_courtier_or_guest = {
-				fp3_bibi_shahrbanu_devotee_trigger = yes
-				has_relation_friend = root
-			}
-		}	
+		# #checking that we have a spouse or daughter that would fit the scope
+		# OR = { 
+		# 	any_spouse = { 
+		# 		fp3_bibi_shahrbanu_devotee_trigger = yes
+		# 	}
+		# 	any_concubine = { 
+		# 		fp3_bibi_shahrbanu_devotee_trigger = yes
+		# 	}
+		# 	any_child = {
+		# 		fp3_bibi_shahrbanu_devotee_trigger = yes
+		# 	}
+		# 	any_courtier_or_guest = {
+		# 		fp3_bibi_shahrbanu_devotee_trigger = yes
+		# 		has_relation_friend = root
+		# 	}
+		# }	
+		always = no 
 	}
 
 	immediate = {
 
 		
 		#Saving relevant historical characters and faiths as scopes
-		character:180638 = { save_scope_as = bibi_shahrbanu }
+		# character:180638 = { save_scope_as = bibi_shahrbanu }
 
-		character:33912 = { save_scope_as = imam_husayn }
+		# character:33912 = { save_scope_as = imam_husayn }
 
-		religion:zoroastrianism_religion = { save_scope_as = anahita_faith }
+		# religion:zoroastrianism_religion = { save_scope_as = anahita_faith }
 
 		#saving the caliph as a scope
 		root.faith.religious_head = { 
@@ -500,10 +503,10 @@ fp3_yearly.8020 = {
 			save_scope_as = righteous_caliph
 		}
 
-		random_held_county = {
-			limit = { this = title:c_rayy }
-			save_scope_as = temple_county
-		}
+		# random_held_county = {
+		# 	limit = { this = title:c_rayy }
+		# 	save_scope_as = temple_county
+		# }
 
 		if = { 
 			limit = {
@@ -1413,7 +1416,7 @@ scripted_trigger non_zoroastrian_faith_trigger = {
 }
 
 scripted_trigger dakhma_nostalgic_trigger = {
-	culture = { has_cultural_pillar = heritage_iranian }
+	# culture = { has_cultural_pillar = heritage_iranian }
 	OR = {
 		faith = { has_doctrine_parameter = sky_burials_active }
 		has_trait = stubborn
@@ -1813,8 +1816,8 @@ scripted_trigger fp3_rich_foreign_ruler_trigger = {
 		}
 	}
 	OR = {
-		culture = { has_cultural_pillar = heritage_iranian }
-		knows_language_of_culture = culture:persian
+		# culture = { has_cultural_pillar = heritage_iranian }
+		# knows_language_of_culture = culture:persian
 		dynasty = { has_dynasty_perk = fp3_khvarenah_legacy_2 }
 	}
 }
@@ -2307,31 +2310,32 @@ fp3_yearly.8032 = {
 
 	trigger = { #this event triggers from yearly_persian.1001, and in order to not mess that up, I decided to not demand a fp3_dlc_trigger for this one. 
 
-		is_available_adult = yes
-		OR = {
-			culture = { has_cultural_pillar = heritage_iranian }
-			AND = {
-				any_consort = {
-					culture = { has_cultural_pillar = heritage_iranian }
-				}
-				root.capital_province = { geographical_region = world_persian_empire }
-			}
-		}
+		# is_available_adult = yes
+		# OR = {
+		# 	culture = { has_cultural_pillar = heritage_iranian }
+		# 	AND = {
+		# 		any_consort = {
+		# 			culture = { has_cultural_pillar = heritage_iranian }
+		# 		}
+		# 		root.capital_province = { geographical_region = world_persian_empire }
+		# 	}
+		# }
 
-		any_consort = {
-			is_ai = yes 
-			culture = { has_cultural_pillar = heritage_iranian }
-			NOR = {
-				has_trait = arrogant
-				has_trait = cynical
-				has_trait = callous
-			}
-		}
+		# any_consort = {
+		# 	is_ai = yes 
+		# 	culture = { has_cultural_pillar = heritage_iranian }
+		# 	NOR = {
+		# 		has_trait = arrogant
+		# 		has_trait = cynical
+		# 		has_trait = callous
+		# 	}
+		# }
 
-		any_ancestor = {
-			even_if_dead = yes 
-			house = root.house
-		}
+		# any_ancestor = {
+		# 	even_if_dead = yes 
+		# 	house = root.house
+		# }
+		always = no 
 	}
 
 	immediate = {
@@ -2344,7 +2348,7 @@ fp3_yearly.8032 = {
 		random_consort = {
 			limit = {
 				is_ai = yes 
-				culture = { has_cultural_pillar = heritage_iranian }
+				# culture = { has_cultural_pillar = heritage_iranian }
 				NOR = {
 					has_trait = arrogant
 					has_trait = cynical
@@ -2377,7 +2381,7 @@ fp3_yearly.8032 = {
 		trigger = {
 			OR = {
 				has_religion = religion:islam_religion
-				has_religion = religion:christianity_religion
+				# has_religion = religion:christianity_religion
 			}
 		}
 
@@ -2412,7 +2416,7 @@ fp3_yearly.8032 = {
 					has_trait = zealous 
 				}
 				AND = {
-					has_religion = religion:christianity_religion
+					# has_religion = religion:christianity_religion
 					has_trait = zealous
 				}
 			}
@@ -3348,20 +3352,21 @@ fp3_yearly.8036 = {
 
 	trigger = {
 
-		#standard sanity checks
-		has_fp3_dlc_trigger = yes
-		is_available_healthy_adult = yes 
-		is_ruler = yes 
-		root.capital_province = { geographical_region = world_persian_empire }
+		# #standard sanity checks
+		# has_fp3_dlc_trigger = yes
+		# is_available_healthy_adult = yes 
+		# is_ruler = yes 
+		# root.capital_province = { geographical_region = world_persian_empire }
 
-		any_councillor = {	superstitious_coward_trigger = yes	}
+		# any_councillor = {	superstitious_coward_trigger = yes	}
 
-		any_held_county = {
-			OR = {
-				this = title:c_ardabil
-				development_level <= medium_development_level
-			}
-		}
+		# any_held_county = {
+		# 	OR = {
+		# 		this = title:c_ardabil
+		# 		development_level <= medium_development_level
+		# 	}
+		# }
+		always = no 
 	}
 
 	cooldown = { years = 10 }
@@ -3373,18 +3378,18 @@ fp3_yearly.8036 = {
 			save_scope_as = superstitious_councillor
 		}
 
-		random_held_county = {
-			if = {
-				limit = { this = title:c_ardabil }
-				save_scope_as = spooky_county
-			}
-			else = {
-				limit = { 
-					development_level < medium_development_level
-				}
-				save_scope_as = spooky_county
-			}
-		}
+		# random_held_county = {
+		# 	if = {
+		# 		limit = { this = title:c_ardabil }
+		# 		save_scope_as = spooky_county
+		# 	}
+		# 	else = {
+		# 		limit = { 
+		# 			development_level < medium_development_level
+		# 		}
+		# 		save_scope_as = spooky_county
+		# 	}
+		# }
 	}
 
 	option = {

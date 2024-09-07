@@ -13937,7 +13937,7 @@ ep2_tournament_events.6501 = {
 									geographical_region = world_asia_minor
 								}
 							}
-							religion = religion:christianity_religion
+							# religion = religion:christianity_religion
 						}
 					}
 					give_nickname = nick_monopod

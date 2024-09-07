@@ -4065,12 +4065,12 @@ bp2_yearly.5109 = {
 
 		trigger = {
 			AND = {
-				OR = {
-					faith.religion = { #Use Abrahamics for an afterlife
-						is_in_family = rf_abrahamic
-					}
-					religion = religion:zoroastrianism_religion #Or Zoroastrianism
-				}
+				# OR = {
+				# 	faith.religion = { #Use Abrahamics for an afterlife
+				# 		is_in_family = rf_abrahamic
+				# 	}
+				# 	religion = religion:zoroastrianism_religion #Or Zoroastrianism
+				# }
 				OR = { #Either you or they are Zealous
 					has_trait = zealous
 					scope:child = {

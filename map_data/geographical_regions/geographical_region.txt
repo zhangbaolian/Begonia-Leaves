@@ -484,6 +484,14 @@ dlc_fp2_form_aragon_region = {}
 dlc_fp2_lyonese_monk_region = {}
 
 ### END FP2 Regions
+dlc_fp3_eastern_persian_frontier_regions = {
+	regions = {
+		world_khorasan
+		world_transoxiana
+		world_makran
+		world_kabulistan
+	}
+}
 
 #####################
 # Achievements - 1.4

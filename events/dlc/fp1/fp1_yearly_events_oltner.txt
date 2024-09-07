@@ -1141,10 +1141,10 @@ fp1_yearly.2200 = {
 			has_doctrine = tenet_warmonger
 		}
 		
-		OR = {
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			religion = religion:germanic_religion
-		}
+		# OR = {
+		# 	culture = { has_cultural_pillar = heritage_north_germanic }
+		# 	religion = religion:germanic_religion
+		# }
 		
 		OR = {
 			is_ai = no
@@ -2197,10 +2197,10 @@ fp1_yearly.2600 = {
 		is_available_at_peace_adult = yes
 		NOT = { has_character_flag = had_event_fp1_yearly_2600 }
 		
-		OR = {
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			religion = religion:germanic_religion
-		}
+		# OR = {
+		# 	culture = { has_cultural_pillar = heritage_north_germanic }
+		# 	religion = religion:germanic_religion
+		# }
 		
 		faith = {
 			has_doctrine = tenet_warmonger

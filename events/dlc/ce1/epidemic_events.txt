@@ -31,12 +31,12 @@ epidemic_events.0001 = {
 	}
 	
 	option = { #You get sick lol
+		# name = {
+		# 	trigger = { faith.religion = religion:christianity_religion }
+		# 	text = epidemic_events.0001.a.christian
+		# }
 		name = {
-			trigger = { faith.religion = religion:christianity_religion }
-			text = epidemic_events.0001.a.christian
-		}
-		name = {
-			trigger = { NOT = { faith.religion = religion:christianity_religion } }
+			# trigger = { NOT = { faith.religion = religion:christianity_religion } }
 			text = epidemic_events.0001.a
 		}
 		if = { #are you infecting your knights or your entire army; kinda arbitrary for flavour
@@ -1851,19 +1851,19 @@ epidemic_events.1060 = {
 						value = flag:cats
 					}
 				}
-				20 = {
-					trigger = {
-						NOT = {
-							# No attacking the puppos for Zoroastrians and Canary Islanders
-							root.faith.religion = religion:zoroastrianism_religion
-							root.faith.religion = religion:north_african_religion
-						}
-					}
-					set_variable = {
-						name = blamed_plague_on
-						value = flag:dogs
-					}
-				}
+				# 20 = {
+				# 	trigger = {
+				# 		NOT = {
+				# 			# No attacking the puppos for Zoroastrians and Canary Islanders
+				# 			root.faith.religion = religion:zoroastrianism_religion
+				# 			root.faith.religion = religion:north_african_religion
+				# 		}
+				# 	}
+				# 	set_variable = {
+				# 		name = blamed_plague_on
+				# 		value = flag:dogs
+				# 	}
+				# }
 				20 = { # Religious minorities
 					root = { select_scapegoat_faith_effect = yes }
 					set_variable = {
@@ -1983,18 +1983,18 @@ epidemic_events.1060 = {
 		trigger = {
 			piety_level >= very_high_piety_level
 		}
-		if = {
-			limit = {
-				scope:story_scope = {
-					exists = var:faith_blamed
-					var:faith_blamed.religion = religion:judaism_religion
-				}
-			}
-			add_character_modifier = {
-				modifier = protected_jews
-				years = 10
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		scope:story_scope = {
+		# 			exists = var:faith_blamed
+		# 			var:faith_blamed.religion = religion:judaism_religion
+		# 		}
+		# 	}
+		# 	add_character_modifier = {
+		# 		modifier = protected_jews
+		# 		years = 10
+		# 	}
+		# }
 		every_sub_realm_county = {
 			custom = every_infected_county
 			limit = {
@@ -8098,85 +8098,85 @@ epidemic_events.5010 = {
 	desc = {
 		desc = epidemic_events.5010.opening
 		#What great capital do you have?
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_santiago
-				}
-				desc = epidemic_events.5010.santiago
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_london
-				}
-				desc = epidemic_events.5010.london
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_roma
-				}
-				desc = epidemic_events.5010.rome
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_paris
-				}
-				desc = epidemic_events.5010.paris
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_constantinople
-				}
-				desc = epidemic_events.5010.constantinople
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_praha
-				}
-				desc = epidemic_events.5010.prague
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_toledo
-				}
-				desc = epidemic_events.5010.toledo
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_cairo
-				}
-				desc = epidemic_events.5010.cairo
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_kanyakubja
-				}
-				desc = epidemic_events.5010.kanyakubja
-			}
-			triggered_desc = {
-				trigger = {
-					capital_barony = title:b_varanasi
-				}
-				desc = epidemic_events.5010.varanasi
-			}
-			triggered_desc = {
-				trigger = {
-					NOR = {
-						capital_barony = title:b_cairo
-						capital_barony = title:b_toledo
-						capital_barony = title:b_praha
-						capital_barony = title:b_constantinople
-						capital_barony = title:b_paris
-						capital_barony = title:b_roma
-						capital_barony = title:b_london
-						capital_barony = title:b_santiago
-						capital_barony = title:b_kanyakubja
-						capital_barony = title:b_varanasi
-					}
-				}
+		# first_valid = {
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_santiago
+		# 		}
+		# 		desc = epidemic_events.5010.santiago
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_london
+		# 		}
+		# 		desc = epidemic_events.5010.london
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_roma
+		# 		}
+		# 		desc = epidemic_events.5010.rome
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_paris
+		# 		}
+		# 		desc = epidemic_events.5010.paris
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_constantinople
+		# 		}
+		# 		desc = epidemic_events.5010.constantinople
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_praha
+		# 		}
+		# 		desc = epidemic_events.5010.prague
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_toledo
+		# 		}
+		# 		desc = epidemic_events.5010.toledo
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_cairo
+		# 		}
+		# 		desc = epidemic_events.5010.cairo
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_kanyakubja
+		# 		}
+		# 		desc = epidemic_events.5010.kanyakubja
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			capital_barony = title:b_varanasi
+		# 		}
+		# 		desc = epidemic_events.5010.varanasi
+		# 	}
+		# 	triggered_desc = {
+		# 		trigger = {
+		# 			NOR = {
+		# 				capital_barony = title:b_cairo
+		# 				capital_barony = title:b_toledo
+		# 				capital_barony = title:b_praha
+		# 				capital_barony = title:b_constantinople
+		# 				capital_barony = title:b_paris
+		# 				capital_barony = title:b_roma
+		# 				capital_barony = title:b_london
+		# 				capital_barony = title:b_santiago
+		# 				capital_barony = title:b_kanyakubja
+		# 				capital_barony = title:b_varanasi
+		# 			}
+		# 		}
 				desc = epidemic_events.5010.fallback
-			}
-		}
+		# 	}
+		# }
 	}
 	theme = plague
 	override_background = { reference = ce1_condemned_village }
@@ -8187,18 +8187,18 @@ epidemic_events.5010 = {
 	cooldown = { years = 50 }
 
 	trigger = {
-		OR = {
-			capital_barony = title:b_cairo
-			capital_barony = title:b_toledo
-			capital_barony = title:b_praha
-			capital_barony = title:b_constantinople
-			capital_barony = title:b_paris
-			capital_barony = title:b_roma
-			capital_barony = title:b_london
-			capital_barony = title:b_santiago
-			capital_barony = title:b_kanyakubja
-			capital_barony = title:b_varanasi
-		}
+		# OR = {
+		# 	capital_barony = title:b_cairo
+		# 	capital_barony = title:b_toledo
+		# 	capital_barony = title:b_praha
+		# 	capital_barony = title:b_constantinople
+		# 	capital_barony = title:b_paris
+		# 	capital_barony = title:b_roma
+		# 	capital_barony = title:b_london
+		# 	capital_barony = title:b_santiago
+		# 	capital_barony = title:b_kanyakubja
+		# 	capital_barony = title:b_varanasi
+		# }
 
 		# There be a plague in your capital
 		location = {
@@ -8354,23 +8354,17 @@ epidemic_events.5900 = {
 	}
 
 	option = {
-		name = {
-			text = epidemic_events.5900.christian
-			trigger = {
-				faith = {
-					religion_tag = christianity_religion
-				}
-			}
-		}
+		# name = {
+		# 	text = epidemic_events.5900.christian
+		# 	trigger = {
+		# 		faith = {
+		# 			religion_tag = christianity_religion
+		# 		}
+		# 	}
+		# }
 		name = {
 			text = epidemic_events.5900.fallback
-			trigger = {
-				NOT = {
-					faith = {
-						religion_tag = christianity_religion
-					}
-				}
-			}
+ 
 		}
 		
 		add_stress = medium_stress_gain
@@ -9342,9 +9336,10 @@ epidemic_events.5906 = {
 	trigger = {
 		is_available_adult = yes
 		is_travelling = no
-		faith = {
-			religion_tag = christianity_religion
-		}
+		# faith = {
+		# 	religion_tag = christianity_religion
+		# }
+		always = no 
 		exists = cp:councillor_marshal
 	}
 
@@ -9991,23 +9986,23 @@ epidemic_events.5999 = {
 	}
 
 	option = { # Oh no
-		name = {
-			trigger = {
-				faith = {
-					religion_tag = christianity_religion
-				}
-			}
+		# name = {
+		# 	trigger = {
+		# 		faith = {
+		# 			religion_tag = christianity_religion
+		# 		}
+		# 	}
 
-			text = epidemic_events.5999.c.christian
-		}
+		# 	text = epidemic_events.5999.c.christian
+		# }
 		name = {
-			trigger = {
-				NOT = {
-					faith = {
-						religion_tag = christianity_religion
-					}
-				}
-			}
+			# trigger = {
+			# 	NOT = {
+			# 		faith = {
+			# 			religion_tag = christianity_religion
+			# 		}
+			# 	}
+			# }
 			text = epidemic_events.5999.c.notchristian
 		}
 

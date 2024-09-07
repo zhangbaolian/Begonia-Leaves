@@ -9,7 +9,7 @@
 #evict_holy_order_duel
 # minor_decisions.0100 - evict_holy_order_duel
 
-#Inviting knights for invite_knights_decision
+#Inviting knights for invite_knights_decision 邀请骑士决定
 minor_decisions.0001 = {
 	hidden = yes
 

@@ -691,98 +691,98 @@ tradition_futuwaa = {
 # }
 
 # 荒野狩猎
-# tradition_bush_hunting = {
-# 	category = regional
+tradition_bush_hunting = {
+	category = regional
 
-# 	layers = {
-# 		0 = martial
-# 		1 = mena
-# 		4 = jungle.dds
-# 	}
+	layers = {
+		0 = martial
+		1 = mena
+		4 = jungle.dds
+	}
 	
-# 	#Replaces Jungle Warriors
-# 	is_shown = {
-# 		OR = {
-# 			has_cultural_pillar = heritage_akan
-# 			has_cultural_pillar = heritage_yoruba
-# 		}
-# 		NOT = { has_cultural_tradition = tradition_jungle_warriors }
-# 	}
-# 	can_pick = {
-# 	}
+	#Replaces Jungle Warriors
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_akan
+			has_cultural_pillar = heritage_yoruba
+		}
+		NOT = { has_cultural_tradition = tradition_jungle_warriors }
+	}
+	can_pick = {
+	}
 	
-# 	parameters = {
-# 		unlock_maa_bush_hunter = yes
-# 		jungle_trait_bonuses = yes
-# 		dry_trait_bonuses = yes
-# 		can_recruit_jungle_specialist = yes
-# 	}
-# 	character_modifier = {
-# 		jungle_levy_size = 0.1
-# 		drylands_levy_size = 0.1
-# 		jungle_supply_limit_mult = 0.25
-# 		jungle_travel_danger = jungle_medium_danger_reduction
-# 	}
+	parameters = {
+		unlock_maa_bush_hunter = yes
+		jungle_trait_bonuses = yes
+		dry_trait_bonuses = yes
+		can_recruit_jungle_specialist = yes
+	}
+	character_modifier = {
+		jungle_levy_size = 0.1
+		drylands_levy_size = 0.1
+		jungle_supply_limit_mult = 0.25
+		jungle_travel_danger = jungle_medium_danger_reduction
+	}
 	
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOR = {
-# 						culture_pillar:ethos_communal = { is_in_list = traits }
-# 						culture_pillar:ethos_egalitarian = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_communal_or_egalitarian_desc
-# 				}
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOT = {
-# 						any_culture_county = {
-# 							percent >= 0.3
-# 							any_county_province = {
-# 								terrain = jungle
-# 							}
-# 						}
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_unfulfilled_criteria_penalty
-# 					desc = jungle_percentage_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_communal_or_egalitarian_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							percent >= 0.3
+							any_county_province = {
+								terrain = jungle
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = jungle_percentage_desc
+				}
+			}
 			
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 
-# 	ai_will_do = {
-# 		value = 100
-# 		if = {
-# 			limit = {
-# 				NOT = {
-# 					scope:character = {
-# 						any_sub_realm_county = {
-# 							culture = scope:character.culture
-# 							any_county_province = {
-# 								terrain = jungle
-# 							}
-# 						}
-# 					}
-# 				}
-# 			}
-# 			multiply = 0
-# 		}
-# 	}
-# }
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						any_sub_realm_county = {
+							culture = scope:character.culture
+							any_county_province = {
+								terrain = jungle
+							}
+						}
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}
 
 # 防守战术
 # tradition_mobile_guards = {

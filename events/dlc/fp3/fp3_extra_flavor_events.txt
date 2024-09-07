@@ -1493,15 +1493,15 @@ fp3_yearly.8050 = { #The Fate of the Dead
 	type = character_event
 	title = fp3_yearly.8050.t
 	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { 
-					has_religion = religion:zoroastrianism_religion
-				}
-				desc = fp3_yearly.8050_zoroastrian.desc
-			}
-			desc = fp3_yearly.8050_unzoroastrian.desc
-		}
+		# first_valid = {
+		# 	triggered_desc = {
+		# 		trigger = { 
+		# 			has_religion = religion:zoroastrianism_religion
+		# 		}
+		# 		desc = fp3_yearly.8050_zoroastrian.desc
+		# 	}
+		# 	desc = fp3_yearly.8050_unzoroastrian.desc
+		# }
 		first_valid = {
 			triggered_desc = {
 				trigger = { 
@@ -1531,36 +1531,37 @@ fp3_yearly.8050 = { #The Fate of the Dead
 
 	weight_multiplier = { #more likely if root is zoroastrian
 		base = 0.4
-		modifier = { 
-			has_religion = religion:zoroastrianism_religion 
-			add = 0.6
-		}
+		# modifier = { 
+		# 	has_religion = religion:zoroastrianism_religion 
+		# 	add = 0.6
+		# }
 	}
 
 	trigger = {
 
-		#standard sanity checks
-		has_fp3_dlc_trigger = yes
-		is_ruler = yes
-		is_available_healthy_adult = yes
-		root.capital_province = { geographical_region = world_persian_empire }
+		# #standard sanity checks
+		# has_fp3_dlc_trigger = yes
+		# is_ruler = yes
+		# is_available_healthy_adult = yes
+		# root.capital_province = { geographical_region = world_persian_empire }
 
-		any_held_county = {
-			faith = { religion_tag = zoroastrianism_religion }
-			county_control <= 75 
-			any_county_province = {
-				has_holding_type = castle_holding
-				has_special_building_slot = no
-				has_special_building = no
-				NOR = {
-					has_building = tower_of_silence_01
-					has_building = event_tower_of_silence_01
-				}
-			}
-		}
+		# any_held_county = {
+		# 	faith = { religion_tag = zoroastrianism_religion }
+		# 	county_control <= 75 
+		# 	any_county_province = {
+		# 		has_holding_type = castle_holding
+		# 		has_special_building_slot = no
+		# 		has_special_building = no
+		# 		NOR = {
+		# 			has_building = tower_of_silence_01
+		# 			has_building = event_tower_of_silence_01
+		# 		}
+		# 	}
+		# }
 
-		exists = cp:councillor_court_chaplain 
-		cp:councillor_court_chaplain = { is_available_healthy_ai_adult = yes }
+		# exists = cp:councillor_court_chaplain 
+		# cp:councillor_court_chaplain = { is_available_healthy_ai_adult = yes }
+		always = no 
 	}
 
 	immediate = {
@@ -1586,7 +1587,7 @@ fp3_yearly.8050 = { #The Fate of the Dead
 
 		random_held_county = {
 			limit = {
-				faith = { religion_tag = zoroastrianism_religion }
+				# faith = { religion_tag = zoroastrianism_religion }
 				county_control < 75 
 				any_county_province = {
 					has_holding_type = castle_holding
@@ -1647,7 +1648,7 @@ fp3_yearly.8050 = { #The Fate of the Dead
 							if = {
 								limit = {
 									OR = {
-										faith = { religion_tag = zoroastrianism_religion }
+										# faith = { religion_tag = zoroastrianism_religion }
 										faith = { has_doctrine_parameter = sky_burials_active }
 									}
 								}
@@ -1719,7 +1720,7 @@ fp3_yearly.8050 = { #The Fate of the Dead
 		if = { #if you're zoroastrian or like sky burials in general, you earn piety for this, otherwise you might get an opinion bonus from zoroastrian subjects 
 			limit = {
 				OR = {
-					faith = { religion_tag = zoroastrianism_religion }
+					# faith = { religion_tag = zoroastrianism_religion }
 					faith = { has_doctrine_parameter = sky_burials_active }
 				}
 			}
@@ -1732,7 +1733,7 @@ fp3_yearly.8050 = { #The Fate of the Dead
 					if = {
 						limit = { 
 							AND = {
-								faith = { religion_tag = zoroastrianism_religion } 
+								# faith = { religion_tag = zoroastrianism_religion } 
 								ai_zeal >= low_positive_ai_value
 							}
 						}
@@ -1747,7 +1748,7 @@ fp3_yearly.8050 = { #The Fate of the Dead
 					if = {
 						limit = { 
 							AND = {
-								faith = { religion_tag = zoroastrianism_religion } 
+								# faith = { religion_tag = zoroastrianism_religion } 
 								ai_zeal >= low_positive_ai_value
 							}
 						}
@@ -1781,11 +1782,11 @@ fp3_yearly.8050 = { #The Fate of the Dead
 	option = {
 		name = fp3_yearly.8050.c
 
-		trigger = {
-			NOT = {
-				faith = { religion_tag = zoroastrianism_religion }
-			}
-		}
+		# trigger = {
+		# 	NOT = {
+		# 		faith = { religion_tag = zoroastrianism_religion }
+		# 	}
+		# }
 
 		scope:dakhma_enthusiast = {
 			add_opinion = { 
@@ -1818,7 +1819,8 @@ fp3_yearly.8050 = { #The Fate of the Dead
 		name = fp3_yearly.8050.d
 
 		trigger = {
-			faith = { religion_tag = zoroastrianism_religion }
+			# faith = { religion_tag = zoroastrianism_religion }
+			always = no 
 		}
 
 		scope:dakhma_enthusiast = {
@@ -1897,52 +1899,53 @@ fp3_yearly.8051 = { #The Purest Fire
 
 	trigger = {
 
-		#standard sanity checks
-		has_fp3_dlc_trigger = yes
-		is_ruler = yes
-		is_available_healthy_adult = yes
-		root.capital_province = { geographical_region = world_persian_empire }
-		faith = { religion_tag = zoroastrianism_religion }
+		# #standard sanity checks
+		# has_fp3_dlc_trigger = yes
+		# is_ruler = yes
+		# is_available_healthy_adult = yes
+		# root.capital_province = { geographical_region = world_persian_empire }
+		# faith = { religion_tag = zoroastrianism_religion }
 
-		any_held_county = {
-			faith = { religion_tag = zoroastrianism_religion }
-			any_county_province = {
- 				has_holding_type = church_holding
-  			}
-		}
+		# any_held_county = {
+		# 	faith = { religion_tag = zoroastrianism_religion }
+		# 	any_county_province = {
+ 		# 		has_holding_type = church_holding
+  		# 	}
+		# }
 
-		NOT = { faith.religious_head = root }
+		# NOT = { faith.religious_head = root }
 
-		NOT = { has_character_modifier = fp3_blessed_by_fire_modifier  } #this would make some of the rewards redundant
+		# NOT = { has_character_modifier = fp3_blessed_by_fire_modifier  } #this would make some of the rewards redundant
 
-		OR = {
-			AND = {
-				exists = root.faith.religious_head
-				root.faith.religious_head = { 
-					is_available_healthy_ai_adult = yes
-					opinion = { 
-						target = root 
-						value > 0
-					}
-				}
-			}
-			AND = {
-				exists = cp:councillor_court_chaplain 
-				cp:councillor_court_chaplain = { 
-					is_available_healthy_ai_adult = yes 
-					opinion = { 
-						target = root 
-						value > 0
-					}
-				}
-			}
-		}	
+		# OR = {
+		# 	AND = {
+		# 		exists = root.faith.religious_head
+		# 		root.faith.religious_head = { 
+		# 			is_available_healthy_ai_adult = yes
+		# 			opinion = { 
+		# 				target = root 
+		# 				value > 0
+		# 			}
+		# 		}
+		# 	}
+		# 	AND = {
+		# 		exists = cp:councillor_court_chaplain 
+		# 		cp:councillor_court_chaplain = { 
+		# 			is_available_healthy_ai_adult = yes 
+		# 			opinion = { 
+		# 				target = root 
+		# 				value > 0
+		# 			}
+		# 		}
+		# 	}
+		# }	
+		always = no 
 	}
 
 	immediate = {
 		random_held_county = {
 			limit = {
-				faith = { religion_tag = zoroastrianism_religion }
+				# faith = { religion_tag = zoroastrianism_religion }
 				any_county_province = {
  					has_holding_type = church_holding
   				}

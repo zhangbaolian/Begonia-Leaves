@@ -92,7 +92,7 @@ fp1_yearly.0001 = {
 		#Must be able to raid, or else your thrall economy is being phased out.
 		can_raid_trigger = yes
 		#Should be North Germanic, or the flavour won't make sense.
-		culture = { has_cultural_pillar = heritage_north_germanic }
+		# culture = { has_cultural_pillar = heritage_north_germanic }
 		#Needs a knight for scapegoating.
 		any_knight = {
 			count >= 1
@@ -538,8 +538,8 @@ fp1_yearly.0011 = {
 		#Must have at least one suitable courtier.
 		any_courtier = { offensive_courtier_candidate_trigger = yes }
 		#Both yourself and your capital must be Germanic Pagans.
-		religion = religion:germanic_religion
-		capital_county.religion = religion:germanic_religion
+		# religion = religion:germanic_religion
+		# capital_county.religion = religion:germanic_religion
 	}
 
 	weight_multiplier = {
@@ -949,7 +949,7 @@ fp1_yearly.0021 = {
 		NOT = { has_character_flag = had_event_fp1_yearly_0021 }
 		is_landed = yes
 		#Must be North Germanic.
-		culture = { has_cultural_pillar = heritage_north_germanic }
+		# culture = { has_cultural_pillar = heritage_north_germanic }
 		#Holmgangs must still be in fashion.
 		NOT = {
 			culture = { has_cultural_era_or_later = culture_era_high_medieval }
@@ -1149,13 +1149,13 @@ fp1_yearly.0021 = {
 					NOR = {
 						scope:first_knight = {
 							OR = {
-								religion = religion:judaism_religion
+								# religion = religion:judaism_religion
 								religion = religion:islam_religion
 							}
 						}
 						scope:second_knight = {
 							OR = {
-								religion = religion:judaism_religion
+								# religion = religion:judaism_religion
 								religion = religion:islam_religion
 							}
 						}
@@ -1571,7 +1571,7 @@ fp1_yearly.0031 = {
 		NOT = { has_character_flag = had_event_fp1_yearly_0031 }
 		is_landed = yes
 		#Must be some form of North Germanic culture.
-		culture = { has_cultural_pillar = heritage_north_germanic }
+		# culture = { has_cultural_pillar = heritage_north_germanic }
 		#And that culture must not be too advanced.
 		culture = {
 			NOT = { has_cultural_era_or_later = culture_era_high_medieval }
@@ -1632,18 +1632,18 @@ fp1_yearly.0031 = {
 				}
 			}
 			#Averted giant holmgang that would have sunk Iceland.
-			166 = {
-				trigger = {
-					#Must not have any counties in Iceland, as the news'd travel otherwise.
-					NOT = {
-						any_realm_de_jure_duchy = { this = title:d_iceland }
-					}
-				}
-				save_scope_value_as = {
-					name = lie_nature
-					value = flag:kept_iceland_afloat
-				}
-			}
+			# 166 = {
+			# 	trigger = {
+			# 		#Must not have any counties in Iceland, as the news'd travel otherwise.
+			# 		NOT = {
+			# 			any_realm_de_jure_duchy = { this = title:d_iceland }
+			# 		}
+			# 	}
+			# 	save_scope_value_as = {
+			# 		name = lie_nature
+			# 		value = flag:kept_iceland_afloat
+			# 	}
+			# }
 			#Wooed the child of a foreign king.
 			166 = {
 				trigger = {
@@ -2252,7 +2252,7 @@ fp1_yearly.0051 = {
 		#With a rural, North Germanic capital.
 		capital_county = {
 			#Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 		}
 	}
@@ -3381,7 +3381,7 @@ fp1_yearly.0071 = {
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 			# And ensure it doesn't already have a troll problem.
 			NOT = { has_county_modifier = fp1_yearly_0071_troll_attacks_modifier }
@@ -3800,7 +3800,7 @@ fp1_yearly.0081 = {
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 		}
 	}
@@ -3958,7 +3958,7 @@ fp1_yearly.0082 = {
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 		}
 	}
@@ -4116,7 +4116,7 @@ fp1_yearly.0083 = {
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 		}
 	}
@@ -4274,7 +4274,7 @@ fp1_yearly.0084 = {
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 		}
 	}
@@ -4445,7 +4445,7 @@ fp1_yearly.0085 = {
 		# With a rural, North Germanic capital.
 		capital_county = {
 			# Checking the capital, not the character, since it's a local superstition rather than something ye're insisiting on.
-			culture = { has_cultural_pillar = heritage_north_germanic }
+			# culture = { has_cultural_pillar = heritage_north_germanic }
 			development_level <= terrible_development_level
 		}
 	}
@@ -4843,7 +4843,7 @@ fp1_yearly.0101 = {
 		NOT = { has_character_flag = had_event_fp1_yearly_0101 }
 		is_landed = yes
 		# Valid for North Germanics only.
-		culture = { has_cultural_pillar = heritage_north_germanic }
+		# culture = { has_cultural_pillar = heritage_north_germanic }
 		# Has a valid courtier/guest who can quiz you.
 		any_courtier_or_guest = { fp1_valid_riddler_at_court_trigger = yes }
 		# Doesn't have an established extreme hatred of riddles.
@@ -13085,7 +13085,7 @@ fp1_yearly.1001 = {
 		is_available_even_at_war_adult = yes
 		NOT = { has_character_flag = had_event_fp1_yearly_1001 }
 		#Scandinavian culture group, and within Scandinavia (plus a few other places).
-		culture = { has_cultural_pillar = heritage_north_germanic }
+		# culture = { has_cultural_pillar = heritage_north_germanic }
 		capital_province ?= { geographical_region = dlc_fp1_region_mysterious_stranger_locations }
 	}
 
@@ -16490,13 +16490,13 @@ fp1_yearly.1081 = {
 				trigger = { scope:phantom_island = flag:antilia }
 				desc = fp1_yearly.1081.desc.antilia
 			}
-			triggered_desc = {
-				trigger = {
-					scope:phantom_island = flag:fortunate_isles
-					religion = religion:hellenism_religion
-				}
-				desc = fp1_yearly.1081.desc.fortunate_isles.hellenist
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:phantom_island = flag:fortunate_isles
+			# 		religion = religion:hellenism_religion
+			# 	}
+			# 	desc = fp1_yearly.1081.desc.fortunate_isles.hellenist
+			# }
 			triggered_desc = {
 				trigger = { scope:phantom_island = flag:fortunate_isles }
 				desc = fp1_yearly.1081.desc.fortunate_isles.other
@@ -16505,13 +16505,13 @@ fp1_yearly.1081 = {
 				trigger = { scope:phantom_island = flag:st_brendans_island }
 				desc = fp1_yearly.1081.desc.st_brendans_island
 			}
-			triggered_desc = {
-				trigger = {
-					scope:phantom_island = flag:isle_of_the_blessed
-					religion = religion:christianity_religion
-				}
-				desc = fp1_yearly.1081.desc.isle_of_the_blessed.christian
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		scope:phantom_island = flag:isle_of_the_blessed
+			# 		religion = religion:christianity_religion
+			# 	}
+			# 	desc = fp1_yearly.1081.desc.isle_of_the_blessed.christian
+			# }
 			triggered_desc = {
 				trigger = { scope:phantom_island = flag:isle_of_the_blessed }
 				desc = fp1_yearly.1081.desc.isle_of_the_blessed.other
@@ -16579,7 +16579,7 @@ fp1_yearly.1081 = {
 		is_available_even_at_war_adult = yes
 		NOT = { has_character_flag = had_event_fp1_yearly_1081 }
 		#Must be North Germanic.
-		culture = { has_cultural_pillar = heritage_north_germanic }
+		# culture = { has_cultural_pillar = heritage_north_germanic }
 		#Has to keep their capital in general Scandinavian core sphere of influence.
 		capital_province = {
 			OR = {

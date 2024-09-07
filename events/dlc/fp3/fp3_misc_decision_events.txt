@@ -59,52 +59,52 @@ fp3_misc_decisions.0006 = {
 }
 
 # Demand Submission Letter Events
-fp3_misc_decisions.0010 = {
-	type = letter_event
-	opening = fp3_misc_decisions.0010.opening
-	desc = {
-		desc = fp3_misc_decisions.0010.desc_intro
-		# If the Persian Struggle is still ongoing, comment on that
-		triggered_desc = {
-			trigger = {
-				exists = struggle:persian_struggle
-				scope:actor ?= title:d_sunni.holder
-			}
-			desc = fp3_misc_decisions.0010.desc_struggle
-		}
-	}
-	sender = scope:recipient
+# fp3_misc_decisions.0010 = {
+# 	type = letter_event
+# 	opening = fp3_misc_decisions.0010.opening
+# 	desc = {
+# 		desc = fp3_misc_decisions.0010.desc_intro
+# 		# If the Persian Struggle is still ongoing, comment on that
+# 		triggered_desc = {
+# 			trigger = {
+# 				exists = struggle:persian_struggle
+# 				scope:actor ?= title:d_sunni.holder
+# 			}
+# 			desc = fp3_misc_decisions.0010.desc_struggle
+# 		}
+# 	}
+# 	sender = scope:recipient
 
-	immediate = {
-		show_as_tooltip = {
-			if = {
-				limit = { scope:piety_cost_reduction ?= yes }
-				add_piety = massive_piety_loss
-			}
-			add_hook = {
-				target = scope:recipient
-				type = caliphal_submission_hook
-			}
-			# Remove "rejected my authority" negative opinion, if valid
-			if = {
-				limit = {
-					has_opinion_modifier = {
-						modifier = fp3_rejected_my_authority_opinion
-						target = scope:recipient
-					}
-				}
-				remove_opinion = {
-					modifier = fp3_rejected_my_authority_opinion
-					target = scope:recipient
-				}
-			}
-		}
-	}
+# 	immediate = {
+# 		show_as_tooltip = {
+# 			if = {
+# 				limit = { scope:piety_cost_reduction ?= yes }
+# 				add_piety = massive_piety_loss
+# 			}
+# 			add_hook = {
+# 				target = scope:recipient
+# 				type = caliphal_submission_hook
+# 			}
+# 			# Remove "rejected my authority" negative opinion, if valid
+# 			if = {
+# 				limit = {
+# 					has_opinion_modifier = {
+# 						modifier = fp3_rejected_my_authority_opinion
+# 						target = scope:recipient
+# 					}
+# 				}
+# 				remove_opinion = {
+# 					modifier = fp3_rejected_my_authority_opinion
+# 					target = scope:recipient
+# 				}
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = fp3_misc_decisions.0010.a
-	}
-}
+# 	option = {
+# 		name = fp3_misc_decisions.0010.a
+# 	}
+# }
 
 fp3_misc_decisions.0011 = {
 	type = letter_event
@@ -131,105 +131,105 @@ fp3_misc_decisions.0011 = {
 }
 
 # Embrace Zoroastrianism faith selection event
-fp3_misc_decisions.0015 = {
-	type = character_event
-	title = fp3_misc_decisions.0015.t
-	desc = fp3_misc_decisions.0015.desc
-	left_portrait = {
-		character = root
-		animation = worry
-	}
-	theme = faith
+# fp3_misc_decisions.0015 = {
+# 	type = character_event
+# 	title = fp3_misc_decisions.0015.t
+# 	desc = fp3_misc_decisions.0015.desc
+# 	left_portrait = {
+# 		character = root
+# 		animation = worry
+# 	}
+# 	theme = faith
 
-	immediate = {
-		# Gather what faiths we can choose to convert to (Zoroastrian faiths practiced by counties in our realm)
-		every_sub_realm_county = {
-			faith = {
-				if = {
-					limit = {
-						# Don't add the same faith to a list more than once
-						NOT = {
-							any_in_list = {
-								list = realm_zoroastrian_faiths
-								this = prev
-							}
-						}
-						religion = religion:zoroastrianism_religion
-					}
-					add_to_list = realm_zoroastrian_faiths
-				}
-			}
-		}
-		# Save the faiths with the most, 2nd most, and 3rd most fervor
-		# These are the faiths that we will be allowed to convert to
-		ordered_in_list = {
-			list = realm_zoroastrian_faiths
-			order_by = fervor
-			position = 0
-			save_scope_as = zoroastrian_faith_1
-		}
-		if = {
-			limit = {
-				list_size = {
-					name = realm_zoroastrian_faiths
-					value > 1
-				}
-			}
-			ordered_in_list = {
-				list = realm_zoroastrian_faiths
-				order_by = fervor
-				position = 1
-				save_scope_as = zoroastrian_faith_2
-			}
-		}
-		if = {
-			limit = {
-				list_size = {
-					name = realm_zoroastrian_faiths
-					value > 2
-				}
-			}
-			ordered_in_list = {
-				list = realm_zoroastrian_faiths
-				order_by = fervor
-				position = 2
-				save_scope_as = zoroastrian_faith_3
-			}
-		}
-	}
+# 	immediate = {
+# 		# Gather what faiths we can choose to convert to (Zoroastrian faiths practiced by counties in our realm)
+# 		every_sub_realm_county = {
+# 			faith = {
+# 				if = {
+# 					limit = {
+# 						# Don't add the same faith to a list more than once
+# 						NOT = {
+# 							any_in_list = {
+# 								list = realm_zoroastrian_faiths
+# 								this = prev
+# 							}
+# 						}
+# 						religion = religion:zoroastrianism_religion
+# 					}
+# 					add_to_list = realm_zoroastrian_faiths
+# 				}
+# 			}
+# 		}
+# 		# Save the faiths with the most, 2nd most, and 3rd most fervor
+# 		# These are the faiths that we will be allowed to convert to
+# 		ordered_in_list = {
+# 			list = realm_zoroastrian_faiths
+# 			order_by = fervor
+# 			position = 0
+# 			save_scope_as = zoroastrian_faith_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				list_size = {
+# 					name = realm_zoroastrian_faiths
+# 					value > 1
+# 				}
+# 			}
+# 			ordered_in_list = {
+# 				list = realm_zoroastrian_faiths
+# 				order_by = fervor
+# 				position = 1
+# 				save_scope_as = zoroastrian_faith_2
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				list_size = {
+# 					name = realm_zoroastrian_faiths
+# 					value > 2
+# 				}
+# 			}
+# 			ordered_in_list = {
+# 				list = realm_zoroastrian_faiths
+# 				order_by = fervor
+# 				position = 2
+# 				save_scope_as = zoroastrian_faith_3
+# 			}
+# 		}
+# 	}
 
-	option = { # Zoroastrian faith option 1 (faith with the most fervor)
-		name = fp3_misc_decisions.0015.a
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:zoroastrian_faith_1 }
-	}
+# 	option = { # Zoroastrian faith option 1 (faith with the most fervor)
+# 		name = fp3_misc_decisions.0015.a
+# 		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:zoroastrian_faith_1 }
+# 	}
 
-	option = { # Zoroastrian faith option 2
-		name = fp3_misc_decisions.0015.b
-		trigger = {
-			list_size = {
-				name = realm_zoroastrian_faiths
-				value > 1
-			}
-		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:zoroastrian_faith_2 }
-	}
+# 	option = { # Zoroastrian faith option 2
+# 		name = fp3_misc_decisions.0015.b
+# 		trigger = {
+# 			list_size = {
+# 				name = realm_zoroastrian_faiths
+# 				value > 1
+# 			}
+# 		}
+# 		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:zoroastrian_faith_2 }
+# 	}
 
-	option = { # Zoroastrian faith option 3
-		name = fp3_misc_decisions.0015.c
-		trigger = {
-			list_size = {
-				name = realm_zoroastrian_faiths
-				value > 2
-			}
-		}
-		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:zoroastrian_faith_3 }
-	}
+# 	option = { # Zoroastrian faith option 3
+# 		name = fp3_misc_decisions.0015.c
+# 		trigger = {
+# 			list_size = {
+# 				name = realm_zoroastrian_faiths
+# 				value > 2
+# 			}
+# 		}
+# 		make_character_crypto_religionist_effect = { CRYPTO_RELIGION = scope:zoroastrian_faith_3 }
+# 	}
 
-	option = { # Don't switch to any secret faith
-		name = false_conversion.0020.b # "No, no, the time is not yet right."
-		add_piety = miniscule_piety_gain # Refund piety
-	}
-}
+# 	option = { # Don't switch to any secret faith
+# 		name = false_conversion.0020.b # "No, no, the time is not yet right."
+# 		add_piety = miniscule_piety_gain # Refund piety
+# 	}
+# }
 
 ###################################
 # Challenge House Head Events
