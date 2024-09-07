@@ -1755,7 +1755,7 @@ stewardship_general.5041 = {
 					faith = {
 						OR = {
 							religion_tag = islam_religion
-							religion_tag = christianity_religion
+							# religion_tag = christianity_religion
 						}
 					}
 				}

@@ -32,12 +32,12 @@ learning_theology.1301 = {
 	desc = {
 		desc = learning_theology.1301.desc_opening
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					faith = { religion_tag = christianity_religion }
-				}
-				desc = learning_theology.1301.desc_regula_pastoralis
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		faith = { religion_tag = christianity_religion }
+			# 	}
+			# 	desc = learning_theology.1301.desc_regula_pastoralis
+			# }
 			desc = learning_theology.1301.desc
 		}
 		desc = learning_theology.1301.desc_ending
@@ -1043,14 +1043,14 @@ learning_theology.3021 = {
 		}
 		desc = {
 			first_valid = {
-				triggered_desc = {
-					trigger = {
-						faith = {
-							religion_tag = christianity_religion
-						}
-					}
-					desc = learning_theology.3021.desc_christian
-				}
+				# triggered_desc = {
+				# 	trigger = {
+				# 		faith = {
+				# 			religion_tag = christianity_religion
+				# 		}
+				# 	}
+				# 	desc = learning_theology.3021.desc_christian
+				# }
 				desc = learning_theology.3021.desc_other
 			}
 		}
@@ -3395,7 +3395,7 @@ learning_theology_special.1003 = {
 ##################################################
 
 scripted_trigger learning_theology_special_1101_rabbi_trigger = {
-	faith = faith:rabbinism
+	# faith = faith:rabbinism
 	OR = {
 		has_trait = education_learning_2
 		has_trait = education_learning_3
@@ -3433,9 +3433,9 @@ learning_theology_special.1101 = {
 		is_landed = yes
 		faith = {
 			OR = {
-				religion_tag = judaism_religion
-				religion_tag = christianity_religion
-				religion_tag = dualism_religion
+				# religion_tag = judaism_religion
+				# religion_tag = christianity_religion
+				# religion_tag = dualism_religion
 				religion_tag = islam_religion
 			}
 		}
@@ -3460,17 +3460,17 @@ learning_theology_special.1101 = {
 					}
 				}
 			}
-			create_character = {
-				location = root.capital_province
-				template = scholar_character
-				faith = faith:rabbinism
-				culture = culture:french
-				trait = scholar
-				trait = diligent
-				name = "Shlomo Yitzchaki"
-				gender = male
-				save_scope_as = scholar
-			}
+			# create_character = {
+			# 	location = root.capital_province
+			# 	template = scholar_character
+			# 	faith = faith:rabbinism
+			# 	culture = culture:french
+			# 	trait = scholar
+			# 	trait = diligent
+			# 	name = "Shlomo Yitzchaki"
+			# 	gender = male
+			# 	save_scope_as = scholar
+			# }
 			save_scope_value_as = {
 				name = rashi
 				value = yes
@@ -3505,19 +3505,20 @@ learning_theology_special.1101 = {
 				template = scholar_character
 				faith = root.faith
 				culture = root.culture
-				gender_female_chance = {
-					if = {
-						limit = { faith:rabbinism = { has_doctrine_parameter = clergy_must_be_male } }
-						value = 0
-					}
-					else_if = {
-						limit = { faith:rabbinism = { has_doctrine_parameter = clergy_must_be_female } }
-						value = 100
-					}
-					else = {
-						value = 50
-					}
-				}
+				# gender_female_chance = {
+				# 	if = {
+				# 		limit = { faith:rabbinism = { has_doctrine_parameter = clergy_must_be_male } }
+				# 		value = 0
+				# 	}
+				# 	else_if = {
+				# 		limit = { faith:rabbinism = { has_doctrine_parameter = clergy_must_be_female } }
+				# 		value = 100
+				# 	}
+				# 	else = {
+				# 		value = 50
+				# 	}
+				# }
+				gender_female_chance = 50
 				save_scope_as = scholar
 			}
 			save_scope_value_as = {

@@ -1420,7 +1420,8 @@ stewardship_wealth.5001 = {
 	
 	option = { #slaughter and sell
 		trigger = {
-			NOT = { religion = religion:hinduism_religion }
+			# NOT = { religion = religion:hinduism_religion }
+			always = yes 
 		}
 		name = stewardship_wealth.5001.c
 		add_gold = medium_gold_value
@@ -1883,9 +1884,9 @@ stewardship_wealth.6001 = {
 	trigger = {
 		is_at_war = no
 		any_held_county = { count >= 1 }
-		NOT = {
-			faith = faith:iconoclast
-		}
+		# NOT = {
+		# 	faith = faith:iconoclast
+		# }
 		NOT = {
 			any_character_artifact = {
 				has_variable = small_wooden_carving_artifact

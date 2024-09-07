@@ -219,9 +219,9 @@ warhorse.0003 = {
 
 	option = {
 		name = warhorse.0003.sleipnir
-		trigger = {
-			faith = { religion_tag = germanic_religion }
-		}
+		# trigger = {
+		# 	faith = { religion_tag = germanic_religion }
+		# }
 		hidden_effect = {
 			scope:story= {
 				set_variable = { #Horse of Oden
@@ -234,9 +234,9 @@ warhorse.0003 = {
 	
 	option = {
 		name = warhorse.0003.uchchaihshravas
-		trigger = {
-			faith = { religion_tag = hinduism_religion }
-		}
+		# trigger = {
+		# 	faith = { religion_tag = hinduism_religion }
+		# }
 		hidden_effect = {
 			scope:story= {
 				set_variable = { #Horse of Surya (and Bali)
@@ -249,9 +249,9 @@ warhorse.0003 = {
 
 	option = {
 		name = warhorse.0003.dadhi_kra
-		trigger = {
-			faith = { religion_tag = hinduism_religion }
-		}
+		# trigger = {
+		# 	faith = { religion_tag = hinduism_religion }
+		# }
 		hidden_effect = {
 			scope:story= {
 				set_variable = { #Personification of the morning Sun
@@ -264,9 +264,9 @@ warhorse.0003 = {
 
 	option = {
 		name = warhorse.0003.devadatta
-		trigger = {
-			faith = { religion_tag = hinduism_religion }
-		}
+		# trigger = {
+		# 	faith = { religion_tag = hinduism_religion }
+		# }
 		hidden_effect = {
 			scope:story= {
 				set_variable = { #Horse of Kalki
@@ -279,9 +279,9 @@ warhorse.0003 = {
 
 	option = {
 		name = warhorse.0003.keshi
-		trigger = {
-			faith = { religion_tag = hinduism_religion }
-		}
+		# trigger = {
+		# 	faith = { religion_tag = hinduism_religion }
+		# }
 		hidden_effect = {
 			scope:story= {
 				set_variable = { #Horse of Kalki
@@ -339,9 +339,9 @@ warhorse.0003 = {
 
 	option = {
 		name = warhorse.0003.burko
-		trigger = {
-			culture = { has_cultural_pillar = heritage_east_slavic }
-		}
+		# trigger = {
+		# 	culture = { has_cultural_pillar = heritage_east_slavic }
+		# }
 		hidden_effect = {
 			scope:story= {
 				set_variable = { #Magical horse in Russian folklore

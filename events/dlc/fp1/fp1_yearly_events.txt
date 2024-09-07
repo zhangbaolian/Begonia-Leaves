@@ -14975,46 +14975,47 @@ fp1_yearly.1061 = {
 	hidden = yes
 
 	trigger = {
-		# DLC check.
-		has_fp1_dlc_trigger = yes
-		# Germanic faith.
-		religion = religion:germanic_religion
-		# Shouldn't ever happen, but just in case, exempt sky burials so that the character is never buried twice.
-		NOT = {
-			faith = { has_doctrine_parameter = sky_burials_active }
-		}
-		# And we shouldn't really be erecting glorious mounds to long lives that were actually cut short too early.
-		age >= 30
-		# Must be significant in some way.
-		OR = {
-			highest_held_title_tier >= tier_duchy
-			piety_level >= high_prestige_level
-			prestige_level >= high_piety_level
-			# Monarch of Parties.
-			fp1_funeral_longship_likes_parties = yes
-			# Monarch of Duels.
-			fp1_funeral_longship_likes_duels = yes
-			# Monarch of Hunting.
-			fp1_funeral_longship_likes_hunting = yes
-			# Monarch of Magic.
-			fp1_funeral_longship_likes_magic = yes
-		}
-		# With a landed player heir of at least duchy tier, or close family, a soulmate, or best friend who's the same.
-		OR = {
-			AND = {
-				exists = player_heir
-				player_heir = { fp1_funeral_longship_generic_mourner_trigger = yes }
-			}
-			any_close_family_member = { fp1_funeral_longship_generic_mourner_trigger = yes }
-			any_relation = {
-				type = soulmate
-				fp1_funeral_longship_generic_mourner_trigger = yes
-			}
-			any_relation = {
-				type = best_friend
-				fp1_funeral_longship_generic_mourner_trigger = yes
-			}
-		}
+		# # DLC check.
+		# has_fp1_dlc_trigger = yes
+		# # Germanic faith.
+		# religion = religion:germanic_religion
+		# # Shouldn't ever happen, but just in case, exempt sky burials so that the character is never buried twice.
+		# NOT = {
+		# 	faith = { has_doctrine_parameter = sky_burials_active }
+		# }
+		# # And we shouldn't really be erecting glorious mounds to long lives that were actually cut short too early.
+		# age >= 30
+		# # Must be significant in some way.
+		# OR = {
+		# 	highest_held_title_tier >= tier_duchy
+		# 	piety_level >= high_prestige_level
+		# 	prestige_level >= high_piety_level
+		# 	# Monarch of Parties.
+		# 	fp1_funeral_longship_likes_parties = yes
+		# 	# Monarch of Duels.
+		# 	fp1_funeral_longship_likes_duels = yes
+		# 	# Monarch of Hunting.
+		# 	fp1_funeral_longship_likes_hunting = yes
+		# 	# Monarch of Magic.
+		# 	fp1_funeral_longship_likes_magic = yes
+		# }
+		# # With a landed player heir of at least duchy tier, or close family, a soulmate, or best friend who's the same.
+		# OR = {
+		# 	AND = {
+		# 		exists = player_heir
+		# 		player_heir = { fp1_funeral_longship_generic_mourner_trigger = yes }
+		# 	}
+		# 	any_close_family_member = { fp1_funeral_longship_generic_mourner_trigger = yes }
+		# 	any_relation = {
+		# 		type = soulmate
+		# 		fp1_funeral_longship_generic_mourner_trigger = yes
+		# 	}
+		# 	any_relation = {
+		# 		type = best_friend
+		# 		fp1_funeral_longship_generic_mourner_trigger = yes
+		# 	}
+		# }
+		always = no 
 	}
 
 	immediate = {

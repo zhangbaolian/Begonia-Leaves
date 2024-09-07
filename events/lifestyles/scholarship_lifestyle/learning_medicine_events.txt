@@ -649,18 +649,18 @@ learning_medicine.2010 = { #by Mathilda Bjarnehed
 					trigger = { current_date >= 1316.12.30 }
 					desc = learning_medicine.2010.mundinus.desc
 				}
-				triggered_desc = {
-					trigger = {
-						NOR = {
-							culture = { has_cultural_pillar = heritage_arabic }
-							scope:court_physician = { culture = { has_cultural_pillar = heritage_arabic } }
-							faith = { religion_tag = islam_religion }
-							scope:court_physician.faith = { religion_tag = islam_religion }
-						}
-						current_date >= 1225.1.1
-					}
-					desc = learning_medicine.2010.avicenna.desc
-				}
+				# triggered_desc = {
+				# 	trigger = {
+				# 		NOR = {
+				# 			culture = { has_cultural_pillar = heritage_arabic }
+				# 			scope:court_physician = { culture = { has_cultural_pillar = heritage_arabic } }
+				# 			faith = { religion_tag = islam_religion }
+				# 			scope:court_physician.faith = { religion_tag = islam_religion }
+				# 		}
+				# 		current_date >= 1225.1.1
+				# 	}
+				# 	desc = learning_medicine.2010.avicenna.desc
+				# }
 				triggered_desc = {
 					trigger = {
 						NOR = {

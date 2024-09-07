@@ -491,26 +491,27 @@ martial_strategy.7000 = {
 		animation = worry
 	}	
 	trigger = {
-		any_knight = {
-			is_alive = yes
-			NOT = { has_trait = brave }
-		}
-		has_heavy_cavalry = yes
-		OR = {
-			root = {
-				culture = {
-					OR = {
-						has_cultural_pillar = heritage_latin
-						has_cultural_pillar = heritage_frankish
-						has_cultural_pillar = heritage_central_germanic
-						has_cultural_pillar = heritage_north_germanic
-						has_cultural_pillar = heritage_west_germanic
-						has_cultural_pillar = heritage_west_slavic
-					}
-				}
-			}
-			has_war_elephants = yes
-		}
+		# any_knight = {
+		# 	is_alive = yes
+		# 	NOT = { has_trait = brave }
+		# }
+		# has_heavy_cavalry = yes
+		# OR = {
+		# 	root = {
+		# 		culture = {
+		# 			OR = {
+		# 				has_cultural_pillar = heritage_latin
+		# 				has_cultural_pillar = heritage_frankish
+		# 				has_cultural_pillar = heritage_central_germanic
+		# 				has_cultural_pillar = heritage_north_germanic
+		# 				has_cultural_pillar = heritage_west_germanic
+		# 				has_cultural_pillar = heritage_west_slavic
+		# 			}
+		# 		}
+		# 	}
+		# 	has_war_elephants = yes
+		# }
+		always = no 
 	}
 
 	weight_multiplier = {

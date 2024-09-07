@@ -2279,18 +2279,18 @@ diplomacy_majesty_special.1010 = {
 					value = flag:chivalry #the value of chivalry
 				}
 			}
-			10 = {
-				trigger = {
-					AND = {
-						root.faith = faith:catholic
-						scope:debater.faith = faith:catholic
-					}
-				}
-				save_scope_value_as = {
-					name = topic
-					value = flag:seven_virtues #the most important of the seven virtues
-				}
-			}
+			# 10 = {
+			# 	trigger = {
+			# 		AND = {
+			# 			root.faith = faith:catholic
+			# 			scope:debater.faith = faith:catholic
+			# 		}
+			# 	}
+			# 	save_scope_value_as = {
+			# 		name = topic
+			# 		value = flag:seven_virtues #the most important of the seven virtues
+			# 	}
+			# }
 			10 = {
 				trigger = { sex_opposite_of = scope:debater }
 				save_scope_value_as = {

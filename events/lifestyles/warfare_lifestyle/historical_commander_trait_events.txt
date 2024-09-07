@@ -391,10 +391,10 @@ historical_commander_trait.0004 = {
 		}
 		number_of_commander_traits < 3
 
-		OR = {
-			faith = faith:catholic
-			faith = faith:orthodox
-		}
+		# OR = {
+		# 	faith = faith:catholic
+		# 	faith = faith:orthodox
+		# }
 	}
 	
 
