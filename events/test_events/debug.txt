@@ -997,12 +997,12 @@ debug.313 = {
 
 	
 	immediate = {
-		save_scope_as = owner
-		title:c_kandy = { title_province = { add_to_list = artifact_material_sources } }
-		create_artifact_chest_effect = {
-			OWNER = root
-			CARPENTER = root
-		}
+		# save_scope_as = owner
+		# title:c_kandy = { title_province = { add_to_list = artifact_material_sources } }
+		# create_artifact_chest_effect = {
+		# 	OWNER = root
+		# 	CARPENTER = root
+		# }
 	}
 
 	option = { 
@@ -1745,8 +1745,8 @@ debug.347 = {
 		faith = {
 			NOR = {
 				has_doctrine = tenet_aniconism
-				religion = religion:judaism_religion
-				religion = religion:christianity_religion
+				# religion = religion:judaism_religion
+				# religion = religion:christianity_religion
 				religion = religion:islam_religion
 			}
 		}
@@ -1769,12 +1769,13 @@ debug.348 = {
 	orphan = yes
 
 	trigger = {
-		faith = {
-			NOT = {
-				has_doctrine = tenet_aniconism
-			}
-			religion = religion:christianity_religion
-		}
+		# faith = {
+		# 	NOT = {
+		# 		has_doctrine = tenet_aniconism
+		# 	}
+		# 	religion = religion:christianity_religion
+		# }
+		always = no 
 	}
 
 	immediate = {
@@ -2304,26 +2305,26 @@ debug.411 = { # For usage debugging achievements. Should be a generic command ra
 	orphan = yes
 	hidden = yes
 	immediate = {
-		debug_log = "Iberia Converted to Mozarab!"
-		every_county_in_region = {
-			region = world_europe_west_iberia
-			set_county_faith = faith:mozarabic_church
-		}
+		# debug_log = "Iberia Converted to Mozarab!"
+		# every_county_in_region = {
+		# 	region = world_europe_west_iberia
+		# 	set_county_faith = faith:mozarabic_church
+		# }
 
-		debug_log = "Woosh! Caucasian Iberia is now yours!"
-		every_county_in_region = {
-			region = dlc_fp2_caucasian_iberia
-			create_title_and_vassal_change = {
-				type = conquest
-				save_scope_as = change
-			}
-			change_title_holder_include_vassals = {
-				holder = root
-				change = scope:change
-			}
-			resolve_title_and_vassal_change = scope:change
-			change_county_control = 100 # (Not actually necessary, apparently)
-		}
+		# debug_log = "Woosh! Caucasian Iberia is now yours!"
+		# every_county_in_region = {
+		# 	region = dlc_fp2_caucasian_iberia
+		# 	create_title_and_vassal_change = {
+		# 		type = conquest
+		# 		save_scope_as = change
+		# 	}
+		# 	change_title_holder_include_vassals = {
+		# 		holder = root
+		# 		change = scope:change
+		# 	}
+		# 	resolve_title_and_vassal_change = scope:change
+		# 	change_county_control = 100 # (Not actually necessary, apparently)
+		# }
 	}
 }
 
@@ -2787,12 +2788,13 @@ debug.511 = { # Set secret faith for Character
 		name = debug.511.a
 
 		trigger = {
-			NOT = { exists = root.secret_faith }
+			# NOT = { exists = root.secret_faith }
+			always = no 
 		}
 
-		root = {
-			set_character_secret_faith = faith:rabbinism
-		}
+		# root = {
+		# 	set_character_secret_faith = faith:rabbinism
+		# }
 	}
 
 	option = {
