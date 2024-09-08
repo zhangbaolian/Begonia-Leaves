@@ -858,48 +858,53 @@ stress_threshold.1011 = {
 			# Only faiths where Lustful is a sin qualify for this conversion (which is brought on by lustful thoughts).
 			hidden_effect = {
 				random_list = {
-					20 = {
-						trigger = {
-							NOT = { faith = faith:catholic }
-							NOT = { faith = faith:orthodox }
-							does_religion_exist_in_world_region_trigger = { RELIGION = faith:catholic.religion }
-						}
-						faith:catholic = { save_scope_as = new_faith }
-						add_character_flag = stress_threshold_option_conversion
-					}
-					20 = {
-						trigger = {
-							NOT = { faith = faith:orthodox }
-							NOT = { faith = faith:catholic }
-							does_religion_exist_in_world_region_trigger = { RELIGION = faith:orthodox.religion }
-						}
-						faith:orthodox = { save_scope_as = new_faith }
-						add_character_flag = stress_threshold_option_conversion
-					}
-					20 = {
-						trigger = {
-							NOT = { faith = faith:paulician }
-							does_religion_exist_in_world_region_trigger = { RELIGION = faith:paulician.religion }
-						}
-						faith:paulician = { save_scope_as = new_faith }
-						add_character_flag = stress_threshold_option_conversion
-					}
-					20 = {
-						trigger = {
-							NOT = { faith = faith:nestorian }
-							does_religion_exist_in_world_region_trigger = { RELIGION = faith:nestorian.religion }
-						}
-						faith:nestorian = { save_scope_as = new_faith }
-						add_character_flag = stress_threshold_option_conversion
-					}
-					20 = {
-						trigger = {
-							NOT = { faith = faith:karaism }
-							does_religion_exist_in_world_region_trigger = { RELIGION = faith:karaism.religion }
-						}
-						faith:karaism = { save_scope_as = new_faith }
-						add_character_flag = stress_threshold_option_conversion
-					}
+					# 20 = {
+					# 	trigger = {
+					# 		# NOT = { faith = faith:catholic }
+					# 		# NOT = { faith = faith:orthodox }
+					# 		# does_religion_exist_in_world_region_trigger = { RELIGION = faith:catholic.religion }
+					# 		always = no 
+					# 	}
+					# 	faith:catholic = { save_scope_as = new_faith }
+					# 	add_character_flag = stress_threshold_option_conversion
+					# }
+					# 20 = {
+					# 	trigger = {
+					# 		# NOT = { faith = faith:orthodox }
+					# 		# NOT = { faith = faith:catholic }
+					# 		# does_religion_exist_in_world_region_trigger = { RELIGION = faith:orthodox.religion }
+					# 		always = no 
+					# 	}
+					# 	faith:orthodox = { save_scope_as = new_faith }
+					# 	add_character_flag = stress_threshold_option_conversion
+					# }
+					# 20 = {
+					# 	trigger = {
+					# 		# NOT = { faith = faith:paulician }
+					# 		# does_religion_exist_in_world_region_trigger = { RELIGION = faith:paulician.religion }
+					# 		always = no 
+					# 	}
+					# 	faith:paulician = { save_scope_as = new_faith }
+					# 	add_character_flag = stress_threshold_option_conversion
+					# }
+					# 20 = {
+					# 	trigger = {
+					# 		# NOT = { faith = faith:nestorian }
+					# 		# does_religion_exist_in_world_region_trigger = { RELIGION = faith:nestorian.religion }
+					# 		always = no 
+					# 	}
+					# 	faith:nestorian = { save_scope_as = new_faith }
+					# 	add_character_flag = stress_threshold_option_conversion
+					# }
+					# 20 = {
+					# 	trigger = {
+					# 		# NOT = { faith = faith:karaism }
+					# 		# does_religion_exist_in_world_region_trigger = { RELIGION = faith:karaism.religion }
+					# 		always = no 
+					# 	}
+					# 	faith:karaism = { save_scope_as = new_faith }
+					# 	add_character_flag = stress_threshold_option_conversion
+					# }
 				}
 			}
 		}
@@ -1037,17 +1042,17 @@ stress_threshold.1011 = {
 			}
 			text = stress_threshold.1011.conversion.judaism
 		}		
-		name = { # Special event option name if converting from non-Christianity to Christianity.
-			trigger = {
-				faith = {
-					NOT = { religion_tag = christianity_religion }
-				}
-				scope:new_faith = {
-					religion_tag = christianity_religion
-				}
-			}
-			text = stress_threshold.1011.conversion.christianity
-		}
+		# name = { # Special event option name if converting from non-Christianity to Christianity.
+		# 	trigger = {
+		# 		faith = {
+		# 			NOT = { religion_tag = christianity_religion }
+		# 		}
+		# 		scope:new_faith = {
+		# 			religion_tag = christianity_religion
+		# 		}
+		# 	}
+		# 	text = stress_threshold.1011.conversion.christianity
+		# }
 		name = { # Fallback event option when converting from a non-Abrahamic faith to an Abrahamic one.
 			trigger = {
 				faith = {
