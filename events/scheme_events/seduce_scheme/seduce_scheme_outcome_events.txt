@@ -446,8 +446,9 @@ seduce_outcome.2000 = {
 
 
 	trigger = {
-		scope:target.faith = root.faith
-		scope:target = { has_title = title:k_papal_state }
+		# scope:target.faith = root.faith
+		# scope:target = { has_title = title:k_papal_state }
+		always = no 
 	}
 
 	immediate = {

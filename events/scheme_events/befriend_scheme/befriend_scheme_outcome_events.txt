@@ -2676,9 +2676,9 @@ befriend_outcome.8008 = {
 	override_background = {
 		trigger = {
 			NOR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = temple
@@ -2686,9 +2686,9 @@ befriend_outcome.8008 = {
 	override_background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = ep2_holy_site_indian
@@ -2932,9 +2932,9 @@ befriend_outcome.9800 = {
 	override_background = {
 		trigger = {
 			NOR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = temple
@@ -2942,9 +2942,9 @@ befriend_outcome.9800 = {
 	override_background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = ep2_holy_site_indian
@@ -3083,9 +3083,9 @@ befriend_outcome.9900 = {
 	override_background = {
 		trigger = {
 			NOR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = temple
@@ -3093,9 +3093,9 @@ befriend_outcome.9900 = {
 	override_background = {
 		trigger = {
 			OR = {
-				faith = { religion = religion:hinduism_religion }
+				# faith = { religion = religion:hinduism_religion }
 				faith = { religion = religion:buddhism_religion }
-				faith = { religion = religion:jainism_religion }
+				# faith = { religion = religion:jainism_religion }
 			}
 		}
 		reference = ep2_holy_site_indian

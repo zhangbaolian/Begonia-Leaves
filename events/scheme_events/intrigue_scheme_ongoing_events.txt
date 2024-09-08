@@ -3629,7 +3629,7 @@ intrigue_scheme_ongoing.5014 = {
 			triggered_desc = {
 				trigger = {
 					has_fp3_dlc_trigger = yes
-					culture = { has_cultural_pillar = heritage_iranian }
+					# culture = { has_cultural_pillar = heritage_iranian }
 				}
 				desc = intrigue_scheme_ongoing.5014.t_persian
 			}
@@ -3716,7 +3716,7 @@ intrigue_scheme_ongoing.5015 = {
 			triggered_desc = {
 				trigger = {
 					has_fp3_dlc_trigger = yes
-					culture = { has_cultural_pillar = heritage_iranian }
+					# culture = { has_cultural_pillar = heritage_iranian }
 				}
 				desc = intrigue_scheme_ongoing.5014.t_persian
 			}

@@ -591,8 +591,8 @@ sway_outcome.1004 = {
 								AND = {
 									OR = {
 										has_religion = religion:buddhism_religion
-										has_religion = religion:jainism_religion
-										has_religion = religion:hinduism_religion
+										# has_religion = religion:jainism_religion
+										# has_religion = religion:hinduism_religion
 									}
 									ai_zeal >= low_positive_ai_value
 								}
@@ -600,8 +600,8 @@ sway_outcome.1004 = {
 							scope:owner = {
 								OR = {
 									has_religion = religion:buddhism_religion
-									has_religion = religion:jainism_religion
-									has_religion = religion:hinduism_religion
+									# has_religion = religion:jainism_religion
+									# has_religion = religion:hinduism_religion
 								} 
 							}
 						}
@@ -766,10 +766,10 @@ sway_outcome.2001 = {
 				desc = sway_outcome.2001.not_interested_toll_exemptions
 				desc = sway_outcome.2001.not_interested_friend
 				triggered_desc = {
-					trigger = {
-						religion = religion:christianity_religion
-						scope:target.religion = religion:christianity_religion
-					}
+					# trigger = {
+					# 	religion = religion:christianity_religion
+					# 	scope:target.religion = religion:christianity_religion
+					# }
 					desc = sway_outcome.2001.not_interested_relics
 				}
 			}
