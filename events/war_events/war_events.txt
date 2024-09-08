@@ -80,13 +80,13 @@ war_event.2001 = {
 
 		ai_chance = { # Invalidate against the Mongol Empire, anything else is pure suicide
 			base = 100
-			modifier = {
-				factor = 0
-				scope:defender = {
-					is_ai = yes
-					has_title = title:e_mongol_empire
-				}
-			}
+			# modifier = {
+			# 	factor = 0
+			# 	scope:defender = {
+			# 		is_ai = yes
+			# 		has_title = title:e_mongol_empire
+			# 	}
+			# }
 		}
 	}
 	
@@ -105,13 +105,13 @@ war_event.2001 = {
 
 		ai_chance = { # Invalidate against the Mongol Empire, anything else is pure suicide
 			base = 0
-			modifier = {
-				add = 100
-				scope:defender = {
-					is_ai = yes
-					has_title = title:e_mongol_empire
-				}
-			}
+			# modifier = {
+			# 	add = 100
+			# 	scope:defender = {
+			# 		is_ai = yes
+			# 		has_title = title:e_mongol_empire
+			# 	}
+			# }
 		}
 	}
 }
