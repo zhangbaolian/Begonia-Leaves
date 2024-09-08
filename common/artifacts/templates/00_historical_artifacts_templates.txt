@@ -390,23 +390,23 @@ pentapyrgion_template = {
 	unique = yes
 }
 
-# branch_zoroastr_template = {
-# 	can_equip = {
-# 		always = yes
-# 	}
+branch_zoroastr_template = {
+	can_equip = {
+		always = yes
+	}
 
-# 	# can this character benefit from the full modifiers of the artifact?
-# 	can_benefit = {
-# 		has_religion = religion:zoroastrianism_religion
-# 	}
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		#has_religion = religion:zoroastrianism_religion #LotR
+		always = no
+	}
 
-# 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
-# 	fallback = {
-# 		court_grandeur_baseline_add = 3
-# 	}
-
-# 	unique = yes
-# }
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		court_grandeur_baseline_add = 3
+	}
+	unique = yes
+}
 
 # branch_germanic_template = {
 # 	can_equip = {

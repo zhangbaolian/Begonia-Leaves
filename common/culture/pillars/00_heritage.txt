@@ -37,3 +37,12 @@ heritage_tibetan = {
 	}
 	audio_parameter = european
 }
+heritage_turkic = {
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_turkic
+		}
+	}
+	audio_parameter = european
+}

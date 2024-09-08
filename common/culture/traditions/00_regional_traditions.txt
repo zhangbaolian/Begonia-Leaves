@@ -454,56 +454,56 @@
 # }
 
 # 陆上商队
-# tradition_caravaneers = {
-# 	category = regional
+tradition_caravaneers = {
+	category = regional
 
-# 	layers = {
-# 		0 = diplo
-# 		1 = mena
-# 		4 = camel.dds
-# 	}
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = camel.dds
+	}
 
-# 	is_shown = {
-# 		always = no
-# 	}
+	is_shown = {
+		always = no
+	}
 
-# 	parameters = {
-# 		wanderers_gain_extra_economic_skills = yes
-# 		more_likely_to_leave_court = yes
-# 	}
+	parameters = {
+		wanderers_gain_extra_economic_skills = yes
+		more_likely_to_leave_court = yes
+	}
 
-# 	character_modifier = {
-# 		movement_speed = 0.05
-# 		diplomatic_range_mult = 0.2
-# 		character_travel_safety_mult = 0.2
-# 		character_travel_speed_mult = 0.2
-# 	}
+	character_modifier = {
+		movement_speed = 0.05
+		diplomatic_range_mult = 0.2
+		character_travel_safety_mult = 0.2
+		character_travel_speed_mult = 0.2
+	}
 
-# 	cost = {
-# 		prestige = {
-# 			add = {
-# 				value = tradition_base_cost
-# 				desc = BASE
-# 				format = "BASE_VALUE_FORMAT"
-# 			}
-# 			if = {
-# 				limit = {
-# 					NOT = {
-# 						culture_pillar:ethos_egalitarian = { is_in_list = traits }
-# 					}
-# 				}
-# 				add = {
-# 					value = tradition_incompatible_ethos_penalty
-# 					desc = not_egalitarian_desc
-# 				}
-# 			}
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOT = {
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_egalitarian_desc
+				}
+			}
 
-# 			multiply = tradition_replacement_cost_if_relevant
-# 		}
-# 	}
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
 
-# 	ai_will_do = { value = 100 }
-# }
+	ai_will_do = { value = 100 }
+}
 
 # 马上领主
 tradition_horse_lords = {

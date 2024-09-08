@@ -1,4 +1,4 @@
-﻿#Generic travel events
+﻿#Generic travel events  一般旅行事件
 
 namespace = travel_events
 
@@ -707,7 +707,7 @@ scripted_trigger is_near_vikings_trigger = {
 }
 scripted_trigger is_near_berber_pirates_trigger = {
 	NOT = {
-		culture = { has_cultural_pillar = heritage_berber }
+		culture = { has_cultural_pillar = heritage_virtual }
 	}
 	location = {
 		any_neighboring_province = {
@@ -715,7 +715,7 @@ scripted_trigger is_near_berber_pirates_trigger = {
 			county = {
 				holder = { in_diplomatic_range = root }
 				is_coastal_county = yes
-				culture = { has_cultural_pillar = heritage_berber }
+				culture = { has_cultural_pillar = heritage_virtual }
 			}
 		}
 	}
@@ -833,7 +833,7 @@ travel_events.4003 = {
 						county = {
 							holder = { in_diplomatic_range = root }
 							any_county_province = { is_coastal = yes }
-							culture = { has_cultural_pillar = heritage_berber }
+							culture = { has_cultural_pillar = heritage_virtual }
 						}
 					}
 					county = {
@@ -4245,20 +4245,20 @@ travel_events.4023 = {
 	desc = {
 		desc = travel_events.4023.desc.intro
 		first_valid = {
-			triggered_desc = {
-				trigger = {
-					religion = religion:christianity_religion
-					scope:prester_john_scope = { is_male = yes }
-				}
-				desc = travel_events.4023.desc.mid.john
-			}
-			triggered_desc = {
-				trigger = {
-					religion = religion:christianity_religion
-					scope:prester_john_scope = { is_female = yes }
-				}
-				desc = travel_events.4023.desc.mid.joan
-			}
+			# triggered_desc = {
+			# 	trigger = {
+			# 		religion = religion:christianity_religion
+			# 		scope:prester_john_scope = { is_male = yes }
+			# 	}
+			# 	desc = travel_events.4023.desc.mid.john
+			# }
+			# triggered_desc = {
+			# 	trigger = {
+			# 		religion = religion:christianity_religion
+			# 		scope:prester_john_scope = { is_female = yes }
+			# 	}
+			# 	desc = travel_events.4023.desc.mid.joan
+			# }
 			desc = travel_events.4023.desc.mid
 		}
 		desc = travel_events.4023.desc.outro
@@ -4633,7 +4633,8 @@ travel_events.4025 = {
 		add_trait = holy_warrior
 		if = {
 			limit = {
-				religion = religion:christianity_religion
+				# religion = religion:christianity_religion
+				always = no 
 				OR = {
 					has_any_nickname = no
 					has_bad_nickname = yes
@@ -4999,7 +5000,8 @@ travel_events.4029 = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					religion = religion:christianity_religion
+					# religion = religion:christianity_religion
+					always = no 
 				}
 				desc = travel_events.4029.desc.mid.christian
 			}
@@ -6832,18 +6834,18 @@ travel_events.4037 = {
 				faith = { has_doctrine_parameter = unreformed }
 				location.faith = { has_doctrine_parameter = unreformed_syncretic_actor_opinion_active }
 			}
-			AND = {
-				religion = religion:christianity_religion
-				location.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
-			}
+			# AND = {
+			# 	religion = religion:christianity_religion
+			# 	location.faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
+			# }
 			AND = {
 				religion = religion:islam_religion
 				location.faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
 			}
-			AND = {
-				religion = religion:judaism_religion
-				location.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
-			}
+			# AND = {
+			# 	religion = religion:judaism_religion
+			# 	location.faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
+			# }
 		}
 	}
 	immediate = {
@@ -7040,18 +7042,18 @@ travel_events.4038 = {
 				faith = { has_doctrine_parameter = unreformed_syncretic_actor_opinion_active }
 				location.faith = { has_doctrine_parameter = unreformed }
 			}
-			AND = {
-				faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
-				location.religion = religion:christianity_religion
-			}
+			# AND = {
+			# 	faith = { has_doctrine_parameter = christian_syncretic_actor_opinion_active }
+			# 	location.religion = religion:christianity_religion
+			# }
 			AND = {
 				faith = { has_doctrine_parameter = islamic_syncretic_actor_opinion_active }
 				location.religion = religion:islam_religion
 			}
-			AND = {
-				faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
-				location.religion = religion:judaism_religion
-			}
+			# AND = {
+			# 	faith = { has_doctrine_parameter = jewish_syncretic_actor_opinion_active }
+			# 	location.religion = religion:judaism_religion
+			# }
 		}
 	}
 	immediate = {

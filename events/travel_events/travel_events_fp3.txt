@@ -26,11 +26,12 @@ travel_events_fp3.0010 = {
 		years = 10
 	}
 	trigger = {
-		has_dlc_feature = legacy_of_persia
-		is_available_travelling_adult = yes
-		is_landed = yes
-		exists = location.faith
-		root.location.faith = { religion_tag = zoroastrianism_religion }
+		# has_dlc_feature = legacy_of_persia
+		# is_available_travelling_adult = yes
+		# is_landed = yes
+		# exists = location.faith
+		# root.location.faith = { religion_tag = zoroastrianism_religion }
+		always = no 
 	}
 	immediate = {
 		create_character = {
@@ -182,7 +183,8 @@ travel_events_fp3.0010 = {
 	option = {
 		name = travel_events_fp3.0010.b
 		trigger = {
-			root.religion = religion:zoroastrianism_religion
+			# root.religion = religion:zoroastrianism_religion
+			always = no 
 		}
 		flavor = travel_events_fp3.0010.a.lightning.desc
 		scope:fp3_zoroastrian_armed_pilgrim = {
@@ -320,21 +322,21 @@ travel_events_fp3.0010 = {
 	option = {
 		name = travel_events_fp3.0010.c
 		flavor = travel_events_fp3.0010.c.flavor
-		if = {
-			limit = {
-				root.religion = religion:zoroastrianism_religion
-			}
-			add_piety = medium_piety_gain
-			stress_impact = {
-				zealous = medium_stress_impact_loss
-			}
-		}
-		else = {
-			add_piety = medium_piety_loss
-			stress_impact = {
-				zealous = medium_stress_impact_gain
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		root.religion = religion:zoroastrianism_religion
+		# 	}
+		# 	add_piety = medium_piety_gain
+		# 	stress_impact = {
+		# 		zealous = medium_stress_impact_loss
+		# 	}
+		# }
+		# else = {
+		# 	add_piety = medium_piety_loss
+		# 	stress_impact = {
+		# 		zealous = medium_stress_impact_gain
+		# 	}
+		# }
 		random_list = {
 			70 = {
 				desc = travel_events_fp3.0010.c.success
@@ -696,15 +698,15 @@ travel_events_fp3.0012 = {
 				value = lifestyle_mystic_xp_gain_minor_value
 			}
 		}
-		if = {
-			limit = {
-				root.religion = religion:zoroastrianism_religion
-			}
-			add_piety = minor_piety_gain
-			stress_impact = {
-				zealous = medium_stress_impact_loss
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		root.religion = religion:zoroastrianism_religion
+		# 	}
+		# 	add_piety = minor_piety_gain
+		# 	stress_impact = {
+		# 		zealous = medium_stress_impact_loss
+		# 	}
+		# }
 		else = {
 			add_piety = minor_piety_loss
 			stress_impact = {
@@ -1667,18 +1669,19 @@ travel_events_fp3.0040 = {
 		years = 10
 	}
 	trigger = {
-		has_dlc_feature = legacy_of_persia
-		is_available_travelling_adult = yes
-		is_landed = yes
-		is_ai = no #Cultural acceptance volatility
-		#We do not check local culture since this represents the nomadic incursions of Turkic warriors into Iran.
-		current_date > "990.01.1" #before this it does not make sense to run into nomadic turkic warriors in Iran
-		root.location = { geographical_region = dlc_fp3_greater_persian_frontier_regions }
-		root.culture = {
-			NOT = {
-				has_cultural_pillar = heritage_turkic
-			}
-		}
+		# has_dlc_feature = legacy_of_persia
+		# is_available_travelling_adult = yes
+		# is_landed = yes
+		# is_ai = no #Cultural acceptance volatility
+		# #We do not check local culture since this represents the nomadic incursions of Turkic warriors into Iran.
+		# current_date > "990.01.1" #before this it does not make sense to run into nomadic turkic warriors in Iran
+		# root.location = { geographical_region = dlc_fp3_greater_persian_frontier_regions }
+		# root.culture = {
+		# 	NOT = {
+		# 		has_cultural_pillar = heritage_turkic
+		# 	}
+		# }
+		always = no 
 	}
 	immediate = {
 		create_character = {

@@ -140,15 +140,15 @@ travel_events.1201 = { #Chivalry
 
 		culture = {
 			NOT = { has_cultural_tradition = tradition_chivalry }
-			OR = {
-				has_cultural_pillar = heritage_brythonic
-				has_cultural_pillar = heritage_central_germanic
-				has_cultural_pillar = heritage_frankish
-				has_cultural_pillar = heritage_goidelic
-				has_cultural_pillar = heritage_iberian
-				has_cultural_pillar = heritage_latin
-				has_cultural_pillar = heritage_west_germanic
-			}
+			# OR = {
+			# 	has_cultural_pillar = heritage_brythonic
+			# 	has_cultural_pillar = heritage_central_germanic
+			# 	has_cultural_pillar = heritage_frankish
+			# 	has_cultural_pillar = heritage_goidelic
+			# 	has_cultural_pillar = heritage_iberian
+			# 	has_cultural_pillar = heritage_latin
+			# 	has_cultural_pillar = heritage_west_germanic
+			# }
 		}
 	}
 
@@ -704,7 +704,7 @@ travel_events.1207 = { #Vegetarians
 				has_cultural_tradition = tradition_sacred_hunts
 				has_cultural_tradition = tradition_hunters
 				has_cultural_pillar = heritage_indo_aryan
-				has_cultural_pillar = heritage_dravidian
+				# has_cultural_pillar = heritage_dravidian
 			}
 		}
 	}
@@ -862,7 +862,7 @@ travel_events.1209 = { #Storytellers
 		culture = {
 			NOT = {
 				has_cultural_tradition = tradition_storytellers
-				has_cultural_tradition = tradition_fp1_northern_stories
+				# has_cultural_tradition = tradition_fp1_northern_stories
 			}
 		}
 	}
@@ -1014,7 +1014,7 @@ travel_events.1211 = { #Poetry
 		culture = {
 			NOT = {
 				has_cultural_tradition = tradition_poetry
-				has_cultural_tradition = tradition_fp1_northern_stories
+				# has_cultural_tradition = tradition_fp1_northern_stories
 			}
 		}
 	}
@@ -1366,14 +1366,14 @@ travel_events.1215 = { #Martial admiration
 
 		culture = {
 			NOT = {
-				has_cultural_tradition = tradition_martial_admiration
-				has_cultural_tradition = tradition_pacifism
-				has_cultural_tradition = tradition_futuwaa
-				has_cultural_tradition = tradition_druzhina
+				# has_cultural_tradition = tradition_martial_admiration
+				# has_cultural_tradition = tradition_pacifism
+				# has_cultural_tradition = tradition_futuwaa
+				# has_cultural_tradition = tradition_druzhina
 				has_cultural_tradition = tradition_chanson_de_geste
-				has_cultural_pillar = heritage_iranian
-				has_cultural_pillar = heritage_frankish
-				has_cultural_pillar = heritage_east_slavic
+				# has_cultural_pillar = heritage_iranian
+				# has_cultural_pillar = heritage_frankish
+				# has_cultural_pillar = heritage_east_slavic
 			}
 		}
 	}

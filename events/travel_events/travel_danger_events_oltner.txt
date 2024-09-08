@@ -498,8 +498,8 @@ travel_danger_events.9020 = { # Sea, Desert, War: Emaciated
 		
 		culture = {
 			NOR = {
-				has_cultural_tradition = tradition_saharan_nomads
-				has_cultural_tradition = tradition_desert_nomads
+				# has_cultural_tradition = tradition_saharan_nomads
+				# has_cultural_tradition = tradition_desert_nomads
 			}
 		}
 
@@ -544,7 +544,7 @@ travel_danger_events.9020 = { # Sea, Desert, War: Emaciated
 			culture = {
 				NOR = {
 					has_cultural_tradition = tradition_dryland_dwellers
-					has_cultural_tradition = tradition_caravaneers
+					# has_cultural_tradition = tradition_caravaneers
 				}
 			}
 		}

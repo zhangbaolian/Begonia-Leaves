@@ -15426,12 +15426,12 @@ travel_events.2107 = {
 		name = {
 			text = {
 				first_valid = {
-					triggered_desc = {
-						trigger = { 
-							faith = { religion_tag = christianity_religion }
-						}
-						desc = travel_events.2107.a_christian
-					}
+					# triggered_desc = {
+					# 	trigger = { 
+					# 		faith = { religion_tag = christianity_religion }
+					# 	}
+					# 	desc = travel_events.2107.a_christian
+					# }
 					triggered_desc = {
 						desc = travel_events.2107.a
 					}
