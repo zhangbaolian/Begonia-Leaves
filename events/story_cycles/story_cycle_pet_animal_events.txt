@@ -1921,22 +1921,22 @@ pet_animal.1101 = {
 	title = pet_animal.1101.t
 	desc = pet_animal.1101.desc
 	theme = pet
-	override_background = {
-		trigger = {
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			religion = religion:germanic_religion
-		}
-		reference = fp1_runestone
-	}
-	override_background = {
-		trigger = {
-			NAND = {
-				culture = { has_cultural_pillar = heritage_north_germanic }
-				religion = religion:germanic_religion
-			}
-		}
-		reference = farmland
-	}
+	# override_background = {
+	# 	trigger = {
+	# 		culture = { has_cultural_pillar = heritage_north_germanic }
+	# 		religion = religion:germanic_religion
+	# 	}
+	# 	reference = fp1_runestone
+	# }
+	# override_background = {
+	# 	trigger = {
+	# 		NAND = {
+	# 			culture = { has_cultural_pillar = heritage_north_germanic }
+	# 			religion = religion:germanic_religion
+	# 		}
+	# 	}
+	# 	reference = farmland
+	# }
 	left_portrait = {
 		character = root
 		animation = happiness
@@ -2378,13 +2378,13 @@ pet_animal.1109 = {
 	title = pet_animal.1109.t
 	desc = pet_animal.1109.desc
 	theme = pet
-	override_background = {
-		trigger = {
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			religion = religion:germanic_religion
-		}
-		reference = fp1_runestone
-	}
+	# override_background = {
+	# 	trigger = {
+	# 		culture = { has_cultural_pillar = heritage_north_germanic }
+	# 		religion = religion:germanic_religion
+	# 	}
+	# 	reference = fp1_runestone
+	# }
 	left_portrait = scope:other_owner
 	
 	trigger = {
@@ -3021,13 +3021,13 @@ pet_animal.1118 = {
 	title = pet_animal.1118.t
 	desc = pet_animal.1118.desc
 	theme = pet
-	override_background = {
-		trigger = {
-			culture = { has_cultural_pillar = heritage_north_germanic }
-			religion = religion:germanic_religion
-		}
-		reference = fp1_runestone
-	}
+	# override_background = {
+	# 	trigger = {
+	# 		culture = { has_cultural_pillar = heritage_north_germanic }
+	# 		religion = religion:germanic_religion
+	# 	}
+	# 	reference = fp1_runestone
+	# }
 	left_portrait = {
 		character = scope:vassal
 		animation = anger
