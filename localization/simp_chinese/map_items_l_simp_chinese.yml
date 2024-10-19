@@ -5,7 +5,7 @@
  lakes_dongqianhu:0 "东钱湖"
 
  # MAJOR RIVERS
- river_fuchunjiang:0 "富春江"
- river_qiantangjiang:0 "钱塘江"
- river_changjiang:0 "长江"
+#  river_fuchunjiang:0 "富春江"
+#  river_qiantangjiang:0 "钱塘江"
+#  river_changjiang:0 "长江"
  river_caoejiang:0 "曹娥江"

@@ -1,5 +1,5 @@
 ﻿NGame = {
-	END_DATE = "4150.1.1"
+	END_DATE = "4722.1.1"
 	GAME_SPEED_TICKS = {	# how many seconds should a day take in every game speed
 		2
 		1
@@ -71,9 +71,9 @@ NSetup = {
 
 NJominiMap = {
 	WORLD_EXTENTS_X = 15359 	#WORLD_EXTENTS_X = 8191
-	WORLD_EXTENTS_Y = 51
+	WORLD_EXTENTS_Y = 51 # 51
 	WORLD_EXTENTS_Z = 11263		#WORLD_EXTENTS_X = 8191
-	WATERLEVEL = 3.6
+	WATERLEVEL = 3.5
 }
 
 NCharacter = {

@@ -1,0 +1,22 @@
+﻿
+
+#获取黄帝纪年时间，转换为公元纪年时间。
+#公元纪年 = 黄帝纪年-2698
+
+# 小于2698 公元前
+qhty_shijian_xiaoyu = {
+	value = current_year
+	subtract = 2698
+}
+# 大于2698 公元
+qhty_shijian_dayu_dengyu = {
+	value = current_year
+	subtract = 2698
+}
+
+# 年时间换算
+qhty_shijian_nian = {
+	value = current_year
+	subtract = 2698
+	abs = yes
+}

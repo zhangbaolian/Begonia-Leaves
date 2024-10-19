@@ -1,563 +1,189 @@
-﻿#k_maghreb
-##d_hanzhou ###################################
-###c_canarias
+﻿#k_yue
+##d_zhejiang_hangzhou ###################################
+###c_hangzhou_hangzhou
+
 1 = {
-	culture = han
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-###c_hengan
-62 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-84 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_jiande
-85 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_tonglu
-101 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_fuyang
-114 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_linan
-131 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_xiaoshan
-155 = {
-	culture = qin
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_yuhang
-197 = {
-	culture = qin
-	religion = zhengyi
-	holding = castle_holding
-}
-
-### c_shaoxing
-202 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_keqiao
-215 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_shangyu
-229 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_zhuji
-247 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_shengzhou
-271 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_xinchang
-291 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_yuyao
-312 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_cixi
-333 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_zhenhai
-349 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_jiangbei
-353 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_haishu
-356 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_fegnhua
-366 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_yinzhou
-376 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-
-###c_beicang
-389 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_ninghai
-399 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_xiangshan
-418 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-##d_zhejiang_jinhua
-###c_jinhua_pujiang
-437 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_jinhua_yiwu
-452 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_jinhua_dongyang
-464 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
 
-###c_jinhua_panan
-482 = {
-	culture = han
+###c_hangzhou_xiaoshan
+4 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jinhua_yongkang
-501 = {
-	culture = han
+###c_hangzhou_fuyang
+16 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jinhua_wuyi
-515 = {
-	culture = han
+###c_hangzhou_linan
+26 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jinhua_jindong
-533 = {
-	culture = han
+###c_hangzhou_tonglu
+37 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jinhua_wucheng
-543 = {
-	culture = han
+###c_hangzhou_jiande
+45 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jinhua_lanxi
-543 = {
-	culture = han
+###c_hangzhou_hengan
+53 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-##d_zhejiang_jiaxing
-###c_jiaxing_haining
-578 = {
-	culture = han
+###c_hangzhou_yuhang
+61 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jiaxing_haiyan
-588 = {
-	culture = han
+###c_shaoxing_shaoxing
+66 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_jiaxing_pinghu
-597 = {
-	culture = han
+###c_shaoxing_keqiao
+70 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-
-###c_jiaxing_nanhu
-605 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_jiaxing_xiuzhou
-612 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_jiaxiang_tongxiang
-625 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_jiaxing_jiashan
-639 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-##d_zhejiang_quzhou
-###c_quzhou_longyou
-647 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_quzhou_qujiang
-662 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_quzhou_kecheng
-681 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_quzhou_changshan
-692 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_quzhou_kaihua
-707 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_quzhou_yushan
-730 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-##d_zhejiang_lishui
-###c_lishui_liandu
-751 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_lishui_qingtian
-768 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_lishui_sonyang
-813 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_lishui_zhuchang
-831 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_lishui_longquan
-851 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_lishui_qingyuan
-905 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-##d_zhejiang_wenzhou
-###c_wenzhou_lucheng
-925 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_wenzhou_longwan
-933 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_wenzhou_ouhai
-939 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-
-###c_wenzhou_dongtou
-947 = {
-	culture = han
+71 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-
-###c_wenzhou_yongjia
-954 = {
-	culture = han
+72 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
-
-###c_wenzhou_leqing
-978 = {
-	culture = han
+73 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_wenzhou_ruian
-1002 = {
-	culture = han
+##c_shaoxing_shangyu
+74 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_wenzhou_wencheng
-1026 = {
-	culture = han
+##c_shaoxing_zhuji
+80 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_wenzhou_taishun
-1035 = {
-	culture = han
+##c_shaoxing_shengzhou
+89 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_wenzhou_cangnan
-1050 = {
-	culture = han
+##c_shaoxing_xinchang
+99 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_wenzhou_pingyang
-1061 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
 
-###c_wenzhou_longgang
-1077 = {
-	culture = han
+##d_zhejiang_ningbo ###################################
+###c_ningbo_yinzhou
+105 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-##d_zhejiang_taizhou
-###c_taizhou_jiaojiang
-1082 = {
-	culture = han
+###c_ningbo_fenghua
+110 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-###c_taizhou_linhai
-1088 = {
-	culture = han
+###c_ningbo_haishu
+115 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-###c_taizhou_huangyan
-1107 = {
-	culture = han
+###c_ningbo_jiangbei
+119 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-###c_taizhou_luqiao
-1122 = {
-	culture = han
+###c_ningbo_cixi
+121 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-###c_taizhou_sanmen
-1131 = {
-	culture = han
+###c_ningbo_yuyao
+128 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-###c_taizhou_wenling
-1178 = {
-	culture = han
+###c_ningbo_zhenhai
+137 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-###c_taizhou_yuhuan
-1193 = {
-	culture = han
+###c_ningbo_beicang
+139 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-##d_zhejaing_huzhou
-###c_huzhou_wuxing
-1205 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_huzhou_changxing
-1215 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_huzhou_deqing
-1229 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_huzhou_anji
-1239 = {
-	culture = han
+###c_ningbo_ninghai
+144 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
-}
+ }
 
-##d_zhejiang_zhoushan
-###c_huzhou_anji
-1253 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
-###c_zhoushan_putuo
-1253 = {
-	culture = han
+###c_ningbo_xiangshan
+153 = {
+	culture = yue
 	religion = zhengyi
 	holding = castle_holding
 }
 
-###c_zhoushan_daishan
-1266 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}
 
-###c_zhoushan_shensi
-1287 = {
-	culture = han
-	religion = zhengyi
-	holding = castle_holding
-}

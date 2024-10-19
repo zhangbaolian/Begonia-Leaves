@@ -151,3 +151,13 @@ object={
 	pdxmesh="building_special_tower_of_london_mesh"
 	count=0
 }
+object={
+	name="wall_of_gurgan"
+	render_pass=MapUnderWater
+	clamp_to_water_level=yes
+	generated_content=no
+	layer="temp_layer"
+	pdxmesh="fp3_building_special_great_wall_of_gorgan_01_a_mesh"
+	count=1
+	transform="10590.144531 0.000000 5440.871582 0.000000 0.426793 0.000000 -0.198817 0.663744 0.663744 0.663744
+"}

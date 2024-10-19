@@ -1,2 +1,18 @@
 ﻿l_simp_chinese:
-  GAME_DATE_STRING_LONG: "$DAY|O$ of $MONTH$, $YEAR$ 轩辕"
+
+  QHTY_TIME_NODE_BC_AND_AD:"'(int32)2698'"
+  QHTY_VALUE_2X:"'(int32)-1'"
+
+
+  QHTY_TIME:"[Select_CString( LessThan_int32( '(int32)$YEAR$', $QHTY_TIME_NODE_BC_AND_AD$), '公元前', '公元' )]"
+
+  # QHTY_YEAR:"[Multiply_int32( 'Subtract_int32( '(int32)$YEAR$', $QHTY_TIME_NODE_BC_AND_AD$ )', $QHTY_VALUE_2X$)]"
+  QHTY_YEAR:"[Subtract_int32( '(int32)$YEAR$', $QHTY_TIME_NODE_BC_AND_AD$)]"
+  QHTY_YEAR_INT:"[Multiply_int32(Subtract_int32( '(int32)$YEAR$', $QHTY_TIME_NODE_BC_AND_AD$),$QHTY_VALUE_2X$)]"
+  QHTY_TEST:"'(int32)$QHTY_YEAR$'"
+
+
+  QHTY_GANZHI_JINIANN:"[GetPlayer.Custom('QHTY_TIANGAN')][GetPlayer.Custom('QHTY_DIZHI')][GetPlayer.Custom('QHTY_SHENGXIAO')]"
+
+  # GAME_DATE_STRING_LONG: "轩辕 $YEAR$年$MONTH$$DAY|O$日" 
+  GAME_DATE_STRING_LONG:0 " $QHTY_GANZHI_JINIANN$$QHTY_TIME$ $QHTY_YEAR_INT$ 年 $MONTH$ $DAY|O$日"

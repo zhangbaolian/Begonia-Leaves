@@ -1,20 +1,20 @@
-e_huaxia = {
+﻿e_tianchao = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
 }
 
 k_yue = {
 	867.1.1 = { change_development_level = 3 }
-	1066.1.1 = { 
-		change_development_level = 6
-		holder = 20842 
+	2160.1.1 = {
+		holder = 37000101
 	}
 	2222.1.1 = {
 		holder = 37000102
+		government = fenfeng_government
 	}
 }
 
-d_hangzhou = {
+d_zhejiang_hangzhou = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { 
 		change_development_level = 6
@@ -25,10 +25,53 @@ d_hangzhou = {
 	}
 }
 
-c_hanzhou_hanzhou = {
+c_hangzhou_hangzhou = {
+	767.1.1 = { government = fenfeng_government }
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
-	767.1.1 = { government = tribal_government }
+
+	850.1.1 = {
+		holder = 166423
+	}
+	877.1.1 = {
+		holder = 166424
+	}
+	906.1.1 = {
+		holder = 166425
+	}
+	929.1.1 = {
+		holder = 166426
+	}
+	941.1.1 = {
+		holder = 166427
+	}
+	964.1.1 = {
+		holder = 166428
+	}
+	979.1.1 = {
+		holder = 166429
+	}
+	994.1.1 = {
+		holder = 166430
+	}
+	1010.1.1 = {
+		holder = 166431
+	}
+	1030.1.1 = {
+		holder = 166432
+	}
+	1066.1.1 = {
+		holder = 20842
+	}
+	2222.1.1 = {
+		holder = 37000102
+	}
+}
+c_shaoxing_shaoxing = {
+	767.1.1 = { government = fenfeng_government }
+	867.1.1 = { change_development_level = 3 }
+	1066.1.1 = { change_development_level = 6 }
+
 	850.1.1 = {
 		holder = 166423
 	}

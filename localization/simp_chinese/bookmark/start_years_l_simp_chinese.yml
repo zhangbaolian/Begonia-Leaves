@@ -1,2 +1,8 @@
 ﻿l_simp_chinese:
- start_year_1066_10_01_desc:0 "This is a start year."
+#  start_year_1066_10_01_desc:0 "This is a start year."
+
+ bm_group_1652:0 "封邦建国"
+ start_year_1652_02_01_desc:0 "暂无描述"
+
+ bm_group_1928:0 "春秋战国"
+ start_year_1928_01_01_desc:0 "暂无描述"

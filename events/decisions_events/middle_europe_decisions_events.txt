@@ -1,0 +1,2 @@
+﻿
+# namespace = middle_europe_decisions

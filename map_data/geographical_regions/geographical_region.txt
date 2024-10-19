@@ -103,6 +103,7 @@ world_europe = {}
 world_middle_east = {}
 world_india = {}
 
+
 ###########################################################################
 # Material Regions
 ###########################################################################
@@ -426,20 +427,20 @@ ghw_region_north_eastern_india = {}
 ### END GHW Regions
 islamic_heartlands = {}
 
-dlc_fp1_region_core_north_sea = {
-	duchies = {
-		#k_norway
-		d_viken d_agder d_vestlandi d_trandalog
-		#k_england
-		d_york d_norfolk d_bedford d_canterbury
-		#k_denmark
-		d_sjaelland d_slesvig d_jylland
-	}
-	counties = {
-		#k_england
-		c_huntingdonshire c_northamptonshire c_leicestershire c_nottinghamshire
-	}
-}
+# dlc_fp1_region_core_north_sea = {
+# 	duchies = {
+# 		#k_norway
+# 		d_viken d_agder d_vestlandi d_trandalog
+# 		#k_england
+# 		d_york d_norfolk d_bedford d_canterbury
+# 		#k_denmark
+# 		d_sjaelland d_slesvig d_jylland
+# 	}
+# 	counties = {
+# 		#k_england
+# 		c_huntingdonshire c_northamptonshire c_leicestershire c_nottinghamshire
+# 	}
+# }
 
 #####################
 # FP1 Regions
@@ -483,6 +484,14 @@ dlc_fp2_form_aragon_region = {}
 dlc_fp2_lyonese_monk_region = {}
 
 ### END FP2 Regions
+dlc_fp3_eastern_persian_frontier_regions = {
+	regions = {
+		world_khorasan
+		world_transoxiana
+		world_makran
+		world_kabulistan
+	}
+}
 
 #####################
 # Achievements - 1.4
@@ -587,3 +596,9 @@ hunt_animal_elk_region = {}
 
 # Chiefly the Celtic Rim.
 board_game_fidchell_region = {}
+
+
+################
+# 区域 #
+################
+world_zg_xb = {}

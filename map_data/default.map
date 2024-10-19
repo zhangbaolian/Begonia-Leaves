@@ -22,18 +22,18 @@ seasons = "seasons.txt"
 ###############
 # MAJOR RIVERS
 ###############
-river_provinces = RANGE { 3 4 }	#富春江
-river_provinces = RANGE { 5 6 }	#钱塘江
-river_provinces = RANGE { 8 60 } #长江
-river_provinces = RANGE { 306 311 } #曹娥江
+# river_provinces = RANGE { 3 4 }	#富春江
+# river_provinces = RANGE { 5 6 }	#钱塘江
+# river_provinces = RANGE { 8 60 } #长江
+river_provinces = RANGE { 481 486 } #曹娥江
 
 ########
 # LAKES
 ########
 
-lakes = LIST { 7 }	#千岛湖
-lakes = LIST { 61 } #鄱阳湖
-lakes = LIST { 417 } #东钱湖
+lakes = LIST { 478 } #千岛湖
+lakes = LIST { 479 } #鄱阳湖
+lakes = LIST { 480 } #东钱湖
 
 #####################
 # IMPASSABLE TERRAIN
