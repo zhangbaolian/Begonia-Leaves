@@ -1,1 +1,5 @@
-﻿
+﻿xiachong = {
+	# prefix = "dynnp_C"
+	name = "dynn_Xia_Chong"
+	dynasty = si001 #Serra
+}

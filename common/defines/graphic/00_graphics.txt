@@ -103,7 +103,7 @@ NBarbershop = {
 NCamera = {
 	FOV	= 60 # Field-of-View
 	ZNEAR = 10
-	ZFAR = 100000
+	ZFAR = 200000
 
 	SHADOW_DISTANCE_FACTOR = 5 # Influences if distant shadows are rendered or not (higher means more distant shadows are rendered)
 	EDGE_SCROLLING_PIXELS = 5 # how many pixels from window edge that will trigger edge scrolling

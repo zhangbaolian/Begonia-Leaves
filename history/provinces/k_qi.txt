@@ -1,6 +1,0 @@
-1435 = {
-	culture = yue
-	religion = zhengyi
-	holding = tribal_holding
-	special_building = great_wall_of_gorgan_01
-}

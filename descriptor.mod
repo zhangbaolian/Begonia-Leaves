@@ -1,4 +1,4 @@
-version="0.1"
+version="1.0.1"
 tags={
 	"Total Conversion"
 	"Map"
@@ -13,6 +13,6 @@ replace_path="history/characters"
 replace_path="history/provinces"
 replace_path="history/struggles"
 replace_path="history/titles"
-supported_version="1.13.*"
+supported_version="1.14.*"
 path="F:/Documents/Paradox Interactive/Crusader Kings III/mod/Begonia Leaves"
 remote_file_id="3263313755"

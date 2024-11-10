@@ -1,8 +1,0 @@
-﻿2222010102 = { # 姬
-	name = "dynn_ji"
-	culture = "qin"
-}
-2222010103 = { # 武
-	name = "dynn_wu"
-	culture = "qin"
-}

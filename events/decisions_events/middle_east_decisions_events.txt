@@ -1,2 +1,0 @@
-﻿
-# namespace = middle_east_decisions

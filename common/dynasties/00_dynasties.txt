@@ -8,3 +8,15 @@
 	name = "dynn_Prydain"
 	culture = "welsh"
 }
+
+# 商
+2000000011 = {
+	name = "dynn_Zi"
+	culture = "shang"
+}
+
+# 夏
+si001 = {
+	name = "dynn_Si"
+	culture = "shang"
+}

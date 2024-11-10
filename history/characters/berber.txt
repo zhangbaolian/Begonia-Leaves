@@ -1,8 +1,8 @@
 ﻿20842 = {
 	name = "Guanarigato"
 	dynasty = 100848
-	religion = "zhengyi"
-	culture = han
+	religion = "shang_di"
+	culture = shang
 	father = 166432
 	1039.1.1 = {
 		birth = "1039.1.1"
@@ -16,7 +16,7 @@
 	name = "Guanareme"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	831.1.1 = {
 		birth = "831.1.1"
 	}
@@ -29,7 +29,7 @@
 	name = "AN_aterve"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166423
 	850.1.1 = {
 		birth = "850.1.1"
@@ -43,7 +43,7 @@
 	name = "Zonzamas"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166424
 	867.1.1 = {
 		birth = "867.1.1"
@@ -57,7 +57,7 @@
 	name = "TitaN_e"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166425
 	890.1.1 = {
 		birth = "890.1.1"
@@ -71,7 +71,7 @@
 	name = "Ayoze"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166426
 	911.1.1 = {
 		birth = "911.1.1"
@@ -85,7 +85,7 @@
 	name = "Dardamo"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166427
 	936.1.1 = {
 		birth = "936.1.1"
@@ -99,7 +99,7 @@
 	name = "Betzenuhya"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166428
 	955.1.1 = {
 		birth = "955.1.1"
@@ -113,7 +113,7 @@
 	name = "GuardafI_a"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166429
 	977.1.1 = {
 		birth = "977.1.1"
@@ -127,7 +127,7 @@
 	name = "Imobach"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166430
 	994.1.1 = {
 		birth = "994.1.1"
@@ -141,7 +141,7 @@
 	name = "AdxoN_a"
 	dynasty = 100848
 	religion = "west_african_pagan"
-	culture = baranis
+	culture = shang
 	father = 166431
 	1017.1.1 = {
 		birth = "1017.1.1"

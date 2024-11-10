@@ -1,6 +1,0 @@
-﻿l_simp_chinese:
-
- QHTY_SHIJIAN_GONGYUANQIAN:0 "公元前"
- QHTY_TIANGAN_GONGYUAN:0 "公元"
- QHTY_SHIJIAN_DUAN:0 "[GetPlayer.Custom('QHTY_SHIJIA_DUAN')]"
- QHTY_SHIJIAN_NIAN:0 "[GetPlayer.Custom('QHTY_SHIJIAN_NIAN')]"

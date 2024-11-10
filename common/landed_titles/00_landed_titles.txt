@@ -17,30 +17,51 @@ k_fashion = { # Kingdom of Fashion from Establish a New Fashion at Court decisio
 }
 
 ### 天朝 ###
-e_tianchao = {
-	color = { 209 63 44 }
+# e_tianchao = {
+# 	color = { 209 63 44 }
 	
-	capital = c_shaoxing
+# 	capital = c_shaoxing
 	
-	ai_primary_priority = {
-		if = {
-			limit = {
-				OR = {
-					culture = culture:qin
-					culture = culture:yue
-					culture = culture:han
-				}
-			}
-			add = @correct_culture_primary_score
-		}
-	}
-}
+# 	ai_primary_priority = {
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					culture = culture:qin
+# 					culture = culture:yue
+# 					culture = culture:han
+# 				}
+# 			}
+# 			add = @correct_culture_primary_score
+# 		}
+# 	}
+# }
 
 ### 姬周 ###
-e_zhou = {
-	color = { 209 63 44 }
+# e_zhou = {
+# 	color = { 209 63 44 }
 	
-	capital = c_xian_xian
+# 	capital = c_xian_xian
+	
+# 	ai_primary_priority = {
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					culture = culture:qin
+# 					culture = culture:yue
+# 					culture = culture:han
+# 				}
+# 			}
+# 			add = @correct_culture_primary_score
+# 		}
+# 	}
+
+# }
+
+### 殷商 ###
+k_shang = {
+	color = { 242 253 255 }
+
+	capital = c_anyang_anyang
 	
 	ai_primary_priority = {
 		if = {
@@ -57,19 +78,20 @@ e_zhou = {
 
 }
 
-### 殷商 ###
-k_yin = {
-	color = { 12 63 44 }
+# 方伯 崇
+d_shang_chong = {
+	color = { 190 0 47 }
 
-	capital = c_hebi_qi
+	capital = c_luoyang_song
 	
 	ai_primary_priority = {
 		if = {
 			limit = {
 				OR = {
-					culture = culture:qin
-					culture = culture:yue
+					# culture = culture:qin
+					# culture = culture:yue
 					culture = culture:han
+					culture = culture:shang
 				}
 			}
 			add = @correct_culture_primary_score
@@ -79,24 +101,24 @@ k_yin = {
 }
 
 ### 管国 ###
-k_guan = {
-	color = { 10 63 44 }
+# k_guan = {
+# 	color = { 10 63 44 }
 	
-	capital = c_zhengzhou_guancheng
-	ai_primary_priority = {
-		if = {
-			limit = {
-				OR = {
-					culture = culture:qin
-					culture = culture:yue
-					culture = culture:han
-				}
-			}
-			add = @correct_culture_primary_score
-		}
-	}
+# 	capital = c_zhengzhou_guancheng
+# 	ai_primary_priority = {
+# 		if = {
+# 			limit = {
+# 				OR = {
+# 					culture = culture:qin
+# 					culture = culture:yue
+# 					culture = culture:han
+# 				}
+# 			}
+# 			add = @correct_culture_primary_score
+# 		}
+# 	}
 
-}
+# }
 
 ### 浙江 ###
 k_yue = { # 越
@@ -3721,7 +3743,12 @@ k_yu = { # 豫？
 			b_1954baizhuang={ province = 1954 color = { 57 130 238 } }
 			b_1955dongfeng={ province = 1955 color = { 105 148 177 } }
 			b_1956shanying={ province = 1956 color = { 157 119 24 } }
-			b_1957tongye={ province = 1957 color = { 153 236 86 } }							  
+			b_1957tongye={ province = 1957 color = { 153 236 86 } }
+			b_4850gaozhuang={ province = 4850 color = { 161 51 179 } }
+			b_4851baibi={ province = 4851 color = { 18 183 244 } }
+			b_4852yonghe={ province = 4852 color = { 56 70 213 } }
+			b_4853xincun={ province = 4853 color = { 79 78 7 } }
+							  
 		}
 		c_anyang_tangyin = { # 汤阴 
 			color = { 155 166 233 }
@@ -8578,6 +8605,45 @@ k_qin = { # 秦
 		}
 	}	
 }	
+
+### 山西 ###
+k_shanxi = {
+	color = { 22 24 35 }
+	capital = c_yuncheng_ruicheng
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:han
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+
+	d_shangxi_yuncheng = {
+		color = { 22 24 35 }
+		capital = c_yuncheng_ruicheng		
+		c_yuncheng_ruicheng = {
+			color = { 22 24 35 }
+			b_4840ruicheng={ province = 4840 color = { 17 185 132 } }
+			b_4841ximo={ province = 4841 color = { 117 24 32 } }
+			b_4842yangcheng={ province = 4842 color = { 97 183 136 } }
+			b_4843fenglingdu={ province = 4843 color = { 225 180 43 } }
+			
+		}
+		c_yuncheng_yongji = {
+			color = { 22 24 35 }
+			b_4844yongji={ province = 4844 color = { 222 138 180 } }
+			b_4845hanyang={ province = 4845 color = { 98 229 109 } }
+			b_4846zhangying={ province = 4846 color = { 137 126 119 } }
+			b_4847qingtou={ province = 4847 color = { 246 29 5 } }
+			b_4848kaizhang={ province = 4848 color = { 96 128 199 } }
+			b_4849qinghua={ province = 4849 color = { 23 124 251 } }
+		}
+	}
+}
 
 # These titles cut hundreds of errors from logs. 
 e_hre = { landless = yes }

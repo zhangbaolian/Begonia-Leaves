@@ -254,11 +254,7 @@
 			icon = sunni
 			religious_head = d_sunni
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = baghdad
-			# holy_site = sinai
+			holy_site = jenne
 
 			#Tenet:
 			doctrine = tenet_struggle_submission
@@ -279,11 +275,7 @@
 			icon = muwalladi
 			religious_head = d_sunni
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = cordoba
-			# holy_site = fes
+			holy_site = jenne
 
 			#Tenet:
 			doctrine = tenet_struggle_submission
@@ -306,11 +298,7 @@
 			icon = maturidi
 			religious_head = d_sunni
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = baghdad
-			# holy_site = samarkand
+			holy_site = jenne
 
 			#Tenet
 			doctrine = tenet_adaptive
@@ -331,11 +319,7 @@
 			icon = masmudi
 			religious_head = d_masmudi
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = tinmallal
-			# holy_site = fes
+			holy_site = jenne
 
 			#Tenet:
 			doctrine = tenet_struggle_submission
@@ -359,11 +343,7 @@
 			icon = mutazila
 			religious_head = d_sunni
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = baghdad
-			# holy_site = sinai
+			holy_site = jenne
 
 			#Tenet:
 			doctrine = tenet_struggle_submission
@@ -383,11 +363,7 @@
 			color = { 0.2 0.7 0.1 }
 			icon = quranist
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = kufa
-			# holy_site = sinai
+			holy_site = jenne
 
 			#Tenet
 			doctrine = tenet_literalism
@@ -417,11 +393,7 @@
 			icon = shia
 			religious_head = d_shiite
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_struggle_submission
 			doctrine = tenet_esotericism
@@ -455,11 +427,7 @@
 			color = { 0.1 0.8 0.1 }
 			icon = qarmatian
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_unrelenting_faith
 			doctrine = tenet_aniconism
@@ -494,11 +462,7 @@
 			icon = nizari
 			religious_head = d_nizari
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_religious_legal_pronouncements
 			doctrine = tenet_false_conversion_sanction
@@ -538,11 +502,7 @@
 			icon = zayidi
 			religious_head = d_zayidi
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_struggle_submission
 			doctrine = tenet_unrelenting_faith
@@ -573,11 +533,7 @@
 			icon = imami
 			religious_head = d_imami
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = baghdad
+			holy_site = jenne
 
 			doctrine = tenet_legalism
 			doctrine = tenet_false_conversion_sanction
@@ -615,11 +571,7 @@
 			icon = ghulat
 			religious_head = d_ghulat
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_struggle_submission
 			doctrine = tenet_false_conversion_sanction
@@ -649,11 +601,7 @@
 			color = { 0.2 0.4 0.1 }
 			icon = alawite
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_esotericism
 			doctrine = tenet_reincarnation
@@ -690,11 +638,7 @@
 			color = { 0.4 0.6 0.1 }
 			icon = alevi
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_esotericism
 			doctrine = tenet_inner_journey
@@ -742,11 +686,7 @@
 			color = { 0.3 0.7 0.1 }
 			icon = islam_druze
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = beirut
-			# holy_site = zozan
+			holy_site = jenne
 
 			doctrine = tenet_gnosticism
 			doctrine = tenet_reincarnation
@@ -785,11 +725,7 @@
 			color = { 0.3 0.6 0.3 }
 			icon = ibadi
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = basra
-			# holy_site = nizwa
+			holy_site = jenne
 
 			#Tenet
 			doctrine = tenet_literalism
@@ -826,11 +762,7 @@
 			color = { 0.3 0.7 0.7 }
 			icon = azariqa
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = siffa
-			# holy_site = kufa
+			holy_site = jenne
 
 			#Tenet
 			doctrine = tenet_legalism
@@ -867,11 +799,7 @@
 			color = { 0.6 0.7 0.7 }
 			icon = nadjat
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = bahrein
-			# holy_site = yamama			
+			holy_site = jenne		
 
 			#Tenet
 			doctrine = tenet_struggle_submission
@@ -902,11 +830,7 @@
 			icon = muhakkima_3
 
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = sijilmasa	
-			# holy_site = siffa
+			holy_site = jenne
 
 			#Tenet
 			doctrine = tenet_struggle_submission
@@ -940,11 +864,7 @@
 			icon = ibadi_custom
 			religious_head = d_shiite
 
-			# holy_site = mecca
-			# holy_site = medina
-			# holy_site = jerusalem
-			# holy_site = nadjaf
-			# holy_site = damascus
+			holy_site = jenne
 
 			doctrine = tenet_struggle_submission
 			doctrine = tenet_unrelenting_faith

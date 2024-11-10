@@ -1,1 +1,0 @@
-﻿# namespace = east_europe

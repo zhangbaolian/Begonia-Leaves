@@ -1,5 +1,0 @@
-﻿# Keeping Prydain to dodge a stubborn error.
-2222010101 = {
-	name = "dynn_si"
-	culture = "yue"
-}

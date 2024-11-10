@@ -219,11 +219,7 @@
 			icon = tengri
 			reformed_icon = tengri_reformed
 
-			# holy_site = kara_khorum
-			# holy_site = qayaliq
-			# holy_site = kerch
-			# holy_site = tavan_bogd
-			# holy_site = preslav
+			holy_site = jenne
 
 			doctrine = unreformed_faith_doctrine
 
