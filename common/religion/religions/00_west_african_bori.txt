@@ -220,7 +220,11 @@ west_african_bori_religion = {
 			icon = west_african_bori
 			reformed_icon = west_african_bori_reformed
 
-			holy_site = jenne
+			holy_site = daura
+			holy_site = garumele
+			holy_site = igbo
+			holy_site = el_fasher
+			holy_site = wandala
 
 			doctrine = west_african_unreformed_faith_doctrine
 

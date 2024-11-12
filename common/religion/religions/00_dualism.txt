@@ -225,7 +225,11 @@
 			religious_head = d_manichean
 			icon = manichean
 
-			holy_site = jenne
+			holy_site = ahvaz
+			holy_site = yijinai # As most of China is not on the map, this works to represent the large Chinese following of the faith
+			holy_site = khotan # While Jerusalem was important to early Manicheans, by CK's timeframe, Central Asia was much more important
+			holy_site = samarkand
+			holy_site = udabhanda
 
 			doctrine = tenet_mendicant_preachers # Manicheans preached very far East
 			doctrine = tenet_adaptive
@@ -340,7 +344,11 @@
 			color = { 0.5 0.75 0.3 }
 			icon = dualism
 
-			holy_site = jenne
+			holy_site = baghdad
+			holy_site = farz
+			holy_site = basra
+			holy_site = damascus
+			holy_site = jerusalem
 
 			doctrine = tenet_pacifism
 			doctrine = tenet_esotericism
@@ -452,7 +460,11 @@
 			color = { 0.6 0.6 0.4 }
 			icon = sabianism
 
-			holy_site = jenne
+			holy_site = baghdad
+			holy_site = farz
+			holy_site = basra
+			holy_site = damascus
+			holy_site = jerusalem
 
 			doctrine = tenet_islamic_syncretism # Referred to in the Quran as people of the book, in Hadith they were regarded entirely as Muslims
 			doctrine = tenet_esotericism
@@ -503,7 +515,11 @@
 			color = { 0.8 0.6 0.4 }
 			icon = valentinianism
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = sijilmasa
+			holy_site = sinai
 
 			doctrine = tenet_asceticism # Regarded starvation as the redemption of the human soul and would practice meditation
 			doctrine = tenet_esotericism
@@ -612,7 +628,11 @@
 			color = { 0.8 0.6 0.4 }
 			icon = sethianism
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = rome
+			holy_site = alexandria
+			holy_site = sijilmasa
+			holy_site = sinai
 
 			doctrine = tenet_communal_identity
 			doctrine = tenet_esotericism
@@ -728,7 +748,11 @@
 			color = { 0.3 0.6 0.2 }
 			icon = priscillianism
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = toledo
+			holy_site = cordoba
+			holy_site = memphis
+			holy_site = sinai
 
 			doctrine = tenet_asceticism
 			doctrine = tenet_esotericism
@@ -840,7 +864,11 @@
 			color = { 0.3 0.6 0.2 }
 			icon = cainitism
 
-			holy_site = jenne
+			holy_site = ushi-darena
+			holy_site = nok_kundi
+			holy_site = takht-i-sangin
+			holy_site = takht-e_soleyman
+			holy_site = yazd
 
 			doctrine = tenet_reincarnation
 			doctrine = tenet_esotericism

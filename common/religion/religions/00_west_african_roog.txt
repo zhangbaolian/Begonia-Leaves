@@ -219,7 +219,11 @@ west_african_roog_religion = {
 			icon = west_african_roog_sene
 			reformed_icon = west_african_roog_sene_reformed
 
-			holy_site = jenne
+			holy_site = kisi
+			holy_site = sherbro
+			holy_site = kayor
+			holy_site = kasa
+			holy_site = wadan
 
 			doctrine = west_african_unreformed_faith_doctrine
 

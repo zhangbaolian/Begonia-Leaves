@@ -220,7 +220,11 @@ west_african_religion = {
 			icon = mande
 			reformed_icon = mande_reformed
 
+			holy_site = awkar
 			holy_site = jenne
+			holy_site = niani
+			holy_site = kukiya
+			holy_site = kisi
 
 			doctrine = west_african_unreformed_faith_doctrine
 
@@ -234,7 +238,11 @@ west_african_religion = {
 			icon = west_african
 			reformed_icon = west_african_reformed
 
+			holy_site = awkar
 			holy_site = jenne
+			holy_site = niani
+			holy_site = kukiya
+			holy_site = wadan 
 
 			doctrine = west_african_unreformed_faith_doctrine
 

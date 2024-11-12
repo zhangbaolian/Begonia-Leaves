@@ -231,7 +231,11 @@
 			icon = fp2_basque
 			reformed_icon = fp2_basque_reformed
 
-			holy_site = jenne
+			holy_site = viscaya
+			holy_site = aneto
+			holy_site = bordeaux
+			holy_site = santiago
+			holy_site = cordoba
 
 			doctrine = unreformed_faith_doctrine
 

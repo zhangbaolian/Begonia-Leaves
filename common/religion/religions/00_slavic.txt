@@ -220,7 +220,11 @@
 			icon = slavic
 			reformed_icon = slavic_reformed
 
-			holy_site = jenne
+			holy_site = kiev
+			holy_site = novgorod
+			holy_site = barlad
+			holy_site = plock
+			holy_site = rugen
 
 			doctrine = unreformed_faith_doctrine
 

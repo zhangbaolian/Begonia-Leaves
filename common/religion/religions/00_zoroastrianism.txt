@@ -2,7 +2,6 @@
 	family = rf_eastern
 	graphical_faith = "zoroastrian_gfx"
 
-	doctrine = doctrine_monogamy
 	doctrine = special_doctrine_not_allowed_to_hof
 	doctrine = heresy_hostility_doctrine # Needs to be before eastern_hostility_doctrine in order to override the same religion hostility
 	doctrine = eastern_hostility_doctrine
@@ -230,7 +229,11 @@
 			icon = zoroastrian
 			religious_head = d_mazdayasna #actually The Magi
 
-			holy_site = jenne
+			holy_site = adur_farnbag
+			holy_site = adur_burzen_mihr
+			holy_site = takht-i-sangin
+			holy_site = takht-e_soleyman
+			holy_site = yazd
 
 			doctrine = tenet_divine_marriage
 			doctrine = tenet_communal_identity
@@ -246,7 +249,11 @@
 			icon = zurvanism
 			religious_head = d_zurvanism
 
-			holy_site = jenne
+			holy_site = ushi-darena
+			holy_site = nishapur 
+			holy_site = takht-i-sangin
+			holy_site = takht-e_soleyman
+			holy_site = yazd
 
 			doctrine = tenet_reincarnation 
 			doctrine = tenet_communal_identity
@@ -256,7 +263,6 @@
 			doctrine = doctrine_clerical_function_alms_and_pacification
 
 			doctrine = doctrine_spiritual_head
-			doctrine = doctrine_major_branch_behdin
 			doctrine = doctrine_consanguinity_restricted
 			doctrine = doctrine_heretic_branch_zandik
 		}
@@ -266,7 +272,11 @@
 			icon = gayomarthianism
 			religious_head = d_mazdayasna
 
-			holy_site = jenne
+			holy_site = ushi-darena
+			holy_site = nok_kundi
+			holy_site = adur_farnbag
+			holy_site = takht-e_soleyman
+			holy_site = adur_burzen_mihr
 
 			doctrine = tenet_ritual_celebrations
 			doctrine = tenet_communal_identity
@@ -282,7 +292,11 @@
 			icon = khurmazta
 			religious_head = d_mazdayasna
 
-			holy_site = jenne
+			holy_site = adur_farnbag
+			holy_site = mizdahqan
+			holy_site = takht-i-sangin
+			holy_site = dunhuang
+			holy_site = takht-e_soleyman
 
 			
 			doctrine = tenet_adaptive	
@@ -294,7 +308,7 @@
 			doctrine = doctrine_major_branch_behdin 
 
 			holy_order_names = {
-				{ name = "holy_order_order_of_waseghn" }
+				{ name = "holy_order_order_of_waseghn" } # Wēžayn, Sogdian form of Verethragna
 			}
 
 			localization = {
@@ -326,7 +340,11 @@
 			icon = mazdakism
 			religious_head = d_mazdakism
 
-			holy_site = jenne
+			holy_site = ushi-darena
+			holy_site = nok_kundi
+			holy_site = balkh 
+			holy_site = takht-e_soleyman
+			holy_site = ctesiphon 
 
 			doctrine = tenet_communal_possessions
 			doctrine = tenet_gnosticism 
@@ -345,7 +363,11 @@
 			icon = khurramism
 			religious_head = d_khurramism
 
-			holy_site = jenne
+			holy_site = mount_damavand
+			holy_site = nok_kundi
+			holy_site = takht-i-sangin
+			holy_site = takht-e_soleyman
+			holy_site = badd
 
 			doctrine = tenet_unrelenting_faith 
 			doctrine = tenet_reincarnation
@@ -375,7 +397,11 @@
 			icon = urartuism
 			religious_head = d_urartuism
 
-			holy_site = jenne
+			holy_site = ushi-darena
+			holy_site = suenik
+			holy_site = takht-i-sangin
+			holy_site = takht-e_soleyman
+			holy_site = ani
 
 			doctrine = tenet_false_conversion_sanction
 			doctrine = tenet_communal_identity
@@ -415,7 +441,11 @@
 			color = { 0.1 0.7 0.2 }
 			icon = afridunism
 
-			holy_site = jenne
+			holy_site = ani
+			holy_site = adur_burzen_mihr
+			holy_site = adur_farnbag
+			holy_site = takht-e_soleyman
+			holy_site = mount_damavand
 
 			doctrine = tenet_unrelenting_faith
 			doctrine = tenet_unreformed_syncretism

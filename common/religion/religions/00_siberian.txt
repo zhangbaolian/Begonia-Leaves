@@ -221,7 +221,11 @@
 		siberian_pagan = {
 			color = { 230 230 230 }
 
-			holy_site = jenne
+			holy_site = perm
+			holy_site = tyumen
+			holy_site = surgut
+			holy_site = ob
+			holy_site = olkhon
 
 			doctrine = unreformed_faith_doctrine
 

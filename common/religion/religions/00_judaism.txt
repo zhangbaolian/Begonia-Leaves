@@ -229,7 +229,11 @@
 			color = { 0.1 0.7 1.0 }
 			icon = rabbinism
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = sufed
+			holy_site = sinai
+			holy_site = alexandria
+			holy_site = babylon
 
 			#Halakha authority
 			doctrine = temple_authority_rabbinic_doctrine
@@ -250,7 +254,11 @@
 			icon = karaism
 			religious_head = d_karaism
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = sufed
+			holy_site = sinai
+			holy_site = alexandria
+			holy_site = hamadan
 
 			#Halakha authority
 			doctrine = temple_authority_toric_doctrine
@@ -271,7 +279,11 @@
 			icon = judaism
 			religious_head = d_haymanot
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = sufed
+			holy_site = sinai
+			holy_site = alexandria
+			holy_site = semien
 
 			#Halakha authority
 			doctrine = temple_authority_kohanim_doctrine
@@ -321,7 +333,11 @@
 			icon = malabarism
 			religious_head = d_malabarism
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = sinai
+			holy_site = kochi
+			holy_site = manipur
+			holy_site = kerala #Synagogues of Kerala
 
 			#Halakha authority
 			doctrine = temple_authority_toric_doctrine
@@ -352,7 +368,11 @@
 				Netaniel Eleazar Akabon
 			}
 
-			holy_site = jenne
+			holy_site = gerizim
+			holy_site = sufed
+			holy_site = sinai
+			holy_site = alexandria
+			holy_site = hamadan
 
 			#Halakha authority
 			doctrine = temple_authority_samaritan_torah_doctrine
@@ -375,7 +395,11 @@
 			religious_head = d_kabarism
 			doctrine = unreformed_faith_doctrine
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = samarkand #Large Jewish settlements appeared in Samarkand in the late-medieval era, also represents Khazar dominance on the Steppe
+			holy_site = sinai
+			holy_site = itil #Khazar capital and jewel of the steppe
+			holy_site = panticapaeum #Major Radhanite settlements on the steppe were built on or near Crimea
 
 			#Halakha authority
 			doctrine = temple_authority_rabbinic_doctrine
@@ -396,7 +420,11 @@
 			color = { 0.5 0.1 0.7 }
 			icon = merkabah
 
-			holy_site = jenne
+			holy_site = jerusalem
+			holy_site = sufed
+			holy_site = sinai
+			holy_site = alexandria
+			holy_site = babylon
 
 			doctrine = doctrine_pluralism_righteous
 

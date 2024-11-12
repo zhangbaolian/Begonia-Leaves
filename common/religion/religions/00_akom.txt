@@ -217,8 +217,12 @@ akom_religion = {
 			icon = akanism
 			reformed_icon = akanism_reformed
 
+			holy_site = bono
+			holy_site = kumasi
+			holy_site = ife
+			holy_site = nikki
 			holy_site = jenne
-		
+
 			doctrine = west_african_unreformed_faith_doctrine
 
 			doctrine = tenet_adorcism

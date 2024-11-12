@@ -14,45 +14,16 @@
 # }
 
 d_shang_chong  = {
-	1066.1.1 = {
-		holder = 300000001
+	1477.1.1 = {
+		holder = rw020002
 	}
 }
 c_luoyang_song = {
 	867.1.1 = { change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6  }
 	767.1.1 = { government = clan_government }
-	850.1.1 = {
-		holder = 166423
-	}
-	877.1.1 = {
-		holder = 166424
-	}
-	906.1.1 = {
-		holder = 166425
-	}
-	929.1.1 = {
-		holder = 166426
-	}
-	941.1.1 = {
-		holder = 166427
-	}
-	964.1.1 = {
-		holder = 166428
-	}
-	979.1.1 = {
-		holder = 166429
-	}
-	994.1.1 = {
-		holder = 166430
-	}
-	1010.1.1 = {
-		holder = 166431
-	}
-	1030.1.1 = {
-		holder = 166432
-	}
-	1066.1.1 = {
-		holder = 300000001
+	1467.1.1 = {
+		holder = rw020002
+		de_jure_liege = d_shang_chong
 	}
 }

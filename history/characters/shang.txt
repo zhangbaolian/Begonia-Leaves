@@ -1,6 +1,6 @@
 ﻿# 商文化人物
-200000001 = {
-	name = "shang_zizhāo" # 子昭 武丁
+rw020001 = {
+	name = "shang_zhao" # 子昭 武丁
 	dynasty = 2000000011 # 家族id
 	religion = "shang_di" # 宗教名称
 	culture = shang # 文化

@@ -4,6 +4,6 @@ tools
 gfx/map/terrain/detail_index.tga
 gfx/map/terrain/detail_intensity.tga
 gfx/models
-common/bookmarks
-common/bookmark_portraits
+# common/bookmarks
+# common/bookmark_portraits
 *.info

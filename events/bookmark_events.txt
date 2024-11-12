@@ -1,0 +1,9 @@
+﻿
+namespace = bookmark
+
+
+###############################
+# 867 - WRATH OF THE NORTHMEN #
+###############################
+
+###Æthelred isn't as cool as Alfred so we kill him

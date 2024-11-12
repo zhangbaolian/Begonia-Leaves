@@ -218,7 +218,11 @@
 			icon = hellenic
 			reformed_icon = hellenic_reformed
 
-			holy_site = jenne
+			holy_site = rome
+			holy_site = athens
+			holy_site = alexandria
+			holy_site = carthage
+			holy_site = olympus
 
 			doctrine = unreformed_faith_doctrine
 

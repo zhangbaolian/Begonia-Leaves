@@ -43,6 +43,7 @@
 			generous
 			honest
 			calm
+			compassionate
 		}
 		sins = {
 			deceitful
@@ -238,7 +239,11 @@
 			color = { 0.8 0.4 0.0 }
 			icon = buddhism
 
-			holy_site = jenne
+			holy_site = kusinagara
+			holy_site = bodh_gaya
+			holy_site = sarnath
+			holy_site = atamasthana
+			holy_site = dagon
 
 			doctrine = tenet_dharmic_pacifism
 			doctrine = tenet_monasticism
@@ -250,7 +255,11 @@
 			color = { 0.8 0.3 0.2 }
 			icon = mahayana
 
-			holy_site = jenne
+			holy_site = kusinagara
+			holy_site = bodh_gaya
+			holy_site = sarnath
+			holy_site = sanchi
+			holy_site = amaravati
 
 			doctrine = tenet_dharmic_pacifism
 			doctrine = tenet_mendicant_preachers
@@ -261,7 +270,11 @@
 			color = { 0.9 0.3 0.0 }
 			icon = vajrayana
 
-			holy_site = jenne
+			holy_site = kusinagara
+			holy_site = bodh_gaya
+			holy_site = sarnath
+			holy_site = sanchi
+			holy_site = ajanta
 
 			doctrine = doctrine_gender_equal
 			doctrine = doctrine_concubines
@@ -349,7 +362,11 @@
 			color = { 99 0 57 }
 			icon = exp_ari_buddhism
 
-			holy_site = jenne
+			holy_site = kusinagara
+			holy_site = bodh_gaya
+			holy_site = sittaung
+			holy_site = ava
+			holy_site = dagon
 			
 			doctrine = doctrine_polygamy
 			doctrine = doctrine_kinslaying_accepted
@@ -369,7 +386,11 @@
 			color = { 0.9 0.2 0.0 }
 			icon = lamaism_buddhism
 
-			holy_site = jenne
+			holy_site = kusinagara
+			holy_site = bodh_gaya
+			holy_site = lhasa
+			holy_site = sagya
+			holy_site = purang
 
 			doctrine = doctrine_gender_equal
 			doctrine = doctrine_concubines

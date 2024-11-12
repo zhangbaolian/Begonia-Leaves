@@ -1,4 +1,4 @@
-﻿300000001 = {
+﻿rw020002 = {
 	name = "xia_hu" # 崇虎
 	dynasty_house = xiachong
 	religion = "shang_di"
@@ -8,10 +8,10 @@
 	intrigue = 5
 	stewardship = 5
 	# father = 166432 # 父亲di
-	1039.1.1 = { # 出生日期
-		birth = "1039.1.1"
+	1457.1.1 = { # 出生日期
+		birth = "1457.1.1"
 	}
-	1089.1.1 = { # 死亡日期
-		death = "1089.1.1"
+	1497.1.1 = { # 死亡日期
+		death = "1497.1.1"
 	}
 }

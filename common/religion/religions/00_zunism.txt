@@ -218,7 +218,11 @@
 			icon = zunist
 			reformed_icon = zunist_reformed
 
-			holy_site = jenne
+			holy_site = kabul
+			holy_site = multan
+			holy_site = bost
+			holy_site = nishapur
+			holy_site = memphis
 
 			doctrine = unreformed_faith_doctrine
 
