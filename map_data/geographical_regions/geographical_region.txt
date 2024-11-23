@@ -598,7 +598,3 @@ hunt_animal_elk_region = {}
 board_game_fidchell_region = {}
 
 
-################
-# 区域 #
-################
-world_zg_xb = {}

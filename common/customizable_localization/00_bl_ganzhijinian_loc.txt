@@ -1,0 +1,182 @@
+﻿#参考资料
+#https://ck3.paradoxwikis.com/index.php?title=User:Keizer_Harm&mobileaction=toggle_view_desktop
+#https://ck3.paradoxwikis.com/Customizable_localization
+#https://wenku.baidu.com/view/59d493f9941ea76e58fa042b?ssid=&from=&bd_page_type=1&uid=bk_1341334407_942&pu=sl%401%2Cpw%401000%2Csz%40224_220%2Cpd%401%2Cfz%402%2Clp%402%2Ctpl%40color%2C&st=1&wk=sh&dt=doc&md=sax_3&bfetype=new&_wkts_=1723582240452
+#common/customizable_localization/_readme.info
+#干支纪年法 
+#————————————————————————————————————————
+#天干：(黄帝纪年+60)÷12 该算式运算的余数结果,即是所在黄帝纪年对应的天干码。
+# 甲 乙 丙 丁 戊 己 庚 辛 壬 癸
+# 1  2  3  4  5  6  7  8  9  0
+#————————————————————————————————————————	  
+#地支：(黄帝纪年+60)÷12 该算式运算的余数结果,即是所在黄帝纪年对应的地支码和生肖码。
+# 子 丑 寅 卯 辰 巳 午 未 申 酉 戌 亥
+# 1  2  3  4  5  6  7  8  9 10  11 0 
+#————————————————————————————————————————
+#生肖：
+# 子 丑 寅 卯 辰 巳 午 未 申 酉 戌 亥
+# 鼠 牛 虎 兔 龙 蛇 马 羊 猴 鸡 狗 猪
+# 1  2  3  4  5  6  7  8  9 10  11 0
+
+
+###########################
+# 获取干支纪年天干
+###########################
+
+QHTY_TIANGAN = {
+	type = character
+	text = {
+		trigger = { qhty_tiangan_modulo = 1 }
+		localization_key = QHTY_TIANGAN_JIA
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 2 }
+		localization_key = QHTY_TIANGAN_YI
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 3 }
+		localization_key = QHTY_TIANGAN_BING
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 4 }
+		localization_key = QHTY_TIANGAN_DING
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 5 }
+		localization_key = QHTY_TIANGAN_WU
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 6 }
+		localization_key = QHTY_TIANGAN_JI
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 7 }
+		localization_key = QHTY_TIANGAN_GENG
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 8 }
+		localization_key = QHTY_TIANGAN_XIN
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 9 }
+		localization_key = QHTY_TIANGAN_REN
+	}
+	text = {
+		trigger = { qhty_tiangan_modulo = 0 }
+		localization_key = QHTY_TIANGAN_GUI
+	}
+}
+
+###########################
+# 获取干支纪年地支
+###########################
+
+QHTY_DIZHI = {
+	type = character
+	text = {
+		trigger = { qhty_dizhi_modulo = 1 }
+		localization_key = QHTY_DIZHI_ZI
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 2 }
+		localization_key = QHTY_DIZHI_CHOU
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 3 }
+		localization_key = QHTY_DIZHI_YIN
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 4 }
+		localization_key = QHTY_DIZHI_MAO
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 5 }
+		localization_key = QHTY_DIZHI_CHEN
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 6 }
+		localization_key = QHTY_DIZHI_SI
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 7 }
+		localization_key = QHTY_DIZHI_WU
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 8 }
+		localization_key = QHTY_DIZHI_WEI
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 9 }
+		localization_key = QHTY_DIZHI_SHEN
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 10 }
+		localization_key = QHTY_DIZHI_YOU
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 11 }
+		localization_key = QHTY_DIZHI_XU
+	}
+	text = {
+		trigger = { qhty_dizhi_modulo = 0 }
+		localization_key = QHTY_DIZHI_HAI
+	}
+}
+
+###########################
+# 获取对应年份生肖
+###########################
+
+QHTY_SHENGXIAO = {
+	type = character
+	text = {
+		trigger = { qhty_shengxiao_modulo = 1 }
+		localization_key = QHTY_SHENGXIAO_SHU
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 2 }
+		localization_key = QHTY_SHENGXIAO_NIU
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 3 }
+		localization_key = QHTY_SHENGXIAO_HU
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 4 }
+		localization_key = QHTY_SHENGXIAO_TU
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 5 }
+		localization_key = QHTY_SHENGXIAO_LONG
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 6 }
+		localization_key = QHTY_SHENGXIAO_SHE
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 7 }
+		localization_key = QHTY_SHENGXIAO_MA
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 8 }
+		localization_key = QHTY_SHENGXIAO_YANG
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 9 }
+		localization_key = QHTY_SHENGXIAO_HOU
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 10 }
+		localization_key = QHTY_SHENGXIAO_JI
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 11 }
+		localization_key = QHTY_SHENGXIAO_GOU
+	}
+	text = {
+		trigger = { qhty_shengxiao_modulo = 0 }
+		localization_key = QHTY_SHENGXIAO_ZHU
+	}
+}
+
+

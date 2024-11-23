@@ -1,11 +1,69 @@
-﻿bm_group_867 = {
-	default_start_date = 867.1.1
-}
+﻿# bm_group_xia = {
+# 	default_start_date = 628.1.1
+# }
 
-bm_group_1066 = {
-	default_start_date = 1066.9.15
-}
+# bm_group_shang = {
+# 	default_start_date = 1098.1.1
+# }
 
-bm_group_1178 = {
+bm_group_zhou = {
+	# default_start_date = 1652.1.1
 	default_start_date = 1178.10.1
 }
+
+# bm_group_qin = {
+# 	default_start_date = 2477.1.1
+# }
+
+# bm_group_han = {
+# 	default_start_date = 2492.1.1
+# }
+
+# bm_group_sanguo = {
+# 	default_start_date = 2918.1.1
+# }
+
+# bm_group_jin = {
+# 	default_start_date = 2964.1.1
+# }
+
+# bm_group_nan_bei_chao = {
+# 	default_start_date = 3118.1.1
+# }
+
+
+# bm_group_sui = {
+# 	default_start_date = 3279.1.1
+# }
+
+
+# bm_group_tang = {
+# 	default_start_date = 3316.1.1
+# }
+
+
+# bm_group_wu_dai_shi_guo = {
+# 	default_start_date = 3605.1.1
+# }
+
+
+# bm_group_song = {
+# 	default_start_date = 3658.2.4
+# }
+
+
+# bm_group_yuan = {
+# 	default_start_date = 3969.12.18
+# }
+
+# bm_group_ming = {
+# 	default_start_date = 4066.1.23
+# }
+
+# bm_group_qing = {
+# 	default_start_date = 4334.5.1
+# }
+
+# bm_group_zhong_hua_min_guo = {
+# 	default_start_date = 4610.1.1
+# }

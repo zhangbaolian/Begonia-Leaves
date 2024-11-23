@@ -1,0 +1,9 @@
+﻿# k_shanxi
+## d_shanxi_yuncheng
+## d_shangxi_jincheng
+
+
+# 天井关
+# 4928 = {
+# 	holding = castle_holding
+# }

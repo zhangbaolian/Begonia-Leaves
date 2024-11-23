@@ -1,8 +1,0 @@
-#k_maghreb
-##d_canarias ###################################
-###c_canarias
-1953 = {		#GRAN CANARIA
-	culture = shang
-	religion = shang_di
-	holding = castle_holding
-}
