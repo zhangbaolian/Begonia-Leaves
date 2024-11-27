@@ -1,0 +1,24 @@
+﻿house_Ji_Zhou = { # 姬姓周氏
+	name = "house_Ji_Zhou"
+	dynasty = dynn_Ji
+}
+house_Ji_Shao = { # 姬姓召氏
+	name = "house_Ji_Shao"
+	dynasty = dynn_Ji
+}
+house_Ji_Mao = { # 姬姓召氏
+	name = "house_Ji_Mao"
+	dynasty = dynn_Ji
+}
+house_Ji_Bi = { # 姬姓毕氏
+	name = "house_Ji_Bi"
+	dynasty = dynn_Ji
+}
+house_Jiang_Jing = { # 姜姓井氏
+	name = "house_Jiang_Jing"
+	dynasty = dynn_Jiang
+}
+house_Ji_Rui = { # 姬姓芮氏
+	name = "house_Ji_Rui"
+	dynasty = dynn_Ji
+}

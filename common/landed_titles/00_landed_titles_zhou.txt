@@ -1,0 +1,115 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+
+# 西周诸侯国
+#酆国
+k_feng = {
+	color = { 117 135 138 }
+
+	capital = c_xian_zhouzhi
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+k_zhou = { # 周国 周公旦 姬姓周氏
+	color = { 75 92 196 }
+	capital = c_baoji_fengxiang
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+k_shao = { # 召国 召公奭 姬姓召氏
+	color = { 75 92 196 }
+	capital = c_baoji_qishan
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+
+k_mao = { # 毛国 姬姓毛氏
+	color = { 75 92 196 }
+	capital = c_baoji_fufeng
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+
+k_bi = { #毕国 姬姓毕氏
+	color = { 75 92 196 }
+	capital = c_xianyang_xianyang
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+k_jing = { #井国 姜姓井氏
+	color = { 75 92 196 }
+	capital = c_baoji_chencang
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+
+k_rui = { #芮国 姬姓芮氏
+	color = { 75 92 196 }
+	capital = c_weinan_hancheng
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+

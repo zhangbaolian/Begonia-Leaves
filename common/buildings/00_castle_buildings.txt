@@ -11,6 +11,16 @@
 castle_01 = {
 	construction_time = slow_construction_time
 
+	### Chinese ### 	
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_01_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+
 	### WESTERN ###
 	asset = {
 		type = pdxmesh
@@ -412,6 +422,15 @@ castle_01 = {
 
 castle_02 = {
 	construction_time = slow_construction_time
+	### Chinese ### 	
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_02_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}	
 
 	### WESTERN ###
 	asset = {
@@ -785,6 +804,16 @@ castle_02 = {
 
 castle_03 = {
 	construction_time = slow_construction_time
+	### Chinese ### 	
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_03_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}	
+	
 
 	### WESTERN ###
 	asset = {
@@ -1149,6 +1178,16 @@ castle_03 = {
 
 castle_04 = {
 	construction_time = slow_construction_time
+	### Chinese ### 	
+	asset = {
+		type = pdxmesh
+		name = "building_chinese_castle_04_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { chinese_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}	
+
 
 	### WESTERN ###
 	asset = {

@@ -1,0 +1,80 @@
+﻿# 西安
+
+## d_qin_xian
+c_xian_changan = {
+	1652.1.1 = {
+		holder = zhou_2
+	}
+	1655.1.1 = {
+		holder = zhou_1
+	}
+}
+
+c_xian_huyi = {
+	1652.1.1 = {
+		holder = zhou_3
+	}
+}
+
+c_xian_lantian = {
+	1655.1.1 = {
+		holder = zhou_1
+	}
+}
+
+c_xian_lintong = {
+	1655.1.1 = {
+		holder = zhou_1
+	}
+}
+
+c_xian_gaoling = {
+	1655.1.1 = {
+		holder = zhou_1
+	}
+}
+
+## d_qin_xianyang
+c_xianyang_xianyang = {
+	1652.1.1 = {
+		holder = zhou_7
+	}
+}
+c_xianyang_xingping = {
+	1652.1.1 = {
+		holder = zhou_7
+	}
+}
+
+## d_qin_baoji
+c_baoji_fengxiang = {
+	1652.1.1 = {
+		holder = zhou_4
+	}
+}
+
+c_baoji_qishan = {
+	1652.1.1 = {
+		holder = zhou_5
+	}
+}
+
+c_baoji_fufeng  = {
+	1652.1.1 = {
+		holder = zhou_6
+	}
+}
+
+
+
+c_baoji_chencang = {
+	1652.1.1 = {
+		holder = zhou_8
+	}
+}
+
+c_weinan_hancheng = {
+	1652.1.1 = {
+		holder = zhou_9
+	}
+}

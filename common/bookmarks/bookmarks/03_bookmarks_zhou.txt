@@ -1,0 +1,33 @@
+﻿# 周朝剧本
+## 三监之乱 
+bm_zhou_SanJianZhiLuan = {
+	start_date = 1656.2.1
+	is_playable = yes
+	group = bm_group_zhou
+
+	weight = { value = 100 }
+
+	#周成王 姬诵
+	character = {
+		name = "bookmark_sjzl_jisong"
+		dynasty = dynn_Ji
+		dynasty_splendor_level = 5
+		type = male
+		birth = 1642.2.1
+		title = e_zhou
+		government = feudal_government
+		culture = zhou
+		religion = "zhengyi"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = zhou_1
+		position = { 500 600 }
+
+		animation = happiness
+	}
+}
+## 共和行政
+bm_zhou_GongHeXingZheng = {
+	start_date = 1857.1.1
+	is_playable = no
+	group = bm_group_zhou
+}

@@ -61,6 +61,14 @@ walls_01 = {
 	asset = {
 		type = pdxmesh
 		names = {
+			"chinese_walls_01_mesh"
+			"chinese_walls_01_mesh"
+		}
+		graphical_cultures = { chinese_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
 			"western_walls_01_a_mesh"
 			"western_walls_01_b_mesh"
 		}
@@ -142,6 +150,14 @@ walls_01 = {
 
 walls_02 = {
 	is_graphical_background = yes
+	asset = {
+		type = pdxmesh
+		names = {
+			"chinese_walls_02_mesh"
+			"chinese_walls_02_mesh"
+		}
+		graphical_cultures = { chinese_building_gfx }
+	}	
 
 	asset = {
 		type = pdxmesh
@@ -237,7 +253,14 @@ walls_02 = {
 
 walls_03 = {
 	is_graphical_background = yes
-
+	asset = {
+		type = pdxmesh
+		names = {
+			"chinese_walls_03_mesh"
+			"chinese_walls_03_mesh"
+		}
+		graphical_cultures = { chinese_building_gfx }
+	}
 	asset = {
 		type = pdxmesh
 		graphical_regions = { graphical_western }
@@ -333,6 +356,14 @@ walls_03 = {
 
 walls_04 = {
 	is_graphical_background = yes
+	asset = {
+		type = pdxmesh
+		names = {
+			"chinese_walls_04_mesh"
+			"chinese_walls_04_mesh"
+		}
+		graphical_cultures = { chinese_building_gfx }
+	}
 
 	asset = {
 		type = pdxmesh

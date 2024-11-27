@@ -1,0 +1,27 @@
+﻿l_simp_chinese:
+
+ zhouli_religion: "周礼"
+ zhouli_religion_adj: "周礼"
+ zhouli_religion_adherent: "周礼徒"
+ zhouli_religion_adherent_plural: "周礼徒"
+ zhouli_religion_desc: "道是万事万物赖以存在的来源、方式和本质。得道者可以坐致太平，知足常足，死后登仙，与道合真。"
+ #Zhengyi
+ li: "周礼"
+ li_adj: "周礼"
+ li_adherent: "周礼弟子"
+ li_adherent_plural: "周礼弟子"
+ li_desc: "不像其他道教门派，礼在天师治下遵循一套严密的品阶。礼道士制作并售卖符箓，以防止维持生命活力的“炁”的流失。"
+ li_positive_afterlife: "太阴"
+ li_negative_afterlife: "地狱"
+ #Shangqing
+ yue: "乐"
+ yue_adj: "乐"
+ yue_adherent: "乐弟子"
+ yue_adherent_plural: "乐弟子"
+ yue_desc: "乐道教是唐代道教的主流形式。这个门派的弟子通过调神和炼形的手段到达天人合一，而其他道教门派多使用符箓和炼丹。"
+ #Quanzhen
+ fa: "法"
+ fa_adj: "法"
+ fa_adherent: "法弟子"
+ fa_adherent_plural: "法弟子"
+ fa_desc: "法道教弟子修炼内丹，达到炼形与合道。通过这个过程，道士才得以长生久视，修成神仙。"

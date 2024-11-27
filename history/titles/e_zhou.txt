@@ -1,0 +1,62 @@
+﻿###  周朝 ###
+e_zhou = {
+	1652.1.1 = {
+		holder = zhou_2
+		government = feudal_government
+	}
+	1655.1.1 = {
+		holder = zhou_1
+	}
+}
+
+###  酆国 ###
+k_feng = {
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_3
+	}
+}
+
+###  周国 ###
+k_zhou = {
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_4
+	}
+}
+###  召国 ###
+k_shao = {
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_5
+	}
+}
+###  毛国 ###
+k_mao = {
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_6
+	}
+}
+###  毕国 ###
+k_bi = {
+	
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_7
+	}
+}
+###  井国 ###
+k_jing = {
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_8
+	}
+}
+###  芮国 ###
+k_rui = {
+	1652.1.1 = {
+		liege = e_zhou
+		holder = zhou_9
+	}
+}

@@ -53,4 +53,4 @@ lakes = LIST { 480 } #东钱湖
 # UNUSED PROVINCES
 # These provinces cause issues because they are passable land, but not part of any title.
 # They are probably not visible anywhere on the map, so feel free to reuse them (after double checking that they are actually missing).
-impassable_mountains = LIST { 4908 } #Old Forest
+impassable_mountains = LIST { 0 4908 } #Old Forest

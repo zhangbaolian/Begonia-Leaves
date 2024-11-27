@@ -1,0 +1,26 @@
+﻿# #k_qin
+# ##d_qin_xian ###################################
+# ###c_xian_zhouzhi
+# 4453 = {	#ARLES
+# 	culture = zhou
+# 	religion = catholic
+# 	holding = castle_holding
+# }
+# # ###c_xian_huyi
+# 4463 = {	#ARLES
+# 	culture = zhou
+# 	religion = catholic
+# 	holding = castle_holding
+# }
+# # ###c_xian_changan
+4468 = {
+	culture = zhou
+	religion = li
+	holding = castle_holding
+	867.1.1 = {
+		buildings = {
+			castle_04
+			curtain_walls_08
+		}
+	}
+}

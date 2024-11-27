@@ -1,0 +1,64 @@
+﻿object={
+	name="chinese_great_wall_01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_01_entity"
+	count=0
+}
+object={
+	name="chinese_great_wall_02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_02_entity"
+	count=0
+}
+object={
+	name="chinese_great_wall_03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_03_entity"
+	count=0
+}
+object={
+	name="chinese_great_wall_04"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_04_entity"
+	count=0
+}
+object={
+	name="chinese_great_wall_tower_01"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_tower_01_entity"
+	count=1
+	transform="9403.733398 -0.417480 6222.502930 0.000000 -0.440848 0.000000 0.897582 1.000000 1.000000 1.000000
+"}
+object={
+	name="chinese_great_wall_tower_02"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_tower_02_entity"
+	count=0
+}
+object={
+	name="chinese_great_wall_tower_03"
+	render_pass=MapUnderWater
+	clamp_to_water_level=no
+	generated_content=no
+	layer="temp_layer"
+	entity="chinese_great_wall_tower_03_entity"
+	count=0
+}

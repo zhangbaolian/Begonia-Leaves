@@ -1,7 +1,7 @@
 ﻿@correct_culture_primary_score = 100
 @better_than_the_alternatives_score = 50
 @always_primary_score = 1000
-
+@never_primary_score = -1000
 
 ###VANILLA FASHION###
 k_fashion = {
@@ -17,48 +17,27 @@ k_fashion = {
 	}
 }
 
-### 天朝 ###
-# e_tianchao = {
-# 	color = { 209 63 44 }
-	
-# 	capital = c_shaoxing
-	
-# 	ai_primary_priority = {
-# 		if = {
-# 			limit = {
-# 				OR = {
-# 					culture = culture:qin
-# 					culture = culture:yue
-# 					culture = culture:han
-# 				}
-# 			}
-# 			add = @correct_culture_primary_score
-# 		}
-# 	}
-# }
 
 ### 姬周 ###
-# e_zhou = {
-# 	color = { 209 63 44 }
+e_zhou = {
+	color = { 209 63 44 }
 	
-# 	capital = c_xian_xian
+	capital = c_xian_changan
 	
-# 	ai_primary_priority = {
-# 		if = {
-# 			limit = {
-# 				OR = {
-# 					culture = culture:qin
-# 					culture = culture:yue
-# 					culture = culture:han
-# 				}
-# 			}
-# 			add = @correct_culture_primary_score
-# 		}
-# 	}
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:zhou
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
 
-# }
+}
 
-### 殷商 ###
+### 殷国 ###
 k_shang = {
 	color = { 242 253 255 }
 
@@ -68,8 +47,6 @@ k_shang = {
 		if = {
 			limit = {
 				OR = {
-					culture = culture:qin
-					culture = culture:yue
 					culture = culture:han
 				}
 			}
@@ -79,29 +56,8 @@ k_shang = {
 
 }
 
-# 方伯 崇
-d_shang_chong = {
-	color = { 190 0 47 }
 
-	capital = c_luoyang_song
-	
-	ai_primary_priority = {
-		if = {
-			limit = {
-				OR = {
-					# culture = culture:qin
-					# culture = culture:yue
-					culture = culture:han
-					culture = culture:shang
-				}
-			}
-			add = @correct_culture_primary_score
-		}
-	}
-
-}
-
-### 管国 ###
+## 管国 ###
 # k_guan = {
 # 	color = { 10 63 44 }
 	
@@ -121,6 +77,8 @@ d_shang_chong = {
 
 # }
 
+### 酆国 ###
+
 ### 浙江 ###
 k_yue = { # 越
 	color = { 23 124 176 }
@@ -131,7 +89,7 @@ k_yue = { # 越
 			limit = {
 				OR = {
 					culture = culture:han
-					culture = culture:yue
+					# culture = culture:yue
 				}
 			}
 			add = @correct_culture_primary_score
@@ -144,7 +102,11 @@ k_yue = { # 越
 		
 		c_hangzhou_hangzhou = { # 钱塘
 			color = { 75 30 47 }
-			b_1hangzhou={ province = 1 color = { 134 253 138 } }
+			b_1hangzhou = { 
+				province = 1 
+				
+				color = { 134 253 138 } 
+			}
 			b_2xihu={ province = 2 color = { 138 204 155 } }
 			b_3liuxia={ province = 3 color = { 31 79 121 } }																	  
 		}
@@ -870,7 +832,7 @@ k_yue = { # 越
 			b_448huaikan={ province = 448 color = { 86 106 88 } }							  
 		}
 		c_huzhou_deqing = { # 德清
-			color = {111 36 45} 
+			color = { 111 36 45 } 
 			b_449qianyuan={ province = 449 color = { 58 11 167 } }
 			b_450gaoqiao={ province = 450 color = { 194 90 235 } }
 			b_451zhongguan={ province = 451 color = { 26 20 25 } }
@@ -936,7 +898,7 @@ k_minyue = { # 闽越？
 		if = {
 			limit = {
 				OR = {
-					culture = culture:yue
+					culture = culture:han
 				}
 			}
 			add = @correct_culture_primary_score
@@ -5216,7 +5178,7 @@ k_e = { # 鄂
 			limit = {
 				OR = {
 					culture = culture:han
-					culture = culture:yue
+					# culture = culture:yue
 				}
 			}
 			add = @correct_culture_primary_score
@@ -5883,7 +5845,7 @@ k_xiang = { # 湘
 			limit = {
 				OR = {
 					culture = culture:han
-					culture = culture:yue
+					# culture = culture:yue
 				}
 			}
 			add = @correct_culture_primary_score
@@ -6787,7 +6749,7 @@ k_qian = { # 黔
 			limit = {
 				OR = {
 					culture = culture:han
-					culture = culture:yue
+					# culture = culture:yue
 				}
 			}
 			add = @correct_culture_primary_score
@@ -7605,14 +7567,14 @@ k_qian = { # 黔
 ### 陕西 ###
 k_qin = { # 秦
 	color = { 22 24 35 }
-	capital = c_guiyang_guiyang
+	capital = c_xian_changan
 	
 	ai_primary_priority = {
 		if = {
 			limit = {
 				OR = {
 					culture = culture:han
-					culture = culture:yue
+					# culture = culture:yue
 				}
 			}
 			add = @correct_culture_primary_score
@@ -8024,7 +7986,6 @@ k_qin = { # 秦
 		color = { 80 97 109 }
 		capital = c_xian_changan
 
-		
 		c_xian_zhouzhi = { # 周至
 			color = { 80 97 109 }
 			b_4453erqu={ province = 4453 color = { 74 121 167 } }
@@ -9058,13 +9019,13 @@ k_shanxi = {
 			b_5103dibabao={ province = 5103 color = { 212 140 139 } }
 			b_5104qingliangsi={ province = 5104 color = { 114 135 125 } }		   
 		}
-		c_lvliang_xing = {
+		c_lvliang_xing = { 
 			color = { 140 7 13 }
 			b_5105weifen={ province = 5105 color = { 125 192 54 } }
 			b_5106gaojiacun={ province = 5106 color = { 127 75 58 } }
 			b_5107kangning={ province = 5107 color = { 135 62 241 } }
 			b_5108luoyukou={ province = 5108 color = { 164 238 158 } }
-			b_5109ge垯shang={ province = 5109 color = { 174 123 156 } }
+			b_5109gedashang={ province = 5109 color = { 174 123 156 } }
 			b_5110hejiahui={ province = 5110 color = { 216 240 112 } }
 			b_5111mengjiaping={ province = 5111 color = { 50 237 216 } }
 			b_5112watang={ province = 5112 color = { 171 187 213 } }
@@ -9131,7 +9092,8 @@ k_shanxi = {
 			b_5149xiaoyi={ province = 5149 color = { 36 160 182 } }
 			b_5150xiaqu={ province = 5150 color = { 45 20 70 } }
 			b_5151nanwu={ province = 5151 color = { 18 144 189 } }
-			b_5152nanan={ province = 5152 color = { 94 140 69 } }		   
+			b_5152nanan={ province = 5152 color = { 94 140 69 } }
+			b_5174maxin={ province = 5174 color = { 253 146 78 } }		   
 		}
 		c_lvliang_jiaocheng = {
 			color = { 181 18 53 }
@@ -9170,7 +9132,6 @@ k_shanxi = {
 			b_5171gutao={ province = 5171 color = { 232 24 252 } }
 			b_5172ninggu={ province = 5172 color = { 142 198 222 } }
 			b_5173buyi={ province = 5173 color = { 16 102 226 } }
-			b_5174dongquan={ province = 5174 color = { 253 146 78 } }
 			b_5175zhukeng={ province = 5175 color = { 215 242 78 } }
 			b_5176xiangyuan={ province = 5176 color = { 18 107 184 } }
 			b_5177hongshan={ province = 5177 color = { 255 247 100 } }		   
@@ -9696,3 +9657,4 @@ k_shanxi = {
 e_hre = { landless = yes }
 e_byzantium = { landless = yes }
 e_roman_empire = { landless = yes }
+

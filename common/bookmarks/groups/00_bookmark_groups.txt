@@ -7,8 +7,7 @@
 # }
 
 bm_group_zhou = {
-	# default_start_date = 1652.1.1
-	default_start_date = 1178.10.1
+	default_start_date = 1652.1.1
 }
 
 # bm_group_qin = {

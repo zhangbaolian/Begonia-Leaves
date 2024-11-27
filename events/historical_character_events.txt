@@ -19,13 +19,15 @@ historical_char_creation_events.1 = {
 	}
 	theme = friendly
 	override_effect_2d = legend_glow
+
+	orphan = yes #LotR
 	
-	override_background = {
-		trigger = {
-			scope:historical_character.faith = faith:norse_pagan
-		}
-		reference = fp1_runestone_circle
-	}
+	# override_background = { #LotR
+	# 	trigger = {
+	# 		scope:historical_character.faith = faith:norse_pagan
+	# 	}
+	# 	reference = fp1_runestone_circle
+	# }
 	
 	override_background = {
 		trigger = {

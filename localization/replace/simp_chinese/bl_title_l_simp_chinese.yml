@@ -1,8 +1,7 @@
 ﻿l_simp_chinese:
  #e_huaxia
- e_tianchao:0 "天朝"
-#e_zhou 周朝
-#  e_zhou:0 "周"
+#  e_tianchao:0 "天朝"
+ e_zhou:0 "周"
 #  k_guan:0 "管"
  k_shang:0 "商"
  d_shang_chong:"有崇氏"
@@ -273,7 +272,7 @@
  b_217yongchang:0 "永昌"
 
 ##d_zhejiang_jiaxing 嘉兴
- d_zhejiang_jiaxing:0 "长水"
+ d_zhejiang_jiaxing:0 "嘉兴"
  c_jiaxing_haining:0 "海宁"
  c_jiaxing_haiyan:0 "海盐"
  c_jiaxing_pinghu:0 "平湖"
@@ -559,8 +558,8 @@
  b_439qinggang:0 "清港"
  b_440ganjiang:0 "干江"
 
-##d_zhejaing_huzhou 湖州
- d_zhejaing_huzhou:0 "吴兴"
+##d_zhejiang_huzhou 湖州
+ d_zhejiang_huzhou:0 "湖州"
  c_huzhou_wuxing:0 "吴兴"
  c_huzhou_changxing:0 "长兴"
  c_huzhou_deqing:0 "德清"
@@ -5701,7 +5700,7 @@ k_qin:0 "秦"
  c_baoji_mei:0 "眉"
  c_baoji_fufeng:0 "扶风"
  c_baoji_qishan:0 "岐山"
- c_baoji_fengxiang:0 "凤翔"
+ c_baoji_fengxiang:0 "雍" #西周-雍 凤翔 
  c_baoji_qianyang:0 "千阳"
  c_baoji_chencang:0 "陈仓"
  c_baoji_linyou:0 "麟游"
@@ -5768,7 +5767,7 @@ k_qin:0 "秦"
 ## d_qin_xian 西安
  d_qin_xian:0 "镐京"
  c_xian_zhouzhi:0 "盩厔"
- c_xian_huyi:0 "鄠邑"
+ c_xian_huyi:0 "丰"
  c_xian_changan:0 "长安"
  c_xian_lantian:0 "蓝田"
  c_xian_lintong:0 "临潼"
@@ -6560,7 +6559,7 @@ k_qin:0 "秦"
  b_5106gaojiacun:0 "高家村"
  b_5107kangning:0 "康宁"
  b_5108luoyukou:0 "罗峪口"
- b_5109ge垯shang:0 "圪垯上"
+ b_5109gedashang:0 "圪垯上"
  b_5110hejiahui:0 "贺家会"
  b_5111mengjiaping:0 "孟家坪"
  b_5112watang:0 "瓦塘"

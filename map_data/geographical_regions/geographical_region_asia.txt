@@ -3,23 +3,23 @@
 # >> world_asia_east_china_yue
 
 ################################
-world_asia_east_china = {
-	duchies = {	
-		d_zhejiang_hangzhou
-	}
-}
+# world_asia_east_china = {
+# 	duchies = {	
+# 		d_zhejiang_hangzhou
+# 	}
+# }
 
-world_asia_east = {
-	regions = { 
-	    world_asia_east_china
-    }
-}
+# world_asia_east = {
+# 	regions = { 
+# 	    world_asia_east_china
+#     }
+# }
 
-################################
-graphical_asia_east_china = {
-	graphical = yes
-	color = { 245 255 0 }
-	regions = {
-		world_asia_east_china	
-	}
-}
+# ################################
+# graphical_asia_east_china = {
+# 	graphical = yes
+# 	color = { 245 255 0 }
+# 	regions = {
+# 		world_asia_east_china	
+# 	}
+# }

@@ -1,0 +1,12 @@
+﻿#宗族
+#姬、姜、姒、嬴、妘、妫、姞、姚
+# dynn_Ji_2 2为声调
+
+dynn_Ji = { name = "dynn_Ji" culture = "han" }
+dynn_Jiang = { name = "dynn_Jiang" culture = "han" }
+dynn_Si = { name = "dynn_Si" culture = "han" }
+dynn_Ying = { name = "dynn_Ying" culture = "han" }
+dynn_Yun = { name = "dynn_Yun" culture = "han" }
+dynn_Gui = { name = "dynn_Gui" culture = "han" }
+dynn_Ji_2 = { name = "dynn_Ji_2" culture = "han" }
+dynn_Yao = { name = "dynn_Yao" culture = "han" }
